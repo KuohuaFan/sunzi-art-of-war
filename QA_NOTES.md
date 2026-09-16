@@ -139,3 +139,11 @@ Google Search Console 已重新提交 `sitemap.xml`，介面明確回報「已�
 版本 `5b901def` 已發布至 `https://sunziaow.manus.space/`。正式繁中首頁可見原篇次／短篇優先與 1、2、3、5、10 分鐘篩選；實際切換短篇優先及一分鐘條件後只顯示〈九變〉，結果為 1／13 篇且沒有水平溢出。
 
 正式英文章節可見「Personal reading speed」與「Start timer」。在瀏覽器寫入 150 words/min 的本機測試樣本並重新載入後，〈Laying Plans〉由預設 2 min read 更新為 3 min read，頁面標示 Personalized、150 words per minute 及 1 sample，證明 localStorage 持久化與個人化估算在正式站生效。正式 sitemap 仍維持 98 個公開網址。
+
+## 2026-09-17 Logo、開源備份與 GitHub Pages 驗收
+
+使用者提供的紫色鳥形圖已裁切成方形並輸出 512×512 主 Logo、180×180 Apple Touch Icon、64×64 與 32×32 favicon。Logo 已出現在首頁、繁中／六語導覽、私人事件簿介面、Web App Manifest，以及首頁加十三篇共十四張 1200×630 Open Graph 圖；首頁與〈謀攻〉分享圖已逐張視覺核對。
+
+README、MIT 程式碼授權及 CC BY-SA 4.0 內容授權已完成。公開前的乾淨副本排除了 `.git`、`node_modules`、`dist`、`.manus-logs`、`.project-config.json` 與 `.webdev`，敏感檔名、私鑰、Token、Email 及大於 10 MB 檔案掃描均為零。乾淨副本重新安裝鎖定依賴後，12 個測試檔、50 項測試全部通過。
+
+GitHub Pages 匯出器預先產生 98 個公開索引頁、事件簿降級頁與 404，共 100 個 HTML；每個公開頁均含 Logo、完整正文、正式站 canonical 及 `/sunzi-art-of-war/` 子路徑資產。事件簿與 AI 操作不在靜態站呼叫不存在的 API，而是連回完整正式站。正式 GitHub Pages 以 `gh-pages` 根目錄發布，HTTPS 已強制，首頁、繁中深層篇章、英文章節、事件簿降級頁均回應 200，未知頁回應 404。瀏覽器實測首頁 Logo、十三篇卡片、閱讀規劃與子路徑連結均正常。

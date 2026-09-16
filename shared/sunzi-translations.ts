@@ -1,0 +1,5291 @@
+import type { SunziLocale } from "./sunzi-locales";
+
+export type SunziTranslatedChapter = {
+  chapterNumber: number;
+  chapterTitle: string;
+  fullTitle: string;
+  group: string;
+  summary: string;
+  tags: string[];
+  seoTitle: string;
+  seoDescription: string;
+  segments: Array<{ id: string; text: string }>;
+  points: Array<{ title: string; body: string; segmentId: string }>;
+};
+
+export const SUNZI_TRANSLATION_META = {
+  "model": "gpt-5-mini",
+  "sourceOldid": "7906064",
+  "generatedAt": "2026-09-10T21:19:04.794Z"
+} as const;
+
+export const SUNZI_TRANSLATIONS: Record<SunziLocale, SunziTranslatedChapter[]> = {
+  "en": [
+    {
+      "chapterNumber": 1,
+      "chapterTitle": "Laying Plans",
+      "fullTitle": "Laying Plans, Chapter One",
+      "group": "Temple Calculations",
+      "summary": "This chapter defines war as a matter of national survival and human life. It argues that decisions should be founded on five factors—Way, Heaven, Earth, commander, and law—and then compared by seven calculations. Comparison is not a static score but a means to find usable advantages and to form plans that seize initiative. Deception and measures of perception serve information and cognition, yet everything returns to prewar calculation: the more complete the conditions, preparations, and judgments, the more foreseeable the outcome.",
+      "tags": [
+        "Five Factors",
+        "Seven Calculations",
+        "Strategic Planning",
+        "Deception",
+        "Decision-making"
+      ],
+      "seoTitle": "Laying Plans: Five Factors and Seven Calculations",
+      "seoDescription": "War is a state's gravest matter; assess five factors and seven calculations. Thorough prewar calculation makes victory more predictable.",
+      "segments": [
+        {
+          "id": "01-01",
+          "text": "Sun Tzu said: Warfare is the great affair of state, the matter of life and death, the road to survival or ruin; it must not be neglected. Therefore it is to be examined by five factors and compared by seven calculations to determine the facts: first, the Way; second, Heaven; third, Earth; fourth, the commander; fifth, method and discipline."
+        },
+        {
+          "id": "01-02",
+          "text": "By the Way I mean the people being in harmony with their ruler, willing to live and die with him and unafraid of danger. By Heaven I mean yin and yang, cold and heat, and the timing of the seasons. By Earth I mean distances and terrain—high and low, near and far, dangerous and safe, wide and narrow, and grounds of life and death. By the commander I mean wisdom, trustworthiness, benevolence, courage, and strictness. By method and discipline I mean organization, the chain of command, and the control of expenditure. Every commander has heard of these five things; the one who understands them will win, and the one who does not will not. Therefore compare them by seven calculations to learn the truth: Which sovereign has the Way? Which commander is capable? Which side has Heaven and Earth in its favor? Which side enforces laws and orders? Which has stronger forces? Which has better-trained troops? Which has clearer rewards and punishments? By these I know who will win and who will lose."
+        },
+        {
+          "id": "01-03",
+          "text": "If a commander listens to my plan and employs it, retain him; if he does not listen to my plan and will surely fail in employing it, dismiss him. Calculate the advantages and secure his adherence; then create strategic momentum to support operations beyond the immediate theater. Momentum is shaping power in response to advantage. Warfare is the way of deception. Therefore, when able, appear unable; when employing forces, appear not to; when near, appear far; when far, appear near. Offer bait in the form of gain; exploit disorder; attack where the enemy is unprepared; prepare against an enemy whose forces are sound; avoid one who is strong. Anger them and throw them into confusion; humble yourself to make them arrogant; give them no rest when they are at ease; divide those who are united. Attack where they are unprepared; appear where you are not expected. This is the victory of the military strategist, and it must not be disclosed beforehand."
+        },
+        {
+          "id": "01-04",
+          "text": "Those who are victorious before battle have made many calculations; those not victorious have made few. Many calculations bring victory; few calculations do not bring victory—how much less for those who make none? From this observation I can see who will win."
+        }
+      ],
+      "points": [
+        {
+          "title": "Warfare is a state's great affair",
+          "body": "War must not be treated as a commander's personal gamble. It involves public resources, life and death, and the survival of the state, so it requires careful assessment above all.",
+          "segmentId": "01-01"
+        },
+        {
+          "title": "Five factors and seven calculations",
+          "body": "The five factors provide observational dimensions and the seven calculations require step-by-step comparison of enemy and self. Together they form the basic framework for prewar judgment.",
+          "segmentId": "01-02"
+        },
+        {
+          "title": "Create momentum by exploiting advantage",
+          "body": "Plans must be adjusted to present opportunities and constraints; 'momentum' is not arbitrary change but shaping the situation by leveraging concrete advantages.",
+          "segmentId": "01-03"
+        },
+        {
+          "title": "Deception and shaping perceptions",
+          "body": "Presenting ability as inability, use as disuse, nearness as distance and vice versa serves to mislead the opponent and expose exploitable openings.",
+          "segmentId": "01-03"
+        },
+        {
+          "title": "Prewar calculation creates victory",
+          "body": "True advantage is formed before combat. The difference between many calculations and few lies in whether conditions have been fully inventoried and compared.",
+          "segmentId": "01-04"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 2,
+      "chapterTitle": "Waging War",
+      "fullTitle": "Waging War — Chapter 2",
+      "group": "State Expenditure",
+      "summary": "This chapter focuses on the timing and costs of war. Once an army is mobilized, transport, equipment, levies and rising prices steadily drain national resources; even a well-devised tactical plan can be nullified by delay. Therefore the use of arms prizes swift achievement of objectives and the shortening of supply lines. The capture of enemy resources and personnel should be treated not only as plunder but as rewards, reorganization, and conversion so that defeating the enemy also strengthens your own forces.",
+      "tags": [
+        "cost",
+        "decisive victory",
+        "logistics",
+        "national resources",
+        "reorganization"
+      ],
+      "seoTitle": "Waging War — Cost, Speed and Logistics (Sun Tzu, Ch.2)",
+      "seoDescription": "Explains why swift victories and using enemy supplies preserve the state; prolonged campaigns drain wealth and blunt forces.",
+      "segments": [
+        {
+          "id": "02-01",
+          "text": "Sun Tzu said: In matters of warfare, when chariots are driven by thousands, wagons numbered by the hundreds, armored men amounting to a hundred thousand, and provisions must be supplied for a thousand li, then internal and external expenses, the costs for guests, materials like glue and lacquer, and the provision and maintenance of chariots and armor will come to a daily cost of a thousand pieces of gold; only then can an army of one hundred thousand be raised. In the employment of arms, what matters most is victory; if the campaign is prolonged, weapons grow blunt and edge is lost, assaults on cities sap strength, and long exposure of troops exhausts the state's resources. When weapons are dulled and edge lost, when strength is bent and treasure spent, feudal lords seize the opportunity to rise; even the wise cannot remedy what follows. Hence among soldiers one hears praise of clumsy speed but not of skilful delay. There has never been a case where protracted warfare benefited the state. Therefore one who does not fully understand the harms of using arms cannot fully understand their benefits."
+        },
+        {
+          "id": "02-02",
+          "text": "A competent commander does not levy the same men twice nor requisition grain for three successive years; he takes what is needed from his own state only as necessary and lives off the enemy's supplies, and so the army's rations will suffice."
+        },
+        {
+          "id": "02-03",
+          "text": "When a state's army is provisioned from afar, long transport impoverishes the people; when the army is close, prices rise and people are forced to sell at high cost, exhausting their wealth and driving them into corvée. Strength is strained and the treasury exhausted; the heartland and households lie empty. Of the people's resources, seven tenths are consumed; of the public's resources—broken carts and idle horses, armor, arrows and crossbows, halberds, shields, siege engines, draft oxen and large wagons—six tenths are consumed."
+        },
+        {
+          "id": "02-04",
+          "text": "Therefore a wise general strives to feed his troops from the enemy: one measure taken from the enemy may be worth twenty of ours; one bundle of their straw may be worth twenty of ours."
+        },
+        {
+          "id": "02-05",
+          "text": "Killing the enemy comes from anger; taking the enemy's goods is profit. Thus in chariot battles, when you capture ten or more chariots, reward those who captured them first and replace the captured banners. Mix captured chariots into your own ranks, use competent captured soldiers and feed them well—this is called defeating the enemy and increasing your strength."
+        },
+        {
+          "id": "02-06",
+          "text": "Hence in war what is prized is victory, not duration. Therefore the general who understands warfare holds the people's lives in his hands and is the arbiter of the state's safety and peril."
+        }
+      ],
+      "points": [
+        {
+          "title": "Victory matters; not duration",
+          "body": "This chapter does not urge recklessness. It argues that prolonged consumption dulls weapons, saps strength and treasure, and gives rivals opportunity to act.",
+          "segmentId": "02-01"
+        },
+        {
+          "title": "Know the harms of warfare",
+          "body": "Focusing only on potential gains without accounting for direct and indirect costs is insufficient for deciding to wage war. Risk awareness is prerequisite to benefit assessment.",
+          "segmentId": "02-01"
+        },
+        {
+          "title": "Live off the enemy",
+          "body": "Long-range supply burdens the populace. Shortening supply lines and using local or enemy resources reduces the total cost of war.",
+          "segmentId": "02-02"
+        },
+        {
+          "title": "Defeat the enemy and grow stronger",
+          "body": "After capturing enemy chariots, replace their insignia, integrate their vehicles and troops, and treat captured soldiers well—this converts enemy assets into your own strength.",
+          "segmentId": "02-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 3,
+      "chapterTitle": "Attack by Stratagem",
+      "fullTitle": "Attack by Stratagem — Chapter Three",
+      "group": "Complete Victory",
+      "summary": "This chapter presents a doctrine of achieving victory while preserving the whole. The highest form of success is not triumph in open battle but first undermining the enemy's plans and alliances so they cannot resist; besieging cities is a last resort because of its cost. The chapter also treats comparisons of force, the ruler–general relationship, and the conditions for knowing victory, stressing that political leaders should not interfere with military expertise and that commanders must grasp enemy and self, size and disposition of forces, timing, and the will of the organization.",
+      "tags": [
+        "Complete Victory",
+        "Defeat the Plan",
+        "Defeat Alliances",
+        "Ruler–General Relations",
+        "Know the Enemy and Yourself"
+      ],
+      "seoTitle": "Attack by Stratagem — Sun Tzu on Complete Victory (Chapter 3)",
+      "seoDescription": "Ranks methods of victory—undermine plans and alliances before fighting; siege is last resort. Emphasizes unity, judgment, and noninterference.",
+      "segments": [
+        {
+          "id": "03-01",
+          "text": "Sun Tzu said: In the methods of warfare, preserving the state is supreme; destroying the state is next. Preserving the army is supreme; destroying the army is next. Preserving a division is supreme; destroying a division is next. Preserving a regiment is supreme; destroying a regiment is next. Preserving a unit is supreme; destroying a unit is next. Therefore, to win a hundred victories in a hundred engagements is not the acme of skill; to subdue the enemy without fighting is the acme of skill."
+        },
+        {
+          "id": "03-02",
+          "text": "Therefore the best strategy is to defeat the enemy's plans; next best is to disrupt their alliances; next best is to fight their armies; worst is to besiege fortified cities. Siege warfare should be undertaken only when unavoidable. To frame and fit siege-towers and battering engines, and prepare other implements, takes three months; to raise approaches and undermine the walls takes another three months. If a general cannot restrain his anger and the troops swarm like ants, killing a third of the soldiers yet failing to take the city, this is the disaster of siege warfare."
+        },
+        {
+          "id": "03-03",
+          "text": "Thus the skillful commander bends the enemy's forces without fighting, captures their cities without assaulting them, ruins their state without protracted campaigns. He strives to contend for the realm with his resources intact; therefore the troops are not exhausted and the gains remain whole—this is the method of attacking by stratagem."
+        },
+        {
+          "id": "03-04",
+          "text": "Hence in the conduct of war: if you are ten times as many, surround the enemy; if five times, attack; if twice, divide them; if equal, be able to fight; if fewer, be able to hold the defensive; if inferior in every way, be able to avoid them. Thus the firmness of a small force can lead to its capture by a larger one."
+        },
+        {
+          "id": "03-05",
+          "text": "A commander is the state's principal support. If that support is complete, the state will be strong; if the support is flawed, the state will be weak."
+        },
+        {
+          "id": "03-06",
+          "text": "Therefore there are three things by which a ruler may bring trouble upon his army: not recognizing when the army cannot advance yet ordering it to advance, and not recognizing when it cannot retreat yet ordering it to retreat—this ties the army; not understanding the matters of the three divisions yet meddling in their administration—this confuses the soldiers; not knowing the authority assigned within the three divisions yet interfering with their duties—this makes the soldiers distrustful. When the three armies are confused and distrustful, ruin for the state is near; this is called leading a disordered army to defeat."
+        },
+        {
+          "id": "03-07",
+          "text": "There are five points by which victory may be known: knowing whether you can fight or cannot fight; mastering the use of many or few forces; having unity of purpose between high and low; preparing for the expected and awaiting the unexpected; and having a capable commander whom the ruler does not hamper. These five constitute the way to know victory."
+        },
+        {
+          "id": "03-08",
+          "text": "Hence it is said: Know the enemy and know yourself, and you will not be imperiled in a hundred engagements. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will be defeated in every battle."
+        }
+      ],
+      "points": [
+        {
+          "title": "Subduing without battle",
+          "body": "The highest excellence is not measured by the number of battlefield victories but by whether the objective is achieved with minimal destruction.",
+          "segmentId": "03-01"
+        },
+        {
+          "title": "Best to attack the plan",
+          "body": "Strategies are ranked: first disrupt the enemy's plans, then their alliances, then their armies; besieging cities is the least desirable option.",
+          "segmentId": "03-02"
+        },
+        {
+          "title": "Strive to preserve the whole",
+          "body": "Preservation is not passive avoidance; it means securing the state and forces so success does not require exhausting one's own resources.",
+          "segmentId": "03-03"
+        },
+        {
+          "title": "Three causes of a ruler's trouble with the army",
+          "body": "Direct interference born of ignorance about when to advance or retreat, how commands and authority are organized, will produce confusion and disorder among the troops.",
+          "segmentId": "03-06"
+        },
+        {
+          "title": "Know the enemy and yourself",
+          "body": "Knowing how to judge fightability, employ forces, ensure unity of will, prepare for surprise, and allow competent command without interference is the practical formula for victory.",
+          "segmentId": "03-07"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "Military Disposition",
+      "fullTitle": "Military Disposition — Chapter 4",
+      "group": "Securing Victory",
+      "summary": "This chapter examines what can be controlled and what cannot. It argues that one should first create conditions that make oneself undefeatable—this is within one's control—while whether the enemy exposes a weakness cannot be forced. The skilled combatant does not seek glory through risky feats but chooses engagements where victory is already likely. The sequence degree → measure → calculation → comparison → victory shows how advantage arises from successive assessments of terrain, capacity, numbers, and force balance.",
+      "tags": [
+        "Invincibility",
+        "Preemptive Victory",
+        "Military Disposition",
+        "Risk",
+        "Measurement"
+      ],
+      "seoTitle": "Sun Tzu — Military Disposition (Chapter 4): Securing Victory",
+      "seoDescription": "Explains making oneself undefeatable, waiting for enemy weakness, and how measurement and calculation turn terrain and forces into victory.",
+      "segments": [
+        {
+          "id": "04-01",
+          "text": "Sun Tzu said: In former times those skilled in war first made themselves invincible, and then waited for the enemy to be vulnerable. \"Invincible\" depends on oneself; \"vulnerable\" depends on the enemy. Therefore the skillful warrior can make himself invincible but cannot make the enemy necessarily vulnerable. Thus: victory can be recognized, but it cannot be forced."
+        },
+        {
+          "id": "04-02",
+          "text": "Being invincible is a matter of defense; vulnerability to defeat invites attack. To defend is to appear lacking; to attack is to possess surplus. The good defender conceals himself beneath the ninefold earth; the good attacker moves above the nine heavens—thus they can preserve themselves and secure complete victory."
+        },
+        {
+          "id": "04-03",
+          "text": "To win in ways that everyone can see is not the highest skill; to win in battle and have the world call it skill is not the highest excellence. Lifting a single autumn hair is not proof of great strength; seeing the sun and moon is not proof of superior sight; hearing thunder is not proof of keen hearing."
+        },
+        {
+          "id": "04-04",
+          "text": "What ancient writers called being skilled at war was winning where victory was easy. Therefore the victories of the skilled carry no name for cleverness and no claim of heroic deed. Their victories do not go wrong. \"Not going wrong\" means that where they place themselves they will certainly win; they win over foes already doomed. Thus the skilled commander stands on ground where he cannot be defeated and does not miss the enemy's collapse. Therefore a victorious army first secures victory and then seeks battle; a defeated army first engages in battle and then seeks victory. The effective commander cultivates the Way and preserves the laws, and so can direct matters of victory and defeat."
+        },
+        {
+          "id": "04-05",
+          "text": "On military method: first measurement, second estimation, third calculation, fourth comparison, fifth victory. Terrain gives rise to measurement; measurement gives rise to estimation; estimation gives rise to calculation; calculation gives rise to comparison; comparison gives rise to victory. Thus a victorious army weighs ounces by the pound, while a defeated army weighs the pound by the ounce. The fighting of the victorious is like releasing accumulated water down a thousand-foot gorge—that is its form."
+        }
+      ],
+      "points": [
+        {
+          "title": "Make yourself invincible first",
+          "body": "Secure your defenses, systems, and preparations first; then wait for external opportunities. This is risk control before pursuing returns.",
+          "segmentId": "04-01"
+        },
+        {
+          "title": "Invincibility is within; vulnerability is in the enemy",
+          "body": "Avoiding defeat is mainly under your control; defeating the opponent depends on whether they expose opportunities.",
+          "segmentId": "04-01"
+        },
+        {
+          "title": "Win where victory is easy",
+          "body": "True skill lies in choosing engagements with an existing advantage, not in courting danger to gain fame.",
+          "segmentId": "04-04"
+        },
+        {
+          "title": "Victors secure advantage before fighting",
+          "body": "Action is the culmination of an already established advantage, not the means to gamble on creating one.",
+          "segmentId": "04-04"
+        },
+        {
+          "title": "Measure, estimate, calculate, compare, win",
+          "body": "From terrain scale to capacity, troop numbers, and force comparison—victory follows layered, quantitative assessment.",
+          "segmentId": "04-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "Military Momentum",
+      "fullTitle": "Military Momentum — Chapter Five",
+      "group": "Relying on Momentum",
+      "summary": "This chapter moves from organization and command to how momentum is formed. Governing a crowd as if it were a few depends on structure and signals; fighting many as if fighting few depends on formation and designation. Though combat shows endless variation, its basic elements are the recurring alternation of orthodox and unorthodox. Momentum is not an abstract spirit but the combination of position, speed, rhythm, and conditions into a releasable force. A brilliant leader does not only demand individual courage but designs the environment so that ordinary people, placed and timed correctly, produce a decisive collective effect.",
+      "tags": [
+        "Momentum",
+        "Orthodox and Unorthodox",
+        "Organization",
+        "Rhythm",
+        "Employing Momentum"
+      ],
+      "seoTitle": "Sun Tzu Chapter 5 — Military Momentum and the Use of Force",
+      "seoDescription": "Explains how organization, orthodox and unorthodox tactics, timing and formation combine into decisive momentum in warfare.",
+      "segments": [
+        {
+          "id": "05-01",
+          "text": "Sun Tzu said: To govern many as if governing few — that is a matter of division and numbers. To fight many as if fighting few — that concerns form and designation. To marshal an army so that it will certainly engage the enemy without defeat — that lies in the use of orthodox and unorthodox tactics. Where force is applied, as when hurling a heavy stone at an egg, that concerns emptiness and solidity."
+        },
+        {
+          "id": "05-02",
+          "text": "In all fighting, match with the orthodox and win by the unorthodox. Therefore the skillful user of surprise is inexhaustible like Heaven and Earth, unending like rivers and seas. They end only to begin again, like the sun and moon; they die and are reborn, like the four seasons. Sounds are not more than five, yet the changes of the five sounds cannot be fully heard; colors are not more than five, yet the variations of five colors cannot be fully seen; tastes are not more than five, yet the shifts of five tastes cannot be fully sampled. Battle formations are no more than orthodox and unorthodox, yet the variations of orthodox and unorthodox cannot be exhausted. Orthodox and unorthodox generate one another in a cycle without end — who can fully fathom it?"
+        },
+        {
+          "id": "05-03",
+          "text": "The swiftness of rushing water that can carry off a floating stone — that is momentum. The rapid strike of a bird of prey that can break and shatter — that is tempo. Therefore the skillful fighter’s momentum is steep, and his tempo is brief. Momentum is like a drawn crossbow; tempo is like the release mechanism."
+        },
+        {
+          "id": "05-04",
+          "text": "Confused and clamorous, the contest appears chaotic yet cannot be thrown into disorder; blurred and indeterminate, the formation is rounded and cannot be broken. Disorder is born of order; timidity is born of courage; weakness is born of strength. Order and disorder are matters of organization and numbers; courage and timidity are matters of momentum; strength and weakness are matters of form."
+        },
+        {
+          "id": "05-05",
+          "text": "Therefore the one who skillfully moves the enemy shapes a situation to which the enemy will respond; he offers and the enemy will take. Use advantage to move them, and await them with your troops."
+        },
+        {
+          "id": "05-06",
+          "text": "Thus the skilled commander seeks victory in the situation, not by blaming his men; therefore he can choose people and assign them to fit the situation. To rely on momentum is to fight with men as if turning logs and stones. The nature of wood and stone: when level they rest, when tilted they move; when square they stop, when round they roll. Therefore the skillful commander’s momentum is like rolling a round stone down a thousand‑footh cliff — that is momentum."
+        }
+      ],
+      "points": [
+        {
+          "title": "Division and designation",
+          "body": "Whether a large organization can be commanded depends on layered structure, units of responsibility, and consistent signaling.",
+          "segmentId": "05-01"
+        },
+        {
+          "title": "Match orthodox, win by unorthodox",
+          "body": "Orthodox and unorthodox are mutually transforming configurations; one should not treat either as a permanently fixed category.",
+          "segmentId": "05-02"
+        },
+        {
+          "title": "Steep momentum, brief tempo",
+          "body": "Power should be concentrated into a short, effective release—like a drawn crossbow and a quick trigger; prolonging the tempo dissipates advantage.",
+          "segmentId": "05-03"
+        },
+        {
+          "title": "Shape and bait",
+          "body": "Use visible form and offered advantages to steer the enemy’s choices, then meet their response with prepared reserves.",
+          "segmentId": "05-05"
+        },
+        {
+          "title": "Seek victory in the situation, not in blame",
+          "body": "Leadership is about selecting people and arranging conditions to exploit momentum, not simply blaming individuals for systemic failure.",
+          "segmentId": "05-06"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 6,
+      "chapterTitle": "Emptiness and Fullness",
+      "fullTitle": "Emptiness and Fullness — Chapter Six",
+      "group": "Securing Victory",
+      "summary": "This chapter centers on seizing the initiative so that the enemy acts according to your design rather than forcing you to react. By offering advantage or harm, using speed, feints and concealment, you disperse enemy defenses and concentrate at the decisive point. The highest military form is formlessness, which prevents the enemy from knowing where to commit resources. The chapter closes with the metaphor of water: water avoids heights and flows downward; troops avoid the strong and strike the weak. Methods must not be fixed but must change with the enemy and the environment.",
+      "tags": [
+        "Emptiness and Fullness",
+        "Initiative",
+        "Concentration",
+        "Formlessness",
+        "Adapt to Enemy"
+      ],
+      "seoTitle": "Sun Tzu — Chapter 6: Emptiness and Fullness (Formlessness)",
+      "seoDescription": "How to seize the initiative, disperse enemy defenses, concentrate forces at decisive points, and remain formless like water in order to adapt and win.",
+      "segments": [
+        {
+          "id": "06-01",
+          "text": "Sun Tzu said: Those who occupy the ground of battle before the enemy arrives are at ease; those who take the ground later and must hurry to battle are fatigued. Therefore the skillful commander causes others to come to him and does not go to others."
+        },
+        {
+          "id": "06-02",
+          "text": "To make the enemy come of their own accord is to offer them profit; to prevent the enemy from coming is to harm them. Thus make the idle enemy labor, make the sated enemy hungry, make the secure enemy move. Move where they do not expect to go; strike where they do not expect to be struck."
+        },
+        {
+          "id": "06-03",
+          "text": "To march a thousand li without fatigue is to move through ground unoccupied by men. To attack and be sure to capture is to strike where he does not guard; to defend and be sure to hold is to defend where he does not attack. Therefore the skillful attacker makes the enemy uncertain where to guard; the skillful defender makes the enemy uncertain where to attack. Subtle, subtle indeed — reaching formlessness; mysterious, mysterious indeed — reaching soundlessness. Thus one can determine the enemy’s fate."
+        },
+        {
+          "id": "06-04",
+          "text": "Advance in a way that cannot be stopped by striking at their weak points; withdraw in a way that cannot be pursued by moving with speed beyond reach. Thus, if I desire battle, even though the enemy has high ramparts and deep ditches, I can force him to fight by attacking what he must relieve. If I desire not to fight, even if I merely mark out ground and hold it, I can prevent the enemy from engaging by diverting his intentions."
+        },
+        {
+          "id": "06-05",
+          "text": "Therefore give the enemy a visible form while I remain formless; then I concentrate while the enemy disperses. I concentrate as one, the enemy divides into ten; when ten attack one, I am many and the enemy few. He who can use many against few makes his engagements sure. If the place where I will fight cannot be known, then the enemy must prepare in many places; with many places to prepare, the place I fight will be thinly guarded. Prepare the front and the rear will be weak; prepare the rear and the front will be weak; prepare the left and the right will be weak; prepare the right and the left will be weak. If you prepare everywhere, then nothing is weak. 'Weak' means being the one forced to guard; 'many' means making others guard against you."
+        },
+        {
+          "id": "06-06",
+          "text": "Therefore, knowing where to fight and when to fight allows you to gather forces over a thousand li for battle; not knowing where or when means the left cannot help the right, the right cannot help the left, the front cannot help the rear, and the rear cannot help the front — and that is with distances of only a few li, much less dozens. In my judgment, though the Yue may have many soldiers, how much does that avail in victory or defeat? Hence it is said: victory can be seized. Even if the enemy is numerous, he can be rendered unable to fight."
+        },
+        {
+          "id": "06-07",
+          "text": "Thus by calculation you know the measures of gain and loss; by disposition you know the principles of movement and stillness; by forming shape you know the ground of life and death; by probing you discover surplus and deficiency. Therefore the extreme in shaping an army is to be formless. Formless, the deepest spy cannot see it, the wisest cannot plan against it. By adapting form to secure victory, the many cannot know. All may know the apparent forms by which I win, but none know the underlying forms by which I control victory. Therefore my triumphs cannot be repeated in the same way; I shape myself endlessly to circumstances."
+        },
+        {
+          "id": "06-08",
+          "text": "The shape of an army is like water. The way water moves is to avoid heights and flow downward; the army that wins avoids the strong and strikes the weak. Water shapes its course to the ground; army shapes victory to the enemy. Hence an army has no constant form, no fixed shape; one who can change with the enemy to secure victory is called divine. Likewise the five elements have no permanent victor, the four seasons have no fixed place: days are short or long, the moon wanes and waxes."
+        }
+      ],
+      "points": [
+        {
+          "title": "Make others come; do not go to others",
+          "body": "Initiative is not merely acting first but forcing the enemy to respond to your timing, position and resource allocation.",
+          "segmentId": "06-01"
+        },
+        {
+          "title": "Attack what they must relieve",
+          "body": "You need not assault an opponent’s chosen strongpoint directly; change the stakes so they abandon their advantageous positions.",
+          "segmentId": "06-04"
+        },
+        {
+          "title": "I concentrate while the enemy divides",
+          "body": "Hide the main direction of your advance to force the enemy to guard many places, then concentrate locally to achieve numerical superiority at the decisive point.",
+          "segmentId": "06-05"
+        },
+        {
+          "title": "The ultimate formation is formlessness",
+          "body": "Avoid fixed, readable deployment patterns so that your informational advantage cannot be interpreted and used against you.",
+          "segmentId": "06-07"
+        },
+        {
+          "title": "The army’s form is like water",
+          "body": "Tactics must adapt to terrain and to the enemy; repeating previously successful shapes without regard to changing conditions risks failure.",
+          "segmentId": "06-08"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 7,
+      "chapterTitle": "Contesting Positions",
+      "fullTitle": "Chapter Seven — Contesting Positions",
+      "group": "Contesting Advantage",
+      "summary": "This chapter examines the difficulty of moving an army from assembly to the capture of advantageous positions. Turning a circuitous route into a direct advantage requires inducement, route planning, speed, and logistics; pursuing speed alone may cost the baggage train and divide the forces. The text presents the wind, forest, fire, and mountain modes of action, emphasizes unified signals through drums and banners, discusses morale and physical strength, and counsels restraint when facing feigned retreats, decoy forces, returning armies, and desperate foes.",
+      "tags": [
+        "Contesting Positions",
+        "Indirect vs Direct",
+        "Wind-Forest-Fire-Mountain",
+        "Morale",
+        "Logistics"
+      ],
+      "seoTitle": "Sun Tzu — Chapter 7: Contesting Positions and Maneuver",
+      "seoDescription": "On contesting advantageous positions through indirect routes, the wind, forest, fire, and mountain modes of action, unified signals, morale, and logistics.",
+      "segments": [
+        {
+          "id": "07-01",
+          "text": "Sun Tzu said: In all the methods of employing troops, the general receives orders from the sovereign, combines forces and marshals the people, makes alliances and establishes camps; nothing is more difficult than contesting positions. The difficulty in contesting positions lies in making the roundabout seem direct and turning danger into advantage. Therefore take a circuitous route and lure them with profit; when those behind set out, the first arrivals will already be there—this is the strategy of indirect and direct movement."
+        },
+        {
+          "id": "07-02",
+          "text": "Therefore contesting for advantage brings both profit and danger. If the whole army marches to seize an advantage, it will not arrive in time; if part of the army is sent to seize it, the baggage will be lost. Therefore roll up the armor, hurry, and do not rest by day or night; travel at double speed and march without stopping. If you contest an advantage a hundred li away, the three army commanders may be captured; the vigorous will go first and the exhausted will lag behind, so only one in ten will arrive. If you contest an advantage fifty li away, the commander of the vanguard may be lost, and only half will arrive. If you contest an advantage thirty li away, two-thirds will arrive. Therefore an army without baggage perishes; without provisions it perishes; without accumulated stores it perishes. Whoever does not know the designs of neighboring lords cannot make alliances in advance; whoever does not know the terrain of mountains, forests, obstacles, and marshes cannot march; whoever does not employ local guides cannot gain the advantage of the ground."
+        },
+        {
+          "id": "07-03",
+          "text": "Thus an army is established through deception, moved by advantage, and changed by dividing and uniting. Therefore be swift as the wind, quiet as a forest, fierce as fire, immovable as a mountain, inscrutable as darkness, and sudden in action as thunder. Plunder the countryside and divide your forces; extend your territory and distribute the gains; weigh the situation and then act. Whoever is first to understand the strategy of the indirect and direct approaches will prevail—this is the method of contesting positions."
+        },
+        {
+          "id": "07-04",
+          "text": "The Military Regulations say: 'When voices cannot be heard, use gongs and drums; when people cannot see one another, use standards and banners.' Gongs, drums, standards, and banners serve as the people's common ears and eyes. Once the people are unified by them, the brave cannot advance alone and the timid cannot retreat alone—this is the method of employing a multitude. Therefore night fighting uses many gongs and drums, while day fighting uses many standards and banners; this is how one alters the way people hear and see."
+        },
+        {
+          "id": "07-05",
+          "text": "An army's morale can be seized, and a general's mind can be shaken. Therefore morning morale is keen, at midday it flags, and in the evening it turns homeward. The skilled commander avoids keen morale and strikes when it flags or turns homeward—this is managing morale; he uses order to await disorder and calm to await clamor—this is governing the mind; he uses proximity to await distance, ease to await toil, and fullness to await hunger—this is managing strength; he does not challenge an enemy whose standards are in perfect order or attack a formation drawn up in imposing array—this is managing change."
+        },
+        {
+          "id": "07-06",
+          "text": "Therefore, in employing troops: do not advance against a high ridge; do not go against an enemy who has a hill at his back; do not pursue a feigned retreat; do not attack fresh, vigorous troops; do not swallow the bait of a decoy force; do not block an army returning home; when you surround an army, leave it an outlet; do not press a desperate enemy. These are the principles of employing troops."
+        }
+      ],
+      "points": [
+        {
+          "title": "Turn indirect into direct; turn danger into advantage",
+          "body": "An indirect route that changes the enemy’s judgment and gains time can become the direct way to arrive first.",
+          "segmentId": "07-01"
+        },
+        {
+          "title": "Contesting advantage brings both gain and risk",
+          "body": "Pursuing opportunity creates speed but stretches formations and endangers supplies; advantage and risk coexist.",
+          "segmentId": "07-02"
+        },
+        {
+          "title": "Wind — Forest — Fire — Mountain",
+          "body": "Swift, still, aggressive and immobile correspond to different tempos; the point is to switch according to purpose, not to seek speed alone.",
+          "segmentId": "07-03"
+        },
+        {
+          "title": "The people's common ears and eyes",
+          "body": "Shared signals prevent the brave from advancing alone and the timid from retreating alone, turning individual reactions into organized action.",
+          "segmentId": "07-04"
+        },
+        {
+          "title": "Managing morale, mind, strength and change",
+          "body": "Waiting for the enemy’s sharpness to wane, their order to falter, and their strength to be spent before engaging is control of tempo.",
+          "segmentId": "07-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 8,
+      "chapterTitle": "Nine Changes",
+      "fullTitle": "Nine Changes, Chapter Eight",
+      "group": "Adaptation",
+      "summary": "This chapter emphasizes that principles must not be detached from circumstances. Avoiding certain roads, not attacking some forces, not contesting particular cities or lands, and even refusing some sovereign commands may all be necessary to prevent mechanically applying general rules. Mature judgment sees hidden risks in apparent benefits and looks for remedies within dangers. The chapter closes by listing five dangerous character traits in commanders, showing how courage, clinging to life, impatience, excessive scrupulousness, and misplaced affection for the people can all be exploited by an opponent.",
+      "tags": [
+        "Nine Changes",
+        "Benefits and Risks",
+        "Preparations",
+        "Five Dangers",
+        "Adaptation"
+      ],
+      "seoTitle": "Sun Tzu: Nine Changes (Ch. 8) — Adaptation & Five Dangers",
+      "seoDescription": "Chapter 8 stresses adapting rules to circumstances, weighing benefits and harms, and five character-based risks leaders must guard against.",
+      "segments": [
+        {
+          "id": "08-01",
+          "text": "Sun Tzu said: In the methods of warfare, a commander takes orders from the sovereign, unites the forces and gathers the troops. On broken ground do not linger; at crossroads join with allies; on cut-off ground do not remain; when surrounded, devise plans; on fatal ground, fight. There are roads one must not take, armies one must not attack, cities one must not besiege, terrain one must not contest, and sovereign commands one must not accept. Therefore a general who understands how to exploit the advantages of the Nine Changes knows how to employ troops; a general who does not understand the advantages of the Nine Changes, though he knows the lay of the land, cannot gain its benefits; one who organizes troops without knowledge of the Nine Changes, though he knows the terrain's advantages, cannot make effective use of his men."
+        },
+        {
+          "id": "08-02",
+          "text": "Therefore the wise man's deliberations always mix considerations of benefit and harm: mixed with benefit he attends to what is attainable; mixed with harm he seeks dangers that can be resolved. Thus one bends the feudal lords by pointing to harms, conscripts them by appealing to obligations, and draws them forward by offering benefits."
+        },
+        {
+          "id": "08-03",
+          "text": "Hence in the art of war do not rely on the enemy not coming; rely on being prepared to meet him. Do not rely on him not attacking; rely on possessing positions or conditions that cannot be successfully attacked."
+        },
+        {
+          "id": "08-04",
+          "text": "Therefore a general has five dangers: one who resigns himself to death can be slain; one who clings to life can be captured; one quick to anger can be despised; one overly punctilious in integrity can be humiliated; one too fond of his people can become burdened. These five are a commander's faults and the disasters of employing troops. When an army is overturned and a general killed, it is always because of one of these five dangers; they must not be neglected."
+        }
+      ],
+      "points": [
+        {
+          "title": "Restraint in Action",
+          "body": "Roads, enemy forces, cities, terrain, and orders should not be acted on merely because they exist; action must serve the overall objective.",
+          "segmentId": "08-01"
+        },
+        {
+          "title": "Mastery of the Nine Changes",
+          "body": "Knowing terrain is not the same as leveraging it; one must also know when to alter normal practice.",
+          "segmentId": "08-01"
+        },
+        {
+          "title": "Weighing Benefits and Harms",
+          "body": "In considering advantages, include potential harms; in assessing risks, look for solvable aspects—avoid one-sided judgment.",
+          "segmentId": "08-02"
+        },
+        {
+          "title": "Do Not Rely on Enemy Inaction",
+          "body": "Security must not be built on expecting the opponent to do nothing; it must be built on readiness to meet action.",
+          "segmentId": "08-03"
+        },
+        {
+          "title": "The General's Five Dangers",
+          "body": "Virtues taken to extremes become predictable weaknesses. Self-awareness is an element of strategic risk management.",
+          "segmentId": "08-04"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 9,
+      "chapterTitle": "Marching",
+      "fullTitle": "Marching, Chapter Nine",
+      "group": "Facing the Enemy",
+      "summary": "This chapter begins with how an army should occupy mountain, water, marsh and plain positions, then explains how to judge situations from subtle signs. Movements of trees, rising birds, dust, words, rewards and punishments, and soldiers’ postures must be read together. The chapter closes by linking organizational discipline with loyalty: punish men before they are attached and they will not accept it; if men are attached but punishment is not enforced, they are unusable. Orders must be consistent to build trust.",
+      "tags": [
+        "Marching",
+        "Terrain",
+        "Facing the Enemy",
+        "Discipline",
+        "Trust"
+      ],
+      "seoTitle": "Sun Tzu — Marching: Terrain, Signs, Discipline",
+      "seoDescription": "Guidance on choosing terrain, reading battlefield signs, and balancing discipline with trust in Sun Tzu's 'Marching'.",
+      "segments": [
+        {
+          "id": "09-01",
+          "text": "Sun Tzu said: In placing an army opposite the enemy, if mountains cut you off and you rely on valleys, occupy the high ground with observation; fight from a raised position without having to climb—this is the mountain army. If water cuts you off, keep well away from it; if the enemy is cut off by water and comes, do not meet him in the water—let him be half across and strike him; this is advantageous. If you seek battle, do not attach yourself to the water to meet the enemy; take high ground with observation and do not face the current—this is the army on the water. If marshes cut you off, depart quickly and do not linger; when armies meet amid marsh they must rely on water grasses and have their backs to dense trees—this is the marsh army. On flat ground it is easy; the right is backed and high, the front is death and the rear life—this is the plain army. The advantages of these four dispositions are how the Yellow Emperor overcame the four rulers."
+        },
+        {
+          "id": "09-02",
+          "text": "Armies prefer heights and avoid low ground; they prize the sunny side and disdain the shady; they preserve life and occupy solid ground. An army without many ailments is said to be certain to win. On hills and embankments, take the sunny side and have your right flank supported—this is the advantage troops gain from the ground. After heavy rain, when the water is turbid, those who wish to ford should wait until it clears."
+        },
+        {
+          "id": "09-03",
+          "text": "Where there are sheer ravines or features called sky-wells, sky-traps, sky-nets, sky-sinks and sky-gaps, withdraw at once and do not approach. If we keep away, the enemy approaches; if we approach, the enemy falls back. Where the army is bordered by obstacles, ponds, reeds, woods or thorny thickets, be careful when covering and securing lines—these are the places ambushers inhabit."
+        },
+        {
+          "id": "09-04",
+          "text": "If the enemy is near and silent, he relies on his position; if he is distant and challenges, he wants you to advance. If his place of station is easy to occupy, it is advantageous. Many trees moving mean they are coming; much grass blocking the way means doubt; birds rising mean an ambush; startled beasts mean a hidden force. Dust that rises high and sharp indicates chariots; dust low and wide indicates infantry. Scattered, spreading dust denotes woodcutters or foragers; a few going back and forth denotes a camp detail. Humble words combined with increased preparations mean advance; bold words with pressing forward mean retreat. Light chariots going out first and remaining to the side mark a formation. Those who ask for peace without agreement are plotting. Running about and deploying troops indicate a set plan for engagement. Half advance and half retreat is a lure. One who stands with a staff is hungry; one who draws water and drinks first is thirsty. Those who see gain but do not advance are weary. Birds gathering indicate emptiness; cries at night indicate fear. An army in disorder shows the commander is not respected; moving banners show confusion; angry officers show fatigue. When there is grain, horses and meat, no supply rope hung, and the troops do not return to their quarters, these are desperate enemy bands. Long-winded, whispering, and speaking slowly to people indicate loss of the troops. Frequent rewards show constraint; frequent punishments show distress. To be violent first and then fear one’s own men is lack of thoroughness. Those who come to surrender and thank you seek rest. If soldiers angrily go out to meet each other and, after long time, neither join nor part, you must examine the situation carefully."
+        },
+        {
+          "id": "09-05",
+          "text": "Therefore troops are not valuable merely for their numbers. What matters is avoiding reckless advance, and being able to combine forces, judge the enemy, and take prisoners. Those who are careless and readily engage the enemy will surely be captured."
+        },
+        {
+          "id": "09-06",
+          "text": "If soldiers are not yet attached and you punish them, they will not accept it and will be hard to use. If soldiers are attached but punishments are not enforced, they cannot be used. Therefore govern them with regulations and align them with military discipline—this is what secures success. If commands are habitually practiced and used to teach the people, the people obey; if commands are habitually not practiced and used to teach the people, the people do not obey. Orders that are habitually observed are in harmony with the masses."
+        }
+      ],
+      "points": [
+        {
+          "title": "Positioning and observing",
+          "body": "Marching involves both choosing secure positions and observing the enemy; terrain handling and intelligence interpretation are inseparable.",
+          "segmentId": "09-01"
+        },
+        {
+          "title": "Prefer heights, avoid low ground",
+          "body": "Choosing a camp values visibility, dryness, health and logistical support to minimize noncombat losses.",
+          "segmentId": "09-02"
+        },
+        {
+          "title": "Read signs in context",
+          "body": "Natural and human signals are ambiguous; never interpret them in isolation—cross-check distance, posture, dust and words.",
+          "segmentId": "09-04"
+        },
+        {
+          "title": "Numbers alone do not win",
+          "body": "Quantity is not the sole advantage; the ability to combine forces, evaluate the enemy and secure obedience matters more than merely adding men.",
+          "segmentId": "09-05"
+        },
+        {
+          "title": "Rule with civility, align with force",
+          "body": "Care and attachment build loyalty; discipline enforces cohesion. Both are necessary—either missing makes troops unusable.",
+          "segmentId": "09-06"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 10,
+      "chapterTitle": "Terrain",
+      "fullTitle": "Terrain — Chapter Ten",
+      "group": "Terrain",
+      "summary": "This chapter first categorizes six kinds of ground—accessible, entangling, intermediate, narrow, precipitous, and distant—and then enumerates six forms of defeat: flight, laxity, entrapment, collapse, disorder, and rout. The first set are external conditions; the second set mostly arise from errors in command and organization and should not be blamed on Heaven. Commanders must judge independently, based on enemy, own forces, and terrain, whether to fight, prioritizing the protection of the people and the state's interest. Loving and protecting troops must be paired with effective command; otherwise affection becomes indulgence.",
+      "tags": [
+        "terrain",
+        "six defeats",
+        "commander's duty",
+        "know the ground",
+        "organization"
+      ],
+      "seoTitle": "Sun Tzu — Terrain: Six Grounds and Six Defeats (Chapter 10)",
+      "seoDescription": "Chapter 10 explains six terrain types and six commander-caused defeats; it stresses judging terrain, protecting the people, and disciplined leadership.",
+      "segments": [
+        {
+          "id": "10-01",
+          "text": "Sun Tzu said: Generally, ground takes six forms: accessible, entangling, intermediate, narrow, precipitous, and distant. If I can go and the enemy can come, it is called accessible. On accessible ground, take the high sunny places first and secure your supply routes; such ground favors battle. If one can go but cannot easily return, it is called entangling. On entangling ground, if the enemy is unprepared, sallying forth brings victory; if the enemy is prepared, sallying forth will not win and return is difficult—this is unfavorable. If I sally forth and suffer while the enemy also suffers from sallying, this is intermediate ground. On intermediate ground, even if the enemy has the advantage, I do not advance; instead I draw them out, force them to extend half their force, and then strike—this is advantageous. On narrow ground, if we occupy it first we must fill it and wait for the enemy; if the enemy occupies it first, then if they have filled it we must not follow, but if they have not filled it we may follow. On precipitous ground, if we occupy it first we must hold the high sunny places to await the enemy; if the enemy occupies it first, draw off and do not follow. On distant ground, when forces are even it is difficult to provoke battle; fighting there is disadvantageous. These six are the ways of terrain; they are the supreme responsibilities of a general and must not be overlooked."
+        },
+        {
+          "id": "10-02",
+          "text": "Therefore there are troops that flee, troops that slacken, troops that are trapped, troops that collapse, troops that fall into disorder, and troops that are put to flight. These six failures are not calamities sent by Heaven but faults of the general. When forces are evenly matched yet a detachment acts alone and causes flight, it is called flight. When the soldiers are strong but the officers weak, this is laxity. When the officers are strong but the soldiers weak, this is entrapment. When senior officers are angry and refuse orders, meeting the enemy by charging on their own and the commander cannot gauge their capacity, this is collapse. When a general is weak and not strict, when training and regulations are unclear, officers and soldiers irregular, and deployments scattered and confused, this is disorder. When a general cannot assess the enemy, joins small forces against many, sends the weak to attack the strong, and troops are sent without selecting the vanguard, this results in rout. These six are the paths to defeat; they are the supreme duties of a general and must be carefully examined."
+        },
+        {
+          "id": "10-03",
+          "text": "Terrain is the army’s aid. Estimating the enemy and securing victory, calculating difficulties, perils, and distances—this is the master’s way of command. One who knows this and fights will certainly win; one who does not know this and fights will certainly be defeated. Therefore, if the way of battle promises victory, then even if the ruler says 'do not fight' one can fight; if the way of battle does not promise victory, then even if the ruler orders 'fight' one should not. Thus advance without seeking fame and retreat without avoiding blame; care only to protect the people and ensure gains align with the sovereign—this is the nation's treasure."
+        },
+        {
+          "id": "10-04",
+          "text": "Treat your soldiers like newborn infants, and you can have them cross deep streams with you; treat them like cherished sons, and you can die with them. To be lavish in care but unable to use them, to love them but be unable to command, to pamper and yet be unable to govern—this is like a spoiled child and is not fit for service."
+        },
+        {
+          "id": "10-05",
+          "text": "Knowing that my troops can strike while not knowing that the enemy cannot be attacked is half a victory; knowing that the enemy can be attacked while not knowing that my troops cannot attack is half a victory; knowing both enemy and my troops can fight while not knowing that the ground is unsuited to battle is half a victory. Therefore the skilled commander moves without confusion and acts without exhaustion. Hence: know the enemy and know yourself, and in a hundred battles you will never be in peril; know the heavens and the earth, and your victory will be complete."
+        }
+      ],
+      "points": [
+        {
+          "title": "The six kinds of ground",
+          "body": "The same terrain is not inherently advantageous to either side; what matters are who occupies it first, supply lines, ease of withdrawal, and whether forces are proportionate to the terrain.",
+          "segmentId": "10-01"
+        },
+        {
+          "title": "Six defeats lie with the commander",
+          "body": "Flight, laxity, entrapment, collapse, disorder, and rout mostly stem from misusing forces, imbalances of authority, and unclear orders—these are matters of management and leadership responsibility.",
+          "segmentId": "10-02"
+        },
+        {
+          "title": "Advance without seeking fame, retreat without avoiding blame",
+          "body": "Decisions must be professional and detached from personal reputation; priority is protecting the people and serving the state's interest.",
+          "segmentId": "10-03"
+        },
+        {
+          "title": "Love must be paired with command",
+          "body": "Trust and care cannot replace clear orders; indulgent affection without governance turns troops into spoiled dependents.",
+          "segmentId": "10-04"
+        },
+        {
+          "title": "Know heaven and earth to complete victory",
+          "body": "Knowing only the enemy and oneself is insufficient; incorporating terrain and timing into judgment raises the chance of total victory.",
+          "segmentId": "10-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 11,
+      "chapterTitle": "Nine Grounds",
+      "fullTitle": "The Nine Grounds — Chapter Eleven",
+      "group": "Military Circumstances",
+      "summary": "This chapter distinguishes nine kinds of ground—scattered, light, contentious, intersecting, main-road, serious, difficult, encircled, and death—and prescribes different principles for each situation. Deep penetration into enemy territory alters soldiers’ psychology and unit cohesion; commanders must align will, secure supply, and control information. The serpent analogy shows how mutual rescue between front and rear creates systemic responsiveness. The point is not rote memorization of nine names but understanding how position, lines of retreat, resources and morale jointly change what to do.",
+      "tags": [
+        "Nine Grounds",
+        "Military Circumstances",
+        "Deep Penetration",
+        "Coordination",
+        "Situational Awareness"
+      ],
+      "seoTitle": "Sun Tzu — The Nine Grounds (Chapter 11)",
+      "seoDescription": "Chapter 11 categorizes nine battlefield situations and shows how position, supply and morale dictate command and action.",
+      "segments": [
+        {
+          "id": "11-01",
+          "text": "Sun Tzu said: In the methods of employing troops there are nine kinds of ground: scattered ground, light ground, contentious ground, intersecting ground, main-road ground, serious ground, difficult ground, encircled ground, and death ground. When a state fights within its own territory, that is scattered ground. When one enters another’s territory but not deeply, that is light ground. Ground that benefits both sides when either gains it is contentious ground. Ground that I can go to and the enemy can come to is intersecting ground. Where a state’s territory branches in three directions, and the first to arrive secures the larger number of people, that is main-road ground. When one penetrates deeply into another’s land and has many cities to his rear, that is serious ground. Mountain forests, obstacles, marshes and all difficult routes are difficult ground. Where the approach is narrow and the return route roundabout, and the enemy in smaller force can strike our larger force, that is encircled ground. Where swift battle preserves life but delay destroys it, that is death ground. Therefore on scattered ground there is no fighting; on light ground there is no lingering; on contentious ground there is no direct attack; on intersecting ground there is no severance; on main-road ground forces converge and join; on serious ground there is plundering; on difficult ground there is movement; on encircled ground there must be stratagem; on death ground there must be fighting."
+        },
+        {
+          "id": "11-02",
+          "text": "The ancient masters of war could make it so that the enemy’s front and rear could not aid each other, the many and the few could not depend on each other, the high and the low could not rescue each other, the upper and lower could not gather; troops would separate and not assemble, units would combine without alignment. Move when it is to your advantage; stop when it is not. Asked: “If the enemy comes with massed, orderly forces, how should one wait?” The answer: “First seize what he loves, and he will obey.” Therefore speed is the ruling factor in warfare: take advantage of the enemy’s lack of preparedness, go by unexpected routes, and attack where he is unguarded."
+        },
+        {
+          "id": "11-03",
+          "text": "The way of the invading force is that the deeper it goes the more it concentrates; the home ruler cannot withstand it. Forage in abundant countryside so the three armies have enough to eat. Tend them carefully and do not overwork them; conserve spirit and accumulate strength; employ movement and stratagem so that the enemy cannot predict. Drive them so they have nowhere to go, and they will fight to the death. If they cannot die, the soldiers will give their utmost. When troops are very pressed they are fearless; with nowhere to go they stand firm; deeply inside enemy territory they feel constrained; if there is no alternative they will fight. Thus their troops can be alert without drill, obtain without asking, attach without promise, and trust without orders. Remove omens and expel doubt; when death is the only road there is nowhere else to go. My soldiers without private property do not disdain wealth; without spare life they do not disdain longevity. On the day of departure, seated soldiers weep on their collars and those who lie down shed tears along their cheeks. Those driven with nowhere to turn display the courage of Zhu and Gui."
+        },
+        {
+          "id": "11-04",
+          "text": "Therefore the skillful commander is likened to a single living organism. The comparison is to the serpent of Changshan: strike its head and the tail comes; strike its tail and the head comes; strike it in the middle and both head and tail come together. Asked: “Can troops be made to act like that serpent?” The answer: “Yes. The peoples of Wu and Yue hated each other, yet when they shared a boat in a storm they rescued one another like left and right hands.” Hence a harnessed chariot with its wheels buried is not yet reliable; common courage like one is the way of governance; both firmness and flexibility depend on terrain. The skilled commander binds hands so they act like one man when necessity demands it."
+        },
+        {
+          "id": "11-05",
+          "text": "The affairs of the general require calm secrecy, correctness and order. He must dull the soldiers’ ears and eyes so they have no knowledge; change their duties and alter their plans so people cannot perceive; change their billets and lengthen their routes so they cannot calculate. When the commander departs, remove the ladder as one who climbs a height; when he leads them deep into the enemy’s country and then reveals his purpose, he burns the boats and breaks the kettles—like driving a flock of sheep. Drive them forward and drive them back so no one knows where they are bound. Gather the three armies and hurl them into danger: that is the work of the general. The transformations of the nine grounds, the gains of extension and contraction, and the principles of human feeling must all be observed."
+        },
+        {
+          "id": "11-06",
+          "text": "In general, as a guest: deep implies concentration, shallow implies dispersion. When an army leaves its country and crosses a border, that is absolute ground; where roads reach in all directions, that is main-road ground; where one goes deep, that is serious ground; where one goes shallow, that is light ground; when rear is secure but front is narrow, that is encircled ground; when there is nowhere to go, that is death ground. Therefore on scattered ground I will unite their will; on light ground I will make them belonging; on contentious ground I will press from the rear; on intersecting ground I will guard carefully; on main-road ground I will secure the junctions; on serious ground I will maintain their supplies; on difficult ground I will improve the routes; on encircled ground I will block their gaps; on death ground I will show them there is no life. Thus the condition of troops: when surrounded, defend; when forced, fight; when past, pursue."
+        },
+        {
+          "id": "11-07",
+          "text": "Therefore one who does not know the counsels of the princes cannot make plans for alliances in advance; one who does not know mountain forests, difficult passes and marsh forms cannot march an army; one who does not use local guides cannot gain the ground advantage. If four or five of these are lacking and one does not know even one, that is not the army of a hegemon. The hegemon’s army, when attacking a great state, prevents its forces from gathering; with威 impressed upon the enemy, their alliances cannot unite. Therefore do not contend for the world’s alliances nor cultivate sway for the world; rely on your own interests; impose威 on the enemy and cities can be taken and states overthrown. Administer rewards without fixed law and hang decrees without governance. Make the multitudes act as one person. Strike them into action by deeds, not by words; strike them with gain and do not announce the harm. Cast them into a lost ground and then they will live; plunge them into death ground and then they will die. Only when a host is driven into danger can victory and defeat be decided. Thus the affairs of war lie in feigning compliance with the enemy’s intent, compressing the enemy’s direction into one, slaying commanders a thousand miles away—this is the cunning that achieves results."
+        },
+        {
+          "id": "11-08",
+          "text": "Therefore on the day one mobilizes, level the passes and break the tally-chits so their envoys cannot get through; be severe on the altars and in halls to punish deeds. When the enemy opens and closes, rush in quickly; first seize what he loves; give him little time; press close on his heels to decide the engagement. Therefore at first be like a maiden when the enemy opens his door; later be like a rabbit from which there is no escape and the enemy cannot resist."
+        }
+      ],
+      "points": [
+        {
+          "title": "Different natures of the Nine Grounds",
+          "body": "The nine grounds are not merely terrain types; they are defined by distance from home, lines of communication, mutual interests, and the relationship between enemy and friendly forces.",
+          "segmentId": "11-01"
+        },
+        {
+          "title": "Speed is decisive",
+          "body": "Speed is used to exploit the enemy’s unpreparedness and attack where he is unguarded, not as reckless movement divorced from supply and order.",
+          "segmentId": "11-02"
+        },
+        {
+          "title": "Deep penetration concentrates forces",
+          "body": "Retreat routes, distance and resources change soldiers’ psychology; leaders must understand how the situation affects unit cohesion.",
+          "segmentId": "11-03"
+        },
+        {
+          "title": "The serpent analogy",
+          "body": "Mutual support between front and rear does not occur spontaneously; it is produced by command, terrain, and shared stakes that make the group respond as a whole.",
+          "segmentId": "11-04"
+        },
+        {
+          "title": "Act on openings",
+          "body": "Rules give orientation, but action must follow the enemy’s openings and battlefield movement rather than a fixed form.",
+          "segmentId": "11-08"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 12,
+      "chapterTitle": "Fire Attack",
+      "fullTitle": "Attack by Fire — Chapter Twelve",
+      "group": "Caution in Warfare",
+      "summary": "On the surface this chapter treats conditions for using fire, but its real emphasis is that tools, timing and responses must align. Fire attacks have different targets and require supplies and suitable weather; after ignition commanders must watch the enemy’s reaction to decide whether to follow up. Even a successful assault is wasted if its gains are not secured. The chapter closes by raising caution in warfare to a political ethic: ruler and general must not wage war in sudden anger, because emotions recover but lost states and lives do not.",
+      "tags": [
+        "fire attack",
+        "timing",
+        "consolidation",
+        "caution",
+        "emotions"
+      ],
+      "seoTitle": "Sun Tzu — Fire Attack: Timing, Tools, and Restraint",
+      "seoDescription": "Five kinds of fire attack, required conditions and timing, how to respond, and why leaders must avoid anger and consolidate victory.",
+      "segments": [
+        {
+          "id": "12-01",
+          "text": "Sun Tzu said: In all there are five kinds of fire attack: first, fire against the people; second, fire on stores; third, fire on wagons; fourth, fire on magazines; fifth, fire on the troops. To employ fire one must have a cause; smoke and flames must be properly prepared. There is a season to set fire, and there are days on which to kindle it. 'Season' means dry weather. 'Day' means when the moon is in the constellations Ji, Bi, Yi, or Zhen. On the days of these four lunar mansions, winds arise."
+        },
+        {
+          "id": "12-02",
+          "text": "In any fire attack, one must respond according to the five variations of fire: if fire breaks out inside, then respond early from without; if fire breaks out and the enemy troops remain calm, wait and do not attack; when the fire reaches its peak, one may follow and exploit it; if one cannot follow, then stop. Fire can be started from outside without waiting for an internal blaze—start it at the proper time. If the fire is upwind, do not attack downwind. A long daytime wind will often cease at night. Every army must know the five changes of fire and guard against them accordingly. Thus to use fire in support of an attack is a clear tactic; to use water in support is a strong measure. Water can cut off, but it cannot seize."
+        },
+        {
+          "id": "12-03",
+          "text": "When one wins in battle and seizes the prize but does not consolidate the achievement, the result is harmful; this is called 'wasteful lingering.' Therefore an enlightened ruler considers it carefully, and a good general finishes the work. Do not move without advantage, do not employ forces without gain, do not engage unless there is peril. A ruler must not raise troops in anger; a commander must not bring on battle out of resentment. Act when it is advantageous; desist when it is not. Anger can return to joy, resentment can return to pleasure, but a fallen state cannot be restored and the dead cannot be brought back to life. Therefore the wise ruler is cautious and the good general is vigilant—this is the way to secure the state and preserve the army."
+        }
+      ],
+      "points": [
+        {
+          "title": "Fire requires cause and readiness",
+          "body": "Any tool demands the right conditions, supplies and timing; a method without supporting elements cannot produce effective action.",
+          "segmentId": "12-01"
+        },
+        {
+          "title": "Respond to changing conditions",
+          "body": "After fire starts, do not attack mechanically; observe whether the enemy is disordered and whether the fire’s force can be exploited, then decide whether to press on or to stop.",
+          "segmentId": "12-02"
+        },
+        {
+          "title": "Water can cut off but cannot seize",
+          "body": "Different means have different operational limits. Being able to interrupt is not the same as being able to capture; do not confuse functions.",
+          "segmentId": "12-02"
+        },
+        {
+          "title": "Victory without consolidation is loss",
+          "body": "If you win but do not organize and secure the gains, prior costs may become wasted expenditure.",
+          "segmentId": "12-03"
+        },
+        {
+          "title": "Do not wage war in anger",
+          "body": "Major, irreversible decisions must not be driven by transient emotions; caution in warfare is a safeguard for lives and the state.",
+          "segmentId": "12-03"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 13,
+      "chapterTitle": "The Use of Spies",
+      "fullTitle": "On the Use of Spies — Chapter Thirteen",
+      "group": "Foreknowledge",
+      "summary": "The final chapter argues from the high cost of war to demonstrate the value of intelligence: if one begrudges titles and rewards and therefore fails to invest in spies, leaving soldiers and civilians to endure prolonged expense, that is both cruel and foolish. Foreknowledge cannot be obtained from gods, analogy, or conjecture; it must come from people who know the enemy's situation. There are five kinds of spies—local, inside, turned, expendable, and returning—each with a distinct function; among them, the turned spy is the pivot for identifying and using the enemy's intelligence network. Intelligence work requires wisdom, benevolence, subtlety, and strict secrecy.",
+      "tags": [
+        "use of spies",
+        "foreknowledge",
+        "intelligence",
+        "double agents",
+        "secrecy"
+      ],
+      "seoTitle": "Sun Tzu — The Use of Spies: Intelligence and Counterintelligence",
+      "seoDescription": "Chapter on intelligence: five types of spies, the central role of turned agents, and the necessity of human sources, secrecy and wise handling.",
+      "segments": [
+        {
+          "id": "13-01",
+          "text": "Sun Tzu said: In general, when mobilizing an army of a hundred thousand and campaigning a thousand li, the people's expenses and the state's provisions amount to a thousand pieces of gold a day; internal and external unrest follow, the people are exhausted along the roads, and seven hundred thousand households are unable to attend to their affairs. To wage war for years in pursuit of a single day's victory, yet begrudge a hundred pieces of gold in titles and rewards and so remain ignorant of the enemy's condition, is the height of inhumanity; such a person is not a commander of men, not a helper to his sovereign, and not a master of victory. Therefore an enlightened ruler and a worthy general who can move and defeat others, with success arising from foreknowledge, are those who act on prior knowledge. Foreknowledge cannot be obtained from ghosts or spirits, inferred from analogy, or verified by calculation; it must be obtained from people who know the enemy's situation."
+        },
+        {
+          "id": "13-02",
+          "text": "Hence there are five kinds of spies: local spies, inside spies, turned spies, expendable (dead) spies, and returning (living) spies. When all five kinds of spies are active and no one knows their methods, this is called 'divine order' and is the sovereign's treasure. Local spies are used because they are countrymen; inside spies are used because they are officials; turned spies are used because they are enemy agents; expendable spies are used to spread false stories outside so that our spies learn them and then pass them to the enemy; returning spies are those who come back with reports."
+        },
+        {
+          "id": "13-03",
+          "text": "Therefore, of the affairs of the three armies nothing is more intimate than spies, nothing is awarded more richly than spies, and nothing must be kept more secret than spies. Without sage wisdom one cannot employ spies; without benevolence and righteousness one cannot make use of spies; without subtlety one cannot obtain true reports from spies. How subtle! How subtle! There is nothing in which spies are not employed. If an espionage matter has not yet begun but is heard of in advance, both the spy and those to whom he reported will die."
+        },
+        {
+          "id": "13-04",
+          "text": "Whenever the army intends to strike, a city to be taken, or men to be killed, one must first learn the names of the defending general, his attendants, ushers, gatekeepers, and household servants; our spies must be ordered to obtain these names. One must also seek out enemy agents who come to spy on us, reward them, guide them, and then release them; thus a turned spy can be obtained and put to use. Through this, local and inside spies can be identified and employed; through this, expendable spies can be made to convey falsehoods to the enemy; through this, returning spies can be made to report on schedule. The ruler must know the affairs of all five kinds of spies; such knowledge depends on turned spies, and therefore turned spies must be rewarded generously."
+        },
+        {
+          "id": "13-05",
+          "text": "In former times, when the Shang arose, Yi Zhi served in Xia; when the Zhou rose, Lü Ya served in Shang. Therefore an enlightened ruler and a worthy general who can employ the wisest as spies will surely accomplish great deeds. This is the essence of warfare, the reliance of the three armies when they move."
+        }
+      ],
+      "points": [
+        {
+          "title": "Foreknowledge Must Come from People",
+          "body": "Reliable intelligence must have human, traceable sources and direct contacts; it cannot be replaced by superstition, imagination, or unverified analogies.",
+          "segmentId": "13-01"
+        },
+        {
+          "title": "All Five Spies Working Together",
+          "body": "Different classes of agents must operate together to form a network that verifies information, influences the enemy, feeds deception, and returns reports.",
+          "segmentId": "13-02"
+        },
+        {
+          "title": "Nothing Closer Than Spies",
+          "body": "Intelligence sits closest to command and therefore requires corresponding trust, resources, secrecy, and ethical handling.",
+          "segmentId": "13-03"
+        },
+        {
+          "title": "Turned Spies Are the Pivot",
+          "body": "Identifying and using enemy agents who can be turned reduces infiltration risk and enables understanding and exploitation of the opponent's system.",
+          "segmentId": "13-04"
+        },
+        {
+          "title": "Employ the Wisest as Spies",
+          "body": "A ruler and general who employ the wisest as spies can achieve great deeds; intelligence is the essential basis on which the whole army acts.",
+          "segmentId": "13-05"
+        }
+      ]
+    }
+  ],
+  "ja": [
+    {
+      "chapterNumber": 1,
+      "chapterTitle": "始計",
+      "fullTitle": "始計 第一",
+      "group": "廟算（国家レベルの算策）",
+      "summary": "本篇は戦争を国家の存亡と国民の生死に関わる重大事と定義し、意思決定の前に「道・天・地・将・法」の五事で共通の尺度を定め、七計で敵我を比較することを説く。比較は単なる静的評価ではなく、利用可能な利を見極め勢に応じて機を制する方策を組み立てるためのものだ。詭道に関する諸法は情報と認知の操作に属し、最終的には未戦の段階での綿密な算段に帰着する。条件・準備・判断が充実していれば、勝敗はより予見しやすくなる。",
+      "tags": [
+        "五事",
+        "七計",
+        "廟算",
+        "詭道",
+        "決策"
+      ],
+      "seoTitle": "孫子・始計：戦前に勝敗を決める五事と七計",
+      "seoDescription": "戦争を国家の重大事と定義し、五事と七計で敵我を比較。詭道を含む情報操作と未戦の算段が勝敗を左右する。",
+      "segments": [
+        {
+          "id": "01-01",
+          "text": "孫子は言う。兵は国家の重大事であり、生死がかかる場であり、存亡に関わる道であって、これを軽んじてはならない。ゆえに五事をもってこれを論じ、七計をもってこれを比較し、その実情を探るのである。すなわち第一は道、第二は天、第三は地、第四は将、第五は法である。"
+        },
+        {
+          "id": "01-02",
+          "text": "道とは、国民が君と意を同じくし、ともに死に、ともに生き、危険を恐れない状態をいう。天とは陰陽や寒暑、季節や時節のことをいう。地とは地形の高低・遠近・険易・広狭および生死にかかわる点をいう。将とは智・信・仁・勇・厳の資質をいう。法とは法制、官道、主用──つまり規律・補給路・制度や運用のことである。これら五つは将ならずとも皆知るところである。これを知る者は勝ち、知らぬ者は勝てない。ゆえに七計によってこれらを比較して実情を問う。すなわち、主はどちらが道に適っているか、将はどちらが有能か、天地はどちらが有利か、法令はどちらが行われているか、兵力はどちらが強いか、兵卒はどちらが鍛錬されているか、賞罰はどちらが明確か。私はこれによって勝敗を見定める。"
+        },
+        {
+          "id": "01-03",
+          "text": "もし将が私の計を聞き、それを用いれば必ず勝つ。そういう将は留めよ。将が私の計を聞かず、それを用いれば必ず敗れる。そういう将は去らせよ。計を利によって聞かせ、かくして勢を為してその外を補助する。勢とは利に因って機を制することである。兵とは詭道である。ゆえに、能力があるように見せて無能に見せかけ、用いるように見せて用いないように見せ、近いものを遠く見せ、遠いものを近く見せる。利で誘い、混乱させて奪い、充実しているときには備えさせ、強いときは避け、怒らせてこれを挫き、卑しい者をして驕らせ、安逸にある者を労させ、親しい者を離反させる。備えなき所を攻め、意表を突く。これが兵家の勝ち方であり、前もって広めてはならない。"
+        },
+        {
+          "id": "01-04",
+          "text": "戦う前に宮中で算した段階で勝てる者は、算が多い者である。戦う前に宮中で算して勝てない者は、算が少ない者である。算の多い者が勝ち、算の少ない者は勝てない。ましてや算のない者はなおさらである。私はこれによって勝敗を見通す。"
+        }
+      ],
+      "points": [
+        {
+          "title": "兵は国家の重大事",
+          "body": "戦争は将個人の冒険に留まらない。公共資源や生死、政権の存亡に関わるため、まず慎重な検討が求められる。",
+          "segmentId": "01-01"
+        },
+        {
+          "title": "五事と七計",
+          "body": "五事は観察の視点を示し、七計は敵我を項目ごとに比較する。両者を併用することで戦前の判断枠組みが構成される。",
+          "segmentId": "01-02"
+        },
+        {
+          "title": "利に因りて機を制す",
+          "body": "計画は現実の利害や条件に応じて調整されるべきだ。権の行使は恣意ではなく、具体的情勢に基づく衡量によって行われる。",
+          "segmentId": "01-03"
+        },
+        {
+          "title": "詭道と示し方",
+          "body": "能と不能、用と不用、近と遠を逆に示すことは相手の判断を揺さぶり、隙を露出させるための情報・認知操作である。",
+          "segmentId": "01-03"
+        },
+        {
+          "title": "廟算で先に勝つ",
+          "body": "真の勝勢は行動以前に形成される。算（綿密な検討）が多いほど条件を洗い出し比較でき、勝敗はより予見しやすくなる。",
+          "segmentId": "01-04"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 2,
+      "chapterTitle": "作戦",
+      "fullTitle": "作戦 第二",
+      "group": "国用",
+      "summary": "本篇は戦争の時間的・経済的コストを論じる。一旦大軍を動かせば輸送・装備・徴発・物価上昇が国家力を継続的に消耗する。戦術が巧妙でも長期化すれば勝利の価値は薄れる。ゆえに用兵は迅速に目的を達し、補給線を可能な限り短縮することが重要である。敵の物資や人員の接収は単なる略奪ではなく、報奨・整編・転用を含めて行い、敵を倒して自国を弱めないことを目指す。",
+      "tags": [
+        "コスト",
+        "速勝",
+        "後方補給",
+        "国力",
+        "編成・転用"
+      ],
+      "seoTitle": "孫子・作戦：戦争のコストと速戦の要諦",
+      "seoDescription": "戦争が国家にもたらす時間的・経済的負担と、速やかな勝利と敵資源の活用による補給節約の重要性を説く章。",
+      "segments": [
+        {
+          "id": "02-01",
+          "text": "孫子は言う。凡そ用兵の法は、車を馳せ千駟、革車千乗、甲を帯び十万、千里にわたって糧を供給するならば、すなわち内外の費用、賓客の接遇、膠漆の用材、車甲の保存などに日に千金を費やして、ようやく十万の師を挙げることができる。戦に臨むにあたっては勝つことを尊ぶ。長引けば兵は鈍り鋭気は挫け、城を攻めれば力は尽き、師を長く晒せば国家の費用は不足する。兵を鈍らせ鋭気を挫き、力を屈し財を尽くせば、諸侯はその弊に乗じて起こる。たとえ智ある者あれど、後を善くすることはできない。故に兵は拙速を聞くことあれど、巧みにして久しきを見ない。兵久しくして国に利ある者は未だかつていない。故に用兵の害を尽くして知らぬ者は、則ち用兵の利を尽くして知ること能わず。"
+        },
+        {
+          "id": "02-02",
+          "text": "善く兵を用いる者は、徭役を再び課さず、糧を三年にわたって取り立てさせない。国から無理に取り立てるのではなく、敵から糧を得て用いるので、ゆえに軍の食糧は足りうる。"
+        },
+        {
+          "id": "02-03",
+          "text": "国が軍に貧するのは、遠くから輸送するからである。遠距離輸送すれば百姓は貧しくなる。軍が近くにいると物売りは値を高め、値高により百姓の財は尽き、財が尽きれば徭役に追われる。力が屈し財が尽きれば、中央の地は内的に家々が虚しくなる。百姓の負担は十のうち七を失い、公の費用は壊れた車や休める馬、甲冑や弩矢、戟や盾、櫓、牛や大車などに費やされ、十のうち六を失う。"
+        },
+        {
+          "id": "02-04",
+          "text": "ゆえに智将は敵の糧を得ることに努める。敵の食糧一鐘は我が二十鐘に当たり、敵の萁稈一石は我が二十石に当たる。"
+        },
+        {
+          "id": "02-05",
+          "text": "ゆえに敵を殺すのは怒によるものであり、敵の利を取るのは財である。車戦において車を十乗以上得たら、先に取った者に賞を与え、その旌旗を取り替える。捕えた車を混ぜて乗せ、兵をよく養えば、これをもって敵に勝ちながら益々強くするという。"
+        },
+        {
+          "id": "02-06",
+          "text": "ゆえに兵は勝つことを尊び、長引くことを尊ばない。ゆえに兵を知る将は民の生死を司り、国家の安危を左右する主である。"
+        }
+      ],
+      "points": [
+        {
+          "title": "兵は勝ちを重んじ、久戦を重んじない",
+          "body": "本章は軽率を勧めるものではない。むしろ長期化による消耗が兵を鈍らせ、鋭気を挫き、力を疲弊させ、財を尽きさせ、その隙に第三勢力が付け入ることを指摘している。",
+          "segmentId": "02-01"
+        },
+        {
+          "title": "用兵の害を十分に知る",
+          "body": "可能な利益のみを見て直接費用・間接費用を無視すれば、用兵の是非は判断できない。リスクの認識が利益判断の前提となる。",
+          "segmentId": "02-01"
+        },
+        {
+          "title": "敵の糧に依る",
+          "body": "遠距離補給は負担を国内の民衆に転嫁する。補給線を短縮し、既存の資源や敵資源を利用することが戦争の総コストを下げる手段である。",
+          "segmentId": "02-02"
+        },
+        {
+          "title": "敵を勝ち取り自らを強くする",
+          "body": "敵の車や戦力を獲得したら旗を付け替え混成して用い、俘虜や離反兵を手厚く扱って養成する。これは資源の転用と組織的吸収の考え方を示す。",
+          "segmentId": "02-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 3,
+      "chapterTitle": "謀攻",
+      "fullTitle": "謀攻（第三）",
+      "group": "全勝",
+      "summary": "本章は「全勝」の観点を示す。最高の勝利とは正面衝突の多勝ではなく、相手の計略や同盟を崩し、抵抗力を奪うことである。攻城は費用と損耗が大きく、最終手段に限られる。篇は兵力配分や君主と将軍の関係、勝利を見極める条件を扱い、政治的指導は軍事の専門に越権介入してはならず、将は敵我や兵力、時機、組織の意志を理解しなければならないと説く。",
+      "tags": [
+        "全勝",
+        "謀を伐つ",
+        "交を伐つ",
+        "君主と将軍",
+        "知彼知己"
+      ],
+      "seoTitle": "孫子『謀攻』第三章の現代日本語訳と要点",
+      "seoDescription": "孫子『謀攻』第三章を現代日本語で訳出。戦わずして勝つ全勝観や伐謀・伐交の序列、君主と将の関係を解説します。",
+      "segments": [
+        {
+          "id": "03-01",
+          "text": "孫子は言う。凡そ兵を用いる法は、国を全うすることを上となし、国を破ることはその次である。軍を全うすることを上となし、軍を破ることはその次である。旅を全うすることを上となし、旅を破ることはその次である。卒（兵）を全うすることを上となし、卒を破ることはその次である。伍を全うすることを上となし、伍を破ることはその次である。ゆえに百戦百勝することは最上の善ではない。戦わずして人の兵を屈することが、最上の善である。"
+        },
+        {
+          "id": "03-02",
+          "text": "ゆえに上の兵は謀を伐つこと、その次は交を伐つこと、その次は兵を伐つこと、もっとも劣るのは城を攻めることである。攻城の法はやむを得ない場合のためである。櫓や攻具を修め、器械を整えるには三月を要し、さらに城壁に迫るにはさらに三月を要する。将が怒りに勝てず無理を強いて兵をかき付け、兵の三分の一を失っても城を落とせないことがある。これが攻城の災いである。"
+        },
+        {
+          "id": "03-03",
+          "text": "ゆえに兵を善く用いる者は、人の兵を屈するが戦わず、人の城を取るが攻めず、人の国を滅ぼすが長期にわたらない。必ず「全」をもって天下で争う。それゆえ兵を疲弊させずに利を全うできる。これが謀攻の法である。"
+        },
+        {
+          "id": "03-04",
+          "text": "ゆえに兵を用いる法は、相手が十ならこれを囲み、五ならこれを攻め、倍（こちらが倍の兵力）なら分割し、互角なら戦い、少なければ守り、及ばなければ避ける。小さな敵が堅固であるのは、大きな敵によって捕らえられるためである。"
+        },
+        {
+          "id": "03-05",
+          "text": "将とは国の輔（補佐）である。補佐が周到であれば国は必ず強く、補佐に隙があれば国は必ず弱くなる。"
+        },
+        {
+          "id": "03-06",
+          "text": "ゆえに君が軍を憂う理由は三つある。軍が進むべきでないのに進めと言い、軍が退くべきでないのに退けと言う――これを縻（縛）すという。三軍の事を知らずして三軍の政を同じくするなら、軍士は惑う。三軍の権（機微）を知らずして三軍の任を同じくするなら、軍士は疑う。三軍が既に惑い且つ疑えば、諸侯の難事が到来する。これを乱軍引勝という。"
+        },
+        {
+          "id": "03-07",
+          "text": "ゆえに勝利を知ることは五つある。戦うべきか否かを知る者は勝ち、衆寡（兵力の多寡）の用い方を識る者は勝ち、上下が同じ欲（志）を持つ者は勝ち、虞（準備）をもって不意を待つ者は勝ち、将が能くして君がこれを抑えない者は勝つ。これら五つが勝利を知る道である。"
+        },
+        {
+          "id": "03-08",
+          "text": "ゆえに曰く、彼を知り己を知れば、百戦して危うからず。彼を知らずして己を知れば、一勝一負。彼も己も知らなければ、戦うたびに必ず危うい。"
+        }
+      ],
+      "points": [
+        {
+          "title": "不戦而屈人之兵（戦わずして人の兵を屈する）",
+          "body": "最上の善とは勝利の回数で測るのではなく、最小の破壊で目的を達することを基準とする。",
+          "segmentId": "03-01"
+        },
+        {
+          "title": "上兵伐謀（上位の手段は謀を破る）",
+          "body": "手段には明確な序列がある：まず計略を破り、次に外交（同盟）を断ち、さらに野戦、攻城は最後の手段である。",
+          "segmentId": "03-02"
+        },
+        {
+          "title": "必以全爭於天下（全を以て競う）",
+          "body": "『全』とは単なる不戦ではなく、国・軍・利益の可用性を保ち、成功が自軍の消耗によらないことを意味する。",
+          "segmentId": "03-03"
+        },
+        {
+          "title": "君之所以患於軍者三（君主が軍を憂う三つの理由）",
+          "body": "進退の条件、組織運営、指揮権の機微を理解せず越権介入すると、軍は惑い疑い、秩序を失う。",
+          "segmentId": "03-06"
+        },
+        {
+          "title": "知彼知己（彼を知り己を知る）",
+          "body": "勝利の理解はスローガンではなく、可戦性の識別、兵力運用、上下の一致、準備と奇襲への対応、指揮の自主性の総合的判断である。",
+          "segmentId": "03-07"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "軍形",
+      "fullTitle": "軍形第四",
+      "group": "先勝",
+      "summary": "本章は、コントロールできる事柄とそうでない事柄の境界を論じる。まず自らを不敗にする条件を整えることは己の責任であり、敵が勝ち得る状況を露呈するかどうかは敵に委ねられる。善い戦い手は名声や大きな博奕を追わず、条件が整った安全な戦局を選択する。度・量・数・称・勝の順序は、地理・資源・兵力・比較評価を積み重ねて勝敗を導く手順を示す。",
+      "tags": [
+        "不敗",
+        "先勝",
+        "軍形",
+        "リスク",
+        "計量"
+      ],
+      "seoTitle": "孫子 軍形（第四）—不敗を築き勝機を待つ",
+      "seoDescription": "自軍をまず不敗にし、敵の露呈する勝機を待つ。勝利は地形・資源・数・比較の段階的計算から生まれると説く章。",
+      "segments": [
+        {
+          "id": "04-01",
+          "text": "孫子は言う：古の善く戦う者は、まず自らを敗れ得ない状態に整え、敵の勝ち得る時を待った。敗れ得ないことは己にあり、勝ち得ることは敵にある。したがって善く戦う者は、不敗を為すことはできても、敵を必ず勝ち得る者に変えることはできない。ゆえに言う：勝ちうることは知り得ても、それを作り出すことはできない。"
+        },
+        {
+          "id": "04-02",
+          "text": "敗れ得ないものは守りにあり、勝ち得るものは攻めにある。守れば不足し、攻めれば余る。守りに巧みな者は九地の下に隠れ、攻めに巧みな者は九天の上に動く。ゆえに自らを保ちつつ完全な勝利を得ることができる。"
+        },
+        {
+          "id": "04-03",
+          "text": "人々が知るような勝ち方を見るだけでは、本当に巧みな者とは言えない。戦って勝ち、天下が『善い』と言うのも、本当に巧みな者のやり方ではない。だから秋のわずかな毛を挙げて多力とはせず、日月を見ることを明眼とはせず、雷霆を聞くことを鋭い耳とはしない。"
+        },
+        {
+          "id": "04-04",
+          "text": "古にいう『善く戦う者』とは、勝ちやすき所に勝つ者である。ゆえに善戦者の勝には智の名も勇の功もない。したがってその戦いの勝ちは誤りがない。誤りがないとは、彼らの置くところは必ず勝ち、すでに敗れている者に対して勝つということである。ゆえに善く戦う者は、敗れない地位に立ち、敵の敗れを見逃さない。だから勝つ兵は先に勝ちを得てから戦いを求め、敗れる兵は先に戦ってから勝ちを求める。兵を善く用いる者は道を修め法を守るので、勝敗を左右することができる。"
+        },
+        {
+          "id": "04-05",
+          "text": "兵法には一に度、二に量、三に数、四に称、五に勝がある。地は度を生み、度は量を生み、量は数を生み、数は称を生み、称は勝を生む。したがって勝つ軍は、まるで鎰で銖を量るかのごとく（大きな単位で小さなものを扱うがごとく）振る舞い、敗れる軍は銖で鎰を量るがごとし。勝者の戦いは、堆積した水を千仞の渓に決して放つがごとき形である。"
+        }
+      ],
+      "points": [
+        {
+          "title": "まず不敗を築く",
+          "body": "まず自分の防護、制度、準備を整え、外部の機会を待つ。これはリスク管理が利益追求に先行することを意味する。",
+          "segmentId": "04-01"
+        },
+        {
+          "title": "不敗は己に、勝機は敵にある",
+          "body": "失敗を避けることは比較的自分でコントロールできる。一方で相手を打ち破るかどうかは、相手が条件を露呈するかどうかに依存する。",
+          "segmentId": "04-01"
+        },
+        {
+          "title": "勝ちやすい地点を選ぶ",
+          "body": "巧者の真価は、劣勢な状況で名を求めることではなく、既に勝勢が整っている戦いを選択する点にある。",
+          "segmentId": "04-04"
+        },
+        {
+          "title": "勝つ軍は先に勝ちを確保する",
+          "body": "行動は既に優勢が形成されてからの最後の表現であり、行動そのもので優勢が生まれると賭けるものではない。",
+          "segmentId": "04-04"
+        },
+        {
+          "title": "度・量・数・称が勝利を生む",
+          "body": "地形の尺度から資源の容量、兵力の数、比較評価へと段階的に積み上げる計算が最終的に勝敗を決する。",
+          "segmentId": "04-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "兵勢",
+      "fullTitle": "兵勢第五",
+      "group": "勢を任せる",
+      "summary": "本篇は組織と指揮を通じて「勢」の形成を論じる。大勢を治めることは少数を治めることと同じであり、その鍵は編制と合図にある。戦いの変化は多様だが、基本要素は正と奇の反復的な組合せにある。勢は抽象的な気勢ではなく、位置・速度・リズム・条件を組み合わせて解き放たれる力である。優れた指導者は個々の勇気を求めるだけでなく、平凡な者でも適切な位置に置けば全体として効果を発揮するよう環境を設計する。",
+      "tags": [
+        "勢",
+        "奇と正",
+        "組織",
+        "節奏（リズム）",
+        "勢を任せる"
+      ],
+      "seoTitle": "兵勢：勢の構築と運用",
+      "seoDescription": "編制・形・奇正・虚実を通じて「勢」を作り出す方法を解説。リズムと配置で普通の兵でも全体効果を発揮させる指導の要点。",
+      "segments": [
+        {
+          "id": "05-01",
+          "text": "孫子は言う。多くの兵を治めることは少数を治めることと同じであり、そのためのものが分数（編成）である。多くの者を闘わせることは少数を闘わせることと同じであり、それが形と名（形名）である。三軍の兵をして、敵を必ず受けさせて敗れさせないものは奇と正である。兵を加えるありさまは、丸石で卵を投げるようなもの、すなわち虚と実である。"
+        },
+        {
+          "id": "05-02",
+          "text": "凡て戦う者は、正で相対し、奇で勝つ。したがって奇を出すことに巧みな者は、天地のごとく尽きず、江海の水のごとく枯れない。終わればまた始まるのは日月のごとく、死して復生するのは四時のごとし。音は五を越えず、五音の変化は聞き尽くせない。色は五を越えず、五色の変化は見尽くせない。味は五を越えず、五味の変化は味わい尽くせない。戦の勢も奇と正を越えず、奇正の変化は尽きることがない。奇と正は互いに生じ合い、循環に終わりはない。誰がこれを尽くすことができようか。"
+        },
+        {
+          "id": "05-03",
+          "text": "激しい水流の速さが石を流すようにするのが勢であり、猛禽の鋭い速さが物を打ち砕くのが節である。ゆえに戦に巧みな者は、その勢を険しくし、その節を短くする。勢は張り詰めた弩（わな）のようであり、節は発射の機構の瞬間のようである。"
+        },
+        {
+          "id": "05-04",
+          "text": "紛々と入り乱れているようでも、闘いは乱れてはならない。渾々として形が混然としているようでも、形は円満であって敗れてはならない。乱れは治（整えられた編成）から生じ、臆病は勇から生じ、弱さは強さから生じる。治と乱は数（配分・編制）に関することであり、勇と怯は勢に関することであり、強と弱は形に関することである。"
+        },
+        {
+          "id": "05-05",
+          "text": "ゆえに敵を巧みに動かす者は、形を示せば敵は必ずそれに従い、与えれば敵は必ずそれを取りに来る。利益をもって動かし、兵をもってそれを待つのである。"
+        },
+        {
+          "id": "05-06",
+          "text": "ゆえに戦いに巧みな者は、勢に求め、人の責を問いはしない。だからこそ人を選び勢を任せられるのだ。勢に任せるとは、人を戦わせるに際して木や石を転がすようなものである。木や石の性質は、安ければ静まり、危うければ動き、角ばっていれば止まり、円ければ行く。ゆえに戦いの巧者の勢は、千仞の山で円石を転がすがごときものなのである。"
+        }
+      ],
+      "points": [
+        {
+          "title": "編成と形名",
+          "body": "大きな組織が指揮可能かどうかは、階層的な編成、責任単位、統一された合図システムによって決まる。",
+          "segmentId": "05-01"
+        },
+        {
+          "title": "正で合わせ、奇で勝つ",
+          "body": "正と奇は互いに転化する配置であり、ある手段を永久に奇策と決めつけるものではない。",
+          "segmentId": "05-02"
+        },
+        {
+          "title": "勢は険しく、節は短く",
+          "body": "力は短く効果的な解放点に集中すべきであり、張った弩を放つように。リズムを引き延ばすと本来の優位は散逸する。",
+          "segmentId": "05-03"
+        },
+        {
+          "title": "形を作り、利で誘う",
+          "body": "目に見える形勢と利益の誘因によって相手の反応を誘導し、用意した兵力でその行動を受け止める。",
+          "segmentId": "05-05"
+        },
+        {
+          "title": "勢に求め、人を責めず",
+          "body": "指導者の責任は人を選び勢を任せ、条件を配置することであり、システムの失敗を個人にすべて帰することではない。",
+          "segmentId": "05-06"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 6,
+      "chapterTitle": "虚実",
+      "fullTitle": "虚実第六",
+      "group": "勝利の術",
+      "summary": "本章の核心は主導権を握り、敵を自らが仕組んだ流れに沿わせることである。利害の操作、速度、陽動と隠蔽を用いて敵の注意を分散させ、我が方は決定点に兵力を集中させる。兵形の究極は無形にあり、敵にどこへ資源を割くべきか判断させないことが最良である。末節は水の喩えを用いる：水は高きを避け低きを往き、兵は実を避け虚を撃つ。方法は固定すべきでなく、敵と環境に応じて常に変化させねばならない。",
+      "tags": [
+        "虚実",
+        "主導",
+        "集中",
+        "無形",
+        "敵に因る制勝"
+      ],
+      "seoTitle": "孫子『虚実』第六章：無形で敵を制する戦術",
+      "seoDescription": "先手を取り敵を誘導し虚を突いて一点に集中する。無形の兵法で敵の備えを分散させ勝機を掴む方法を説く章。",
+      "segments": [
+        {
+          "id": "06-01",
+          "text": "孫子は言う。戦場に先んじて陣取り敵を待つ者はゆとりがあり、後から戦地に到って戦いに駆けつける者は疲弊する。ゆえに、よく戦う者は他を赴かせて自ら赴かれない。"
+        },
+        {
+          "id": "06-02",
+          "text": "敵を自ら来させることができるのは利益を与えるからであり、敵を来させないのは害を与えるからである。ゆえに敵のゆとりを疲れさせ、満腹の者を飢えさせ、安んじている者を動かす。敵の行かぬ所から出て、敵の意の及ばぬ所へ向かうのだ。"
+        },
+        {
+          "id": "06-03",
+          "text": "千里を行っても疲れないのは人のいない地を行くからである。攻めて必ず奪うのは敵の守らぬ所を攻めるからであり、守って必ず堅固なのは敵が攻めぬ所を守るからである。ゆえに善く攻むる者は敵に何処を守るか知られず、善く守る者は敵に何処を攻めるか知られない。きわめて微細であって形は無形に至り、まことに神妙であって声は無きがごとし。それゆえ敵の生死を司ることができるのだ。"
+        },
+        {
+          "id": "06-04",
+          "text": "前へ出て阻止できないのはその虚を衝くからであり、退いて追えないのは速さが及ばないからである。したがって我が戦いたければ、敵がいかに高塁深溝を築いていようとも彼らが必ず救援する所を攻めれば戦わざるを得なくなる。逆に我が戦いたくなければ、たとえ地に線を画して守っていても、敵は行くところを外されて戦えなくなる。"
+        },
+        {
+          "id": "06-05",
+          "text": "ゆえに人に形を見せ我は無形ならば、我は集中し敵は分散する。我は一に専念し、敵は十に分かれる。十が一を攻めれば我は多数で敵は少数である。多数を以て少数を撃つことができれば、我が対する相手は限定される。われが戦う地点が知られなければ敵の備えは多くなり、その結果われが実際に相対する敵は少なくなる。前を備えれば後が手薄になり、後を備えれば前が手薄になり、左を備えれば右が手薄になり、右を備えれば左が手薄になる。すべてを備えればすべてが手薄となる。『手薄な者』は備えられる者を指し、『多数』は人を我に備えさせる者を指す。"
+        },
+        {
+          "id": "06-06",
+          "text": "ゆえに戦う地点を知り戦う日を知らば千里を隔てて会戦に臨める。戦う地点も日も知らなければ左は右を救えず右は左を救えず前は後を救えず後は前を救えない。まして遠方は数十里、近方は数里であればなおさらである。わが見立てでは、越人の兵がいかに多くとも勝敗に何の助けとなろうか。ゆえに言う、勝利は我がものにしうる。敵がいかに衆であっても争わせないことができる。"
+        },
+        {
+          "id": "06-07",
+          "text": "ゆえに策をめぐらして損得の計を知り、行動して動静の理を悟り、形を整えて死生の地を見定め、角によって有余不足の処を知る。よって兵の形の究極は無形に至る。無形であれば深い間者も窺えず、智者も謀れない。形に拠って衆に勝利を置けば衆はそれを知り得ない。人は皆我が勝つ形を知っても、我が勝利を制する形を知らない。ゆえに戦に勝てばそれは再現されず、形は無窮に応じて変化する。"
+        },
+        {
+          "id": "06-08",
+          "text": "兵の形は水に象えられる。水の流れは高きを避けて低きに向かう。兵の勝ちは実を避けて虚を撃つ。水は地に因って行を制し、兵は敵に因って勝を制す。ゆえに兵に恒常の勢も恒常の形もなく、敵に応じて変化して勝つ者を『神』と称する。五行に常勝なし、四時に常位なし。日には長短があり、月には死生がある。"
+        }
+      ],
+      "points": [
+        {
+          "title": "致人而不致於人",
+          "body": "主導権を取るとは単に先に動くことだけでなく、時間・位置・資源の配分において敵に対応させることを意味する。",
+          "segmentId": "06-01"
+        },
+        {
+          "title": "攻其所必救",
+          "body": "敵の強点を正面突破する必要はない。敵がどうしても救援する地点を突くことで戦いを強いる。",
+          "segmentId": "06-04"
+        },
+        {
+          "title": "我專而敵分",
+          "body": "主攻を隠して敵を多方面に備えさせ、特定の一点に兵力を集中して多数で少数を撃つ。",
+          "segmentId": "06-05"
+        },
+        {
+          "title": "形兵之極，至於無形",
+          "body": "配置や動きに読めるパターンを与えず、情報優位が敵に逆用されるのを防ぐことが重要である。",
+          "segmentId": "06-07"
+        },
+        {
+          "title": "兵形象水",
+          "body": "勝ち方は地形と敵に応じて変えるべきであり、過去の成功形を固定的に繰り返すと効力を失う。",
+          "segmentId": "06-08"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 7,
+      "chapterTitle": "軍爭",
+      "fullTitle": "軍爭第七",
+      "group": "爭利",
+      "summary": "本篇は軍隊が集結して有利な位置を争う際の難題を扱う。迂回を直進に転じ、災いを利として利用する計を説き、誘因・路線・速度・後勤を結び付けて先着を図ることを強調する。単に速さを追うと輜重を失い部隊が分裂する危険がある。『風』『林』『火』『山』の節奏、金鼓と旌旗による一体的指揮、士気と体力の管理、佯敗や餌兵、帰師や窮寇への克制などが述べられる。",
+      "tags": [
+        "軍爭",
+        "迂直",
+        "風林火山",
+        "士気",
+        "後勤"
+      ],
+      "seoTitle": "孫子・軍爭（第七章）— 迂直と行軍の節奏",
+      "seoDescription": "軍の集結から有利地点の争奪まで。迂回を利に変える策、速度と補給、士気管理や風林火山の行動原則を説く章。",
+      "segments": [
+        {
+          "id": "07-01",
+          "text": "孫子は言う。兵を用いる法では、将は君の命を受け、軍を合わせ衆を聚め、交わり和して宿営することが基本であるが、なかでも軍争ほど難しいことはない。軍争の難しさは、迂遠を直進に変え、災いを利益に転じる点にある。したがって道を迂らせて利で誘い、後発の者を動かさせ、先んじて到る――これを以て迂直の計を知る者である。"
+        },
+        {
+          "id": "07-02",
+          "text": "ゆえに軍争は利益をもたらす一方で危険も伴う。全軍を挙げて利を争えば間に合わず、軍を分けて利を争えば輜重を失う。したがって鎧をまとめ、昼夜休まず、倍の速さで強行軍する。百里先の利を争えば、三軍の将が捕らえられるおそれがある。強健な者は先に進み、疲れた者は後に続くため、到着できるのは十人に一人である。五十里先の利を争えば先鋒の将を失い、到着できるのは半数である。三十里先の利を争えば三分の二が到着する。ゆえに軍は輜重がなければ滅び、食糧がなければ滅び、備蓄がなければ滅ぶ。諸侯の謀略を知らなければ前もって同盟を結べず、山林・険阻・沼沢の地形を知らなければ行軍できず、土地に詳しい案内人を用いなければ地の利を得られない。"
+        },
+        {
+          "id": "07-03",
+          "text": "兵は詐を以て立ち、利を以て動き、分合を以て変ずる。ゆえにその疾きは風のごとく、その徐なるは林のごとく、侵掠するは火のごとく、動かざるは山のごとく、察しがたきは陰のごとく、動くは雷震のごとし。郷を掠し衆を分かち、地を広げて利を分ち、権を懸して動く。迂直の計を先に知る者が勝つ、これが軍争の法である。"
+        },
+        {
+          "id": "07-04",
+          "text": "『軍政』に曰く「言葉が互いに聞こえぬゆえに金鼓を置き、視線が互いに見えぬゆえに旌旗を立てる」と。金鼓や旌旗は、民衆の耳目を一つにするためのものである。民が一つに専念すれば、勇者は単独で進めず、怯む者は単独で退けない。これが衆を用いる法である。ゆえに夜戦では金鼓を多くし、昼戦では旌旗を多く用いて、人々の耳目を変えるのである。"
+        },
+        {
+          "id": "07-05",
+          "text": "三軍の気勢は奪うことができ、将軍の心も奪える。ゆえに朝は気が鋭く、昼は気が惰り、夕は帰還の気になる。よって巧みに兵を用いる者は、その鋭きを避け、その惰れて帰る時を撃つ――これが気を操る者である。秩序ある態勢をもって乱れを待ち、静けさをもって喧騒を待つ――これが心を操る者である。近きものをもって遠きを待ち、安らかな者をもって労する者を待ち、満ちた者をもって飢えた者を待つ――これが力を操る者である。正々堂々たる旗を求めず、堂々たる陣を撃たない――これが変化を治める者である。"
+        },
+        {
+          "id": "07-06",
+          "text": "ゆえに用兵の原則は次のとおりである。高地を占める敵に向かって進むな。丘を背にする敵を迎え撃つな。偽りの退却を追うな。鋭気盛んな部隊を攻撃するな。囮として差し出された部隊に食いつくな。帰還する軍の道を塞ぐな。軍を包囲するときは必ず逃げ道を残せ。窮地に陥った敵を追いつめるな。これが用兵の原則である。"
+        }
+      ],
+      "points": [
+        {
+          "title": "以迂為直，以患為利",
+          "body": "間接的な進路が相手の判断を変え時間を稼げるなら、結果的に先着するための直接的な手段になり得る。",
+          "segmentId": "07-01"
+        },
+        {
+          "title": "軍爭為利，軍爭為危",
+          "body": "機会を追う行動は速度を生むが隊列の延長や補給喪失を招く――利益と危険は常に表裏一体である。",
+          "segmentId": "07-02"
+        },
+        {
+          "title": "風林火山",
+          "body": "迅速、徐行、侵掠、不動という節奏を目的に応じて切り替えることが重要で、一律の急速さを追うべきではない。",
+          "segmentId": "07-03"
+        },
+        {
+          "title": "一民之耳目",
+          "body": "金鼓や旌旗という共通の合図は、個々の勇気や怯懦を組織行動へと変換し、部隊の一体性を保つ手段である。",
+          "segmentId": "07-04"
+        },
+        {
+          "title": "治氣、治心、治力、治變",
+          "body": "敵の気力・心情・体力・陣形の変化を見極め、それぞれに応じて待つ・避く・攻めるを使い分けることが勝利を左右する。",
+          "segmentId": "07-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 8,
+      "chapterTitle": "九変",
+      "fullTitle": "九変 第八",
+      "group": "権変（臨機応変）",
+      "summary": "本篇は原則を情勢から切り離してはならないことを強調する。ある道を通らない、ある軍を撃たない、ある城地を争わない、さらには君の命に従わないことさえ、一般的な規則を機械的に適用することを避けるためである。成熟した判断は利益の中に潜む危険を見出し、害の中に解決策を探す。最後に将の五つの危険を列挙し、勇気や生への執着、短気、清廉、民への愛情が節度を失うと敵に利用されることを示す。",
+      "tags": [
+        "九変",
+        "利害",
+        "備戦",
+        "五つの危険",
+        "権変"
+      ],
+      "seoTitle": "孫子・九変（第八）— 臨機応変の兵法と将の五つの危険",
+      "seoDescription": "第八篇「九変」は、原則を情勢に合わせる重要性を説き、行動しない選択や利害併考の必要性を示す。戦略判断で利と害を同時に考え、敵に付け入られない備えを強調する。",
+      "segments": [
+        {
+          "id": "08-01",
+          "text": "孫子は言う。兵を用いる法とは、将は君の命を受け、軍を合わせて衆を集めることである。行き詰まる地には宿営せず、交差する路の地は交わりを利用し、断絶する地には留まらない。包囲される地では策を講じ、背水の地では戦う。道には通らない所があり、軍には攻めない対象があり、城には攻めないものがあり、地には争わない場所があり、君の命にも従わない場合がある。したがって、九変の利に通ずる将は兵の用い方を知るが、九変の利に通じない将は地形を知っていても地の利を得られない。兵を統率する者が九変の術を知らなければ、地利を知っていても人の用い方を得られない。"
+        },
+        {
+          "id": "08-02",
+          "text": "ゆえに、賢者の思慮は必ず利と害を併せ考える。利を織り込めば信頼できる手立てとなり、害を織り込めば災いは解決可能となる。したがって、諸侯を屈服させるには害を以てし、諸侯を徭役に使うには業（負担）を以てし、諸侯を動かすには利益を以てするのである。"
+        },
+        {
+          "id": "08-03",
+          "text": "ゆえに、兵を用いる法は相手が来ないことに頼ってはならない。相手が来てもこちらにそれを待つ手立てがあることを頼みにすべきである。同様に、相手が攻めてこないことに頼るなかれ、こちらに攻められないようにするものを備えておけ。"
+        },
+        {
+          "id": "08-04",
+          "text": "ゆえに将には五つの危険がある。『必ず死ぬ』と潔く決める者は殺され得る。『必ず生き延びる』ことを固執する者は捕虜となり得る。短気で速断する者は侮られ得る。清廉潔白を旨とする者は辱められ得る。民を愛しすぎる者は事務に煩わされる。これら五つは将の過ちであり、兵を用いる際の災いである。軍を覆し将を殺すには必ずこの五つの危険を用いるから、看過してはならない。"
+        }
+      ],
+      "points": [
+        {
+          "title": "すべきでないことがある",
+          "body": "道路、敵軍、城池、領地、命令は存在するからといって必ず行動を起こすべきではない。全体の目的を踏まえ、時には不作為を選ぶことが必要である。",
+          "segmentId": "08-01"
+        },
+        {
+          "title": "九変に通ずる",
+          "body": "地形を把握するだけでは地の利を活かせない。いつ通常のやり方を変えるべきかを知ることが重要である。",
+          "segmentId": "08-01"
+        },
+        {
+          "title": "思慮は利害を併せ考える",
+          "body": "利益の分析には潜む危険も組み入れ、リスク分析では解決の糸口も探して一面的な判断を避けるべきである。",
+          "segmentId": "08-02"
+        },
+        {
+          "title": "相手が来ないと頼るな",
+          "body": "安全は相手が行動しないことを期待して成り立つべきではない。相手が来ても備えがあることを前提に準備せよ。",
+          "segmentId": "08-03"
+        },
+        {
+          "title": "将の五つの危険",
+          "body": "性格上の長所が極端に走ると予測可能な弱点となる。自己認識と節度は戦略的なリスク管理の一部である。",
+          "segmentId": "08-04"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 9,
+      "chapterTitle": "行軍",
+      "fullTitle": "行軍第九",
+      "group": "敵情把握",
+      "summary": "本章は軍隊を山地・水上・斥澤・平地にどう配置すべきかを示したうえで、環境や敵の細かな兆候から状態を読み取る方法を説く。木の動き、鳥の飛び立ち、塵の様相、言辞、賞罰や兵の所作などを互いに照合して解釈することが求められる。最後に規律と人心の結びつきを論じ、親しみがないうちの罰は従わさず、親しみができているのに罰が実行されないのもまた使えないとし、文で教え・武で統率することが信頼と実行を生むと結ぶ。",
+      "tags": [
+        "行軍",
+        "地形",
+        "敵情",
+        "規律",
+        "信頼"
+      ],
+      "seoTitle": "行軍第九：地形と兆候で敵情を読む",
+      "seoDescription": "山・水・湿地・平地の布陣の利点と、鳥・塵・言辞などの兆候から敵の意図を読み、規律と信頼で軍を運用する要点を示す章。",
+      "segments": [
+        {
+          "id": "09-01",
+          "text": "孫子は言う。軍を布いて敵と対する場合、山を断ち谷に寄るときは、生（生存に有利な地）を高所に見、その高所を戦いで登らせないようにする――これが山地に適した軍である。水を隔てる場合は水を遠くに取り、敵が水を断って来るときは水の中に迎えず、半ば渡らせてから撃つのが有利である。戦いたがる側は水に寄り添わず敵を迎え、生地を高くして水流を迎えない――これが水上に適した軍である。斥澤（沼沢）を避けるときは、とにかく急いで去り留まってはならない。もし部隊が斥澤の中で交錯するならば必ず水草に頼り、群木の背に背を向ける――これが斥澤に適した軍である。平陸は扱いやすいが、右側に高所を背にし、前方に死地、後方に生地を配するのが平陸の軍である。これら四種の軍の利は、黄帝が四帝に勝った所以である。"
+        },
+        {
+          "id": "09-02",
+          "text": "一般に軍は高所を好み低地を嫌う。陽の場所を重んじ陰を軽んずる。生を養い実地に居るならば、軍に百の病（損耗）はない、これを必勝という。丘陵や堤防は必ず陽の側に陣取り、右を背にすることが兵にとって有利であり、地が助けるのである。大雨の後、水が泡立って流れるときは、渡ろうとする者はその流れが定まるのを待つべきである。"
+        },
+        {
+          "id": "09-03",
+          "text": "地に深い渓や、天井・天牢・天羅・天陷・天隙といった危険な地形があるときは、必ず急いでそこを離れ、近づいてはならない。我が方が遠ざければ敵が近づき、我が方が迎えれば敵が背を向ける。軍の側に険阻や深い井戸・沼、葦や茂み、林木やつるの茂る藪があれば、必ず覆索して慎重に対処せよ。そこは伏兵や奸細が潜む場所である。"
+        },
+        {
+          "id": "09-04",
+          "text": "敵が近くて静かであるなら、それは地の険を頼んでいるのである。遠く離れて挑発する者は、人を進ませようとする意図である。居る場所が容易なら有利である。多くの木々が動くのは来襲のしるしであり、草が多く障害が多いのは疑わしい。鳥が飛び立つのは伏兵あり、獣が驚くのは覆滅の兆候である。塵が高く鋭ければ車兵の来襲、低く広がれば徒（歩兵）の来襲である。散って道に沿って達する動きは薪や採集者、少数の往来は営軍である。言葉が卑しくなるが備えを増すなら進軍を意図し、言辞が強く進んで急かすようなら退却を装う。軽車が先に出てその側に控えるのは陣である。約束なく和を請う者は謀であり、奔走して兵を整え陳兵するのは期を定める合図である。半進半退するのは誘いである。杖をついて立つ者は飢えており、水を汲んで先に飲む者は渇いている。利を見て進まない者は疲労している。鳥が集まる所は虚（敵薄）であり、夜に叫ぶ者は恐れている。軍が騒擾するのは将が重んじられていない証し、旌旗が揺れるのは乱れ、吏が怒るのは倦怠の徴である。粟や馬や肉食を供給されていても軍に蓄えがなく、それでも本陣に帰らない者は窮迫した寇である。しつこくこびへつらいゆっくり人と言葉を交わす者は衆心を失っている。賞をしきりに与えるのは窮し、罰をたびたび行うのは困窮である。先に暴を働き後にその衆を畏れさせる者は統率の至らぬ者である。来て委ねて謝する者は休息を求めている。兵が怒って互いに迎え合い、長く合流せずまた離れもしない場合は必ず慎重に観察せよ。"
+        },
+        {
+          "id": "09-05",
+          "text": "ゆえに兵は数を増すことが貴いのではない。むしろ無用な突進をせず、力を合わせ、敵を見積もり人を奪うに足ればよい。思慮なくして敵を侮る者は必ず人に捕らえられる。"
+        },
+        {
+          "id": "09-06",
+          "text": "兵卒がまだ親しく心を寄せていないうちに罰すれば従わず、従わなければ使いにくい。兵卒が既に親しんでいるのに罰が実行されないならば、それもまた使えない。ゆえに文（教令）によって命じ、武によって整えること、これを以て必ず勝ち取るのである。常に令を行いそれで民を教えれば民は服する。令を常に行わずに民を教えれば民は服さない。令を常に行う者は衆と通じ合うのである。"
+        }
+      ],
+      "points": [
+        {
+          "title": "軍の布陣と敵情把握",
+          "body": "行軍は安全な布陣の選定と敵情観察が同時に行われるべきであり、地形処理と情報の読み取りは切り離せない。",
+          "segmentId": "09-01"
+        },
+        {
+          "title": "高所を好み低地を嫌う",
+          "body": "営地選定では視界・乾燥・健康・補給を重視し、非戦闘による損耗を先に減らすことが重要である。",
+          "segmentId": "09-02"
+        },
+        {
+          "title": "跡・徴候から情勢を読む",
+          "body": "自然と人為の兆候は多義的であり、距離・姿勢・塵土・言辞などを相互に照合して判断すべきである。",
+          "segmentId": "09-04"
+        },
+        {
+          "title": "兵は数が全てではない",
+          "body": "単に兵力を増やすよりも、無闇な突進を避け合力し敵を見通して人を取る能力が勝敗を左右する。",
+          "segmentId": "09-05"
+        },
+        {
+          "title": "文で教え、武で整える",
+          "body": "民心を得るための教化（文）と、一致を保つための規律（武）の両立が不可欠であり、どちらか欠ければ組織は使えなくなる。",
+          "segmentId": "09-06"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 10,
+      "chapterTitle": "地形",
+      "fullTitle": "地形第十",
+      "group": "地利",
+      "summary": "本篇は通・掛・支・隘・険・遠の六種の地形を説き、続いて走・弛・陷・崩・乱・北の六つの敗象を挙げる。前者は外部条件に関する判断、後者は主に指揮や組織の過誤に起因し天災とするべきでない。将は敵我と地形を分けて独立に判断し、民衆を保護し国家の利益に合致するかを基準とすべきである。兵を厚く愛する場合でも、使役と命令の有効性が伴わなければ寵愛は驕りとなる。",
+      "tags": [
+        "地形",
+        "六敗",
+        "将道",
+        "知地",
+        "組織"
+      ],
+      "seoTitle": "孫子 地形（第十）— 六地と六敗の教え",
+      "seoDescription": "六種の地形と六つの敗因を詳述。地形判断と将の責任、補給・撤退の要点、兵の扱い方を現代に通じる語で示す。",
+      "segments": [
+        {
+          "id": "10-01",
+          "text": "孫子は言う：地形には通・掛・支・隘・険・遠の六種がある。吾が往くことができ、彼も来ることができるものを「通」という。通の形は、まず高所や開けた場所を占め、糧道が有利であれば戦いに有利である。行けるが戻りにくいものを「掛」という。掛の形は、敵が無備であれば出て勝つことができるが、敵が備えていれば出て勝てず、戻るのも困難で不利である。吾が出て不利で、彼も出て不利なら「支」という。支の形は、敵が有利でも我は出ずに引き、敵を半ば出させてから撃つのが有利である。隘の形は、我が先に占めれば満たして敵を待つべきである。もし敵が先に占めれば、満ちていれば従わず、満ちていなければ従う。険の形は、我が先に占めれば必ず高所に居して敵を待つべきである；もし敵が先に占めれば引いて去り、従ってはならない。遠の形は勢が均衡しており挑発しにくく、戦っても有利でない。これら六つは地の道であり、将の重大な任務だから見落としてはならない。"
+        },
+        {
+          "id": "10-02",
+          "text": "ゆえに兵には走・弛・陷・崩・乱・北の六つがある。これら六つは天の災いではなく将（将官）の過ちである。勢いが均衡しているのに一挙に崩れるような状態を「走」という。卒（兵）が強く吏（指揮官）が弱い状態を「弛」という。吏が強く卒が弱い状態を「陷」という。大吏が怒って服さず、敵に会うとむきになって自ら戦い、将がその能を把握していないのを「崩」という。将が弱く厳格でなく教えが明確でないため吏卒の規律が一定せず、陳兵が縦横に乱れるのを「乱」という。将が敵を料れず、少で衆に当たり、弱で強を撃ち、兵の先鋒を選べないのを「北」という。これら六つは敗れる道であり、将の重大な責務として見落としてはならない。"
+        },
+        {
+          "id": "10-03",
+          "text": "地形は兵の助けである。敵を推し量り勝利を制し、険阻や難所、遠近を計ることは上将の道である。これを知って戦えば必ず勝ち、これを知らずに戦えば必ず敗れる。したがって、戦いの道が必勝であれば、主が「戦うな」と言っても戦うことができる；戦いの道が勝ち得ないのであれば、主が「必ず戦え」と言っても戦ってはならない。ゆえに進むときは名を求めず、退くときは罪を避けず、ただ民を保護し、利益が主に合致することこそ国の宝である。"
+        },
+        {
+          "id": "10-04",
+          "text": "兵を乳児のように扱えば、深い渓にも共に赴くことができる。兵を愛する子のように扱えば、ともに死ぬこともできる。しかし、厚くしても使いこなせず、愛しても命令が通らず、乱れて治められないならば、それは驕った子のようであり用いることはできない。"
+        },
+        {
+          "id": "10-05",
+          "text": "我が兵が攻撃し得ることを知っていて敵の攻撃が不可能であることを知らなければ勝利は半分である；敵が攻撃し得ることを知っていて我が兵が攻撃できないことを知らなければ勝利は半分である；敵が攻撃し得、我が兵も攻撃し得ることを知りながら、地形が戦に適さないことを知らなければ勝利は半分である。ゆえに兵を知る者は、動いても迷わず、挙動しても窮しない。ゆえに言う：彼を知り己を知れば、勝ってなお危うからず；天を知り地を知れば、勝利を全うし得る。"
+        }
+      ],
+      "points": [
+        {
+          "title": "六地の道",
+          "body": "同じ地形でも敵と我とで常に一方が有利とは限らない。重要なのは占領の先後、補給路、撤退の難易度、兵力の相称である。",
+          "segmentId": "10-01"
+        },
+        {
+          "title": "六つの敗因は将にあり",
+          "body": "走・弛・陷・崩・乱・北はいずれも兵力誤用、権限の不均衡、教令の不明確さに起因する。これらは天災ではなく、指揮と組織の責任である。",
+          "segmentId": "10-02"
+        },
+        {
+          "title": "進むは名を求めず、退くは罪を避けず",
+          "body": "戦闘判断は個人の名誉や面子で左右されてはならない。民を保護し国家の利益に適うかを基準にすることが将の職責である。",
+          "segmentId": "10-03"
+        },
+        {
+          "title": "厚くして能く使い、愛して能く令すべし",
+          "body": "信頼や慈愛は重要だが、それだけで指揮が通るわけではない。厚遇が使えない組織を生むなら寵愛は害となる。",
+          "segmentId": "10-04"
+        },
+        {
+          "title": "天を知り地を知れば勝利を全うできる",
+          "body": "敵我の状況だけでなく、行動場としての地形と時機を把握することが、勝利を完全なものにする要件である。",
+          "segmentId": "10-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 11,
+      "chapterTitle": "九地",
+      "fullTitle": "九地第十一",
+      "group": "兵情",
+      "summary": "本章は軍と戦場との関係に応じて、散・軽・争・交・衢・重・圮・圍・死の九種の地を区別し、それぞれの状況に応じた処し方を説く。敵地の深浅や退路、補給、民心の有無は兵の士気と結束を変え、指揮官は意志の統一、補給の確保、情報統制を図らねばならない。首尾相救の譬えや、舟を焼く決断の例は、位置・退路・資源・心理が行動をどう変えるかを示している。重要なのは名を暗記することではなく、地の性質とそれが兵と作戦にもたらす影響を読み取ることである。",
+      "tags": [
+        "九地",
+        "兵情",
+        "深入",
+        "協同",
+        "情勢"
+      ],
+      "seoTitle": "孫子『九地』：位置と退路が戦場の勝敗を決める",
+      "seoDescription": "『九地』は地の分類を通じて、退路・補給・士気が戦術と統率に与える影響を論じる。位置と心理を読み解く指南。",
+      "segments": [
+        {
+          "id": "11-01",
+          "text": "孫子は言う。用兵の法には、散地、軽地、争地、交地、衢地、重地、圮地、圍地、死地の九種がある。諸侯が自分の領地で戦うのを散地、他人の地に入って浅くしか踏み込まないのを軽地、我が得れば利だが彼も得れば利となるのを争地、我が行けるが彼も来られるのを交地、諸侯の地が三つに及び、先に到着して天下の衆を得るのを衢地、他人の地に深く入って城や後背が多くなるのを重地、山林や険阻、沼沢のように行きにくい道を圮地、入り口が狭く帰路が遠回りで向こうが少数でこちらの衆を攻め得るのを圍地、急戦すれば生き延び急がなければ滅ぶのを死地という。したがって散地では戦闘はない、軽地ではとどまれない、争地では攻めが得策でない、交地では離断がない、衢地では合流が可能、重地では略奪を行い、圮地では進軍すべき道をとり、圍地では画策し、死地では戦うのである。"
+        },
+        {
+          "id": "11-02",
+          "text": "古の善く兵を用いる者は、敵の前後を遮断し、衆寡が頼り合わず、身分の上下が互いに救い合わず、上下が引き締まらず、兵が離れて集まらず、合しても整わないようにする。利益に合えば行動し、利益に合わなければ止める。問う、『敵が衆を整えて将を率いて来るとき、どうするか』と。答えは、『まず彼らの愛するものを奪えば従う』である。ゆえに兵の情は速さを主とし、人の不意をつき、不測の道を用いて彼らの戒めぬ所を攻めるのである。"
+        },
+        {
+          "id": "11-03",
+          "text": "客として進軍する道は、深ければ専心させ、主人は抗しがたくなる。肥えた野に掠めれば三軍は食に足る。兵を慎んで疲れさせず、気力を蓄え力をため、兵の運用と計謀を練って測りがたいものとせよ。投じられて行く所なければ、死しても北へ逃げずに戦う。死んで逃げ得ずとも士は全力を尽くす。兵士が甚だしく追い込まれれば恐れず、行く先のない者は堅く抗す。深く入り込めば拘束され、やむを得ぬ時は戦う。ゆえにその兵は訓練せずとも警戒し、求めずとも得、約せずとも親しく、命ぜずとも信じる。疑いを取り除き、死に至るまで行き所を失わせよ。我が士に余財なければ物品を憎むことなし、余命なければ命を惜しまぬ。出撃の命が下れば、座する者は袖を濡らし、臥する者は涙を流す。行く所なき者は、諸や劌の勇のようになるのである。"
+        },
+        {
+          "id": "11-04",
+          "text": "ゆえに善く兵を用いる者は、率然に譬える。率然とは常山の蛇である。首を撃てば尾が来て、尾を撃てば首が来て、中央を撃てば首尾ともに来る。問う、『兵を率然の如く使えるか』と。答え、『できる。呉と越は互いに憎んでいるが、同舟して渡るとき風が起これば互いに救い合い、左右の手のようになる』。だから方馬が車輪にかかり埋まれば頼るべきではない。勇を齊しく一つにするは政の道、剛と柔を共に得るは地の理だ。ゆえに善く兵を用いる者は、手を携えて一人を使うがごとくする、やむを得ぬからである。"
+        },
+        {
+          "id": "11-05",
+          "text": "将の事は、静をもって幽（人目から隠すこと）とし、正をもって治める。士卒の耳目を愚弄して無知にし、その務めを易（変）じ、謀を革めて人に識られざらしめ、居を替え路を迂遠にして人に思案させぬようにする。帥が去る期日は梯子を外して高所から去るが如くせよ。深く諸侯の地に入って機を発し、舟を焼き釜を破るが如く、群羊を駆るがごとくである。駆りて往き、駆りて還る、誰もどこへ行くか知らぬ。三軍の衆を集めて危所に投じる、これ将軍の務めである。九地の変化、屈伸の利、人情の理は察さぬわけにいかぬ。"
+        },
+        {
+          "id": "11-06",
+          "text": "凡そ客としての道は、深ければ専属を生じ、浅ければ散ずる。国を去り境を越えて師を起こすは絶地、四方に通じるは衢地、深く入るは重地、浅く入るは軽地、背後は固く前は隘（狭）きは圍地、行く所なきは死地である。ゆえに散地では吾はその志を一つにし、軽地では属せしめ、争地ではその後を急ぎ、交地では守りを慎み、衢地では結びを固め、重地では食糧を継ぎ、圮地では道を進め、圍地では欠所を塞ぎ、死地では生きられぬことを示す。ゆえに兵の情は、圍られれば弁護し、やむを得ぬれば戦い、過てば従うのである。"
+        },
+        {
+          "id": "11-07",
+          "text": "ゆえに諸侯の謀を知らざる者は、交わりを予測できぬ。山林、険阻、沼沢の形を知らぬ者は行軍できぬ。郷導（現地案内）を用いぬ者は地利を得られぬ。この四つ五つの一つを知らぬは、覇者の兵にあらず。覇者が大国を伐つるときはその衆は集まらず、威を敵に加えれば彼らの交わりはまとまらぬ。ゆえに天下の交を争わず、天下の権を養わず、己の私心を信じて威を敵に及ぼせば、その城を拔き、その国を傾けうる。法のない賞を施し、政のない令を掲げよ。三軍を一人のごとく扱え。事を以て犯せ、言で告げるな；利で誘え、害を告げるな。彼らを滅亡の地に投じてこそ存し、死地に陷してこそ生く。衆が害に陷るゆえに勝敗を為すこと能う。ゆえに兵の事は、敵の意に順うふりをして、一方向に敵を集め、千里の将を殺す、これを巧みにして事を成すと言う。"
+        },
+        {
+          "id": "11-08",
+          "text": "ゆえに政を挙げる日には、関所を平らげ符を折り、使者に通じさせるな；廊廟の上で厳しくし、事を誅する。敵が開閉すれば必ず素早く入り、先に彼の愛するものを奪い、期を少し与え、墨を踏むが如く敵に従い決戦を定めよ。ゆえに初めは処女のごとくであれ、敵は戸を開け；後には脱兔のごとくあれ、敵は及ばず拒めない。"
+        }
+      ],
+      "points": [
+        {
+          "title": "九地の異なる性質",
+          "body": "九地は単なる地形の分類ではなく、我と敵の距離、交通、利益、退路の有無などによって状況を定義し、それぞれに応じた行動原理が必要である。",
+          "segmentId": "11-01"
+        },
+        {
+          "title": "速さを主とする兵の情",
+          "body": "速度は相手の不意を突き、予期せぬ路を用いて戒めぬ所を攻めるためのもの。補給や組織を無視した無謀な急進ではない。",
+          "segmentId": "11-02"
+        },
+        {
+          "title": "深入は専心を生む",
+          "body": "退路や距離、資源の有無は兵士の心理と結束を変える。指揮官はその影響を読み、意志を統合し補給・情報を管理すべきである。",
+          "segmentId": "11-03"
+        },
+        {
+          "title": "率然の譬えの意味",
+          "body": "首尾が互いに助け合う状態は自然発生ではなく、政令・利害・地形が一致することで組織全体が一体的に反応することを示す。",
+          "segmentId": "11-04"
+        },
+        {
+          "title": "踐墨に随う実践性",
+          "body": "基本的な規範や準備は重要だが、実際の行動は敵の開閉や戦場の変化に合わせて機敏に対応する必要がある。",
+          "segmentId": "11-08"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 12,
+      "chapterTitle": "火攻",
+      "fullTitle": "第十二章 火攻",
+      "group": "慎戦",
+      "summary": "本篇は表向きに火攻の条件を述べるが、実際の重点は手段・時機・対応が一致することにある。火攻は対象が異なるため、発動前に物資や天候などの条件を整え、発火後も敵の反応を観察して続行するかを判断しなければならない。勝って占領しても、成果を固められなければ徒労に終わる。末節では慎戦を政治的倫理として説き、君主や将は一時の怒りで兵を起こしてはならないと戒める。感情は回復しても、国家の滅亡や死者は戻らないからである。",
+      "tags": [
+        "火攻",
+        "時機",
+        "成果",
+        "慎戦",
+        "感情"
+      ],
+      "seoTitle": "孫子 第十二章 火攻 — 火の用い方と慎戦",
+      "seoDescription": "火攻の五類と発火に適した天候・時刻、火と水の使い分け、勝利後の収拾と怒りでの起兵を戒める教えを解説します。",
+      "segments": [
+        {
+          "id": "12-01",
+          "text": "孫子は言う：火攻には五つがある。一つは火人、二つは火積、三つは火輜、四つは火庫、五つは火隊である。火を行うには必ず原因があり、煙や燃料は常日頃から備えておかなければならない。火を放つには時があり、火を起こすには日がある。ここで「時」とは天候が乾燥していることを指し、「日」とは月が箕・壁・翼・軫の宿にあることである。これら四つの宿に月がある日は風が起こる日である。"
+        },
+        {
+          "id": "12-02",
+          "text": "火攻を行う場合は、必ず五種類の火の変化に応じて対応しなければならない。火が内部から発生したならば、外側で早めに応じよ。火が燃え出しても敵兵が静まっている（混乱していない）場合は、待って攻めてはならない。火勢が極まって利用できるときは、それに乗じて攻めよ。利用できないならば止めよ。火は外から発生させることもでき、内部に頼る必要はない。時を見て発火せよ。火が風上で発生したならば、風下を攻めてはならない。昼の風が長く続けば、夜には風は止む。軍はこの五つの火の変化を知り、それに応じて部隊を配して守るべきである。ゆえに火で攻撃を補助するのは効果が明白であり、水で補助するのは強力である。水は遮断することはできても、奪い取ることはできない。"
+        },
+        {
+          "id": "12-03",
+          "text": "戦いに勝って占領したにもかかわらず、その功を修めないのは凶であり、それを『費留』という。ゆえに明主はこれをよく考え、良将はこれを整えるべきである。利益にならなければ動くな、得にならなければ用いるな、危険でなければ戦うな。君主は怒りに任せて兵を起こしてはならず、将は憤りに任せて戦を起こしてはならない。利益に合致すれば動き、合致しなければ止めよ。怒りはまた喜びに戻ることがあり、憤りはまた安らぎに戻ることがあるが、亡国は再び存することなく、死者は再び生き返らない。ゆえに明主は慎重であり、良将は警戒するべきである。これこそが国を安んじ軍を保全する道である。"
+        }
+      ],
+      "points": [
+        {
+          "title": "行火には理由が必要",
+          "body": "どんな手段でも条件・物資・時機が必要であり、手段だけでは有効な行動にならない。",
+          "segmentId": "12-01"
+        },
+        {
+          "title": "変化に応じて対処する",
+          "body": "火が起きた後に機械的に突入するのではなく、敵の混乱具合や火勢の利用可能性を観察して、攻めるか止めるかを決める必要がある。",
+          "segmentId": "12-02"
+        },
+        {
+          "title": "水は遮断できても奪えない",
+          "body": "手段ごとに効果の限界がある。補給や流通を断つことはできても、直接的に奪取することはできないと混同してはならない。",
+          "segmentId": "12-02"
+        },
+        {
+          "title": "勝って成果を固めよ",
+          "body": "勝利して占領しても、成果を収め固めなければ前のコストは無駄になり得る。占領後の処理を怠らないことが重要である。",
+          "segmentId": "12-03"
+        },
+        {
+          "title": "怒りで起兵してはならない",
+          "body": "重大で不可逆な決断は一時の感情に基づいてはならない。慎重な判断は国家と兵士の命を守るための基本である。",
+          "segmentId": "12-03"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 13,
+      "chapterTitle": "用間",
+      "fullTitle": "用間第十三",
+      "group": "先見",
+      "summary": "末段では、戦争の膨大な費用を対比して情報の価値を立証する。爵禄を惜しんで諜報に投資せず、国民や軍を長年消耗させることは仁義に欠け愚かであるとする。先見（先知）は鬼神や類推、未検証の徴候からは得られず、敵情を知る人間から得られるものである。郷間・内間・反間・死間・生間という五種の間者はそれぞれ機能を持ち、五者を総動員してこそ秘匿性と有効性が保たれる。とりわけ反間は敵からの間者を見抜き利用する枢要であり、情報活動には智恵・仁義・微妙さ・厳格な機密保持が求められる。",
+      "tags": [
+        "間者の運用",
+        "先見",
+        "情報",
+        "反間",
+        "機密保持"
+      ],
+      "seoTitle": "孫子『用間』――五種の間者と情報の本質",
+      "seoDescription": "戦争の巨額な費用と対比して情報の価値を論じ、郷間・内間・反間・死間・生間の役割と反間の中核性、機密保持の重要性を説く。",
+      "segments": [
+        {
+          "id": "13-01",
+          "text": "孫子は言う。兵を興して十万を動かし、千里を出征すれば、民の出費や国家の扶持は日々千金に達し、国内外に騒動が起こり、道は疲弊して事を行えない者は七十万の家にのぼる。数年にわたって守り合い、一日の勝を争うために民をこれほど消耗させておきながら、爵位や俸禄の百金を惜しみ、敵の情を知らないのは、極めて仁に欠けることである。かかる者は人たる将ではなく、主の佐でもなく、勝利を導く主とはいえない。ゆえに、明君賢将が人を動かして勝利を得、衆の中から成功を成す所以は「先知」にある。先知とは、鬼神に求めるべきでもなく、事象の形に当てはめるべきでもなく、定度で試すべきでもない。必ず人に求め、敵の情を知る者から得られるものである。"
+        },
+        {
+          "id": "13-02",
+          "text": "ゆえに用いる間（間者）には五つがある。すなわち郷間・内間・反間・死間・生間である。五間がそろって起こり、その道を人に知られぬとき、これを「神紀」という。君主の宝である。郷間はその郷里の人によって用いる者、内間はその官吏によって用いる者、反間は敵の間者を逆に利用する者、死間は外に誑かし事を仕組ませて我が間者にそれを知らせ、それを敵に伝えさせる者、生間は情報を生きて返す者である。"
+        },
+        {
+          "id": "13-03",
+          "text": "ゆえに、三軍の事において、間者ほど親しくしてはならぬものはなく、間者ほど手厚く賞すべきものはなく、間者ほど事を密にすべきものはない。聖智でなければ間を用いることはできず、仁義でなければ間を使うことはできず、微妙さがなければ間の実を得ることはできない。微なるかな、微なるかな、間を用いざるところなし。間の事が発せられる前に先に漏れ聞かれたならば、間を用いる者も告げる者も皆死ぬであろう。"
+        },
+        {
+          "id": "13-04",
+          "text": "凡そ軍が撃たんと欲するところ、城が攻められんと欲するところ、人が殺されんと欲するところは、必ず先にその守将、左右の側近、謁者、門番、舎人の姓名を知るべし。己が間者に必ずこれを索めよと命ずるべし。必ず敵の間者のうち、我に来て間をなす者を索め、因ってこれを利し、導いて舍き、かくして反間を得て用うる。これによりて知られれば、郷間や内間を得て使うことができ、これによりて知られれば、死間を誑かし事として使い敵に告がせしめ、これによりて知られれば、生間を期日に使うことができる。五間の事は主たる者が必ず知るべきことであり、これを知ることは必ず反間に在り。ゆえに反間を厚くせざるべからず。"
+        },
+        {
+          "id": "13-05",
+          "text": "昔、殷の興るとき、伊摯は夏に在り、周の興るとき、呂牙は殷に在った。ゆえに明君賢将、上智を以て間と為すことを得る者は、必ず大功を成すであろう。これこそ兵の要、三軍が頼んで動くものなり。"
+        }
+      ],
+      "points": [
+        {
+          "title": "先知は人に由る",
+          "body": "信頼できる情報は追跡可能な人間と接触源によって得られるものであり、迷信や想像、未検証の類推に代えられるものではない。",
+          "segmentId": "13-01"
+        },
+        {
+          "title": "五間の総動員",
+          "body": "異なる出所が相互に補完して初めて検証・影響・回報・反情報を含む完全なネットワークが成立する。",
+          "segmentId": "13-02"
+        },
+        {
+          "title": "間は三軍に最も近い事柄",
+          "body": "情報は決定と最も近接しているため、それに見合う信頼・報奨・機密保持・倫理的配慮が必要である。",
+          "segmentId": "13-03"
+        },
+        {
+          "title": "反間は枢要",
+          "body": "敵側からの間者活動を見抜き利用することで、浸透の危険を減じるだけでなく敵の情報体系を逆に理解できる。",
+          "segmentId": "13-04"
+        },
+        {
+          "title": "上智を以て間と為す",
+          "body": "高品質の情報は単なる低級な雑務ではなく、全軍の行動を決定づける高度な専門業務である。",
+          "segmentId": "13-05"
+        }
+      ]
+    }
+  ],
+  "ko": [
+    {
+      "chapterNumber": 1,
+      "chapterTitle": "始計",
+      "fullTitle": "始計第一",
+      "group": "묘산(廟算)",
+      "summary": "본편은 전쟁을 국가의 존망과 민생이 걸린 중대한 문제로 규정하고, 결정을 내리기 전에 도·천·지·장·법의 다섯 가지로 공통된 판단 기준을 세운다. 이어 일곱 가지 계책으로 적·아군을 비교해 현실의 이익과 약점을 파악하고, 그에 따라 권세를 형성해 전술적 유·불리를 만든다. 기도의 운용은 정보와 인식의 조작에 해당하지만 최종적으로는 사전에 얼마나 철저히 계산하고 준비했는가가 승패를 가른다고 주장한다.",
+      "tags": [
+        "오사(五事)",
+        "칠계(七計)",
+        "묘산(廟算)",
+        "꾀(詭道)",
+        "의사결정"
+      ],
+      "seoTitle": "손자병법 제1편 '始計' 번역과 해설",
+      "seoDescription": "전쟁을 국가의 중대사로 보고 다섯 가지와 일곱 가지 기준으로 적·아군을 비교해 전투 전 승패를 점치는 방법을 설명한다.",
+      "segments": [
+        {
+          "id": "01-01",
+          "text": "손자가 말하였다. 병(兵)이란 나라의 큰 일이자, 생사(死生)가 걸린 곳이며, 존망(存亡)의 길이므로 살피지 않을 수 없다. 그러므로 이를 다섯 가지로써 경영하고, 일곱 가지 계책으로써 비교하여 그 실정을 찾는다. 하나는 도(道), 둘은 천(天), 셋은 지(地), 넷은 장수(將), 다섯은 법(法)이다."
+        },
+        {
+          "id": "01-02",
+          "text": "도(道)란 백성으로 하여금 군주와 뜻을 같이하게 하여, 함께 죽을 수 있고 함께 살 수 있으며, 위험을 두려워하지 않게 하는 것이다. 천(天)은 음양과 한서(寒暑), 때의 제약을 말한다. 지(地)는 높낮이·원근·험난함과 쉬움·넓고 좁음·생사에 관한 것이다. 장수(將)는 지혜·신뢰·인(仁)·용기·엄격함이다. 법(法)은 제도와 관로(官道), 군대의 주된 운용이다. 이 다섯 가지는 장수가 듣지 못하는 바가 없으니, 아는 자는 이기고 모르는 자는 이기지 못한다. 그러므로 일곱 가지 계책으로 놓고 그 실정을 살핀다. 묻기를: 주(主)에게 누가 도를 갖추고 있는가? 장수는 누가 능한가? 천지(天地)는 누가 유리한가? 법령은 누가 집행되는가? 병력은 누가 강한가? 사병(士卒)은 누가 잘 훈련되어 있는가? 상벌은 누가 분명한가? 나는 이로써 승패를 알겠다."
+        },
+        {
+          "id": "01-03",
+          "text": "장수가 내 계책을 들으면, 그를 써서 반드시 이기게 될 자이면 머물게 하고; 장수가 내 계책을 듣지 않아, 그를 써서 반드시 패할 자이면 물리쳐라. 계책으로써 듣게 하면 그를 위하여 세세(勢)를 만들어 바깥을 보좌한다. 세(勢)란 이익에 따라 권세를 행사하는 것이다. 병(兵)이란 꾀의 길이다. 그러므로 능한 것을 능하지 않은 듯 보이고, 쓸 것을 쓰지 않는 듯 보이며, 가까움을 멀게 보이게 하고, 멀음을 가깝게 보이게 하라. 이익으로 유도하고, 혼란을 이뤄 빼앗고, 실한 곳에는 대비하며, 강한 데는 피하며, 분노하게 하여 어지럽게 하고, 낮춤으로써 교만하게 하며, 편안한 자를 일을 시키고, 친한 자를 멀어지게 하라. 그 대비하지 않은 곳을 공격하고, 뜻밖의 곳에서 나오게 하라. 이것이 병가가 이기는 방식으로서 미리 전해 줄 수 없는 것이다."
+        },
+        {
+          "id": "01-04",
+          "text": "전투에 들어가기 전에 묘산(廟算)으로 승리를 점하는 자는 계산을 많이 한 자이다. 전투에 들어가기 전에 묘산으로 승리가 보이지 않는 자는 계산을 적게 한 자이다. 계산이 많으면 승하고, 적으면 이기지 못하니 하물며 계산이 없다면 말할 것도 없다. 내가 이 점으로 보면 승패가 드러난다."
+        }
+      ],
+      "points": [
+        {
+          "title": "병(兵)은 국가의 중대한 사안",
+          "body": "전쟁은 장수 개인의 모험이 아니다. 그것은 공적 자원과 생사, 정권의 존망에 관계하므로 신중한 평가가 최우선이다.",
+          "segmentId": "01-01"
+        },
+        {
+          "title": "다섯 가지와 일곱 가지",
+          "body": "오사(五事)는 관찰의 축을 제공하고, 칠계(七計)는 적·아군을 항목별로 비교하도록 한다. 이 둘의 결합이 전투 전 판단의 기본 틀을 이룬다.",
+          "segmentId": "01-02"
+        },
+        {
+          "title": "이익에 따라 권세를 만든다",
+          "body": "수립한 계획은 현실의 이익과 조건에 맞춰 조정되어야 한다. 권세(勢)는 임의의 변화가 아니라 구체적 유·불리를 바탕으로 형성하는 것이다.",
+          "segmentId": "01-03"
+        },
+        {
+          "title": "꾀(詭道)와 가시화의 기술",
+          "body": "능·무·용·불용·원근을 반대로 보이게 하는 것은 상대의 판단을 교란하여 취약점을 드러내게 하는 데 목적이 있다.",
+          "segmentId": "01-03"
+        },
+        {
+          "title": "묘산에 의한 선승",
+          "body": "진정한 우세는 전투 이전에 형성된다. 계산(판단)이 충분할수록 승패를 예견할 수 있다; 계산이 많으면 승리, 적으면 패배한다.",
+          "segmentId": "01-04"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 2,
+      "chapterTitle": "작전",
+      "fullTitle": "작전 제2편",
+      "group": "국가 운용",
+      "summary": "본편은 전쟁의 시간과 비용 문제에 집중한다. 대군이 출동하면 보급·운송·장비·징발과 물가 상승으로 국가 재정이 소모된다. 지체하면 병력이 무뎌지고 승리의 의미가 퇴색하므로 신속한 승리가 핵심이다. 또한 적의 자원과 병력을 단순 약탈하는 것이 아니라 보상·정비·흡수하여 적의 손익을 자기 이익으로 전환하는 방안도 강조한다.",
+      "tags": [
+        "비용",
+        "속승",
+        "병참",
+        "국력",
+        "병력 재편"
+      ],
+      "seoTitle": "손자병법 作戰(제2): 전쟁의 비용과 속전의 원칙",
+      "seoDescription": "장기전의 막대한 비용과 병참 부담을 경고하며, 신속한 승리와 적 자원의 흡수·전환으로 국력을 보전하는 원칙을 다룬다.",
+      "segments": [
+        {
+          "id": "02-01",
+          "text": "손자가 말하였다: 군사를 운용하는 법에는 마차를 수천 대 달리고 전차를 수천 대 가지며 갑옷을 입은 자 열만을 거느리고 천 리의 군량을 운송해야 할 경우, 안팎의 비용과 접객에 드는 비용, 칠·침 등의 재료, 차와 갑주의 보수 등으로 날마다 천금의 비용이 든 후에야 비로소 열만의 군대를 일으킬 수 있다. 전쟁을 행함에 있어 귀중한 것은 승리이다. 오래 끌면 병력이 무뎌지고 날이 서지 않으며 성을 공격하면 힘이 부족해지고, 군대를 오래 밖에 노출시키면 국가의 재정이 모자라게 된다. 병력이 무뎌지고 날이 서지 않으며 힘이 기울고 재물이 다하면 제후들이 그 폐단을 타고 일어나니, 지혜로운 자라도 뒤처리를 잘하지 못한다. 그러므로 전쟁에서는 서투르더라도 빠른 것이 듣기 쉬울 뿐, 교묘하되 오래 가는 것은 본 적이 없다. 병력으로 오래 이익을 얻은 적은 아직 없다. 그러므로 병을 씀에 있어서 해로움을 충분히 알지 못하면, 병을 씀의 이익을 충분히 알 수 없다."
+        },
+        {
+          "id": "02-02",
+          "text": "유능한 장수는 백성을 두 번 연속으로 징발하지 않고 군량을 삼 년씩 쌓아두지 않는다. 국토에서만 취하지 않고 적지에서 식량을 얻음으로써 군식이 넉넉하게 된다."
+        },
+        {
+          "id": "02-03",
+          "text": "나라가 군대를 건사하는 데 가난하면 먼 곳에서 보급을 끌어오게 되고, 먼 수송은 백성을 가난하게 만든다. 군대 가까이에서 물자를 구하면 물가가 비싸져 백성의 재산이 바닥나고, 재정이 고갈되면 토목·노역에 급히 동원된다. 힘이 약해지고 재물이 다하면 중원의 가정들이 비어 버린다. 백성의 재물은 열 중 일곱이 줄고, 공공의 물자는 마차 파손과 말의 은거, 갑옷·화살·석궁, 창·방패·차폐물, 소와 대형수레 등이 열 중 여섯이 손실된다."
+        },
+        {
+          "id": "02-04",
+          "text": "그러므로 지혜로운 장수는 적지에서 식량을 얻으려 한다. 적의 식량 한 단위는 우리 것 스무 단위를 대신하고, 적의 짚 한 단위는 우리 것 스무 단위를 대신한다."
+        },
+        {
+          "id": "02-05",
+          "text": "따라서 적을 죽이는 것은 분노에서 비롯되고, 적의 이익을 빼앗는 것은 재물에 관한 일이다. 전차 전투에서 전차를 열 대 이상 얻으면 먼저 취한 자에게 상을 주고 그들의 기와 깃발을 바꿔라. 전차를 섞어 운용하고 포로 병사들을 잘 보살피고 기용하면, 이것이 적을 이기고 오히려 자기 편을 강하게 하는 것이다."
+        },
+        {
+          "id": "02-06",
+          "text": "그러므로 군사는 승리를 귀히 여기고 오래 끄는 것을 귀히 여기지 않는다. 병사를 잘 아는 장수는 백성의 명운을 맡은 자이며, 국가의 안위와 위험을 좌우하는 주인이다."
+        }
+      ],
+      "points": [
+        {
+          "title": "승리 중시, 장기전 지양",
+          "body": "본문은 성급함을 조장하는 것이 아니라 장기간의 소모가 병력을 무디게 하고 전력을 떨어뜨리며 제3자가 틈을 탈 빌미를 제공할 수 있음을 경고한다. 따라서 가능한 한 빨리 목적을 달성해야 한다.",
+          "segmentId": "02-01"
+        },
+        {
+          "title": "용병의 해악을 충분히 알라",
+          "body": "예상되는 이득만 보고 직접·간접비용을 무시하면 올바른 결정을 내릴 수 없다. 전쟁의 위험과 비용을 인식하는 것이 이익 판단의 전제다.",
+          "segmentId": "02-01"
+        },
+        {
+          "title": "적에게서 군량을 얻다",
+          "body": "원거리 수송은 국민에게 부담을 지우므로 보급선을 단축하고 기존 자원을 활용하거나 적의 자원을 전환·이용함으로써 전쟁의 총비용을 낮추는 것이 중요하다.",
+          "segmentId": "02-02"
+        },
+        {
+          "title": "적을 이기고 오히려 강해지다",
+          "body": "전리품과 포로를 단순 약탈로 끝내지 않고 깃발을 바꾸어 혼편성하고, 포로를 잘 수용·양성하여 전력으로 편입하면 승리가 곧 전력 증강으로 이어진다.",
+          "segmentId": "02-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 3,
+      "chapterTitle": "謀攻",
+      "fullTitle": "謀攻第三",
+      "group": "전승",
+      "summary": "이 편은 전체의 이익을 보존하는 것을 최고의 계책으로 삼는 전승(全勝) 관점을 제시한다. 최고 수준의 승리는 정면전투에서 이기는 것이 아니라 상대의 계략과 동맹을 먼저 무너뜨려 저항의 조건을 상실하게 하는 것이다. 성(城)을 공격하는 공성은 대가가 크므로 최후의 수단으로만 사용해야 한다. 또한 병력 비교, 군주와 장수의 관계, 승리를 아는 조건을 다루며 정치적 지도자가 군사 전문 분야에 부적절하게 간섭해서는 안 되고, 장수는 적·아군·병력의 증감·시기와 조직적 의지를 모두 이해해야 함을 강조한다.",
+      "tags": [
+        "전승",
+        "모략(伐謀)",
+        "외교 파괴(伐交)",
+        "군주·장수 관계",
+        "지피지기(知彼知己)"
+      ],
+      "seoTitle": "손자병법 제3편 모공 — 전승의 전략",
+      "seoDescription": "전투 아닌 계략과 외교 파괴로 승리하는 전승 전략. 공성은 최후 수단이며 군주‑장수 관계와 지피지기의 원칙을 설명한다.",
+      "segments": [
+        {
+          "id": "03-01",
+          "text": "손자(孫子)가 말하였다. 병법에서의 원칙은 나라 전체를 온전히 하는 것이 으뜸이고, 나라를 파괴하는 것이 그 다음이다. 군대를 온전히 하는 것이 으뜸이고, 군대를 파괴하는 것이 그 다음이다. 여단(旅)을 온전히 하는 것이 으뜸이고, 여단을 파괴하는 것이 그 다음이다. 병졸(卒)을 온전히 하는 것이 으뜸이고, 병졸을 파괴하는 것이 그 다음이다. 소대(伍)를 온전히 하는 것이 으뜸이고, 소대를 파괴하는 것이 그 다음이다. 그러므로 백 번 싸워 백 번 이기는 것이 최고의 선은 아니다. 싸우지 않고 적의 병력을 굴복시키는 것이 최고의 선이다."
+        },
+        {
+          "id": "03-02",
+          "text": "그러므로 최고의 병법은 적의 계략을 꺾는 것이고, 그 다음은 외교적 연합을 깨뜨리는 것이며, 그 다음은 병력을 치는 것이고, 가장 못한 것은 성을 공격하는 것이다. 성을 공격하는 방법은 부득이할 때의 일이다. 공성탑과 공구를 수리·제작하고 장비를 갖추더라도 삼개월이 지나야 완성되며, 성과의 거리를 좁히는 데 또 삼개월이 걸린다. 장군이 분노를 이기지 못하고 개미처럼 달라붙어 병사를 삼분의 일이나 잃고도 성을 빼앗지 못한다면 이것이 곧 공격의 재난이다."
+        },
+        {
+          "id": "03-03",
+          "text": "그러므로 병법에 능한 자는 적의 군대를 굴복시키되 싸우지 않고, 적의 성을 빼앗되 공성하지 않으며, 적의 나라를 무너뜨리되 오래 끌지 않는다. 반드시 온전함으로 천하에서 다투므로 군대가 지치지 않으면서 이익을 온전하게 얻을 수 있다. 이것이 모공(謀攻)의 방법이다."
+        },
+        {
+          "id": "03-04",
+          "text": "그러므로 병법의 이치로서, 적이 열 배이면 포위하고, 적이 다섯 배이면 공격하며, 적이 배수이면 분산시킨다. 적과 비슷하면 싸울 수 있고, 적이 적으면 지켜낼 수 있으며, 실력이 못 미치면 피할 수 있다. 그러므로 소수의 적이 굳세면 오히려 큰 적을 사로잡을 수 있다."
+        },
+        {
+          "id": "03-05",
+          "text": "장수는 나라의 보좌자이다. 보좌가 온전하면 나라는 반드시 강하고, 보좌가 허술하면 나라는 반드시 약해진다."
+        },
+        {
+          "id": "03-06",
+          "text": "그러므로 군대 때문에 군주가 근심하는 바는 세 가지가 있다. 군대가 나아갈 수 없음에도 나아간다고 하고, 군대가 물러설 수 없음에도 물러선다고 하는 것은 군대를 묶는 것이다. 삼군의 사정을 알지 못하면서 삼군의 정사(政事)에 관여하면 군사들이 혼란스러워할 것이다. 삼군의 권한을 알지 못하면서 삼군의 임무를 함께 지휘하면 군사들이 의심할 것이다. 삼군이 이미 혼란과 의심에 빠지면 제후에게 어려움이 닥친다. 이를 ‘혼란한 군대로 인한 위난’이라 한다."
+        },
+        {
+          "id": "03-07",
+          "text": "그러므로 승리를 아는 데에는 다섯 가지가 있다. 언제 싸울 수 있고 언제 싸울 수 없는지를 아는 자가 이기고, 다수·소수의 활용법을 아는 자가 이기며, 위아래의 뜻이 같으면 이기고, 미리 대비하여 뜻밖의 일을 기다리는 자가 이기고, 장수가 능력 있고 군주가 간섭하지 않으면 이긴다. 이 다섯 가지가 승리를 아는 도(道)이다."
+        },
+        {
+          "id": "03-08",
+          "text": "그러므로 말한다. 적을 알고 자신을 알면 백 번 싸워도 위태롭지 않다. 적을 알지 못하고 자신만 안다면 한 번 이기고 한 번 진다. 적도 자신도 알지 못하면 매번 싸움이 위태롭다."
+        }
+      ],
+      "points": [
+        {
+          "title": "싸우지 않고 적의 군대를 굴복시키는 것",
+          "body": "최고의 선은 전투의 승패나 수치로 평가되는 것이 아니라, 가능한 한 최소한의 파괴로 목적을 달성했는지로 판단한다.",
+          "segmentId": "03-01"
+        },
+        {
+          "title": "최고의 병법은 계략을 꺾음",
+          "body": "수단에는 명확한 우선순위가 있다: 먼저 적의 계획을 무너뜨리고, 다음으로 외교적 연합을 분쇄하며, 그 다음에 야전에서 대적하고, 공성은 최후의 부득이한 수단이다.",
+          "segmentId": "03-02"
+        },
+        {
+          "title": "온전함으로 천하에서 다투라",
+          "body": "온전함은 단순한 비전투가 아니라 국가·군대·이익을 보전해 성공이 자기 소모로 이루어지지 않도록 하는 적극적 전략이다.",
+          "segmentId": "03-03"
+        },
+        {
+          "title": "군주가 군대 때문에 근심하는 세 가지",
+          "body": "진퇴 조건·조직 운용·지휘 권한을 모른 채 직접 개입하면 군대는 혼란과 의심에 빠져 질서가 무너진다. 정치의 불필요한 간섭은 군사력을 약화시킨다.",
+          "segmentId": "03-06"
+        },
+        {
+          "title": "지피지기",
+          "body": "승리를 안다는 것은 구호가 아니라 전투 가능성, 병력 운용, 상하의 공동 의지, 대비 상태와 지휘의 자율성에 대한 종합적 판단을 말한다.",
+          "segmentId": "03-07"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "군형",
+      "fullTitle": "군형 제4",
+      "group": "선승",
+      "summary": "본편은 스스로 패하지 않을 조건을 먼저 갖추고, 적이 스스로 드러내는 승산을 기다리는 '선승'의 원리를 다룬다. 통제 가능한 것은 방어와 준비이며, 상대의 취약성은 강제로 만들 수 없다. 현명한 지휘관은 화려한 전공을 좇지 않고 이미 승세가 갖춰진 전장을 선택한다. '도·량·수·칭·승'의 순서는 지리와 자원, 병력 규모와 비교를 차례로 계산해 승리를 판단하는 과정을 설명한다.",
+      "tags": [
+        "불가승",
+        "선승",
+        "군형",
+        "위험",
+        "계량"
+      ],
+      "seoTitle": "손자병법 군형 제4장: 선승과 승리의 조건",
+      "seoDescription": "스스로 불패의 조건을 마련하고 적의 취약을 기다리는 선승의 원리와 도·량·수·칭·승에 대한 설명입니다.",
+      "segments": [
+        {
+          "id": "04-01",
+          "text": "손자께서 말씀하셨다. 옛날의 잘 싸우는 자는 먼저 스스로를 '패할 수 없는' 상태로 만들어 적이 '이길 수 있는' 상황이 되기를 기다렸다. '패할 수 없음'은 자기에게 있고, '이길 수 있음'은 적에게 있다. 그러므로 잘 싸우는 자는 자기로 하여금 패할 수 없게 만들 수는 있어도, 적을 반드시 이기게 만들 수는 없다. 그러므로 말하건대: 승리는 알 수는 있으나 만들 수는 없다."
+        },
+        {
+          "id": "04-02",
+          "text": "‘패할 수 없음’은 수비이고, ‘이길 수 있음’은 공격이다. 수비하면 부족함이 있고, 공격하면 여유가 있다. 잘 지키는 자는 땅 속 깊이 몸을 숨기듯 하고, 잘 공격하는 자는 하늘 위에서 움직이듯 하여 스스로를 보전하면서 완전한 승리를 얻는다."
+        },
+        {
+          "id": "04-03",
+          "text": "남들이 아는 승리만을 바라보는 것은 진정한 고수의 도가 아니다. 싸워 이기고 세상이 모두 잘했다고 칭송하는 것도 진정한 고수의 경지가 아니다. 그러므로 가을의 잔털 하나를 들어 올린다고 해서 큰 힘이 아니며, 해와 달을 본다고 해서 눈이 밝은 것이 아니며, 우레 소리를 들었다고 해서 귀가 밝은 것이 아니다."
+        },
+        {
+          "id": "04-04",
+          "text": "옛날에 말하는 ‘잘 싸우는 자’는 이기기 쉬운 곳에서 이긴 사람이다. 그러므로 잘 싸우는 자의 승리는 지혜의 이름이나 용맹의 공으로 드러나지 않는다. 이 때문에 그들의 전투 승리는 어그러지지 않는다. 어그러지지 않는다는 것은 그들이 위치하는 바가 반드시 이기며, 이미 무너진 적을 확실히 만드는 것을 뜻한다. 그러므로 잘 싸우는 자는 패하지 않는 곳에 서고, 적의 패함을 놓치지 않는다. 그러므로 승리는 먼저 승리할 조건을 갖춘 뒤에 전투를 구하고, 패한 군대는 먼저 전투를 벌인 뒤에 승리를 구한다. 병력을 잘 다루는 자는 도를 닦고 법을 지키므로 승패를 결정하는 일을 능히 할 수 있다."
+        },
+        {
+          "id": "04-05",
+          "text": "병법에는 말하기를: 첫째는 도(度), 둘째는 량(量), 셋째는 수(數), 넷째는 칭(稱), 다섯째는 승(勝)이라 하였다. 땅이 도를 낳고, 도가 량을 낳고, 량이 수를 낳고, 수가 칭을 낳고, 칭이 승을 낳는다. 그러므로 승리한 군대는 마치 큰 저울추로 작은 것을 재듯 하고, 패한 군대는 작은 저울추로 큰 것을 재려 한다. 승병의 전투는 쌓인 물을 천 길 협곡으로 단번에 흘려보내는 형상과 같다."
+        }
+      ],
+      "points": [
+        {
+          "title": "먼저 불가승을 마련하라",
+          "body": "자신의 방어, 제도, 준비를 먼저 정비하고 외부의 기회를 기다리는 것이 위험 관리를 우선하는 태도다.",
+          "segmentId": "04-01"
+        },
+        {
+          "title": "불가승은 자기에게, 가승은 적에게",
+          "body": "패하지 않는 것은 비교적 스스로 조절할 수 있으나, 적을 이길 조건이 드러나는지는 상대에게 달려 있다.",
+          "segmentId": "04-01"
+        },
+        {
+          "title": "쉽게 이길 수 있는 곳을 택하라",
+          "body": "현명함은 불리한 상황에서 위험을 감수해 명성을 얻으려 하기보다 이미 승세가 갖춰진 곳을 선택하는 데 있다.",
+          "segmentId": "04-04"
+        },
+        {
+          "title": "승병은 먼저 승리한 뒤 전투를 청한다",
+          "body": "행동은 이미 형성된 우세의 결과여야 하며, 행동 자체로 우세를 도박하듯 만들어서는 안 된다.",
+          "segmentId": "04-04"
+        },
+        {
+          "title": "도·량·수·칭·승의 순서",
+          "body": "지리적 조건으로부터 규모와 자원, 병력 수량과 비교에 이르기까지 차례로 계산하고 재어야 최종적인 승부 판단이 가능하다.",
+          "segmentId": "04-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "兵勢",
+      "fullTitle": "兵勢第五",
+      "group": "임세",
+      "summary": "이 편은 조직과 지휘에서 출발해 '세(勢)'의 형성을 논한다. 다수의 관리를 소수처럼 다루는 핵심은 편제와 신호 체계이며, 전투의 변화는 많아도 기본 요소는 기(奇)와 정(正)의 반복적 결합이다. 세는 추상적 기운이 아니라 위치·속도·절주·조건을 결합해 폭발 가능한 힘으로 만드는 것이다. 유능한 지휘관은 개인의 용맹을 요구하는 대신 환경을 설계해 평범한 병사도 적절한 위치에서 전체 효과를 내게 한다.",
+      "tags": [
+        "세",
+        "기와 정",
+        "조직",
+        "절주",
+        "임세"
+      ],
+      "seoTitle": "병세 제5장: 기세와 조직의 원리",
+      "seoDescription": "병세는 위치·속도·절주의 결합으로 발휘되는 힘이다. 이 장은 분제·형세·기정·허실·절의 원리를 설명한다.",
+      "segments": [
+        {
+          "id": "05-01",
+          "text": "손자가 말하였다. 많은 병력을 다루는 것은 적은 병력을 다루는 것과 같으니, 그것은 규모를 나누고 배치하는 문제이다. 많은 병력을 전투에 투입하는 것은 적은 병력을 전투에 쓰는 것과 같으니, 그것은 형태와 명칭(대형과 명령체계)의 문제이다. 삼군의 병력을 적에게 맞서 패하지 않게 만드는 것은 기(奇)와 정(正)에 달려 있다. 병력을 가하는 방식은 마치 큰 돌로 계란을 던지는 것과 같으니, 그것은 허실(빈자리와 실자리)의 문제이다."
+        },
+        {
+          "id": "05-02",
+          "text": "전투에서는 정으로 맞서고 기로써 이긴다. 그러므로 기를 잘 내놓는 자의 변화는 하늘과 땅처럼 무궁하고 강과 바다처럼 다하지 않는다. 끝나면 다시 시작하는 것은 해와 달과 같고, 죽었다가 다시 살아나는 것은 사계절과 같다. 소리는 다섯을 넘지 않지만 다섯 소리의 변화를 모두 듣기 어렵고, 색도 다섯을 넘지 않으나 다섯 빛깔의 변화를 모두 보기는 힘들며, 맛도 다섯을 넘지 않으나 다섯 맛의 변화를 전부 맛보기는 어렵다. 전장의 형세도 기와 정을 넘지 않으니, 기정의 변화는 끝을 헤아릴 수 없다. 기와 정은 서로 생겨 끝없는 순환을 이루니 누가 이를 다 헤아릴 수 있겠는가?"
+        },
+        {
+          "id": "05-03",
+          "text": "격류가 빠르게 흘러 돌을 떠내려가게 하는 것이 '세'이다. 맹조(맹금류)의 급습이 나뭇가지를 꺾는 것이 '절'이다. 그러므로 잘 싸우는 자는 그 기세가 험하고(급하며), 타이밍은 짧다. 세는 팽팽히 당긴 석궁과 같고, 절은 발사 장치와 같다."
+        },
+        {
+          "id": "05-04",
+          "text": "겉으로 보면 어지럽고 뒤섞여 있으나, 싸움이 어지럽다고 해서 혼란스러운 것은 아니다. 흐릿하고 둥글게 보이나 형태가 둥글다고 해서 무너지지 않는 것은 아니다. 혼란은 통치(정비)에서 생기고, 겁은 용기에서 생기며, 약함은 강함에서 생긴다. 통치와 혼란은 편제와 수(數)의 문제이고, 용기와 겁은 기세의 문제이며, 강약은 형태의 문제이다."
+        },
+        {
+          "id": "05-05",
+          "text": "그러므로 적을 잘 움직이는 자는 형세를 만들어 적이 반드시 그에 따르게 하고, 미끼를 주어 적이 반드시 취하게 만든다. 이익으로 적을 유인하고 준비된 병력으로 그를 맞이한다."
+        },
+        {
+          "id": "05-06",
+          "text": "그러므로 잘 싸우는 자는 승부를 세(勢)에 두고 사람을 탓하지 않는다. 그래서 그는 사람을 가려 뽑아 세에 맡길 수 있다. 세에 맡긴다는 것은 사람을 전투에 쓰되 마치 나무와 돌을 굴리는 것과 같다. 나무와 돌의 성질은 안정하면 멈추고, 위태로우면 움직이며, 네모나면 서고, 둥글면 굴러간다. 그러므로 잘 싸우는 자의 세는 마치 둥근 돌을 천 길 벼랑 위에서 굴리는 것과 같으니, 이것이 바로 세이다."
+        }
+      ],
+      "points": [
+        {
+          "title": "분수와 형세",
+          "body": "대규모 조직을 지휘할 수 있는지는 편제와 책임 단위, 일관된 신호 체계에 달려 있다.",
+          "segmentId": "05-01"
+        },
+        {
+          "title": "정으로 합하고 기로 이긴다",
+          "body": "정과 기는 서로 전환되는 배치이며, 어느 한쪽을 영구적 '비책'으로 고정하는 것이 아니다.",
+          "segmentId": "05-02"
+        },
+        {
+          "title": "기세는 급하고 절주는 짧게",
+          "body": "힘은 단기간에 집중해 효과적으로 방출해야 한다. 팽팽한 석궁과 방아쇠처럼 순간에 터뜨리는 것이 유리하다.",
+          "segmentId": "05-03"
+        },
+        {
+          "title": "형을 만들고 이익으로 유인하라",
+          "body": "가시적인 형세와 유인책으로 상대의 행동을 유도하고, 준비된 병력으로 그 행동을 받아쳐라.",
+          "segmentId": "05-05"
+        },
+        {
+          "title": "세에 구하고 사람을 탓하지 말라",
+          "body": "리더의 책임은 적합한 사람을 골라 세(상황)에 맡기고 조건을 설계하는 것이지, 실패를 전적으로 개인 탓으로 돌리는 것이 아니다.",
+          "segmentId": "05-06"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 6,
+      "chapterTitle": "虛實",
+      "fullTitle": "虛實第六",
+      "group": "제승",
+      "summary": "이 장의 핵심은 주도권을 잡아 적이 우리 설계대로 움직이게 하는 것이다. 이득과 해를 통해 접근을 유도하거나 차단하고, 속도·기만·은폐로 적의 방어를 분산시켜 결정점에 병력을 집중한다. 최상의 병형은 무형으로, 적이 어디에 자원을 배치해야 할지 판단하지 못하게 만든다. 끝부분은 물을 비유로 들어, 물이 높은 곳을 피해 낮은 곳으로 흐르듯 병은 실한 곳을 피하고 허한 곳을 공략해야 하며, 방법은 고정되지 않고 적과 환경에 따라 계속 변화해야 함을 말한다.",
+      "tags": [
+        "허실",
+        "주도권",
+        "집중",
+        "무형",
+        "적을 이용한 승리"
+      ],
+      "seoTitle": "허실(第6): 무형으로 적을 제압하는 전략",
+      "seoDescription": "선수 선점과 허실 조작으로 적의 대비를 분산시키고, 무형·속도·기만으로 결정적 지점에 병력을 집중하는 전략적 원리.",
+      "segments": [
+        {
+          "id": "06-01",
+          "text": "손자(孫子)는 말한다. 일반적으로 먼저 전장을 점하고 적을 기다리는 자는 한가롭고, 늦게 전장에 이르러 전투에 달려드는 자는 수고롭다. 그러므로 잘 싸우는 자는 사람을 자신이 원하는 상태로 만들고 스스로는 남에게 끌려가지 않는다."
+        },
+        {
+          "id": "06-02",
+          "text": "적을 스스로 오게 하는 것은 이익(利)으로 유도하는 것이고, 적이 이르지 못하게 하는 것은 해(害)로 막는 것이다. 그러므로 적이 한가로울 때에는 피곤하게 하고, 배부를 때에는 굶주리게 하며, 편안할 때에는 움직이게 한다. 그들이 가지 않는 곳에서 나오게 하고, 그들이 예상하지 못한 곳으로 향하게 한다."
+        },
+        {
+          "id": "06-03",
+          "text": "천 리를 가도 피곤하지 않은 것은 사람이 없는 곳을 가기 때문이다. 공격하여 반드시 얻는 것은 적이 지키지 않는 곳을 공격함이고, 지켜서 반드시 굳건한 것은 적이 공격하지 않는 곳을 지키는 것이다. 그러므로 잘 공격하는 자는 적이 그가 어디를 지키는지 알지 못하고, 잘 지키는 자는 적이 그가 어디를 공격할지 알지 못한다. 극히 미세하여 형태가 없고, 매우 신묘하여 소리마저 없으니 마침내 적의 생사를 좌우하게 된다."
+        },
+        {
+          "id": "06-04",
+          "text": "나아가서 막을 수 없게 하는 것은 적의 허를 찌르는 것이고, 물러가서 쫓을 수 없게 하는 것은 속도가 빨라 닿을 수 없기 때문이다. 그러므로 우리가 싸우기를 원하면 적이 비록 높은 성이나 깊은 도랑을 갖추었어도 어쩔 수 없이 싸우게 만드는 것은 그들이 반드시 구원하려 드는 곳을 공격하기 때문이다. 우리가 싸우기를 원치 않으면 비록 땅을 그리고 지키더라도 적이 우리와 싸울 수 없게 만드는 것은 그들의 향방을 어그러뜨리기 때문이다."
+        },
+        {
+          "id": "06-05",
+          "text": "사람들에게는 형태를 보이게 하고 나는 무형이면, 나는 집중되고 적은 분산된다. 내가 하나에 집중하면 적은 열 곳으로 분산되어 열이 하나를 공격하게 되고, 이로써 나는 다수이고 적은 소수다. 다수로 소수를 공격할 수 있다면 우리가 맞붙을 상대는 한정된다. 우리가 싸울 장소를 알 수 없게 하면 적의 대비는 많아지고, 적의 대비가 많으면 우리가 실제로 싸워야 할 곳은 적어진다. 앞을 대비하면 뒤가 소수화되고, 뒤를 대비하면 앞이 소수화되며, 좌를 대비하면 우가 소수화되고, 우를 대비하면 좌가 소수화된다. 모든 곳을 대비하면 어디에도 소수가 없으니, '소수'는 대비하는 자를 말하고 '다수'는 상대를 대비하게 만드는 자이다."
+        },
+        {
+          "id": "06-06",
+          "text": "전쟁할 장소와 전쟁할 날을 알면 천 리를 달려 함께 모여 싸울 수 있다. 전쟁할 장소와 날을 모르면 왼쪽이 오른쪽을 구원할 수 없고, 오른쪽이 왼쪽을 구원할 수 없으며, 앞이 뒤를 구원할 수 없고 뒤가 앞을 구원할 수 없다. 하물며 먼 곳이 수십 리이고 가까운 곳이 수 리일진대, 내 생각으로는 월나라 병력이 비록 많다 해도 승패에 무슨 이득이 있겠는가. 그러므로 말하길: 승리는 임의로 취할 수 있다. 적이 아무리 많아도 싸움을 못하게 만들 수 있다."
+        },
+        {
+          "id": "06-07",
+          "text": "그래서 책략으로 득실을 계산하고, 실제 행함으로써 동정의 이치를 알며, 형태로써 죽고 사는 땅을 알고, 각(角)으로써 여유와 부족한 점을 알게 된다. 병형의 극치는 무형에 이르는 것이다. 무형이면 깊은 첩자도 들여다볼 수 없고 지혜로운 자도 꾀할 수 없다. 형태를 따라 배치하여 다수에 대해 이득을 얻게 하면 다수도 그 이익을 알 수 없다. 사람들은 내가 어떻게 이겼는지는 알지만, 내가 어떻게 승리를 통제했는지는 모르므로 전투의 승리는 반복되지 않고 무궁히 형태를 변화시켜야 한다."
+        },
+        {
+          "id": "06-08",
+          "text": "병형은 물과 같다. 물이 흐를 때 높은 곳을 피하고 낮은 곳으로 향하듯, 병이 이기려면 실한 곳을 피하고 허한 곳을 쳐야 한다. 물은 지형에 따라 거동을 결정하고, 병은 적에 따라 승리를 결정한다. 그러므로 병에는 완성된 세력도 고정된 형태도 없고, 적에 따라 변하여 승리를 취할 수 있는 자를 신(神)이라 한다. 다섯 가지 운행에도 늘 이기는 것이 없고, 사계에도 일정한 자리가 없으며 낮과 밤에는 길고 짧음이 있고 달에는 흥망이 있다."
+        }
+      ],
+      "points": [
+        {
+          "title": "致人而不致於人",
+          "body": "주도권은 단순히 먼저 행동하는 것이 아니라, 시간·장소·자원 배분에서 상대가 우리에 반응하도록 만드는 것이다.",
+          "segmentId": "06-01"
+        },
+        {
+          "title": "攻其所必救",
+          "body": "상대의 강점에 맞서 정면으로 부딪칠 필요는 없다. 그들이 반드시 지키려 하는 곳을 위협해 그들을 움직이게 하라.",
+          "segmentId": "06-04"
+        },
+        {
+          "title": "我專而敵分",
+          "body": "주공 방향을 은폐하여 적으로 하여금 여러 곳에 나누어 대비하게 만든 뒤, 한곳에 병력을 집중해 국지적 우세를 만들라.",
+          "segmentId": "06-05"
+        },
+        {
+          "title": "形兵之極，至於無形",
+          "body": "배치 의도를 고정된 패턴으로 드러내지 말아야 정보 우위를 유지하고, 적에게 재역습의 기회를 주지 않는다.",
+          "segmentId": "06-07"
+        },
+        {
+          "title": "兵形象水",
+          "body": "전법은 지형과 적의 상태에 따라 유동적으로 바뀌어야 한다. 과거의 성공 형태를 기계적으로 반복하면 효력을 잃는다.",
+          "segmentId": "06-08"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 7,
+      "chapterTitle": "군쟁",
+      "fullTitle": "군쟁 제7편",
+      "group": "이익 쟁탈",
+      "summary": "본 편은 군대가 집결하여 유리한 위치를 차지하려 할 때의 어려움을 다룬다. 우회를 직행으로 보이게 하고 불리함을 유리로 바꾸는 계책을 통해 뒤에 출발한 자가 먼저 도착하게 할 수 있다. 속도와 보급의 균형, 병력의 분합(分合), 사기와 체력 관리, 그리고 함정·유인·포위 상황에서의 절제된 대응을 강조한다. 또한 ‘풍·림·화·산’의 이동 리듬과 금·고·정기(旌旗)를 통한 집단적 지휘·신호의 중요성을 설파한다.",
+      "tags": [
+        "군쟁",
+        "우회·직진",
+        "풍림화산",
+        "사기",
+        "보급"
+      ],
+      "seoTitle": "군쟁(손자병법 제7편): 속도·지형·보급의 법칙",
+      "seoDescription": "행군과 유인, 우회와 직진의 계산, 보급과 사기 관리, 풍림화산의 행군 리듬을 다룬 병법론.",
+      "segments": [
+        {
+          "id": "07-01",
+          "text": "손자 曰: 병법을 쓸 때 장수는 군주에게서 명을 받고 군을 합쳐 무리를 모으며, 맞닦뜨려 진을 치고 쉬는데, 그 가운데 군쟁만큼 어려운 것이 없다. 군쟁이 어려운 까닭은 우회가 직행으로 보이고 재난이 이익으로 보이기 때문이다. 그러므로 길을 우회하게 하고 이익으로 유인하면 뒤에 출발한 자가 먼저 도착한다. 이것이 우회와 직진의 계책을 아는 자이다."
+        },
+        {
+          "id": "07-02",
+          "text": "그러므로 유리한 지점을 다투는 일에는 이익과 위험이 함께 따른다. 전군을 이끌고 이익을 다투면 제때 도착하지 못하고, 병력을 떼어 보내면 군수물자를 잃게 된다. 그러므로 갑옷을 말아 메고 낮과 밤을 쉬지 않으며 평소의 두 배 속도로 강행군한다. 백 리 밖의 이익을 다투면 삼군의 장수가 사로잡힐 수 있다. 강한 자는 앞서고 지친 자는 뒤처지므로 열 명 중 한 명만 도착한다. 오십 리 밖의 이익을 다투면 선봉의 장수를 잃고 절반만 도착한다. 삼십 리 밖의 이익을 다투면 삼분의 이가 도착한다. 그러므로 군대는 군수물자가 없으면 망하고, 식량이 없으면 망하며, 비축 물자가 없으면 망한다. 제후들의 계책을 알지 못하면 미리 동맹을 맺을 수 없고, 산림·험로·늪지의 지형을 알지 못하면 행군할 수 없으며, 현지 길잡이를 쓰지 않으면 지형의 이점을 얻을 수 없다."
+        },
+        {
+          "id": "07-03",
+          "text": "그러므로 병은 기만으로 세워지고 이익으로 움직이며 분합이 변화를 만든다. 그 속도는 바람 같고 그 느긋함은 숲 같으며 침탈은 불 같고 고정함은 산 같고 알기 어려움은 그늘 같으며 움직임은 우레와 같다. 마을을 약탈해 병력을 분산시키고, 지역을 넓혀 이익을 나누며, 권세를 걸어 움직인다. 우회와 직진의 계책을 먼저 아는 자가 이긴다. 이것이 군쟁의 법이다."
+        },
+        {
+          "id": "07-04",
+          "text": "『군정』에 이르기를, \"말이 서로 들리지 않으므로 금과 북을 만들고, 눈이 서로 보이지 않으므로 정기(旌旗)를 세운다\"고 하였다. 금·북·정기는 백성의 귀와 눈이 된다. 백성의 주의가 한곳으로 모이면 용감한 자라도 홀로 나아갈 수 없고, 겁많은 자라도 홀로 물러날 수 없다. 이것이 대중을 쓰는 법이다. 그러므로 야전에는 금과 북을 많이 쓰고, 주간에는 정기를 많이 쓰는데, 이는 사람의 귀와 눈을 변하게 하기 때문이다."
+        },
+        {
+          "id": "07-05",
+          "text": "삼군의 기세는 빼앗을 수 있고 장수의 마음은 빼앗을 수 있다. 아침에는 기운이 예리하고 한낮에는 기운이 둔하며 저녁에는 기운이 돌아온다. 그러므로 병법을 잘 쓰는 자는 그 예리함을 피하고 둔하고 돌아오는 때를 쳐서 기를 다스린다. 다스림으로 어지러움을 기다리고, 고요함으로 소란을 기다리는 것이 마음을 다스리는 것이다. 가까운 것으로 먼 것을 기다리고, 편한 것으로 피곤한 것을 기다리며, 배부른 것으로 배고픈 것을 기다리는 것이 힘을 다스리는 것이다. 정정당당한 깃발을 맞아 들이밀지 말고 당당한 진형을 쳐들어 공격하지 말라. 이것이 변화를 다스리는 법이다."
+        },
+        {
+          "id": "07-06",
+          "text": "그러므로 용병의 원칙은 다음과 같다. 높은 곳을 점한 적에게 맞서 올라가지 말고, 언덕을 등진 적을 정면으로 맞지 말며, 거짓 퇴각을 추격하지 말라. 사기가 왕성한 정예 부대를 공격하지 말고, 미끼로 내놓은 부대를 덥석 물지 말며, 귀환하는 군대의 길을 막지 말라. 적군을 포위할 때에는 반드시 퇴로 하나를 남기고, 궁지에 몰린 적을 지나치게 몰아붙이지 말라. 이것이 용병의 원칙이다."
+        }
+      ],
+      "points": [
+        {
+          "title": "우회를 직행으로, 불리함을 이익으로",
+          "body": "간접적인 노선을 통해 상대의 판단을 흔들고 시간을 벌어 뒤출발자가 먼저 도착하게 만드는 전략적 전환의 중요성.",
+          "segmentId": "07-01"
+        },
+        {
+          "title": "군쟁은 이익이자 위험",
+          "body": "기회를 좇는 것은 속도를 요구하나 편성의 길이를 늘리고 보급 손실을 초래할 수 있다. 이익과 위험은 동전의 양면이다.",
+          "segmentId": "07-02"
+        },
+        {
+          "title": "풍·림·화·산의 행군 리듬",
+          "body": "빠름(風), 느긋함(林), 약탈(火), 정지(山)로 대표되는 여러 행동 양식을 상황과 목표에 맞춰 전환하는 것이 핵심이다.",
+          "segmentId": "07-03"
+        },
+        {
+          "title": "공동의 귀와 눈으로 만든 통제",
+          "body": "금·북·정기 같은 신호 수단은 개인의 과감함이나 소극성을 조직적 행위로 묶어놓아 집단을 통제하는 기능을 한다.",
+          "segmentId": "07-04"
+        },
+        {
+          "title": "기(氣), 심(心), 힘(力), 변(變)의 관리",
+          "body": "적의 예리한 기세를 피하고, 혼란을 기다리며, 체력·식량의 유불리를 이용해 싸움을 선택하는 리듬 관리의 원칙.",
+          "segmentId": "07-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 8,
+      "chapterTitle": "구변",
+      "fullTitle": "구변 제8",
+      "group": "권변",
+      "summary": "이 장은 원칙이 상황과 분리되어 기계적으로 적용되어서는 안 됨을 강조한다. 어떤 길은 가지 않고, 어떤 군대는 치지 않으며, 어떤 성은 공략하지 않고, 어떤 땅은 다투지 않으며, 어떤 군주의 명령은 받지 않는다는 식의 판단은 모두 정형화된 규칙을 상황에 맞게 바꾸지 못한 결과다. 성숙한 판단은 이익 속에서 위험을 보고, 위험 속에서 해결책을 찾는다. 끝으로 장수에게 흔히 생기는 다섯 가지 위험한 성향을 들어 설명하는데, 용기·생명애·성급함·청렴·애민이 지나치면 모두 약점이 되어 적의 도구가 될 수 있음을 경고한다.",
+      "tags": [
+        "구변",
+        "이익과해악",
+        "비상준비",
+        "오위험",
+        "권변"
+      ],
+      "seoTitle": "손자병법 구변 — 상황에 따른 판단과 장수의 다섯 위험",
+      "seoDescription": "원칙을 상황에 맞게 바꾸는 법을 설파한다. 길과 지형, 명령을 선별하고 장수의 다섯 가지 과잉 성향을 경계하라.",
+      "segments": [
+        {
+          "id": "08-01",
+          "text": "손자께서 이르시되: 무릇 병력을 운용하는 법은 장수가 군주의 명을 받아 군을 모으고 병력을 집결시키는 것이다. 무너진 땅(圮地)에는 머물 곳이 없고, 길이 교차하는 곳(衢地)에서는 결속해야 하며, 단절된 곳(絕地)에는 머무르지 말고, 포위된 땅(圍地)에서는 계책을 쓰며, 죽음의 땅(死地)에서는 싸워야 한다. 어떤 길은 통하지 않으며, 어떤 군대는 공격하지 않으며, 어떤 성은 공략하지 않으며, 어떤 땅은 다투지 않으며, 어떤 군주의 명은 받지 않는 법이다. 그러므로 구변의 이익을 통달한 장수는 병법을 아는 자이다. 구변의 이익을 모르는 장수는 비록 지형을 안다 해도 그 이익을 얻지 못하고, 군을 다스리는 이가 구변의 기술을 모르면 비록 지리의 이익을 알아도 사람을 제대로 쓰지 못한다."
+        },
+        {
+          "id": "08-02",
+          "text": "그러므로 현명한 이의 생각은 반드시 이익과 해악을 함께 고려한다. 이익을 함께 고려하면 신뢰할 만한 것을 구하게 되고, 해악을 함께 고려하면 해결할 수 있는 난점을 발견하게 된다. 그래서 제후를 굴복시키려 할 때에는 해악을, 제후를 부리려 할 때에는 노역(業)을, 제후를 따르게 하려 할 때에는 이익을 사용한다."
+        },
+        {
+          "id": "08-03",
+          "text": "그러므로 병법은 적이 오지 않을 것을 믿지 말고 우리가 준비한 것으로 그들을 맞을 것을 믿어야 하며, 적이 공격하지 않을 것을 의지하지 말고 우리가 공격받지 않을 무언가를 갖추었음을 믿어야 한다."
+        },
+        {
+          "id": "08-04",
+          "text": "그러므로 장수에게는 다섯 가지 위험이 있다. 반드시 죽으려 하는 자는 죽일 수 있고, 반드시 살려 두려는 자는 포로가 될 수 있으며, 분을 잘 내고 급한 자는 업신여김을 받을 수 있고, 청렴만을 고집하는 자는 모욕당할 수 있으며, 백성을 지나치게 사랑하는 자는 오히려 백성을 번거롭게 한다. 이 다섯 가지는 장수의 허물이며 병을 쓰는 데 있어 재앙이다. 군대를 뒤엎고 장수를 죽이는 것은 반드시 이 다섯 가지 위험을 이용하므로, 이를 살피지 않을 수 없다."
+        }
+      ],
+      "points": [
+        {
+          "title": "有所不為",
+          "body": "길·적군·성·지형·명령은 존재한다고 해서 반드시 행동해야 하는 것이 아니다. 전체 목적과 상황을 보고 배제할 것을 결정해야 한다.",
+          "segmentId": "08-01"
+        },
+        {
+          "title": "通於九變",
+          "body": "지형을 아는 것만으로는 충분하지 않다. 언제 통상적 방식을 버리고 변해야 할지를 아는 것이 중요하다.",
+          "segmentId": "08-01"
+        },
+        {
+          "title": "慮必雜於利害",
+          "body": "이익을 따질 때 해악을 함께 고려하고, 위험을 분석할 때 해결 가능한 조건을 함께 찾아야 편향된 판단을 피할 수 있다.",
+          "segmentId": "08-02"
+        },
+        {
+          "title": "無恃其不來",
+          "body": "안전은 상대가 행동하지 않을 것을 기대해서는 안 된다. 상대가 와도 대응할 수 있는 준비에 의지해야 한다.",
+          "segmentId": "08-03"
+        },
+        {
+          "title": "將有五危",
+          "body": "장수의 미덕도 극단에 이르면 약점이 된다. 자신의 성향을 인식하고 조절하는 것이 전략적 위험 관리이다.",
+          "segmentId": "08-04"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 9,
+      "chapterTitle": "행군",
+      "fullTitle": "행군 제9장",
+      "group": "적과의 대치",
+      "summary": "본 편은 군대를 배치할 때 지형별 이점과 기피처를 설명하고, 자연·인간의 징후로 적의 태세를 읽어내는 법을 전한다. 산·수·습지·평야 네 가지 배치의 이익을 밝히고, 나무·짐승·먼지·언사 등 간접 징후를 교차해 해석할 것을 강조한다. 끝으로 병사의 귀속과 상벌의 일관성이 신뢰와 실효성을 만든다고 말한다.",
+      "tags": [
+        "행군",
+        "지형",
+        "적과의 대치",
+        "규율",
+        "신뢰"
+      ],
+      "seoTitle": "행군 제9장: 지형과 징후로 전황을 읽다",
+      "seoDescription": "지형·자연·인적 징후로 적의 태세를 판단하고, 규율과 명령 일관성으로 군심을 다루는 방법.",
+      "segments": [
+        {
+          "id": "09-01",
+          "text": "손자曰: 군을 배치하여 적과 마주할 때, 산으로 막히고 골짜기에 의지하면 생활지가 내려다보이는 높은 곳에 자리하라. 전투는 오르기 어렵게 하라. 이것이 산지 배치이다. 물이 끊겨 있으면 물을 멀리 두어야 하니, 적이 물을 건너와도 물속으로 맞아들이지 말고 적이 반쯤 건넜을 때 치면 이롭다. 싸우려 하면 물가에 붙어 적을 맞지 말고 생활지가 높은 곳을 택해 흐르는 물을 마주하지 마라. 이것이 수상(물가) 배치이다. 습지(斥澤)는 신속히 떠나 머무르지 말아야 한다. 만약 습지 한가운데서 군대가 맞붙으면 반드시 수초에 의지하고 등은 숲과 나무를 향하게 하라. 이것이 습지 배치이다. 평지는 운용하기 쉽고, 오른쪽 등뒤가 높으면 앞이 죽음이고 뒤가 생이 된다. 이것이 평지 배치이다. 이 네 가지 병진의 이익으로 황제가 네 제를 이긴 것이다."
+        },
+        {
+          "id": "09-02",
+          "text": "일반적으로 군대는 높은 것을 좋아하고 낮은 것을 싫어하며, 양지를 귀하게 여기고 음지를 천하게 여기며, 생명을 보존하고 땅이 단단한 곳에 머물러야 한다. 군대에 온갖 병폐가 없으면 그것을 반드시 이긴다. 구릉이나 제방에서는 반드시 양지에 자리하고 오른쪽을 등지게 하라. 이것이 병력의 유리함이자 지세의 도움이다. 비가 많이 오고 물거품이 일어나면 건너려 하는 자는 물이 안정될 때까지 기다려라."
+        },
+        {
+          "id": "09-03",
+          "text": "땅에 끊긴 골짜기나, 천정(안으로 꺼진 구멍)·함정·그물 모양의 함몰·틈 같은 위험한 지형이 있으면 즉시 떠나 가까이 가지 말라. 우리가 거리두면 적이 가까이하고, 우리가 맞아가면 적이 물러간다. 군대 옆에 험한 장애물이나 웅덩이, 갈대와 부들, 숲과 덤불이 있으면 반드시 조심하여 덮개와 밧줄로 치밀히 점검하라. 이런 장소가 매복과 간계가 숨어 있는 곳이다."
+        },
+        {
+          "id": "09-04",
+          "text": "적이 가까이 있으면서도 고요하면 그 지형을 믿고 있는 것이다. 멀리서 도전하면 나를 앞으로 나오게 하려는 것이다. 그들이 머무는 곳이 편하면 그곳은 이로운 곳이다. 많은 나무가 흔들리면 그들이 오는 것이다. 풀이 무성해 장애가 많으면 망설이는 것이다. 새가 날아오르면 매복이 있다. 짐승이 놀라면 포위하려 함이다. 먼지가 높고 날카로우면 전차가 오는 것이다. 먼지가 낮고 넓게 퍼지면 보병이 오는 것이다. 길이 흩어져 길게 뻗어 있으면 나무 꺼내거나 채집하는 것이다. 적게 오가면 주둔하는 병영이다. 말이 낮고 겸손하게 하면서 준비를 더하면 전진하려는 것이다. 말이 강하고 재촉하여 나아가면 후퇴하려는 것이다. 가벼운 수레가 먼저 나가고 그 곁에 머무르면 진형이다. 약속도 없이 화의를 청하면 꾀가 있다. 달려가며 진을 치면 기약이 있다. 반쯤 나아갔다 반쯤 물러나는 것은 유인하는 것이다. 지팡이를 짚고 서 있는 자는 배고프다. 물을 길어 먼저 마시는 자는 목마르다. 이익을 보고도 나아가지 않는 자는 피곤한 것이다. 새가 모이면 텅 비어 있는 것이다. 밤에 소리치는 자는 두려움이 있다. 군중이 어지러우면 장수가 존중받지 못한다. 깃발과 기가 흔들리면 혼란이다. 관리들이 성내면 피곤함이다. 군대가 곡식과 말과 고기 등 식량을 갖고 있으나 군이 되돌아가지 않고 초소로 돌아가지 않으면 그들은 궁한 도적이다(필사적인 적이다). 끈끈이 붙어 조근조근 천천히 말하는 자는 병력을 잃은 것이다. 잦은 상은 곤란함의 표이다. 잦은 벌은 곤궁함의 표이다. 먼저 포악하게 굴고 뒤에 병력을 두려워하면 이는 가장 미숙한 징후다. 와서 항복하며 사죄하는 자는 쉬고 싶어하는 것이다. 병사들이 분노하여 서로 맞이하되 오래되어 합쳐지지 않고 또한 서로 떠나지 않는다면 반드시 주의 깊게 살펴야 한다."
+        },
+        {
+          "id": "09-05",
+          "text": "그러므로 군대는 무조건 수가 많은 것이 귀한 것이 아니다. 다만 무모하게 돌진하지 않고 힘을 합치며 적을 판단하고 사람을 탈취할 수 있으면 족하다. 생각 없이 쉽게 적을 대하는 자는 반드시 남에게 잡히게 된다."
+        },
+        {
+          "id": "09-06",
+          "text": "병사가 아직 친밀하게 따르지 않을 때에 벌을 주면 복종하지 않으니 복종하지 않으면 쓰기 어렵다. 병사가 이미 친밀히 따르는데 벌이 집행되지 않으면 역시 쓸 수 없다. 그러므로 문(文)으로 명령하고 무(武)로 정비하라. 이를 반드시 얻는 것이라 한다. 평소의 행실로 명령을 보여 백성을 가르치면 백성이 복종하고, 평소에 행하지 않으면서 가르치면 백성이 따르지 않는다. 평소에 행하는 명령은 군중과 서로 어울리는 것이다."
+        }
+      ],
+      "points": [
+        {
+          "title": "처군·상적",
+          "body": "행군은 안전한 자리 선정과 적정 정보 판단을 동시에 요구한다. 지형 처리와 적의 징후 해석은 분리해서는 안 된다.",
+          "segmentId": "09-01"
+        },
+        {
+          "title": "높음을 선호하고 낮음을 꺼림",
+          "body": "주둔지는 시야·건조·건강·지원 여건을 중시해 선택해야 한다. 비전투성 손실을 먼저 줄이는 것이 중요하다.",
+          "segmentId": "09-02"
+        },
+        {
+          "title": "흔적과 징후로 적을 읽다",
+          "body": "자연과 인간이 남긴 신호는 다의적일 수 있으니 거리·자세·먼지·언사 등을 교차 검증해 판단해야 한다.",
+          "segmentId": "09-04"
+        },
+        {
+          "title": "병력은 수보다 효율",
+          "body": "병력 수가 전부가 아니다. 무모한 진격을 삼가고 힘을 결집하며 적을 꿰뚫어 사람을 취하는 능력이 더 중요하다.",
+          "segmentId": "09-05"
+        },
+        {
+          "title": "문(文)으로 이끌고 무(武)로 정비하라",
+          "body": "병사의 귀속은 배려와 규율의 조화에서 온다. 징계는 시기와 집행의 일관성이 있어야 조직이 쓸모있게 된다.",
+          "segmentId": "09-06"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 10,
+      "chapterTitle": "地形",
+      "fullTitle": "地形第十",
+      "group": "지리",
+      "summary": "이 장은 통·괘·지·애·험·원 여섯 지형을 나열하고, 도주·해이·함몰·붕괴·혼란·패주의 여섯 패배 유형을 든다. 전자는 외부 조건, 후자는 지휘·조직의 실수에서 비롯되며 천재가 아니다. 장수는 적·아군·지형을 독립적으로 판단해 전투 가능성을 결정하고, 군민 보호와 국익에 부합하는지를 기준으로 삼아야 한다. 병사를 사랑하는 것은 명령과 통솔이 병행될 때 유효하다; 통제 없이 방만한 사랑은 사사로움으로 흐른다.",
+      "tags": [
+        "지형",
+        "육패",
+        "장군의 도",
+        "지형 인식",
+        "조직"
+      ],
+      "seoTitle": "지형(第十): 여섯 지형과 여섯 패배",
+      "seoDescription": "제10장 지형은 여섯 종류의 지형과 여섯 가지 패배 원인을 설명하며 장수의 판단과 통솔의 중요성을 강조한다.",
+      "segments": [
+        {
+          "id": "10-01",
+          "text": "손자가 말한다. 지형에는 통(通), 괘(掛), 지(支), 애(隘), 험(險), 원(遠)의 여섯 종류가 있다. '내가 갈 수 있고 적도 올 수 있는' 것을 통이라 한다. 통형은 먼저 높은 곳을 점하고 보급로에 이로우면 전투에 유리하다. '갈 수는 있으나 돌아오기가 어려운' 것을 괘라 한다. 괘형은 적이 대비하지 않았을 때 나가서 이길 수 있으나, 적이 대비하면 나가서 이기지 못하고 돌아오기도 어려워 불리하다. '내가 나가도 불리하고 적이 나와도 불리한' 것을 지라 한다. 지형에서는 적이 나에게 유리해도 내가 나오지 않고 끌어내어 적이 반만 나오게 한 뒤 공격하면 유리하다. 애형은 내가 먼저 점거하면 반드시 채워 적을 기다려야 한다. 만약 적이 먼저 점거했을 때에는 가득 차 있으면 따르지 말고, 가득 차 있지 않으면 따르라. 험형은 내가 먼저 점거하면 반드시 높은 곳을 점해 적을 기다려야 한다. 만약 적이 먼저 점거했다면 끌고 물러나 따르지 말라. 원형은 세력이 균등하여 도전을 걸기 어렵고 싸워도 불리하다. 이 여섯 가지는 지형의 도이니 장수가 책임을 다해 살피지 않을 수 없다."
+        },
+        {
+          "id": "10-02",
+          "text": "그러므로 군대에는 도주(走), 해이(弛), 함몰(陷), 붕괴(崩), 혼란(亂), 패주(北)라는 여섯 가지가 있다. 이 여섯 가지는 하늘의 재앙이 아니라 장수의 잘못이다. 세력이 균등한데도 소수의 공격에 다수가 도망하면 이를 '走'라 한다. 병사가 강하고 관리(吏)가 약하면 '弛'라 하고, 관리가 강하고 병사가 약하면 '陷'이라 한다. 고위 관리가 분노하여 복종하지 않고 적을 만나 스스로 싸우며 장수가 그 능력을 알지 못하면 '崩'이라 한다. 장수가 약해 엄하지 못하고 교도가 분명치 않아 관리와 병의 규율이 일정치 않으며 진을 흩어 놓으면 '亂'이라 한다. 장수가 적을 예측하지 못해 소수로 다수를 상대하거나 약한 병력으로 강한 적을 공격하고 병사를 적재적소에 선발하지 못하면 '北'이라 한다. 이 여섯 가지는 패배의 길이니 장수의 중대한 임무로서 살피지 않을 수 없다."
+        },
+        {
+          "id": "10-03",
+          "text": "지형은 병의 도움이 된다. 적을 헤아려 승리를 계획하고 험난함과 거리 등을 계산하는 것은 훌륭한 장수의 길이다. 이것을 알고 싸우는 자는 반드시 이기고, 모르는 자는 반드시 패한다. 그러므로 전법이 이기면 군주가 '전투를 하지 말라' 해도 싸워도 괜찮하고, 전법이 이기지 못하면 군주가 '반드시 싸워라' 해도 싸울 수 없다. 그러므로 나아갈 때는 이름을 구하지 말고, 물러날 때는 죄를 피하려 하지 말라. 오직 백성을 보호하고 군주의 이익과 부합하는 것이 나라의 보물이다."
+        },
+        {
+          "id": "10-04",
+          "text": "병사들을 갓난아이처럼 여기면 그들과 함께 깊은 내를 건널 수 있고, 사랑하는 자식처럼 여기사 그들과 함께 죽을 수 있다. 그러나 두텁게 사랑하되 부릴 줄 모르고, 사랑하되 명령하지 못하며 어지러워 다스리지 못하면, 교만한 자식과 같아 쓸 수 없다."
+        },
+        {
+          "id": "10-05",
+          "text": "내 병력이 공격할 수 있음을 알면서 적이 공격당하지 않음을 모르면 승리의 절반만 안 것이고, 적이 공격당할 수 있음을 알면서 내 병력이 공격할 수 없음을 모르면 역시 승리의 절반이다. 적이 공격당할 수 있고 내 병력이 공격할 수 있음을 알면서도 지형 때문에 싸울 수 없음을 모르면 승리의 절반이다. 그러므로 병을 아는 자는 행동해도 혼란에 빠지지 않고 결단해도 막히지 않는다. 고로 말하길, 적을 알고 나를 알면 승리는 위태롭지 않고, 천시와 지리를 알면 승리는 온전할 것이다."
+        }
+      ],
+      "points": [
+        {
+          "title": "여섯 지형의 도",
+          "body": "같은 지형이라도 적·아군의 선후(先後), 보급로, 귀환의 난이도, 병력의 적합성에 따라 유·불리가 달라진다. 상황과 위치를 따로 판단해야 한다.",
+          "segmentId": "10-01"
+        },
+        {
+          "title": "여섯 가지 패배는 장수의 탓",
+          "body": "도주·해이·함몰·붕괴·혼란·패주는 병력 오용, 권한 불균형, 훈육 부재 등 지휘와 조직의 실패에서 온다. 천재가 아니다.",
+          "segmentId": "10-02"
+        },
+        {
+          "title": "진퇴의 기준은 명예가 아니다",
+          "body": "진격할 때 명성을 좇지 말고, 퇴각할 때 책임을 피하려 하지 말라. 백성을 보호하고 군주의 이익에 합치되는지를 기준으로 판단하라.",
+          "segmentId": "10-03"
+        },
+        {
+          "title": "사랑하되 다스릴 줄 알라",
+          "body": "병사를 두텁게 아끼는 것만으로는 통솔이 되지 않는다. 사랑과 함께 명확한 명령과 규율이 병행되어야 한다; 그렇지 않으면 조직은 무능해진다.",
+          "segmentId": "10-04"
+        },
+        {
+          "title": "지형과 시기까지 아는 것이 완전한 승리",
+          "body": "적과 아군의 상태만 아는 것으로는 부족하다. 지형(장소)과 천시(시기)를 함께 고려할 때 비로소 전승의 가능성이 온전해진다.",
+          "segmentId": "10-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 11,
+      "chapterTitle": "九地",
+      "fullTitle": "九地第十一",
+      "group": "군사 상황",
+      "summary": "본 장은 군대와 전장 관계에 따라 아홉 가지 지형(구지)을 구분하고, 각 처지에 맞춘 원칙과 지휘자의 역할을 설명한다. 깊이 침투하면 병사의 심리와 결속이 달라지므로 보급과 훈육, 정보통제로 이를 관리해야 한다. 핵심은 지형·퇴로·자원·심리가 어떻게 행동을 바꾸는지 이해하는 것이다.",
+      "tags": [
+        "구지",
+        "군사 상황",
+        "침투",
+        "협동",
+        "상황"
+      ],
+      "seoTitle": "손자병법 11장 구지(九地) 현대 한국어 번역",
+      "seoDescription": "손자병법 제11장 '구지'의 현대 한국어 번역. 아홉 지형별 전술·보급·심리 관리를 다룬다.",
+      "segments": [
+        {
+          "id": "11-01",
+          "text": "손자께서 말씀하시기를, 무릇 병법에는 아홉 종류의 땅이 있으니, 흩어진 땅(散地), 가벼운 땅(輕地), 쟁탈의 땅(爭地), 마주치는 땅(交地), 길이 통하는 땅(衢地), 무거운 땅(重地), 막힌 땅(圮地), 포위된 땅(圍地), 죽음의 땅(死地)이 있다. 제후들이 자기 땅에서 서로 싸우는 곳을 흩어진 땅이라 하고, 다른 사람의 땅에 들어가되 깊이 들어가지 않은 곳을 가벼운 땅이라 하며, 내가 차지하면 이익이고 그들도 차지하면 이익인 곳을 쟁탈의 땅이라 한다. 내가 갈 수 있고 상대도 올 수 있는 곳을 마주치는 땅이라 하고, 제후의 땅 가운데 길이 셋으로 갈라지고 먼저 도달하여 백성을 얻는 곳을 길이 통하는 땅이라 한다. 남의 땅 속으로 깊이 들어가고 뒤에 성읍이 많은 곳을 무거운 땅이라 하고, 산림·험로·늪지같이 행하기 어려운 길을 막힌 땅이라 하며, 들어가는 길은 좁고 돌아오는 길은 멀며 그들이 소수로 나와 우리 군을 공격할 수 있는 곳을 포위된 땅이라 하고, 신속히 싸우면 살아남고 신속하지 않으면 망하는 곳을 죽음의 땅이라 한다. 그러므로 흩어진 땅에서는 싸움이 없고, 가벼운 땅에서는 머무르지 못하며, 쟁탈의 땅에서는 공략할 것이 없고, 마주치는 땅에서는 끊어짐이 없고, 길이 통하는 땅에서는 합류하고 교통하며, 무거운 땅에서는 약탈하고, 막힌 땅에서는 진로를 개척하며, 포위된 땅에서는 꾀를 쓰고, 죽음의 땅에서는 싸우게 된다."
+        },
+        {
+          "id": "11-02",
+          "text": "옛날에 잘 싸운 자는 적의 앞뒤가 서로 닿지 못하게 하고, 다수와 소수가 서로 의지하지 못하게 하며, 귀천이 서로 구원하지 못하게 하고, 상하가 서로 결속하지 못하게 하여 군대가 흩어져 모이지 않게 만들었다. 이익에 부합하면 움직이고, 이익에 부합하지 않으면 멈춘다. 감히 묻노니, '적이 대오를 정비하고 장수가 앞장서 올 때 어떻게 맞이해야 하는가?' 답하길, '그들이 사랑하는 것을 먼저 빼앗으면 곧 따르리라.' 그러므로 병법에서는 무엇보다 속도를 중시하여, 상대가 미처 응하지 못하는 때를 타고, 뜻밖의 길로 가서 그들이 경계하지 않는 곳을 공격한다."
+        },
+        {
+          "id": "11-03",
+          "text": "원정의 도리는 깊게 들어가면 전념하게 되고, 주인은 제어하지 못한다. 비옥한 들판을 약탈하면 삼군이 먹을 것이 풍족해진다. 정성껏 기르고 피로하게 하지 말며, 기운을 합쳐 힘을 비축하고 병력을 운용하여 계책을 세워 상대를 예측하지 못하게 한다. 병력을 되돌릴 곳이 없게 하면 죽음이 있어도 북으로 물러서지 않는다. 죽어서 살아나지 못할지라도 군사들은 온 힘을 다한다. 병사가 극도로 궁지에 몰리면 두려워하지 않고, 갈 곳이 없으면 굳세며, 깊이 침투하면 구속되고, 어쩔 수 없게 되면 싸운다. 그러므로 그 병사는 훈련하지 않아도 경계하고, 구하지 않아도 얻고, 약속하지 않아도 친밀하며, 명령하지 않아도 신뢰한다. 의심을 제거하고 마지막까지 물러갈 곳이 없게 하면 죽음 앞에서도 흔들리지 않는다. 우리 병사에게 남은 재물이 없더라도 물건을 미워해서가 아니요, 남은 목숨이 없더라도 삶을 미워해서가 아니다. 출진을 명한 날에 앉아 있는 자는 눈물이 옷깃을 적시고, 누워 있던 자는 눈물을 흘린다. 되돌아갈 곳이 없는 자는 곧 죽음을 두려워하지 않는 충의가 된다."
+        },
+        {
+          "id": "11-04",
+          "text": "그러므로 잘 싸우는 자는 뱀을 비유로 삼는다. 그 뱀은 상산(常山)의 뱀인데, 머리를 치면 꼬리가 달려오고 꼬리를 치면 머리가 달려오며, 가운데를 치면 머리와 꼬리가 동시에 달려온다. 감히 묻노니, '병사를 뱀처럼 움직이게 할 수 있는가?' 답하길 '할 수 있다. 오나라 사람과 월나라 사람이 서로 미워하더라도 같은 배에 탈 때는 바람을 만나면 서로 돕는 것이 좌우의 손과 같다.' 그러므로 말에 수레바퀴를 묻어 억지로 의지할 수는 없고, 용맹을 하나로 통일시키는 것이 다스림의 도이며, 강함과 부드러움을 모두 갖추는 것은 지형의 이치이다. 그러므로 잘 쓰는 자는 손을 잡아 한 사람처럼 움직이게 하되, 그것은 불가피한 것이다."
+        },
+        {
+          "id": "11-05",
+          "text": "장군의 일은 고요함으로 숨기고 정정당당함으로 다스리는 것이다. 장군은 병사들의 귀와 눈을 어리석게 하여 알지 못하게 하고, 일을 바꾸고 계책을 바꾸어 남으로 하여금 알아채지 못하게 하며, 주둔지를 바꾸고 길을 둘러 돌게 하여 상대가 미리 생각하지 못하게 한다. 장수가 그들과 약속을 정해 놓고서 사다리를 치워 놓는 것 같고, 장수가 그들을 제후의 땅 깊숙이 밀어 넣어 때맞춰 계책을 펼치며 배를 불사르고 가마솥을 깨뜨리는 것은 양 떼를 몰듯 하는 것이다. 몰아가서 가게 하고, 몰아와서 오게 하여 누구도 행선지를 알지 못하게 한다. 삼군의 병력을 모아 그들을 벼랑에 던지는 것이 장군의 임무다. 아홉 땅의 변환과 수축·이완의 이익, 인간 심리의 이치들은 주의하지 않을 수 없다."
+        },
+        {
+          "id": "11-06",
+          "text": "원정의 도리는 깊으면 전념하고 얕으면 분산된다. 본국을 떠나 국경을 넘은 것은 멀리 떨어진 땅이고, 사방으로 통하는 곳은 길이 통하는 땅이며, 깊이 들어간 곳은 무거운 땅이고, 얕게 들어간 곳은 가벼운 땅이고, 뒤가 견고하고 앞이 좁은 곳은 포위된 땅이며, 갈 곳이 없는 곳은 죽음의 땅이다. 그러므로 흩어진 땅에서는 내 장수들이 뜻을 하나로 묶을 것이고, 가벼운 땅에서는 그들을 속박해 소속시키며, 쟁탈의 땅에서는 뒤에서 급히 달려들 것이고, 마주치는 땅에서는 수비를 삼가서 할 것이며, 길이 통하는 땅에서는 결속을 굳게 하고, 무거운 땅에서는 식량을 이어줄 것이며, 막힌 땅에서는 길을 개척해 전진시키고, 포위된 땅에서는 허점을 막고, 죽음의 땅에서는 살 길이 없음을 보여 주어 싸우게 한다. 그러므로 병의 상황은 이러하니: 포위되면 방어하고, 어쩔 수 없으면 싸우며, 이미 지나쳤으면 따라간다."
+        },
+        {
+          "id": "11-07",
+          "text": "그러므로 제후의 계책을 알지 못하면 미리 교섭할 수 없고, 산림·험로·늪지의 지형을 알지 못하면 행군할 수 없으며, 향토 안내인을 쓰지 않으면 지형의 이익을 얻지 못한다. 이 네다섯 가지 가운데 하나를 모르면 그것은 패왕의 군대가 아니다. 패왕의 군대는 큰 나라를 공격할 때 그 병력이 모이지 못하게 하고, 위압을 적에게 가하면 그(적)의 결속이 이루어지지 못한다. 그러므로 천하의 결속을 다투지 말고, 천하의 세력을 키우지 말라. 자신만을 믿고 적에게 위세를 떨치면 그 성을 빼앗고 그 나라를 무너뜨릴 수 있다. 법 없는 상을 베풀고 정사 없는 명령을 내리며, 삼군을 다루되 한 사람을 다루듯 하라. 일을 들어 감행하고 말로 알리지 말며, 이익으로 유인하고 해를 알리지 말라. 사람을 멸망할 땅에 던져야 비로소 살게 하고, 죽음의 땅에 빠뜨려야 비로소 살아난다. 군중이 해에 빠졌을 때에 비로소 승패를 결정할 수 있다. 그러므로 병사의 일은 적의 뜻에 겉으로 순응하는 체하면서 적을 한 방향으로 모이게 하고, 천 리 밖에서 장수를 베어버리게 하는 것에 있어 교묘함이 일을 이룬다."
+        },
+        {
+          "id": "11-08",
+          "text": "그러므로 정권을 일으킬 날에는 관문을 정돈하고 지휘의 증표를 꺾어 보내는 자가 통하지 못하게 하며, 사당과 정전에서 엄하게 다스려 그 일을 처단한다. 적이 문을 열고 닫을 때는 반드시 급히 들어가서 그들이 사랑하는 것을 먼저 빼앗고, 약속을 적게 주며, 적의 뒤를 밟아 흔적을 따라 결전의 시점을 결정한다. 그러므로 처음에는 처녀처럼 조심하고 적이 문을 열면 들어가고, 뒤에는 도망치는 토끼처럼 재빠르게 하여 적이 대응할 틈을 주지 않는다."
+        }
+      ],
+      "points": [
+        {
+          "title": "구지의 본질",
+          "body": "아홉 땅은 단순한 지형 구분이 아니라 자국과의 거리, 교통, 이익과 퇴로, 적과의 관계에 따라 처지가 달라지는 상황의 명칭이다.",
+          "segmentId": "11-01"
+        },
+        {
+          "title": "속도의 전략적 중요성",
+          "body": "속도는 상대의 미처 준비하지 못한 상황을 타격하는 데 쓰인다. 이는 보급과 조직을 버리고 무조건 달리는 것이 아니다.",
+          "segmentId": "11-02"
+        },
+        {
+          "title": "심투가 가져오는 결속 변화",
+          "body": "깊이 침투하면 퇴로와 자원이 바뀌어 병사들의 심리가 달라진다. 지휘자는 이 변화가 조직 결속에 미치는 영향을 이해하고 관리해야 한다.",
+          "segmentId": "11-03"
+        },
+        {
+          "title": "‘뱀’의 비유",
+          "body": "머리와 꼬리가 서로 돕는 현상은 자연발생이 아니라 통일된 지휘, 지형, 공동의 이해관계로 조직적 반응을 만들어낸 결과다.",
+          "segmentId": "11-04"
+        },
+        {
+          "title": "상황에 따른 규범과 유연성",
+          "body": "기본 규칙은 행동의 기준이지만 실제 전투에서는 적의 개폐(開闔)와 전장의 변화에 맞춰 신속히 대응해야 한다.",
+          "segmentId": "11-08"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 12,
+      "chapterTitle": "화공",
+      "fullTitle": "화공 제12편",
+      "group": "신중한 전투",
+      "summary": "이 편은 겉으로는 화공의 조건을 논하지만, 실질적 핵심은 도구·시기·대응의 상호 조화에 있다. 화공은 대상과 목적이 다르므로 사용 전에 물자와 기후 조건을 갖추어야 하고, 발동 뒤에는 적의 반응을 관찰해 계속할지 중단할지 결정해야 한다. 설령 전과를 얻더라도 그 성과를 정비·고정하지 못하면 헛된 소모가 된다. 끝에서는 신중한 전투를 정치적 윤리로 확장하여 군주는 분노로 군을 일으켜서는 안 되며, 감정은 회복될 수 있어도 나라의 멸망과 죽음은 되돌릴 수 없다고 경고한다.",
+      "tags": [
+        "화공",
+        "시기",
+        "성과",
+        "신중",
+        "감정"
+      ],
+      "seoTitle": "손자병법 12장 화공 — 화공의 조건과 신중함",
+      "seoDescription": "화공의 유형·발동 조건·대응을 통해 도구·시기·대응의 조화를 강조하고, 분노로 전쟁을 일으키지 말아야 함을 설파한다.",
+      "segments": [
+        {
+          "id": "12-01",
+          "text": "손자가 말하였다: 화공에는 다섯 가지가 있다. 첫째는 사람에게 불을 지르는 것, 둘째는 쌓아둔 것을 불태우는 것, 셋째는 수송 수단과 보급품을 태우는 것, 넷째는 창고를 불태우는 것, 다섯째는 대형(隊)을 불태우는 것이다. 화공을 행하려면 반드시 이유가 있어야 하고, 연기와 불을 쓰려면 평소부터 갖춰두어야 한다. 불을 피우는 때가 있고, 불을 일으키기 좋은 날이 있다. '때'란 곧 하늘이 건조한 것을 말하고, '날'이란 달이 기·벽·익·진(箕·壁·翼·軫)의 별자리에 있을 때이다. 이 네 숙(宿)이 있으면 바람이 일어나는 날이다."
+        },
+        {
+          "id": "12-02",
+          "text": "모든 화공은 다섯 가지 불의 변화에 따라 대응해야 한다. 불이 내부에서 발생하면 밖에서 먼저 대응하라. 불이 일어났으나 병력들이 고요하면 기다려 공격하지 마라. 불의 위력이 극대화되어 따를 수 있으면 따라가되, 따를 수 없으면 그만두라. 불이 외부에서 일어날 수 있으면 내부의 준비를 기다리지 말고 때에 맞춰 발화하라. 불이 바람 위쪽에서 발생하면 아래쪽에서 공격하지 말라. 낮에 바람이 오래 불면 밤에는 바람이 잦아든다. 모든 군대는 다섯 가지 불의 변화를 알고 기회를 살펴 지켜야 한다. 그러므로 불로 보조하는 공격은 명확하고, 물로 보조하는 공격은 강하다. 물은 끊을 수는 있어도 빼앗을 수는 없다."
+        },
+        {
+          "id": "12-03",
+          "text": "전투에서 승리하여 점령했으나 그 공적을 정리·수복하지 않으면 흉하다. 이를 '비류(費留)'라 부른다. 그러므로 현명한 군주는 이를 숙고하고, 유능한 장수는 이를 정비한다. 이익이 아니면 움직이지 말고, 얻을 것이 아니면 사용하지 말며, 위태롭지 않으면 싸우지 말라. 군주는 분노로 군을 일으켜서는 안 되고, 장수는 노여움으로 전투를 일으켜서는 안 된다. 이익에 합치되면 행동하고, 이익에 합치되지 않으면 멈추라. 분노는 다시 기쁨으로 돌아올 수 있고, 노여움은 다시 즐거움으로 회복될 수 있으나, 나라의 멸망은 되돌릴 수 없고, 죽은 자는 다시 살릴 수 없다. 그러므로 현명한 군주는 이를 조심하고, 유능한 장수는 이에 경계하라. 이것이 나라를 안온하게 하고 군대를 온전케 하는 도리이다."
+        }
+      ],
+      "points": [
+        {
+          "title": "행화에는 이유가 필요하다",
+          "body": "어떤 수단이라도 효과를 내려면 조건·물자·시기가 갖춰져야 한다. 수단만 있고 그에 상응하는 준비가 없으면 유효한 행동이 될 수 없다.",
+          "segmentId": "12-01"
+        },
+        {
+          "title": "변화에 따라 대응하라",
+          "body": "불이 일어난 뒤에는 기계적으로 공격할 것이 아니라 적의 혼란 정도와 화력의 유용성을 관찰해 따라갈지 멈출지 결정해야 한다.",
+          "segmentId": "12-02"
+        },
+        {
+          "title": "물은 끊을 수 있으나 빼앗을 수는 없다",
+          "body": "각 수단은 수행할 수 있는 기능과 한계가 있다. 차단·절단할 수 있는 능력과 직접 점유·탈취하는 능력을 혼동해선 안 된다.",
+          "segmentId": "12-02"
+        },
+        {
+          "title": "승리 후 성과를 정비하라",
+          "body": "성과를 얻은 뒤에도 이를 다지지 않으면 초기의 비용과 노력이 무의미해질 위험이 있다.",
+          "segmentId": "12-03"
+        },
+        {
+          "title": "분노로 군을 일으키지 말라",
+          "body": "중대한 불가역적 결정은 일시적 감정에 의해 좌우되어선 안 된다. 신중함은 생명과 나라의 위험을 관리하는 방식이다.",
+          "segmentId": "12-03"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 13,
+      "chapterTitle": "用間",
+      "fullTitle": "用間第十三",
+      "group": "선지",
+      "summary": "이 장은 전쟁의 막대한 비용을 들어 정보의 가치를 증명한다. 벼슬과 봉록을 아끼느라 정보를 들이지 않아 군민이 장기간 부담을 지게 하는 것은 불인하고 어리석다. 선지(先知)는 귀신·비유·짐작에서 얻을 수 없고 적의 정황을 아는 사람으로부터 얻어야 한다. 향간·내간·반간·사간·생간은 각기 역할이 있으며, 그중 반간은 적의 정보망을 식별하고 이용하는 핵심이다. 정보 업무는 지혜와 인의, 미묘한 솜씨와 엄격한 기밀성을 요구한다.",
+      "tags": [
+        "용간",
+        "선지",
+        "정보",
+        "반간",
+        "기밀"
+      ],
+      "seoTitle": "손자병법 제13장 用間 — 오간과 정보의 원리",
+      "seoDescription": "제13장 '용간'은 오간(향·내·반·사·생)을 통해 적情을 파악하고 기밀·윤리·지혜의 중요성을 설파한다.",
+      "segments": [
+        {
+          "id": "13-01",
+          "text": "손자께서 이르시되: 군대를 일으켜 10만을 동원하고 천 리를 출정하면, 백성의 부담과 국고의 부조가 하루에 천금이 들고, 내부외부가 소란해지며 길이 게을러져 일을 보지 못하는 자가 칠십만 호에 이른다. 수년간 서로 버티며 단 하루의 승리를 다투면서 관직과 봉록 백금을 아끼고 적의 정황을 알지 못하는 것은 지극한 불인(不仁)이다. 그런 자는 장수라 할 수 없고 군주의 보좌가 될 수 없으며 승리를 이끄는 자가 아니다. 그러므로 밝은 군주와 어진 장수는 움직여 남을 이기고, 여러 사람으로부터 공을 세우는 것이 곧 선지(先知)이다. 선지란 귀신에게서 얻을 수 없고 사물의 형상으로부터 유추할 수 없으며 수치로 검증할 수 없다. 반드시 사람으로부터, 적의 정황을 아는 자로부터 얻어야 한다."
+        },
+        {
+          "id": "13-02",
+          "text": "그러므로 간첩을 두는 데는 다섯 가지가 있다: 향간(鄉間), 내간(內間), 반간(反間), 사간(死間), 생간(生間). 다섯 간첩이 함께 일어나 그 방법을 아무도 모르게 하면 이를 '신기(神紀)'라 하며 군주의 보배다. 향간은 그 고을 사람을 통해 쓰는 자요, 내간은 관원(官人)을 통해 쓰는 자요, 반간은 적의 간첩을 이용하는 자요, 사간은 밖에서 속이는 일을 꾸며 우리 간첩이 그것을 알게 하여 적에게 전하게 하는 자요, 생간은 되돌려 보고하는 자다."
+        },
+        {
+          "id": "13-03",
+          "text": "그러므로 삼군의 일 가운데 간첩보다 더 친밀한 것은 없고, 간첩에게 주는 상보다 더 후한 것은 없으며, 간첩에 관한 일보다 더 기밀스러운 것은 없다. 성인의 지혜가 아니면 간첩을 쓸 수 없고, 인의가 아니면 간첩을 부릴 수 없으며, 미묘한 솜씨가 아니면 간첩의 실적을 얻을 수 없다. 오묘하도다! 오묘하도다! 어디든 간첩을 쓰지 않는 곳이 없다. 간첩 일이 발설되기 전에 먼저 들리면, 간첩과 그에게 알린 자는 모두 목숨을 잃는다."
+        },
+        {
+          "id": "13-04",
+          "text": "군대가 치려는 곳, 성을 공략하려는 곳, 사람을 죽이려는 경우에는 반드시 먼저 그곳을 지키는 장수와 좌우의 측근, 알현객(謁者), 문지기(門者), 시종(舍人)의 이름을 알아야 하며, 우리 간첩이 반드시 그것을 색출해 알게 해야 한다. 적이 보낸 간첩이 우리에게 오는 것을 반드시 찾아내 이익을 주고 인도하여 놓아두면, 그렇게 하여 반간을 얻어 쓸 수 있다. 이를 통해 알게 되므로 향간과 내간을 얻어 쓰게 되고, 이를 통해 알게 되므로 사간으로 속이는 일을 꾸며 적에게 알리게 할 수 있으며, 이를 통해 알게 되므로 생간을 기일에 맞추어 쓸 수 있다. 다섯 간첩에 관한 일은 군주가 반드시 알아야 하고, 그것을 알게 하는 것은 반드시 반간에 있으므로 반간을 두텁게 대우하지 않을 수 없다."
+        },
+        {
+          "id": "13-05",
+          "text": "옛날 은(殷)이 일어날 때 伊摯(이치)가 하(夏)에 있었고, 주(周)가 일어날 때 呂牙(여아)가 은(殷)에 있었다. 그러므로 밝은 군주와 어진 장수가 높은 지혜를 간첩으로 삼을 줄 알면 반드시 큰 공을 이룬다. 이것이 병법의 요체이며 삼군이 의지하여 움직이는 바다."
+        }
+      ],
+      "points": [
+        {
+          "title": "선지는 사람으로부터 얻는다",
+          "body": "신뢰할 수 있는 정보는 추적 가능한 사람과 접촉원으로부터 나와야 하며, 미신·상상·미검증 유추로 대체할 수 없다.",
+          "segmentId": "13-01"
+        },
+        {
+          "title": "오간이 함께 일어날 때 완성된다",
+          "body": "서로 다른 출처가 상호 보완되어 검증·영향·회신·반정보 기능을 완성할 때 완전한 정보망이 된다.",
+          "segmentId": "13-02"
+        },
+        {
+          "title": "정보는 결단에 가장 가깝다",
+          "body": "정보는 의사결정과 가장 밀접하므로 그에 상응하는 신뢰·자원·보안·윤리적 요구를 갖춰야 한다.",
+          "segmentId": "13-03"
+        },
+        {
+          "title": "반간은 정보망의 핵심",
+          "body": "적이 보낸 간첩을 식별하고 활용하면 침투 위험을 줄이고 적의 체계를 역으로 이해·이용할 수 있다.",
+          "segmentId": "13-04"
+        },
+        {
+          "title": "고도의 지혜를 정보로 삼아라",
+          "body": "고품질 정보는 하급 잡무가 아니라 전군의 행동을 결정하는 고급 전문 업무다.",
+          "segmentId": "13-05"
+        }
+      ]
+    }
+  ],
+  "es": [
+    {
+      "chapterNumber": 1,
+      "chapterTitle": "Cálculo inicial",
+      "fullTitle": "Cálculo inicial — Capítulo I",
+      "group": "Deliberación estratégica",
+      "summary": "Este capítulo define la guerra como un asunto vital para el Estado y la vida de su pueblo. Sostiene que, antes de decidir, se deben establecer cinco ámbitos de evaluación —el propósito común, el cielo, la tierra, el general y la disciplina— y comparar enemigo y propio mediante siete cálculos. La comparación no es un simple puntaje: sirve para identificar ventajas explotables y formar planes que dominen la situación. Las técnicas de engaño pertenecen al manejo de la información y la percepción, pero todo vuelve al cálculo previo: cuanto más completos sean las condiciones, la preparación y el juicio antes del combate, más previsible será el resultado.",
+      "tags": [
+        "Cinco factores",
+        "Siete cálculos",
+        "Cálculo estratégico",
+        "Engaño",
+        "Toma de decisiones"
+      ],
+      "seoTitle": "Sun Tzu: Cálculo previo y cinco factores decisivos",
+      "seoDescription": "Define la guerra como asunto vital y expone cinco factores y siete comparaciones para prever la victoria antes de combatir.",
+      "segments": [
+        {
+          "id": "01-01",
+          "text": "Sun Tzu dijo: La guerra es un asunto mayor del Estado, un lugar de vida o muerte, el camino de la supervivencia o la perdición; no se lo puede pasar por alto. Por eso se la examina según cinco aspectos y se la compara por siete cálculos, para indagar su verdadera situación: uno, el propósito común (dao); dos, el cielo; tres, la tierra; cuatro, el general; cinco, la disciplina."
+        },
+        {
+          "id": "01-02",
+          "text": "El propósito común es aquello que hace que el pueblo esté de acuerdo con su superior; que pueda morir por él, vivir por él y no temer el peligro. El cielo comprende los opuestos y ciclos (yin y yang), el frío y el calor, las estaciones y el tiempo. La tierra incluye las alturas y las depresiones, las distancias, la dificultad o facilidad del terreno, la amplitud o estrechez y la vida o la muerte. El general posee sabiduría, credibilidad, benevolencia, valor y severidad. La disciplina abarca las normas organizativas, las vías administrativas y el empleo de los recursos. De estas cinco cosas, todo general debe haber oído: quien las conoce vence, quien no las conoce no vence. Por eso se las compara mediante siete cálculos para sondear la verdad: ¿qué soberano tiene el propósito común? ¿qué general es competente? ¿qué condiciones de cielo y tierra son más favorables? ¿qué leyes y decretos se cumplen? ¿qué ejército es más numeroso? ¿qué tropas están mejor entrenadas? ¿qué sistema de recompensas y castigos es más claro? Con esto conozco la victoria o la derrota."
+        },
+        {
+          "id": "01-03",
+          "text": "Si el general escucha mis planes y, usándolos, va a triunfar, lo retendré; si no escucha mis planes y, usándolos, va a fracasar, lo apartaré. Convéncelo ofreciéndole beneficio para que obedezca; así se crea la posición que auxilia las operaciones externas. La posición (shi) es usar la ventaja para condicionar las decisiones. La guerra es el camino del engaño. Por eso, muestra que puedes cuando no puedes, muestra que vas a usar algo cuando no lo harás; muestra que estás cerca cuando estás lejos, y que estás lejos cuando estás cerca. Atraelo con lo ventajoso; tómalo cuando esté en desorden; prepárate cuando él esté abastecido; evita al que es fuerte; enfúrialo y confúndelo; humilla a los humildes para que se vuelvan arrogantes; fatiga al que está descansado; separa a los que son cercanos. Ataca donde no está preparado; sorpréndelo donde no lo espere. Esta es la victoria del estratega, que no conviene anunciar por adelantado."
+        },
+        {
+          "id": "01-04",
+          "text": "Quien, antes de la batalla, en la sala de deliberación acumula más cálculos, obtiene la victoria; quien acumula pocos cálculos no la obtiene. Muchos cálculos llevan a la victoria; pocos cálculos no la llevan —y cuánto más quienes no calculan en absoluto. Por esto, al observarlo, la victoria y la derrota se hacen evidentes."
+        }
+      ],
+      "points": [
+        {
+          "title": "La guerra es un asunto vital del Estado",
+          "body": "La guerra no debe entenderse como una aventura personal del comandante. Implica recursos públicos, vidas humanas y la supervivencia del Estado, por lo que exige evaluación cuidadosa.",
+          "segmentId": "01-01"
+        },
+        {
+          "title": "Cinco factores y siete cálculos",
+          "body": "Los cinco factores ofrecen las dimensiones de observación; los siete cálculos exigen una comparación punto por punto entre enemigo y propio. Juntos forman el marco básico para el juicio previo al combate.",
+          "segmentId": "01-02"
+        },
+        {
+          "title": "Formar la posición a partir de las ventajas",
+          "body": "Los planes deben ajustarse a las ventajas reales y las condiciones presentes. La 'posición' (shi) no es una regla fija, sino la explotación y organización de lo que favorece al bando propio.",
+          "segmentId": "01-03"
+        },
+        {
+          "title": "Engaño y manipulación de la percepción",
+          "body": "Presentar lo contrario de la propia condición —capaz como incapaz, lejos como cerca— busca distorsionar el juicio del adversario y provocar errores útiles.",
+          "segmentId": "01-03"
+        },
+        {
+          "title": "La victoria se forja antes del combate",
+          "body": "La ventaja decisiva suele construirse en la fase de cálculo previo. Cuanto más completo sea el análisis y la preparación, más previsible será el resultado de la confrontación.",
+          "segmentId": "01-04"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 2,
+      "chapterTitle": "Gastos de guerra",
+      "fullTitle": "Gastos de guerra — Capítulo 2",
+      "group": "Para el Estado",
+      "summary": "Este capítulo se centra en el tiempo y el costo de la guerra. Una vez movilizado un gran ejército, el transporte, el equipamiento, las requisiciones y la inflación consumen continuamente la potencia del Estado; aunque las maniobras tácticas sean brillantes, la prolongación puede borrar el significado de la victoria. Por eso usar la fuerza exige alcanzar el objetivo con rapidez y acortar las cadenas de suministro propias. Aprovechar los recursos humanos y materiales del enemigo implica no solo saquear, sino también premiar, reorganizar y convertirlos, de modo que derrotar al enemigo pueda fortalecer en lugar de debilitar al propio Estado.",
+      "tags": [
+        "costos",
+        "victoria rápida",
+        "logística",
+        "poder nacional",
+        "reorganización"
+      ],
+      "seoTitle": "Gastos de guerra: coste, rapidez y logística",
+      "seoDescription": "Análisis sobre por qué la guerra debe buscar la victoria rápida: costes, logística y conversión de recursos enemigos.",
+      "segments": [
+        {
+          "id": "02-01",
+          "text": "Sun Tzu dijo: En lo relativo al empleo de las armas: carros que tiran mil parejas de caballos, mil carros de cuero, cien mil soldados con armadura, y víveres para mil li; entonces aparecen gastos internos y externos, atenciones a huéspedes, materiales como pegamento y laca, mantenimiento de carros y armaduras; el gasto diario alcanza mil piezas de oro, y así se pone en marcha un ejército de cien mil. En la guerra lo valioso es la victoria; si se prolonga, las armas se embotan y se tuercen las puntas; atacar una ciudad agota las fuerzas; un ejército expuesto durante mucho tiempo consume los recursos del Estado. Cuando las armas se embotan, la fuerza se quiebra y las reservas se agotan, los señores feudales se aprovecharán de esa debilidad para alzarse, y aun los más sabios no sabrán manejar lo que venga después. Por eso se habla de la torpeza que actúa con rapidez, no de la habilidad que tarda. Nunca ha habido una guerra larga que haya beneficiado al Estado. El que no comprende por completo los daños de la guerra no puede comprender por completo sus beneficios."
+        },
+        {
+          "id": "02-02",
+          "text": "El que sabe emplear las fuerzas evita reclutarlas dos veces y no almacena víveres por tres años; toma lo necesario del propio país y obtiene provisiones del enemigo; por eso la alimentación del ejército puede ser suficiente."
+        },
+        {
+          "id": "02-03",
+          "text": "Si el Estado empobrece por causa del ejército, los suministros se traen desde lejos; el transporte a larga distancia empobrece al pueblo. Si el ejército está cerca, las ventas son caras y la gente vende a buen precio, agotando su patrimonio; con los bienes agotados se recurre al trabajo forzado. Con la fuerza debilitada y las arcas exhaustas, la región central queda vacía en el interior. Del gasto del pueblo, siete de cada diez se pierden; del gasto público —carros rotos y caballos ociosos, armaduras, flechas y ballestas, lanzas, escudos y mantas protectoras, bueyes y grandes carros— se pierden seis de cada diez."
+        },
+        {
+          "id": "02-04",
+          "text": "Por eso el general prudente procura alimentarse del enemigo: una medida de grano del enemigo equivale a veinte de las nuestras; una unidad de rastrojo o tallo enemigo vale por veinte unidades de lo nuestro."
+        },
+        {
+          "id": "02-05",
+          "text": "Matar al enemigo procede de la ira; tomar sus bienes es ganancia. Así, en la lucha de carros, si se capturan diez o más carros, recompensa a quien los tomó primero y reemplaza sus estandartes. Mezcla los carros capturados y úsalos; cuida y sustenta bien a los prisioneros y soldados capturados. Esto se llama vencer al enemigo y, además, fortalecerse."
+        },
+        {
+          "id": "02-06",
+          "text": "Por eso en la guerra lo principal es la victoria, no la prolongación. El general que comprende el arte de la guerra es quien dirige la vida del pueblo y es responsable de la seguridad o el peligro del Estado."
+        }
+      ],
+      "points": [
+        {
+          "title": "La guerra busca la victoria, no la duración",
+          "body": "Este capítulo no fomenta la precipitación; señala que el desgaste prolongado embota armas, agota fuerzas y recursos, y permite que terceros aprovechen la debilidad.",
+          "segmentId": "02-01"
+        },
+        {
+          "title": "Conocer plenamente los daños de la guerra",
+          "body": "Considerar solo los beneficios sin contabilizar los costos directos e indirectos es insuficiente para decidir usar la fuerza. Reconocer los riesgos es condición previa para valorar las ventajas.",
+          "segmentId": "02-01"
+        },
+        {
+          "title": "Aprovechar el aprovisionamiento enemigo",
+          "body": "El transporte a larga distancia traslada la carga al pueblo. Acortar las líneas de suministro y aprovechar recursos disponibles reduce el costo total del conflicto.",
+          "segmentId": "02-02"
+        },
+        {
+          "title": "Fortalecerse con la victoria",
+          "body": "Tras capturar carros y recursos enemigos, reemplazar insignias, integrarlos y cuidar a los prisioneros demuestra la transformación de recursos y la incorporación organizativa.",
+          "segmentId": "02-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 3,
+      "chapterTitle": "Ataque por la estrategia",
+      "fullTitle": "Ataque por la estrategia — Capítulo 3",
+      "group": "Victoria completa",
+      "summary": "Este capítulo plantea la idea de la \"victoria completa\": la mejor victoria preserva el interés general. El máximo logro no es ganar en batalla abierta, sino quebrantar antes los planes y alianzas del adversario para privarlo de condiciones de resistencia; el asedio es la última opción por su alto costo. El texto aborda además comparación de fuerzas, la relación entre soberano y general y las condiciones para conocer la victoria, enfatizando que el poder político no debe usurpar la competencia militar y que el mando debe comprender enemigo, propia fuerza, tiempo y la voluntad organizacional.",
+      "tags": [
+        "Victoria total",
+        "Atacar el plan",
+        "Atacar las alianzas",
+        "Soberano y comandante",
+        "Conócete y conoce al enemigo"
+      ],
+      "seoTitle": "Sun Tzu: Ataque por la estrategia — Capítulo 3",
+      "seoDescription": "Prioriza vencer sin combate, destruye planes y alianzas antes que ciudades; explica jerarquía militar y la regla ‘conócete y conoce al enemigo’.",
+      "segments": [
+        {
+          "id": "03-01",
+          "text": "Sun Tzu dijo: En el arte de emplear las fuerzas, lo mejor es conservar íntegro al país; en segundo lugar, destruir al país. Conservar íntegro al ejército es lo mejor; en segundo lugar, romper al ejército. Conservar íntegro la brigada es lo mejor; en segundo lugar, romper la brigada. Conservar íntegro al contingente es lo mejor; en segundo lugar, romper el contingente. Conservar íntegro la sección es lo mejor; en segundo lugar, romper la sección. Por eso, ganar cien batallas en cien combates no es la mayor habilidad; someter al enemigo sin combatir es la verdadera suprema habilidad."
+        },
+        {
+          "id": "03-02",
+          "text": "Por tanto, la excelencia en la guerra es atacar el plan del enemigo; lo siguiente es atacar sus alianzas; lo siguiente, atacar sus fuerzas; lo más bajo es sitiar ciudades. Sitio a una ciudad es algo que sólo se hace por necesidad. Construir torres, andamios y armas, disponer equipos, lleva tres meses; cercar las puertas lleva otros tres meses. Si el general no domina su ira y ordena un asalto precipitado, pierde a un tercio de sus hombres y la ciudad no cae; tal es la calamidad del asedio."
+        },
+        {
+          "id": "03-03",
+          "text": "Por eso el que sabe usar las fuerzas somete al ejército enemigo sin luchar, toma la ciudad sin asediarla, destruye el estado sin prolongar la guerra; debe procurar mantener íntegro lo esencial para disputar el dominio del mundo. Así las tropas no se agotan y se conserva la ventaja: ese es el método de atacar por la estrategia."
+        },
+        {
+          "id": "03-04",
+          "text": "Las reglas para emplear las fuerzas son: si tienes diez veces la fuerza del enemigo, rodéalo; si tienes cinco veces, atácale; si lo superas por el doble, divídelo; si sois iguales, combatid; si sois pocos, defended; si no sois iguales, evadid. Así la obstinación del pequeño enemigo facilita su captura por el grande."
+        },
+        {
+          "id": "03-05",
+          "text": "El general es el apoyo del Estado. Si el apoyo es completo, el Estado será fuerte; si el apoyo es deficiente, el Estado será débil."
+        },
+        {
+          "id": "03-06",
+          "text": "Hay tres motivos por los que el soberano sufre problemas con el ejército: no reconocer cuando el ejército no puede avanzar y aún ordenar avance; no reconocer cuando no puede retirarse y aun ordenar retirada: eso atenaza a las tropas. No conocer los asuntos de las tres armas y, sin embargo, intervenir en su administración confunde a los soldados. No conocer las prerrogativas de las tres armas y, sin embargo, asumir sus responsabilidades hace dudar a los soldados. Si las tropas están confundidas y dudan, las dificultades para los príncipes aumentan: esto se llama que un ejército en desorden conduce a la derrota."
+        },
+        {
+          "id": "03-07",
+          "text": "Conocer la victoria depende de cinco cosas: el que sabe cuándo es posible luchar y cuándo no, triunfa; el que sabe emplear la superioridad o la inferioridad numérica, triunfa; el que logra que arriba y abajo compartan la misma voluntad, triunfa; el que prepara lo inesperado para sorprender a quien no lo espera, triunfa; el general capaz que el soberano no coarta, triunfa. Estas cinco son las vías para conocer la victoria."
+        },
+        {
+          "id": "03-08",
+          "text": "Por eso se dice: conoce al enemigo y conócete a ti mismo, y no correrás peligro en cien batallas; no conocer al enemigo pero conocerte a ti mismo, te producirá una victoria y una derrota; no conocer ni al enemigo ni a ti mismo, cada batalla te pondrá en peligro."
+        }
+      ],
+      "points": [
+        {
+          "title": "No someter por el número de batallas",
+          "body": "La mejor pericia no se mide por la cantidad de victorias en combate, sino por alcanzar los fines con la menor destrucción posible.",
+          "segmentId": "03-01"
+        },
+        {
+          "title": "La superioridad: atacar el plan",
+          "body": "Las acciones tienen una jerarquía clara: lo primero es quebrar el plan del adversario, luego socavar sus alianzas, después enfrentarse a sus fuerzas, y el asedio es la última opción.",
+          "segmentId": "03-02"
+        },
+        {
+          "title": "Preservar la integridad como objetivo",
+          "body": "Conservar lo esencial no es pasividad: se trata de mantener íntegros al Estado y a las fuerzas para que la victoria no se pague con la propia aniquilación.",
+          "segmentId": "03-03"
+        },
+        {
+          "title": "Tres fuentes de malestar del soberano respecto al ejército",
+          "body": "Interferir sin entender condiciones de avance/retirada, la organización de las fuerzas y las competencias de mando genera confusión y desorden en las tropas.",
+          "segmentId": "03-06"
+        },
+        {
+          "title": "Conócete y conoce al enemigo",
+          "body": "Saber cuándo luchar, cómo emplear la fuerza, lograr unidad de propósito, preparar lo inesperado y conceder autonomía al general son criterios prácticos para asegurar la victoria.",
+          "segmentId": "03-07"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "La forma del ejército",
+      "fullTitle": "La forma del ejército (Capítulo IV)",
+      "group": "Vencer antes",
+      "summary": "Este capítulo trata los límites entre lo que puede controlarse y lo que no. Primero se establecen las condiciones que garantizan que uno no pueda ser vencido; si el enemigo ofrece o no una oportunidad para ser derrotado no es algo que pueda forzarse. El buen estratega no busca hazañas brillantes, sino batallas con condiciones maduras y resultados previsibles. El orden: medida, cálculo, número, comparación y victoria, muestra que la ventaja nace de evaluar sucesivamente espacio, recursos, cantidades y la relación de fuerzas.",
+      "tags": [
+        "Invencibilidad",
+        "Priorizar la victoria",
+        "Formación militar",
+        "Riesgo",
+        "Medición"
+      ],
+      "seoTitle": "Asegurar la victoria antes de la batalla",
+      "seoDescription": "Cómo garantizar la invencibilidad propia, elegir batallas favorables y medir recursos para lograr la victoria.",
+      "segments": [
+        {
+          "id": "04-01",
+          "text": "Sun Tzu dijo: En tiempos antiguos, los hábiles en la guerra primero se aseguraban de no poder ser vencidos y luego esperaban a que el enemigo pudiera ser vencido. Lo invencible está en uno mismo; lo vencible está en el enemigo. Por eso el buen guerrero puede hacerse invencible, pero no puede forzar que el enemigo sea necesariamente vencible. Por eso se dice: la victoria puede conocerse, pero no puede ser causada a voluntad."
+        },
+        {
+          "id": "04-02",
+          "text": "Lo que no puede ser vencido es la defensa; lo que puede ser vencido es el ataque. En la defensa hay carencia; en el ataque existe abundancia. El buen defensor se oculta bajo las nueve tierras; el buen atacante actúa sobre los nueve cielos; así puede conservarse y conseguir la victoria completa."
+        },
+        {
+          "id": "04-03",
+          "text": "Ver la victoria cuando es lo que todos conocen no es lo supremo en la habilidad; ganar una batalla y recibir el elogio universal no es la máxima de la pericia. Por eso levantar un pelo de otoño no se considera gran fuerza; ver el sol y la luna no se llama vista excepcional; oír el trueno no es oído agudo."
+        },
+        {
+          "id": "04-04",
+          "text": "Lo que en la antigüedad se llamaba gente hábil en la guerra era la que vencía a lo fácil de vencer. Por eso la victoria del buen guerrero no lleva nombre de ingenio ni gloria de valentía. Así su triunfo no yerra. No errar significa que donde coloca sus fuerzas debe ganar: vence a quienes ya están derrotados. Por eso el buen combatiente se sitúa en terreno de no derrota y no desaprovecha la derrota del enemigo. Así, el ejército vencedor busca primero la victoria y luego combate; el ejército derrotado combate primero y luego busca la victoria. El buen servidor de las armas cultiva la doctrina y mantiene las normas; por eso puede decidir sobre la victoria y la derrota."
+        },
+        {
+          "id": "04-05",
+          "text": "Arte militar: uno, medida; dos, estimación; tres, número; cuatro, comparación; cinco, victoria. El terreno produce la medida; la medida produce la estimación; la estimación produce el número; el número produce la comparación; la comparación produce la victoria. Así, el ejército vencedor trata lo grande como si fuera lo pequeño; el ejército derrotado trata lo pequeño como si fuera lo grande. La operación del ejército vencedor sobre la población es como soltar aguas acumuladas en un cauce de gran profundidad: esa es la forma."
+        }
+      ],
+      "points": [
+        {
+          "title": "Asegurar la invencibilidad primero",
+          "body": "Ocúpate primero de tu defensa, tus normas y tus preparativos, y luego espera la oportunidad externa; se trata de controlar riesgos antes que perseguir beneficios.",
+          "segmentId": "04-01"
+        },
+        {
+          "title": "Lo invencible está en uno; lo vencible en el enemigo",
+          "body": "Evitar la derrota depende en gran medida de uno mismo; derrotar al adversario depende de si él expone condiciones favorables.",
+          "segmentId": "04-01"
+        },
+        {
+          "title": "Vencer lo que es fácil de vencer",
+          "body": "La verdadera habilidad consiste en escoger problemas ya favorables, no en exponerse a condiciones adversas para ganar fama.",
+          "segmentId": "04-04"
+        },
+        {
+          "title": "El vencedor asegura la victoria antes de buscar la batalla",
+          "body": "La acción es la manifestación final de una ventaja ya establecida, no el medio para apostar a que la ventaja aparezca.",
+          "segmentId": "04-04"
+        },
+        {
+          "title": "Medida, estimación, número, comparación, victoria",
+          "body": "Desde la escala del terreno hasta la capacidad de recursos, el número de tropas y la comparación de fuerzas, así se llega al juicio sobre la victoria.",
+          "segmentId": "04-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "Ímpetu militar",
+      "fullTitle": "Ímpetu militar — Capítulo V",
+      "group": "Aprovechar la situación",
+      "summary": "Este capítulo trata de la formación del 'ímpetu': desde la organización y el mando hasta cómo se crea una posición favorable. Gobernar multitudes como si fueran pocos depende de la estructura y las señales; las variaciones en combate se reducen a la alternancia entre lo recto y lo inesperado. El ímpetu no es una sensación abstracta, sino la combinación de posición, velocidad, ritmo y condiciones que se libera como fuerza. El líder experto no exige solo coraje individual, sino que diseña el entorno para que personas comunes, en la posición adecuada, produzcan un efecto colectivo.",
+      "tags": [
+        "ímpetu",
+        "sorpresa y ortodoxia",
+        "organización",
+        "ritmo",
+        "aprovechar la situación"
+      ],
+      "seoTitle": "Sun Tzu — Capítulo V: La fuerza del ímpetu en la guerra",
+      "seoDescription": "Explica cómo organización, ritmo y la alternancia entre lo recto y lo inesperado crean una fuerza efectiva en la guerra.",
+      "segments": [
+        {
+          "id": "05-01",
+          "text": "Sun Tzu dijo: En general, gobernar a muchos como si fueran pocos es cuestión de dividir en unidades; combatir con muchos como con pocos es cuestión de la formación y la denominación. Que la multitud de un ejército haga que el enemigo se vea forzado a atacarlo sin poder derrotarlo, eso es la combinación de lo inesperado y lo recto. Que allí donde se aplica la fuerza sea como arrojar una piedra sobre un huevo, eso es la diferencia entre vacío y lleno."
+        },
+        {
+          "id": "05-02",
+          "text": "En toda guerra, se enfrenta con lo recto y se vence con lo inesperado. Por eso quien sabe emplear lo inesperado tiene recursos inagotables como el cielo y la tierra, y como los ríos y los mares. Terminar y volver a empezar, es como el sol y la luna; morir y renacer, como las cuatro estaciones. Los sonidos no pasan de cinco; los cambios de esas cinco notas no se pueden escuchar hasta agotarlos. Los colores no pasan de cinco; los cambios de esos cinco colores no se pueden ver hasta agotarlos. Los sabores no pasan de cinco; los cambios de esos cinco sabores no se pueden probar hasta agotarlos. Las formas del combate no pasan de lo inesperado y lo recto; los cambios entre lo inesperado y lo recto no pueden agotarse. Lo inesperado y lo recto se engendran mutuamente, como un ciclo sin fin: ¿quién podría agotarlo?"
+        },
+        {
+          "id": "05-03",
+          "text": "La rapidez del agua embravecida que llega a arrastrar piedras flotantes, eso es ímpetu; la rapidez de un ave rapaz que llega a quebrar y destrozar, eso es ritmo. Por eso los hábiles en la guerra, su ímpetu es peligroso y su ritmo es breve. El ímpetu es como una ballesta tensada; el ritmo es como el mecanismo de disparo."
+        },
+        {
+          "id": "05-04",
+          "text": "Confusos y multitudinarios: combaten en desorden sin que ello signifique desorden real; turbios y opacos: su forma es compacta e imposible de derrotar. Del orden nace el desorden; de la audacia nace la timidez; de lo fuerte nace lo débil. El orden y el desorden son cuestión de número; la audacia y la timidez dependen del ímpetu; la fuerza y la debilidad dependen de la forma."
+        },
+        {
+          "id": "05-05",
+          "text": "Por eso, quien sabe mover al enemigo le presenta una forma que este inevitablemente seguirá; le ofrece algo que el enemigo inevitablemente tomará. Muévelo mediante una ventaja y espéralo con tropas de reserva."
+        },
+        {
+          "id": "05-06",
+          "text": "Por eso, el buen combatiente busca su ventaja en la situación y no culpa a las personas; así puede elegir a la gente y emplear la situación. El que usa la situación hace que sus hombres luchen como si fueran madera o piedra giradas. La naturaleza de la madera y la piedra: en calma permanecen quietas, en peligro se mueven; lo angular se detiene, lo redondo rueda. Así, el ímpetu del buen guerrero es como hacer rodar una piedra redonda desde lo alto de un precipicio: eso es el ímpetu."
+        }
+      ],
+      "points": [
+        {
+          "title": "División y denominación",
+          "body": "La posibilidad de dirigir grandes fuerzas depende de la organización por unidades, la asignación de responsabilidades y un sistema coherente de señales.",
+          "segmentId": "05-01"
+        },
+        {
+          "title": "Enfrentar con lo recto, vencer con lo inesperado",
+          "body": "Lo recto y lo inesperado son configuraciones que se transforman entre sí; lo inesperado no es un truco fijo sino parte de una dinámica continua.",
+          "segmentId": "05-02"
+        },
+        {
+          "title": "Ímpetu peligroso y ritmo breve",
+          "body": "La fuerza debe concentrarse en puntos de liberación cortos y efectivos; alargar el ritmo disipa la ventaja inicial.",
+          "segmentId": "05-03"
+        },
+        {
+          "title": "Formarlo y tentarlo",
+          "body": "Guiar la respuesta del enemigo con una apariencia y con incentivos, para recibir luego su reacción con fuerzas preparadas.",
+          "segmentId": "05-05"
+        },
+        {
+          "title": "Buscar la ventaja en la situación, no culpar a las personas",
+          "body": "La responsabilidad del liderazgo es escoger a la gente y diseñar condiciones favorables, no atribuir al individuo los fallos del sistema.",
+          "segmentId": "05-06"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 6,
+      "chapterTitle": "Debilidad y fortaleza",
+      "fullTitle": "Debilidad y fortaleza — Capítulo VI",
+      "group": "Asegurar la victoria",
+      "summary": "El núcleo de este capítulo es tomar la iniciativa para que el oponente actúe según nuestro diseño, en lugar de forzarnos a reaccionar. Mediante ventajas y desventajas, velocidad, simulaciones y ocultamiento se dispersa la defensa enemiga y se concentra la propia en el punto decisivo. La mayor destreza es carecer de forma, de modo que el enemigo no sepa dónde asignar recursos. El final utiliza la analogía del agua: el agua evita lo alto y busca lo bajo; las tropas evitan lo sólido y atacan lo vacío. Las formas no deben fijarse: deben cambiar según el enemigo y el terreno.",
+      "tags": [
+        "Debilidad y fortaleza",
+        "Iniciativa",
+        "Concentración",
+        "Sin forma",
+        "Vencer adaptándose"
+      ],
+      "seoTitle": "Capítulo VI — Debilidad y fortaleza: controlar la iniciativa",
+      "seoDescription": "Cómo obligar al enemigo a reaccionar, concentrar fuerzas y adaptarse como el agua para asegurar la victoria.",
+      "segments": [
+        {
+          "id": "06-01",
+          "text": "Sun Tzu dijo: En general, quien ocupa primero el terreno de combate y espera al enemigo está descansado; quien llega después y se apresura hacia la batalla se fatiga. Por eso el buen estratega hace venir a los demás y no se deja traer por ellos."
+        },
+        {
+          "id": "06-02",
+          "text": "El que logra que el enemigo venga por su propia voluntad lo atrae con ventajas; el que impide que el enemigo llegue le causa daño. Así: si el enemigo está descansado, hazlo trabajar; si está saciado, hazle pasar hambre; si está seguro, haz que se mueva. Sal de donde él no va y dirígete a donde no lo espera."
+        },
+        {
+          "id": "06-03",
+          "text": "Recorrer mil li sin fatigarse es hacerlo por tierras sin gente. Atacar con seguridad significa atacar donde no se defiende; defender con seguridad significa defender donde no se ataca. Por eso el buen atacante hace que el enemigo ignore qué defender; el buen defensor hace que ignore qué atacar. ¡Sutil, muy sutil! Llega a no tener forma; ¡maravilloso, muy maravilloso! Llega a no tener sonido; por eso puede decidir la vida o la muerte del enemigo."
+        },
+        {
+          "id": "06-04",
+          "text": "Avanzar de modo que no puedan detenerte es golpear su vacío; retirarse de modo que no puedan perseguirte es moverse con velocidad inalcanzable. Por eso, si deseo combatir, aunque el enemigo tenga altos parapetos y hondos fosos, puedo forzarlo a luchar atacando aquello que debe socorrer; si no deseo combatir, aunque me limite a defender un terreno, el enemigo no podrá obligarme a la batalla si es desviado de su curso."
+        },
+        {
+          "id": "06-05",
+          "text": "Si muestro una forma y yo permanezco sin forma, yo concentro y el enemigo se dispersa. Yo me concentro como uno y el enemigo se divide en diez; esos diez atacan a uno y entonces mis efectivos son muchos y los suyos pocos. Quien puede usar muchos para atacar a pocos limita al adversario. Si el lugar donde voy a combatir es desconocido, el enemigo preparará muchas posiciones; y donde el enemigo prepara muchas posiciones, las fuerzas con que combatiremos serán pocas. Si prepara el frente, la retaguardia queda débil; prepara la retaguardia y el frente queda débil; prepara la izquierda y la derecha queda débil; prepara la derecha y la izquierda queda débil. Si prepara por todas partes, nada estará bien defendido. Los pocos son quienes se preparan; los muchos obligan a otros a prepararse contra ellos."
+        },
+        {
+          "id": "06-06",
+          "text": "Si se conoce el terreno de batalla y el día de la batalla, se puede reunir a mil li de distancia; si no se conocen, la izquierda no puede socorrer a la derecha, la derecha no puede socorrer a la izquierda, el frente no puede ayudar a la retaguardia ni la retaguardia al frente —y eso sin contar distancias de decenas de li. A mi juicio, aunque las tropas de Yue sean numerosas, ¿de qué sirve eso respecto a la victoria o la derrota? Por eso se dice: la victoria puede ser tomada. Aunque el enemigo sea multitud, puede hacerse que no combata."
+        },
+        {
+          "id": "06-07",
+          "text": "Así, al trazar planes se conocen los cálculos de ganancia y pérdida; al ejecutar se entiende la lógica del movimiento y la quietud; al disponer las formaciones se identifican los terrenos de vida y muerte; al sondear los flancos se descubre dónde hay exceso o carencia. Por eso la excelencia en formar tropas llega a la ausencia de forma. Al carecer de forma, los espías no pueden verla, los hombres sabios no pueden concebir planes contra ella. Adaptando la forma según las circunstancias se obtiene la victoria frente a las multitudes sin que ellas lo adviertan. Todos conocen la forma con la que gano, pero nadie conoce la forma con la que me aseguro la victoria. Por eso mi victoria no se repite; mi forma responde sin límites."
+        },
+        {
+          "id": "06-08",
+          "text": "La forma del ejército es como el agua: el agua evita lo alto y se dirige a lo bajo; la victoria militar evita lo sólido y golpea lo vacío. El agua adopta su curso según el terreno; las tropas adaptan la victoria según el enemigo. Por eso las fuerzas no tienen una situación fija ni una forma constante; quien puede cambiar según el enemigo y así vencer es llamado ‘‘divino’’. De ahí que las cinco fases no tengan vencedor constante, las cuatro estaciones no ocupen siempre la misma posición; los días tienen longitud variable y las lunas nacen y mueren."
+        }
+      ],
+      "points": [
+        {
+          "title": "Hacer venir a otros, no dejarse traer por ellos",
+          "body": "La iniciativa no es solo actuar primero, sino lograr que el rival responda en tiempo, lugar y asignación de recursos conforme a nuestro diseño.",
+          "segmentId": "06-01"
+        },
+        {
+          "title": "Atacar lo que debe ser socorrido",
+          "body": "No se trata de chocar contra la fortaleza que el enemigo elige; se busca alterar sus intereses para que abandone posiciones ventajosas.",
+          "segmentId": "06-04"
+        },
+        {
+          "title": "Yo concentrado y el enemigo disperso",
+          "body": "Ocultar la dirección principal del ataque obliga al adversario a defender múltiples puntos, permitiendo concentrar fuerzas en un sector y superar en número localmente.",
+          "segmentId": "06-05"
+        },
+        {
+          "title": "La forma máxima del ejército: alcanzar la sin‑forma",
+          "body": "Evitar que el patrón del despliegue sea interpretable impide que el adversario convierta esa información en ventaja contra nosotros.",
+          "segmentId": "06-07"
+        },
+        {
+          "title": "La forma del ejército es como el agua",
+          "body": "Los métodos para vencer deben adaptarse al terreno y al enemigo; formas exitosas si se fijan y copian pueden volverse ineficaces.",
+          "segmentId": "06-08"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 7,
+      "chapterTitle": "Contienda militar",
+      "fullTitle": "Contienda militar. Capítulo séptimo",
+      "group": "Lucha por el beneficio",
+      "summary": "Este capítulo trata las dificultades que va desde la concentración de las tropas hasta la disputa por posiciones ventajosas. Convertir lo indirecto en ventaja exige combinar incentivos, rutas, velocidad y logística; perseguir solo la apariencia de rapidez puede ocasionar pérdida de bagajes y la fragmentación de las fuerzas. Se presenta el principio de “viento, bosque, fuego, montaña” para modular el ritmo de acción, y se enfatiza la coordinación mediante señales (tam-tam y banderas), la gestión de la moral y la resistencia física, y la moderación ante fingimientos, cebos, retornos y enemigos acorralados.",
+      "tags": [
+        "contienda",
+        "itinerario indirecto",
+        "viento-bosque-fuego-montaña",
+        "moral",
+        "logística"
+      ],
+      "seoTitle": "El Arte de la Guerra — Capítulo 7: Contienda militar",
+      "seoDescription": "Cómo convertir rutas indirectas en ventaja, coordinar señales y gestionar moral y logística al disputar posiciones.",
+      "segments": [
+        {
+          "id": "07-01",
+          "text": "Sun Tzu dijo: En las reglas del empleo de las armas, el general recibe órdenes del soberano, reúne las tropas, concentra a la multitud, concierta alianzas y acampa; no hay nada más difícil que la disputa por terrenos o ventajas. Lo difícil en esa disputa es que lo tortuoso puede convertirse en recto y lo calamitoso en provecho. Por eso se toma una ruta indirecta y se atrae al enemigo con la promesa de un beneficio: cuando los demás parten, vosotros ya habréis llegado. Quien comprende la táctica de lo indirecto y lo directo lo sabe hacer."
+        },
+        {
+          "id": "07-02",
+          "text": "Así, disputar una ventaja ofrece beneficio, pero también entraña peligro. Si todo el ejército marcha para alcanzarla, no llegará a tiempo; si se desprende de parte de sus fuerzas para hacerlo, perderá los bagajes. Por ello se enrolla la armadura y se avanza sin descanso de día ni de noche, a marchas forzadas y al doble de velocidad. Si se disputa una ventaja a cien li, los jefes de los tres ejércitos pueden ser capturados: los vigorosos avanzan primero y los fatigados quedan atrás, de modo que solo uno de cada diez llega. A cincuenta li puede perderse al jefe de la vanguardia y solo llega la mitad; a treinta li llegan dos tercios. Por eso un ejército sin bagajes perece, sin víveres perece y sin reservas perece. Quien desconoce los planes de los señores vecinos no puede concertar alianzas de antemano; quien desconoce montañas, bosques, pasos difíciles y pantanos no puede marchar; quien no emplea guías locales no puede aprovechar el terreno."
+        },
+        {
+          "id": "07-03",
+          "text": "El ejército se funda en el engaño, se mueve por la conveniencia, y su cambio consiste en dividirse y reunirse. Por eso sea su rapidez como el viento, su lentitud como el bosque, su saqueo como el fuego, su inmovilidad como la montaña, difícil de conocer como la oscuridad y cuando se mueva, que lo haga como el estruendo del trueno. Saquead aldeas para dispersar a las masas, limpiad territorio para repartir las ventajas, mantened la iniciativa y actuad. Quien antes conoce el plan de lo indirecto y lo directo gana: esa es la ley de la contienda."
+        },
+        {
+          "id": "07-04",
+          "text": "En el tratado de Administración Militar se dice: “Si las voces no pueden oírse, por eso están los metales y los tambores; si la vista no alcanza, por eso están las banderas”. Los metales, tambores y banderas son, pues, el oído y la vista de la tropa. Cuando el pueblo (los soldados) concentran su atención, el valiente no puede avanzar en solitario, ni el cobarde retirarse en solitario: éste es el arte de emplear multitudes. Por eso en la noche de combate se usan muchos tambores, y en la batalla diurna muchas banderas: así se alteran los oídos y ojos de la gente."
+        },
+        {
+          "id": "07-05",
+          "text": "A un ejército entero se le puede arrebatar el ánimo; a un general se le puede arrebatar el corazón. Por eso la energía de la mañana es aguda, la del mediodía perezosa, y la de la tarde vuelve. El que sabe usar las armas evita la energía aguda y ataca la pereza del retorno: esto regula el ánimo; responde con orden a la confusión y con quietud al clamor: esto regula el corazón; usa la proximidad para enfrentar lo lejano, el reposo para enfrentar el trabajo, la saciedad para enfrentar el hambre: esto regula la fuerza; no busques combatir una bandera recta con otra igual, ni atacar de frente una formación orgullosa: esto regula el cambio."
+        },
+        {
+          "id": "07-06",
+          "text": "Por eso, las reglas para emplear las tropas son estas: no avances contra un enemigo que ocupa una altura; no enfrentes de frente a un enemigo con una colina a su espalda; no persigas una retirada fingida; no ataques tropas frescas y vigorosas; no muerdas el anzuelo de una fuerza señuelo; no bloquees el paso a un ejército que regresa. Cuando rodees a una fuerza, déjale siempre una salida; no presiones en exceso a un enemigo acorralado. Estas son las reglas para emplear las tropas."
+        }
+      ],
+      "points": [
+        {
+          "title": "Convertir lo indirecto en directo, transformar peligro en ventaja",
+          "body": "Una ruta indirecta, bien empleada y combinada con incentivos, puede engañar al enemigo y permitir llegar primero: lo tortuoso puede funcionar como vía directa si altera la percepción del adversario.",
+          "segmentId": "07-01"
+        },
+        {
+          "title": "La contienda trae beneficio y riesgo",
+          "body": "Perseguir una oportunidad exige velocidad y tensión de recursos; la búsqueda de la ventaja puede acortar el tiempo pero alargar y desgastar la columna, y provocar pérdidas de bagaje y de cohesión.",
+          "segmentId": "07-02"
+        },
+        {
+          "title": "Viento, bosque, fuego, montaña",
+          "body": "Las modalidades —rápido como el viento, pausado como el bosque, devastador como el fuego, inmóvil como la montaña— son ritmos de acción que se alternan según el objetivo, no una llamada a una única velocidad.",
+          "segmentId": "07-03"
+        },
+        {
+          "title": "El oído y la vista de la tropa",
+          "body": "Señales audibles y visibles (tambores, metales, banderas) unifican la percepción colectiva: impiden actos individuales extremos y convierten reacciones personales en acción organizada.",
+          "segmentId": "07-04"
+        },
+        {
+          "title": "Control de ánimo, mente, fuerza y adaptación",
+          "body": "Gestionar el momento de atacar—evitando la cumbre del entusiasmo, aprovechando la fatiga—, mantener calma frente al ruido, preservar la fuerza y no enfrentar lo evidente de frente son principios de ritmo y adaptación.",
+          "segmentId": "07-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 8,
+      "chapterTitle": "Nueve cambios",
+      "fullTitle": "Nueve cambios — Capítulo ocho",
+      "group": "Adaptación a las circunstancias",
+      "summary": "Este capítulo enfatiza que los principios no deben aplicarse mecánicamente sin atender la situación. Hay caminos que no se deben tomar, ejércitos que no se deben atacar, ciudades y terrenos que no conviene disputar, e incluso órdenes del soberano que no deben seguirse si resultan perjudiciales. El juicio maduro percibe riesgos dentro de las ventajas y busca soluciones dentro de los peligros. Al final se enumeran cinco defectos peligrosos en un general: la disposición a morir, la obstinación por conservar la vida, la ira y la precipitación, la honradez extrema y el amor al pueblo; si se vuelven excesos, todos pueden ser explotados por el enemigo.",
+      "tags": [
+        "Nueve cambios",
+        "Beneficios y riesgos",
+        "Preparación bélica",
+        "Cinco peligros",
+        "Adaptación"
+      ],
+      "seoTitle": "Nueve cambios: adaptabilidad y los cinco peligros del general",
+      "seoDescription": "Capítulo sobre adaptarse a circunstancias, renunciar a acciones y las cinco fallas que ponen en peligro a un general.",
+      "segments": [
+        {
+          "id": "08-01",
+          "text": "Sunzi dijo: En general, en el arte de la guerra, el general recibe órdenes del soberano, reúne y concentra las tropas. En terreno arruinado no debe acampar; en encrucijadas debe unirse con aliados; en terreno cortado no debe permanecer; en tierra cercada ha de tramar planes; en tierra de muerte ha de combatir. Hay caminos por los que no se debe pasar, ejércitos a los que no se debe atacar, ciudades que no se deben asediar, lugares que no se deben disputar y órdenes del soberano que no deben seguirse. Por tanto, el general que domina las ventajas de los nueve cambios sabe emplear la guerra; el que no las domina, aunque conozca la topografía, no obtendrá la ventaja del terreno; quien dirige tropas sin conocer el arte de los nueve cambios, aunque conozca las ventajas del terreno, no sabrá aprovechar a la gente."
+        },
+        {
+          "id": "08-02",
+          "text": "Por eso la reflexión del sabio siempre mezcla beneficios y perjuicios: al considerar los beneficios se procura su fiabilidad; al considerar los perjuicios se buscan soluciones a los peligros. De ahí que se doblegue a los señores por medio del daño, se obliga a los señores mediante labores o cargas, y se atrae a los señores por medio de la ganancia."
+        },
+        {
+          "id": "08-03",
+          "text": "Así pues, en el empleo de las tropas no te fíes de que el enemigo no vendrá; fíate de que tienes medios para recibirlo. No te fíes de que no atacará; fíate de que posees cosas que lo hacen incapaz de atacar."
+        },
+        {
+          "id": "08-04",
+          "text": "Por eso el general tiene cinco peligros: la determinación de morir —que lo hace matable; la obstinada búsqueda de vivir —que lo hace capturable; la ira y la precipitación —que lo hace humillable; la honradez extrema —que lo hace susceptible de afrenta; el amar al pueblo —que lo hace causar molestias. Estos cinco son faltas del general y calamidades en el uso de las tropas. Cuando un ejército se derrota y se mata a su general, es necesariamente por uno o más de estos cinco peligros; no deben pasarse por alto."
+        }
+      ],
+      "points": [
+        {
+          "title": "Hay cosas que no hacer",
+          "body": "No basta con que un camino exista o un objetivo esté presente; no siempre conviene tomarlo. Caminos, ejércitos, ciudades, territorios y órdenes deben evaluarse en función del fin general antes de actuar.",
+          "segmentId": "08-01"
+        },
+        {
+          "title": "Dominar los nueve cambios",
+          "body": "Conocer la topografía no equivale a saber aprovecharla: es necesario entender cuándo y cómo alterar las normas habituales para explotar las variaciones oportunas.",
+          "segmentId": "08-01"
+        },
+        {
+          "title": "Pensamiento mixto de beneficios y riesgos",
+          "body": "El juicio prudente incorpora tanto las ventajas como los perjuicios: en las ganancias se busca solidez, en los riesgos se buscan soluciones que permitan mitigarlos.",
+          "segmentId": "08-02"
+        },
+        {
+          "title": "No confiar en la pasividad del enemigo",
+          "body": "La seguridad no debe basarse en la esperanza de que el enemigo no actúe, sino en la preparación para enfrentarlo y en disponer de posiciones o recursos que lo hagan incapaz de atacarte con eficacia.",
+          "segmentId": "08-03"
+        },
+        {
+          "title": "Los cinco peligros del general",
+          "body": "Cualidades llevadas al extremo se vuelven vulnerabilidades previsibles: la temeridad hacia la muerte, la desesperada aversión a morir, la ira impetuosa, la probidad inflexible y el amor excesivo al pueblo son defectos que el enemigo puede explotar.",
+          "segmentId": "08-04"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 9,
+      "chapterTitle": "Marcha",
+      "fullTitle": "Marcha, Capítulo IX",
+      "group": "Enfrentar al enemigo",
+      "summary": "Este capítulo parte del trato del ejército con montañas, aguas, ciénagas y llanuras, y avanza a cómo juzgar la situación por señales sutiles del entorno y del enemigo. El movimiento de árboles, el alzar de aves, el polvo, las palabras, el régimen de premios y castigos y la actitud de las tropas son señales que deben leerse en conjunto. Al final se combina disciplina organizativa y lealtad: castigar a quien aún no se ha afiliado provoca rechazo; prometer castigos y no aplicarlos tras la adhesión vuelve inútil al mando. La consistencia en las órdenes crea confianza.",
+      "tags": [
+        "Marcha",
+        "Terreno",
+        "Enfrentar al enemigo",
+        "Disciplina",
+        "Confianza"
+      ],
+      "seoTitle": "Arte de la marcha y señales en el campo — Sun Tzu",
+      "seoDescription": "Consejos de Sun Tzu sobre posicionamiento, lectura de señales y disciplina para que un ejército sea eficaz en el terreno.",
+      "segments": [
+        {
+          "id": "09-01",
+          "text": "Sun Tzu dice: Al situar el ejército frente al enemigo hay cuatro modos de disposición. El ejército de montaña: cuando las montañas forman quiebres y se depende de los valles, ocupe la altura que protege la vida; no emprenda combates que exijan ascender inútilmente; así actúa el ejército en la montaña. El ejército junto al agua: cuando el agua separa, manténgase alejado del agua; si el enemigo, privado de agua, se acerca, no lo reciba en el agua; déjelo a medio cruzar y atácelo, que eso es ventajoso; quien desea pelear no debe apegarse al agua para recibir al enemigo, colóquese en altura y evite enfrentar corrientes; así actúa el ejército junto al agua. Ante ciénagas y pantanos, aléjese rápidamente y no permanezca; si dos fuerzas se encuentran en una ciénaga deben apoyarse en cañas y juncos y tener la espalda resguardada por árboles; así actúa el ejército en la ciénaga. En terreno llano y fácil, con la derecha respaldada por una elevación, con la parte delantera expuesta al peligro y la retaguardia segura, así actúa el ejército en llano. Estas cuatro ventajas son las que le permitieron al Emperador Amarillo vencer a los cuatro príncipes."
+        },
+        {
+          "id": "09-02",
+          "text": "En general, el ejército prefiere la altura y detesta el bajo, valora el yang y desprecia el yin, cuida la vida y ocupa plazas sólidas; un ejército sin múltiples enfermedades es lo que se llama seguro de vencer. En colinas y diques debe situarse en el lado soleado y con la derecha respaldada; esa es la ventaja de las tropas, la ayuda del terreno. Cuando cae lluvia intensa y el agua forma espuma y corrientes, quien desea vadear debe esperar a que se serene."
+        },
+        {
+          "id": "09-03",
+          "text": "Si el terreno tiene barrancos cortantes o presenta pozos, trampas, redes, hundimientos o grietas, debe apartarse de ellos con rapidez, no acercarse. Si nosotros nos distanciamos, el enemigo se aproxima; si nosotros avanzamos a su encuentro, el enemigo retrocede. Cuando junto al ejército haya obstáculos peligrosos, charcas, cañas, bosques o matorrales espinosos, extreme el cuidado y cubra con sogas y protecciones: ahí es donde acechan los emboscadores."
+        },
+        {
+          "id": "09-04",
+          "text": "Si el enemigo está cerca y calla, confía en su posición fortificada; si está lejos y lanza desafíos, quiere que avancemos. Si el lugar que ocupan es fácil de tomar, ello les da ventaja. Muchas copas de árboles que se mueven indican que vienen. Hierba abundante y obstaculizadora despierta sospecha. Aves que se levantan anuncian emboscada. Animales asustados indican que se prepara un envolvimiento. Polvareda alta y puntiaguda señala carros que se aproximan; polvareda baja y ancha, tropa a pie. Polvareda dispersa y extendida corresponde a leñadores o recolectores; pocas idas y venidas, campamento militar. Palabras humildes que van acompañadas de mayor preparación presagian avance; palabras altivas que impulsan a la marcha presagian retroceso. Si salen primero carros ligeros y a su lado se colocan fuerzas, es la formación de batalla. Quien pide paz sin concertarla prepara una artimaña; los que corren y despliegan tropas anuncian un plazo fijado. Medio avanzar y medio retirarse es engaño. El que se apoya en un bastón y permanece de pie está hambriento; quien toma agua y bebe primero está sediento. El que ve la ganancia y no avanza está fatigado. Aves que se juntan señalan debilidad. Gritos nocturnos indican miedo. Si el ejército está desordenado, el general no es estimado. Movimientos de estandartes señalan confusión. Oficiales airados indican cansancio. Si tienen grano, caballos, carne y provistas y no vuelven a sus tiendas, son bandoleros desesperados. Quien habla con excesiva insistencia y murmulla con calma pierde a la tropa. El que premia con frecuencia está en apuro; el que castiga con frecuencia está en aprieto. Quien primero actúa con crueldad y luego teme a su propia muchedumbre demuestra falta de pericia suprema. Los que vienen a presentar excusas buscan descansar. Cuando tropas próximas se reciben con ira y durante largo tiempo ni se unen ni se separan, hay que investigarlo con cuidado."
+        },
+        {
+          "id": "09-05",
+          "text": "Por eso, la virtud de las tropas no está en el mero aumento de número; importa que no haya impulsos guerreros sin previsión, que puedan sumar fuerzas, calcular al enemigo y tomar hombres. Quien actúa sin cautela y es fácil para el enemigo, será sin duda apresado."
+        },
+        {
+          "id": "09-06",
+          "text": "Si los soldados aún no están apegados y los castigas, no obedecerán; sin obediencia resultan difíciles de emplear. Si ya están apegados y el castigo no se ejecuta, tampoco se pueden utilizar. Por eso se les gobierna con medidas civiles y se les iguala mediante la fuerza militar: esto es lo que asegura la victoria. Si las órdenes se cumplen habitualmente, al enseñar al pueblo, éste obedece; si las órdenes no son habituales en el ejercicio, el pueblo no obedece. Quien hace que las órdenes sean costumbre está en armonía con las gentes."
+        }
+      ],
+      "points": [
+        {
+          "title": "Disposición en el terreno",
+          "body": "La marcha incluye simultáneamente la elección de posiciones seguras y la observación del enemigo: manejo del terreno y lectura de inteligencia no deben separarse.",
+          "segmentId": "09-01"
+        },
+        {
+          "title": "Preferir lo alto y lo sano",
+          "body": "La elección del campamento valora la visibilidad, la sequedad, la salud y el apoyo logístico: reducir bajas no combativas es prioridad.",
+          "segmentId": "09-02"
+        },
+        {
+          "title": "Leer señales del entorno",
+          "body": "Señales naturales y humanas son polisémicas; deben interpretarse cruzando distancia, actitud, polvo y palabras para evitar conclusiones aisladas.",
+          "segmentId": "09-04"
+        },
+        {
+          "title": "No vale sólo el número",
+          "body": "La ventaja no está en aumentar tropas sin más; la capacidad de coordinar fuerzas, estimar al enemigo y obtener resultados pesa más que la multitud.",
+          "segmentId": "09-05"
+        },
+        {
+          "title": "Gobernar con trato y disciplina",
+          "body": "Hacer que las órdenes sean la norma forja obediencia; castigar antes de ganarse la lealtad o prometer castigos y no aplicarlos destruye la eficacia.",
+          "segmentId": "09-06"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 10,
+      "chapterTitle": "Terreno",
+      "fullTitle": "Terreno — Capítulo décimo",
+      "group": "Ventaja del terreno",
+      "summary": "Este capítulo distingue seis tipos de terreno —comunicable, colgante, ramificado, angosto, peligroso y lejano— y luego enumera seis formas de derrota: huida, relajación, caída, desbandada, confusión y rendición. Las primeras son condiciones externas; las segundas suelen deberse a errores de mando y organización y no deben atribuirse al clima. El general debe juzgar independientemente la conveniencia del combate según la relación entre fuerzas y terreno, priorizando la protección del pueblo y el interés del Estado. Amar a las tropas requiere poder mandarlas; sin autoridad, la indulgencia se vuelve necedad.",
+      "tags": [
+        "Terreno",
+        "Seis derrotas",
+        "Arte del general",
+        "Conocer el terreno",
+        "Organización"
+      ],
+      "seoTitle": "Sun Tzu: Geografía del combate y los seis tipos de terreno",
+      "seoDescription": "Análisis del capítulo sobre terreno: seis tipos de campo y seis modos de derrota; lecciones sobre mando, abastecimiento, disciplina y juicio estratégico.",
+      "segments": [
+        {
+          "id": "10-01",
+          "text": "Sunzi dijo: En general hay seis tipos de terreno: el que comunica, el que cuelga, el que se ramifica, el angosto, el peligroso y el lejano. Cuando yo puedo ir y él también puede venir, se dice que comunica. En los terrenos comunicables conviene ocupar primero las alturas soleadas y asegurar las rutas de aprovisionamiento; para combatir es ventajoso. Cuando se puede avanzar pero es difícil regresar, eso se llama terreno que cuelga. En ese terreno, si el enemigo no está preparado, salimos y lo vencemos; si el enemigo está preparado, salimos y no vencemos, y entonces nos es difícil regresar, no es conveniente. Si salgo y no me favorece, y él sale y tampoco le favorece, se llama terreno ramificado. En el terreno ramificado, aunque al enemigo le favorezca atacarme, yo no salgo; lo atraigo y lo obligo a retirarse, y cuando esté medio fuera lo golpeo: eso es ventajoso. El terreno angosto: si yo lo ocupo primero, lo lleno para esperar al enemigo; si el enemigo lo ocupa primero, si está lleno no lo sigo, si no está lleno lo sigo. El terreno peligroso: si yo lo ocupo primero, debo situarme en alturas soleadas para esperar al enemigo; si el enemigo lo ocupa primero, lo atraigo y me retiro, no lo sigo. El terreno lejano: las fuerzas están equilibradas y es difícil provocar el combate; si se combate, no es ventajoso. Estas seis clases son la ley del terreno; son la máxima responsabilidad del general y no pueden dejarse de examinar."
+        },
+        {
+          "id": "10-02",
+          "text": "Por eso en el ejército hay quienes huyen, quienes se relajan, quienes caen en la trampa, quienes se desbandan, quienes se confunden y quienes se rinden. Estos seis no son desastres del cielo, sino faltas del general. Cuando las fuerzas están equilibradas y con un solo golpe se derrota a diez, eso se llama huida; si las tropas son fuertes y los oficiales débiles, eso se llama relajación; si los oficiales son fuertes y las tropas débiles, eso se llama caída. Si los principales oficiales se enojan y no obedecen, si ante el enemigo se irritan y combaten por su cuenta, y el general no conoce sus fuerzas, eso se llama desbandada. Si el general es débil y no es severo, si la instrucción no es clara, los oficiales y soldados carecen de constancia y las formaciones están desordenadas, eso se llama confusión. Si el general no sabe evaluar al enemigo, enfrenta pocos contra muchos, usa a los débiles contra los fuertes y las tropas no eligen a los mejores, eso se llama rendición. Estos seis son el camino de la derrota; son la máxima responsabilidad del general y no pueden dejarse de examinar."
+        },
+        {
+          "id": "10-03",
+          "text": "El terreno es auxilio de las tropas. Calcular al enemigo y asegurar la victoria, juzgar peligros, estrecheces y distancias, ese es el supremo arte del general. Quien conoce esto y lucha, ciertamente vencerá; quien no lo conoce y lucha, ciertamente será vencido. Por eso, si la manera de combate asegura la victoria, el soberano dirá “no luchar” y aún así es posible combatir; si la manera de combatir no asegura la victoria, el soberano dirá “debemos luchar” y aun así no es posible. Por tanto, avanzar sin buscar gloria y retirarse sin eludir la culpa; proteger al pueblo como prioridad y que el provecho concuerde con el soberano: eso es el tesoro del Estado."
+        },
+        {
+          "id": "10-04",
+          "text": "Trata a los soldados como a un bebé, y así podrás ir con ellos por ríos profundos; trátalos como a un hijo amado, y así podrás morir junto a ellos. Amar profundamente sin poder emplearlos, quererlos sin poder mandar, sin disciplina ni orden, eso es como un hijo mimado: no puede emplearse."
+        },
+        {
+          "id": "10-05",
+          "text": "Saber que mis tropas pueden atacar sin saber que el enemigo no puede ser atacado es victoria a medias; saber que el enemigo puede ser atacado pero no saber que mis tropas no pueden atacar es victoria a medias; saber que el enemigo puede atacarse y saber que mis tropas pueden atacar, pero no saber que el terreno no es apto para combatir, es victoria a medias. Por eso quien conoce el arte de la guerra actúa sin confundirse y obra sin agotarse. Por eso se dice: “Conoce al enemigo y conócete a ti mismo, y en cien batallas nunca estarás en peligro; conoce el cielo y la tierra, y tu victoria podrá ser completa.”"
+        }
+      ],
+      "points": [
+        {
+          "title": "Seis naturalezas del terreno",
+          "body": "El mismo tipo de terreno no es intrínsecamente ventajoso para uno u otro: importa quién lo ocupa primero, las rutas de aprovisionamiento, la dificultad para retirarse y si la fuerza es proporcional a la posición.",
+          "segmentId": "10-01"
+        },
+        {
+          "title": "Seis derrotas por culpa del mando",
+          "body": "Huida, relajación, caída, desbandada, confusión y rendición suelen deberse a uso erróneo de las fuerzas, desbalance de responsabilidades y órdenes poco claras: son fallos de gestión del mando.",
+          "segmentId": "10-02"
+        },
+        {
+          "title": "Avanzar sin buscar fama, retirarse sin eludir culpa",
+          "body": "El juicio profesional no debe medirse por la reputación personal, sino por la protección del pueblo y la concordancia con el interés del Estado.",
+          "segmentId": "10-03"
+        },
+        {
+          "title": "Amar y mandar deben ir juntos",
+          "body": "La confianza y el cuidado no sustituyen a las órdenes claras; sin autoridad, la indulgencia convierte a la tropa en un hijo malcriado e inútil.",
+          "segmentId": "10-04"
+        },
+        {
+          "title": "Conocer cielo y tierra",
+          "body": "Conocer solo al enemigo y a uno mismo no basta: hay que incorporar el terreno y el tiempo para aumentar la probabilidad de una victoria completa.",
+          "segmentId": "10-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 11,
+      "chapterTitle": "Nueve terrenos",
+      "fullTitle": "Nueve terrenos, capítulo XI",
+      "group": "Situación militar",
+      "summary": "Este capítulo distingue nueve tipos de terreno —disperso, liviano, disputado, intersección, encrucijada, pesado, obstruido, cercado y mortal— según la relación entre ejército y campo de batalla, y asigna principios distintos a cada situación. Profundizar en el territorio enemigo cambia la psicología y la cohesión de las tropas; el mando debe unir voluntades, asegurar los suministros y controlar la información. La metáfora de la serpiente de Changshan ilustra la reacción sistémica de auxilio entre cabeza y cola. El objetivo no es memorizar los nombres, sino comprender cómo posición, vías de retirada, recursos y ánimo transforman la acción.",
+      "tags": [
+        "Nueve terrenos",
+        "Situación militar",
+        "Penetración",
+        "Coordinación",
+        "Contexto"
+      ],
+      "seoTitle": "Nueve terrenos y la gestión del ejército",
+      "seoDescription": "Clasifica nueve tipos de terreno y muestra cómo posición, recursos y ánimo modifican la acción militar.",
+      "segments": [
+        {
+          "id": "11-01",
+          "text": "Sun Tzu dijo: En el arte de la guerra existen nueve terrenos: disperso, liviano, disputado, de intersección, encrucijada, pesado, obstruido, cercado y mortal. Que un señor feudal luche en su propio territorio es terreno disperso; entrar en el terreno ajeno sin internarse profundamente es terreno liviano; cuando lo que yo obtengo me beneficia y lo que él obtiene también le beneficia, eso es terreno disputado; donde yo puedo avanzar y él puede venir es terreno de intersección; el territorio de un señor feudal que controla tres rutas y quien llega primero reúne las fuerzas del reino es encrucijada; internarse profundamente en tierra ajena, con muchas ciudades a la espalda, es terreno pesado; montes, bosques, pasos peligrosos y pantanos —cualquier camino difícil— es terreno obstruido; donde el acceso es angosto y la retirada tortuosa, y pocos pueden atacar a mis tropas, eso es terreno cercado; en el que un combate rápido preserva la vida y la falta de rapidez conduce a la muerte es terreno mortal. Por eso: en terreno disperso no hay batalla; en terreno liviano no hay detención; en terreno disputado no hay asalto; en terreno de intersección no hay ruptura; en la encrucijada las fuerzas se unen y se cruzan; en terreno pesado hay saqueo; en terreno obstruido se marcha; en terreno cercado se urden planes; en terreno mortal se lucha."
+        },
+        {
+          "id": "11-02",
+          "text": "Los antiguos maestros del uso de las tropas podían lograr que el enemigo no se apoyara entre vanguardia y retaguardia, que lo numeroso y lo escaso no se confiaran entre sí, que los altos y los bajos no se auxiliaran, que arriba y abajo no se coordinaran; que los soldados se dispersaran y no se reunieran, que las fuerzas se juntaran pero sin orden. Moverse cuando conviene, detenerse cuando no conviene. Si preguntan: “Si el enemigo viene numeroso y en buen orden, ¿qué hacer?” la respuesta es: “Primero arrebatar lo que más aprecia y entonces obedecerá.” Por eso la naturaleza de la guerra privilegia la rapidez: aprovechar la falta de preparación del otro, avanzar por caminos imprevistos y atacar aquello que no está vigilado."
+        },
+        {
+          "id": "11-03",
+          "text": "En la conducta del huésped (el invasor), cuanto más se adentra, más se concentra; cuanto más superficial, más se dispersa. Saqueando tierras ricas, todo el ejército come suficiente. Cuidad su sustento sin fatigarlos; acumulad vigor y fuerzas; manejad las tropas y los planes de modo impredecible. Si se los arroja sin salida, ante la muerte no retrocederán. Si la muerte no se les permite, los hombres lo dan todo. Cuando los soldados están profundamente comprometidos no temen; sin salida son firmes; internados quedan constreñidos y, si no hay alternativa, luchan. Por eso sus tropas, sin necesidad de formación perfecta, están alertas; sin buscarlo obtienen lo que quieren; sin pactos se vuelven cercanos; sin órdenes muestran confianza. Eliminad señales y dudas; al borde de la muerte no tienen adonde ir. Que mis hombres no tengan bienes sobrantes no significa que odien la riqueza; que no tengan vidas sobrantes no significa que desdeñen la vida. El día de la marcha, los que estaban sentados lloran empapando el cuello, los que yacían despiertan con lágrimas mezcladas. Arrojarles sin salida despierta el valor de hombres como Zhu y Gui."
+        },
+        {
+          "id": "11-04",
+          "text": "El que sabe usar las tropas es comparable a la serpiente de Changshan. Si golpeas su cabeza, la cola acude; si golpeas la cola, la cabeza acude; si golpeas en medio, acuden cabeza y cola. Si preguntan: “¿Se puede hacer que un ejército actúe como esa serpiente?” la respuesta es: “Sí. Los de Wu y los de Yue se odian, pero cuando comparten una misma barca al cruzar, frente al viento se socorren mutuamente como la mano derecha y la izquierda.” Por eso, un caballo con el eje hundido no basta como apoyo; la valentía uniforme es arte del gobierno; combinar firmeza y flexibilidad es ley del terreno. El buen comandante logra que los que se toman de la mano actúen como una sola persona, no por otra razón."
+        },
+        {
+          "id": "11-05",
+          "text": "Las tareas del general: mantener la calma y lo oculto, gobernar con rectitud. Embotar los oídos y ojos de los soldados para que no sepan; cambiarles las tareas, renovar sus planes para que no reconozcan; variar sus alojamientos, alargar sus rutas para que no puedan reflexionar. Fijarles un plazo, como subir a un lugar alto y retirar la escalera; conducirlos a internarse en tierras de señores y, al dar la señal, desencadenar la acción, quemar los barcos y romper los calderos, como arrear un rebaño. Empujarles a ir y a volver sin que nadie sepa el destino. Reunir las fuerzas y arrojarlas al peligro: eso es obra del general. Los cambios entre los nueve terrenos, las ventajas de estirar o contraer y las leyes de la condición humana no deben dejarse sin examen."
+        },
+        {
+          "id": "11-06",
+          "text": "En la condición de huésped, cuanto más profundo, más concentración; cuanto más superficial, más dispersión. Salir del propio país y cruzar fronteras con un ejército es terreno sin retorno; donde las rutas confluyen en las cuatro direcciones es encrucijada; internarse profundo es terreno pesado; internarse poco es terreno liviano; tener la espalda segura pero el frente estrecho es terreno cercado; no tener adonde ir es terreno mortal. Por eso: en terreno disperso unificaré su voluntad; en terreno liviano los haré dependientes; en terreno disputado perseguiré su retaguardia; en terreno de intersección vigilaré su defensa; en la encrucijada consolidaré sus enlaces; en terreno pesado aseguraré su provisión; en terreno obstruido abriré el camino; en terreno cercado taparé sus brechas; en terreno mortal les mostraré que no hay vida. Así es la naturaleza de las tropas: cercar y contener; si no hay alternativa, luchar; si se atraviesa, entonces acompañar."
+        },
+        {
+          "id": "11-07",
+          "text": "Por eso, quien no conoce los planes de los señores feudales no puede anticipar las alianzas; quien no conoce la forma de montes, bosques, pasos peligrosos y pantanos no puede marchar; quien no emplea guías locales no obtiene la ventaja del terreno. Si de cuatro o cinco puntos no conoces ni uno, ese no es un ejército de un hegemon. El ejército de un hegemon, al atacar a un gran Estado, impide que sus fuerzas se reúnan; al imponer su poder sobre el enemigo, impide que sus alianzas se formen. Por eso no compitas por las alianzas del mundo ni cultives el poderío universal; confía en tu propio interés, impón autoridad sobre el enemigo, y sus ciudades podrán ser tomadas, sus Estados derribados. Otorga recompensas sin ley, promulga órdenes sin gobierno. Ataca a las fuerzas de tres divisiones como si fuesen una sola persona. Golpéalos con hechos, no se lo anuncies con palabras; atraélos con ventajas, no les anuncies el daño. Lánzalos al terreno de perdición para luego salvarlos; sumidos en el terreno de muerte, podrán renacer. Cuando las masas están atrapadas en el peligro, entonces se decide la victoria o la derrota. Por eso el arte militar consiste en aparentar seguir la intención del enemigo, concentrar al enemigo en una sola dirección y, a larga distancia, matar al general; eso es obrar con habilidad y lograr lo planeado."
+        },
+        {
+          "id": "11-08",
+          "text": "Por eso, el día en que se levanta la política, abrid las puertas y romped los distintivos, no dejéis pasar sus enviados; mostrad severidad en los corredores y templos para castigar los hechos. Cuando el enemigo abre o cierra, penetrad velozmente; arrebatad primero lo que más ama, concertad citas secretas, seguid al enemigo como quien pisa tinta detrás de su huella para decidir la batalla. Así al principio sed como una doncella en su casa, cuando el enemigo abre la puerta; después sed como un conejo suelto, al que el enemigo ya no puede alcanzar para defenderse."
+        }
+      ],
+      "points": [
+        {
+          "title": "Nueve terrenos como situaciones",
+          "body": "Los nueve terrenos no son solo clasificaciones de paisaje: definen situaciones según la distancia al propio territorio, las vías de acceso, los intereses y la relación enemigo-amigo; cada situación exige principios distintos.",
+          "segmentId": "11-01"
+        },
+        {
+          "title": "La guerra privilegia la rapidez",
+          "body": "La velocidad se utiliza para aprovechar la descoordinación y la falta de preparación del enemigo, actuando por vías inesperadas y atacando lo que no está vigilado, no como huida de la logística.",
+          "segmentId": "11-02"
+        },
+        {
+          "title": "Profundizar cambia la cohesión",
+          "body": "La distancia, las vías de retirada y los recursos transforman la psicología de los combatientes; el mando debe conocer cómo la situación afecta la cohesión y adaptar el liderazgo y el suministro.",
+          "segmentId": "11-03"
+        },
+        {
+          "title": "La metáfora de la serpiente",
+          "body": "La reacción recíproca entre cabeza y cola no es espontánea: es el resultado de órdenes, disposiciones y un interés común que hace que la organización responda como un todo.",
+          "segmentId": "11-04"
+        },
+        {
+          "title": "Adaptarse al abrir y cerrar del enemigo",
+          "body": "Las normas y la disciplina son el marco, pero la acción concreta debe ajustarse al modo en que el adversario abre o cierra sus posibilidades; aprovechar sus aperturas y sorprender en el momento oportuno.",
+          "segmentId": "11-08"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 12,
+      "chapterTitle": "Ataque con fuego",
+      "fullTitle": "Ataque con fuego — capítulo doce",
+      "group": "Cautela en la guerra",
+      "summary": "Este capítulo, que a primera vista trata las condiciones del ataque con fuego, enfoca en realidad la necesidad de coordinación entre medios, momento y respuesta. Los ataques incendiarios tienen distintos objetivos; antes de emplearlos hay que disponer de suministros y condiciones meteorológicas adecuadas; una vez iniciados, es preciso observar la reacción enemiga para decidir si proseguir. Incluso si se vence y se toma el botín, si no se consolidan los resultados el esfuerzo habrá sido en vano. Al final, la prudencia en la guerra se eleva a una ética política: el soberano y el general no deben emprender una campaña por ira pasajera, porque las emociones pueden cambiar, pero una nación perdida o los muertos no vuelven.",
+      "tags": [
+        "ataque con fuego",
+        "momento",
+        "consolidación",
+        "cautela",
+        "emociones"
+      ],
+      "seoTitle": "Ataques con fuego: condiciones, tiempo y prudencia en guerra",
+      "seoDescription": "Condiciones y tiempos para usar el fuego en guerra; cómo responder, consolidar victorias y evitar actuar por ira.",
+      "segments": [
+        {
+          "id": "12-01",
+          "text": "Sun Tzu dijo: En general existen cinco tipos de ataque con fuego: primero, incendiar a las personas; segundo, incendiar los acopios; tercero, incendiar el bagaje y los carros; cuarto, incendiar los depósitos; quinto, incendiar las filas de las tropas. Para llevar a cabo un ataque con fuego debe existir una causa; los instrumentos para humo y fuego deben estar preparados. Hay tiempos apropiados para iniciar el fuego y días propicios para prenderlo. \"Tiempo\" se refiere a la sequedad del cielo. \"Día\" se refiere a cuando la luna está en las mansiones lunares Kui, Bi, Yi o Zhen. Estos cuatro mansiones son días en que se levanta el viento."
+        },
+        {
+          "id": "12-02",
+          "text": "En todo ataque con fuego hay que responder según las cinco variaciones del fuego: si el fuego se origina en el interior, debe responderse pronto desde el exterior; si el fuego se enciende y las tropas enemigas están quietas, hay que esperar y no atacar; cuando el efecto del fuego es máximo, puede aprovecharse y actuarse en consecuencia; si no se puede aprovechar, entonces detenerse. El fuego puede iniciarse desde el exterior sin esperar que venga del interior, lanzándolo en el momento oportuno. Si el fuego nace en la dirección del viento, no atacará hacia el soplo; no se ataque en contra del viento. Si el viento diurno sopla prolongadamente, el viento nocturno cesa. Todo ejército debe conocer las cinco variaciones del fuego y protegerse según ellas. Por eso, quien apoya el ataque con fuego muestra lucidez; quien lo apoya con agua muestra fuerza. El agua puede cortar (interrumpir), pero no puede arrebatar (tomar por sí misma)."
+        },
+        {
+          "id": "12-03",
+          "text": "Vencer en batalla y tomar plazas sin consolidar lo conseguido es calamitoso; esto se llama \"gasto y permanencia\" (費留). Por eso: el soberano prudente lo medita, el buen general lo consolida; no se actúa si no hay beneficio, no se emplean fuerzas si no hay ganancia, no se combate si no es necesario. El soberano no debe movilizar por ira, el general no debe iniciar la guerra por enfado. Actuar cuando conviene al interés; detenerse cuando no conviene. La ira puede volver a alegría, el enfado puede convertirse en agrado; una nación perdida no puede volver a existir, los muertos no pueden volver a la vida. Por eso el soberano sabio es cauto y el buen general está alerta: este es el camino para asegurar el Estado y preservar el ejército."
+        }
+      ],
+      "points": [
+        {
+          "title": "Actuar con fuego requiere condiciones",
+          "body": "Cualquier medio necesita condiciones, suministros y tiempo; sin apoyos adecuados, el recurso por sí solo no genera una acción eficaz.",
+          "segmentId": "12-01"
+        },
+        {
+          "title": "Responder según la variación",
+          "body": "Tras un incendio no se debe atacar mecánicamente: hay que observar si el enemigo está desordenado y si el fuego es explotable, y decidir proseguir o detenerse en consecuencia.",
+          "segmentId": "12-02"
+        },
+        {
+          "title": "El agua puede cortar, no puede arrebatar",
+          "body": "Diferentes medios tienen límites funcionales; lo que sirve para interrumpir no equivale a poder tomar o apropiarse directamente; no confundir funciones.",
+          "segmentId": "12-02"
+        },
+        {
+          "title": "Vencer sin consolidar",
+          "body": "Si se obtienen victorias o capturas pero no se aseguran ni administran, el coste inicial puede convertirse en un gasto inútil y peligroso.",
+          "segmentId": "12-03"
+        },
+        {
+          "title": "No movilizar por ira",
+          "body": "Decisiones irreversibles no deben impulsarse por emociones pasajeras; la prudencia en la guerra es una forma de proteger vidas y al Estado.",
+          "segmentId": "12-03"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 13,
+      "chapterTitle": "Uso de espías",
+      "fullTitle": "El uso de espías — Capítulo XIII",
+      "group": "Presciencia",
+      "summary": "El capítulo final advierte que el enorme coste de la guerra demuestra el valor de la inteligencia: escatimar en agentes mientras se obliga a la población a soportar años de gasto es necio e inhumano. La verdadera presciencia no procede de dioses, analogías o conjeturas, sino de personas que conocen al enemigo. Existen cinco clases de informantes —locales, interiores, dobles, sacrificados y supervivientes— cuya acción conjunta crea una red verificadora. El contraespionaje es el núcleo que permite identificar y usar la red enemiga. El trabajo de inteligencia exige sabiduría, rectitud, sutileza y absoluto secreto.",
+      "tags": [
+        "Empleo de espías",
+        "Presciencia",
+        "Inteligencia",
+        "Contrainteligencia",
+        "Confidencialidad"
+      ],
+      "seoTitle": "Sun Tzu — El uso de espías y la presciencia en la guerra",
+      "seoDescription": "Valora la inteligencia en la guerra: cinco clases de espías, la importancia del contraespionaje y la necesidad de secreto y juicio.",
+      "segments": [
+        {
+          "id": "13-01",
+          "text": "Sun Tzu dijo: Cuando se movilizan cien mil hombres y se marchan mil li, los gastos para el pueblo y las asignaciones del Estado se cuentan en miles diariamente; se trastornan los asuntos internos y externos, las vías quedan lentas y setecientas mil familias quedan sin ocuparse. Mantener un cerco durante años por disputar la victoria de un solo día, y por apegarse al rango y a una paga de cien piezas sin conocer la situación del enemigo, es la más extrema falta de humanidad: no es digno de un general humano, ni es apoyo para el gobernante, ni es camino a la victoria. Por eso el monarca esclarecido y el general virtuoso, los que al moverse derrotan al enemigo y obtienen el triunfo por el juicio de muchos, poseen presciencia. La presciencia no puede obtenerse de los espíritus ni de los dioses; no puede derivarse de analogías con los asuntos ni verificarse por medidas: debe obtenerse de las personas, de los que conocen la situación del enemigo."
+        },
+        {
+          "id": "13-02",
+          "text": "Por eso en el empleo de espías hay cinco clases: el espía del país (xiang), el espía interior, el espía doble, el espía sacrificado (muerto) y el espía vivo. Cuando las cinco clases actúan a la vez y nadie conoce su método, eso se llama “milagrosa regulación” y es el tesoro del soberano. El espía del país se recluta entre los vecinos; el espía interior entre los funcionarios; el espía doble se aprovecha de los espías del enemigo; el espía sacrificado se envía para sembrar engaños en el exterior, de modo que nuestros propios espías los sepan y los transmitan al enemigo; el espía vivo es el que vuelve y rinde cuenta."
+        },
+        {
+          "id": "13-03",
+          "text": "En los asuntos de un ejército no hay nada más íntimo que los espías; ninguna recompensa debe ser mayor que la de los espías; ningún asunto debe ser más secreto que lo relativo a los espías. Sin sabiduría suprema no se puede emplear espías; sin rectitud y benevolencia no se puede mandar sobre ellos; sin sutileza no se pueden obtener sus informaciones verdaderas. ¡Sutil, cuán sutil! No hay nada en lo que no deban emplearse espías. Si una noticia de espionaje se conoce antes de que la operación se haya iniciado, tanto el espía como aquel a quien informó morirán."
+        },
+        {
+          "id": "13-04",
+          "text": "Para cualquier cosa que el ejército quiera atacar, cualquier ciudad que se quiera sitiar, cualquier persona que se quiera matar, primero debe conocerse el nombre del general defensor, sus adjuntos, los heraldos, los guardianes de la puerta y los sirvientes; hay que mandar a nuestros espías que los averigüen. Hay que solicitar a los espías enemigos que vengan a nosotros, favorecerlos, guiarlos y luego soltarlos; así los espías dobles pueden ser detectados y usados. Por ese conocimiento se pueden emplear los espías locales e interiores; por ese conocimiento los espías sacrificados pueden ser enviados con engaños para informar al enemigo; por ese conocimiento los espías vivos pueden operar conforme al plazo. El señor debe conocer los asuntos de las cinco clases de espías; conocerlos depende de los espías dobles, por lo que los espías dobles no deben ser escatimados en recompensas."
+        },
+        {
+          "id": "13-05",
+          "text": "En tiempos pasados, cuando Yin ascendió, Yi Zhi estaba en Xia; cuando Zhou ascendió, Lü Ya estaba en Yin. Por eso un soberano esclarecido y un general competente que sepan emplear la más elevada inteligencia como espías ciertamente lograrán grandes empresas. Este es el punto esencial de la guerra, aquello en lo que se apoya el movimiento de las tres armas."
+        }
+      ],
+      "points": [
+        {
+          "title": "La presciencia se obtiene de las personas",
+          "body": "La inteligencia fiable debe provenir de fuentes humanas rastreables y de contactos; no puede sustituirse por superstición, conjeturas o analogías no verificadas.",
+          "segmentId": "13-01"
+        },
+        {
+          "title": "Las cinco clases cooperan",
+          "body": "Distintos tipos de informantes se complementan para formar una red capaz de verificar, influir, devolver información y ejercer contrainteligencia.",
+          "segmentId": "13-02"
+        },
+        {
+          "title": "Nada es más cercano que la inteligencia",
+          "body": "La inteligencia está íntimamente ligada a la toma de decisiones y por ello requiere confianza, recompensas, secreto y altos estándares éticos y profesionales.",
+          "segmentId": "13-03"
+        },
+        {
+          "title": "El contraespionaje como eje",
+          "body": "Identificar y manejar a los espías enemigos permite reducir el riesgo de infiltración y comprender la estructura del sistema adversario.",
+          "segmentId": "13-04"
+        },
+        {
+          "title": "La inteligencia es trabajo de altura",
+          "body": "La mejor inteligencia no es una tarea menor, sino una función estratégica que, dirigida por la más alta sabiduría, determina el éxito militar.",
+          "segmentId": "13-05"
+        }
+      ]
+    }
+  ],
+  "fr": [
+    {
+      "chapterNumber": 1,
+      "chapterTitle": "Estimation initiale",
+      "fullTitle": "Estimation initiale — Chapitre I",
+      "group": "Consultation au temple",
+      "summary": "Ce chapitre définit la guerre comme une affaire capitale touchant la survie de l’État et la vie des peuples. Il préconise d’établir, avant toute décision, une échelle commune fondée sur cinq facteurs (voie, ciel, terre, général, loi) puis de comparer l’ennemi et soi par sept calculs. La comparaison vise à repérer les avantages exploitables et à former des décisions adaptées au contexte. Les méthodes de ruse relèvent de la gestion de l’information et de la perception, mais tout revient au calcul préalable : plus l’analyse des conditions, les préparatifs et le jugement sont complets, plus la victoire peut être anticipée.",
+      "tags": [
+        "Cinq facteurs",
+        "Sept calculs",
+        "Consultation au temple",
+        "Art de la ruse",
+        "Décision"
+      ],
+      "seoTitle": "Sun Tzu — Estimation initiale : cinq facteurs et sept calculs",
+      "seoDescription": "Chapitre sur l'évaluation préalable : cinq facteurs et sept comparaisons pour prévoir la victoire avant le combat.",
+      "segments": [
+        {
+          "id": "01-01",
+          "text": "Sun Tzu dit : La guerre est une affaire capitale pour l’État, un domaine où se décident la vie et la mort, la voie de la survie ou de la disparition ; on ne peut manquer de l’examiner. C’est pourquoi on l’évalue selon cinq facteurs et on la compare au moyen de sept calculs afin d’en connaître la situation : premier, la voie ; deuxième, le ciel ; troisième, la terre ; quatrième, le général ; cinquième, la loi."
+        },
+        {
+          "id": "01-02",
+          "text": "La voie consiste à faire partager au peuple la volonté du souverain, afin qu’il puisse mourir ou vivre pour lui sans craindre le danger. Le ciel désigne le yin et le yang, le froid et la chaleur, les saisons et le temps. La terre signifie les hauteurs et les profondeurs, les distances et les proximités, les difficultés et les facilités, l’étendue et l’étroitesse, la vie et la mort. Le général désigne la sagesse, la loyauté, la bienveillance, le courage et la rigueur. La loi désigne l’organisation, les voies administratives et l’emploi des ressources. Ces cinq facteurs, tout général en a entendu parler ; celui qui les connaît vaincra, celui qui ne les connaît pas ne vaincra pas. C’est pourquoi on les compare au moyen de sept calculs pour en connaître la situation : quel souverain possède la voie ? quel général est le plus capable ? qui bénéficie du ciel et de la terre ? quelles lois et quels ordres sont appliqués ? quelle armée est la plus forte ? quels soldats sont les mieux entraînés ? chez qui les récompenses et les punitions sont-elles les plus claires ? Par cela, je connais la victoire ou la défaite."
+        },
+        {
+          "id": "01-03",
+          "text": "Si un général écoute mes plans et les met en œuvre, il sera victorieux : il faut le garder. Si un général n’écoute pas mes plans, employer ses services conduira à la défaite : il faut l’écarter. Une fois qu’il a écouté les calculs avantageux, créez la situation qui soutiendra l’action extérieure. La situation consiste à tirer parti des avantages pour adapter son action. La guerre est une voie de ruse. Ainsi, paraissez incapable quand vous êtes capable, inactif quand vous êtes actif ; paraissez loin quand vous êtes proche, proche quand vous êtes loin. Attirez-le par un avantage, profitez de son désordre, préparez-vous lorsqu’il est en ordre, évitez-le lorsqu’il est fort, irritez-le pour le désorienter, montrez-vous inférieur pour le rendre arrogant, restez reposé pour le fatiguer, soyez proche de lui pour le séparer de ses alliés. Attaquez-le là où il n’est pas préparé et surgissez là où il ne s’y attend pas. Telle est la victoire des militaires ; elle ne se transmet pas d’avance."
+        },
+        {
+          "id": "01-04",
+          "text": "Avant le combat, celui qui, lors des consultations au temple, a beaucoup de calculs remportera la victoire ; celui qui en a peu ne la remportera pas. Beaucoup de calculs l'emportent, peu de calculs n'emportent pas ; que dire de l'absence de calculs ? À partir de cela j'observe que la victoire et la défaite sont apparentes."
+        }
+      ],
+      "points": [
+        {
+          "title": "La guerre, affaire majeure de l'État",
+          "body": "La guerre ne doit pas être considérée comme l'aventure personnelle d'un chef militaire. Elle engage les ressources publiques, la vie des citoyens et la survie du régime ; elle exige donc une évaluation prudente et solennelle.",
+          "segmentId": "01-01"
+        },
+        {
+          "title": "Cinq facteurs et sept calculs",
+          "body": "Les cinq facteurs offrent des angles d'observation ; les sept calculs imposent une comparaison systématique entre l'ennemi et soi. Ensemble, ils forment le cadre élémentaire du jugement avant la bataille.",
+          "segmentId": "01-02"
+        },
+        {
+          "title": "Prendre l'initiative selon les avantages",
+          "body": "Un plan établi doit être ajusté aux intérêts et conditions réelles. L'initiative (shi) consiste à exploiter les avantages disponibles pour créer l'occasion et orienter la décision.",
+          "segmentId": "01-03"
+        },
+        {
+          "title": "La ruse et la feinte",
+          "body": "Faire paraître le contraire de la réalité — capable/inapte, employé/inemployé, proche/lointain — vise à fausser le jugement adverse et à provoquer des ouvertures exploitables.",
+          "segmentId": "01-03"
+        },
+        {
+          "title": "La prévision assure la victoire",
+          "body": "L'avantage se construit avant l'affrontement. La différence entre beaucoup et peu de calculs tient à l'exhaustivité de l'inventaire des facteurs et de la comparaison des intérêts ; plus la préparation est complète, plus la victoire devient prévisible.",
+          "segmentId": "01-04"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 2,
+      "chapterTitle": "Opérations",
+      "fullTitle": "Opérations — Chapitre 2",
+      "group": "Affaires de l'État",
+      "summary": "Ce chapitre porte sur le temps et le coût de la guerre. Une armée en campagne entraîne des dépenses continues pour le transport, l'équipement, les réquisitions et provoque la hausse des prix : même une brillante tactique perd sa valeur si la campagne s'éternise. L'emploi des armes requiert d'atteindre rapidement les objectifs et de raccourcir au maximum les lignes de ravitaillement. La prise de ressources et de personnel ennemis ne se réduit pas à du pillage : il faut récompenser, réorganiser et intégrer pour renforcer plutôt que d'affaiblir soi-même l'effort de guerre.",
+      "tags": [
+        "Coût",
+        "Victoire rapide",
+        "Logistique",
+        "Puissance nationale",
+        "Intégration"
+      ],
+      "seoTitle": "Sun Tzu — Chapitre 2 : Opérations et coûts de la guerre",
+      "seoDescription": "Analyse de la durée, des coûts et de la logistique : victoire rapide, ravitaillement à partir de l'ennemi et préservation des ressources nationales.",
+      "segments": [
+        {
+          "id": "02-01",
+          "text": "Sunzi dit : Les règles de l'emploi des armes — atteler mille chevaux, avoir mille chars en cuir, cent mille hommes en armure, acheminer des vivres sur des centaines de lieues — entraînent des dépenses intérieures et extérieures : réceptions, matériaux comme colles et laques, entretien des chars et des armures. Le coût peut atteindre mille monnaies par jour avant même que l'armée de cent mille hommes ne soit levée. Dans l'usage de la guerre, l'essentiel est la victoire : si la guerre se prolonge, les armes s'émoussent et le tranchant s'altère ; l'attaque des citadelles use les forces ; l'exposition prolongée de l'armée épuise les ressources de l'État. Des troupes émoussées, la force réduite et les magasins vidés font que les princes voisins profitent de la faiblesse pour se soulever ; même les hommes sages ne peuvent bien régler la situation ensuite. C'est pourquoi, parmi les choses militaires, on loue la rapidité apparemment grossière, et l'on n'a pas vu la subtilité de la durée. Jamais on n'a remarqué qu'une guerre longue fût profitable au pays. Qui ignore entièrement les maux de l'emploi des armes ne peut connaître pleinement leurs avantages."
+        },
+        {
+          "id": "02-02",
+          "text": "Celui qui sait employer les forces évite de réquisitionner les mêmes hommes deux fois et n'accumule pas de vivres pour trois ans ; il prélève sur les ressources du pays et vit sur les vivres de l'ennemi : ainsi la nourriture de l'armée suffit."
+        },
+        {
+          "id": "02-03",
+          "text": "Quand un pays approvisionne son armée depuis loin, le transport l'appauvrit et appauvrit le peuple ; quand l'armée se tient près, les prix augmentent et la population s'épuise financièrement, ce qui entraîne des corvées forcées. Si la force est affaiblie et les richesses épuisées, le cœur du pays se vide au foyer. Des dépenses du peuple, sept dixièmes sont perdus ; des dépenses publiques — chars brisés, chevaux au repos, armures, traits et arcs à pavillon, hallebardes, boucliers et mantelets, bœufs et gros chariots — six dixièmes disparaissent."
+        },
+        {
+          "id": "02-04",
+          "text": "Ainsi le général avisé cherche à faire manger ses hommes sur l'ennemi : une mesure de vivres prise à l'ennemi vaut vingt mesures si elle venait de chez nous ; une gerbe de fourrage prise à l'ennemi équivaut à vingt gerbes pour nos besoins."
+        },
+        {
+          "id": "02-05",
+          "text": "Tuer l'ennemi procède de la colère ; prendre ses richesses procède de l'intérêt matériel. Dans les combats de chars, si l'on capture dix chars ou plus, il faut récompenser ceux qui les ont d'abord pris et changer leurs enseignes. Mélanger les chars capturés avec les nôtres et y installer des équipages ; traiter bien les prisonniers et pourvoir à leur subsistance : voilà ce qu'on appelle vaincre l'ennemi et s'en trouver plus fort."
+        },
+        {
+          "id": "02-06",
+          "text": "Ainsi la guerre recherche la victoire, non la durée. Le général qui connaît les affaires militaires tient la vie des citoyens en main ; il est le maître de la sûreté ou du péril de l'État."
+        }
+      ],
+      "points": [
+        {
+          "title": "La guerre vise la victoire, non la durée",
+          "body": "Le texte n'encourage pas la précipitation irréfléchie : il met en garde contre l'usure des forces et l'épuisement des ressources qu'entraîne une guerre prolongée, créant des opportunités pour des tiers.",
+          "segmentId": "02-01"
+        },
+        {
+          "title": "Connaître les maux de la guerre",
+          "body": "Se focaliser uniquement sur les gains possibles sans tenir compte des coûts directs et indirects ne permet pas d'évaluer correctement la décision d'entrer en guerre. L'évaluation des risques est préalable au calcul des bénéfices.",
+          "segmentId": "02-01"
+        },
+        {
+          "title": "Se nourrir de l'ennemi",
+          "body": "Le transport à longue distance transfert le fardeau sur la population. Raccourcir les lignes de ravitaillement et utiliser les ressources locales — y compris celles de l'ennemi — réduit le coût total de la campagne.",
+          "segmentId": "02-02"
+        },
+        {
+          "title": "Vaincre pour renforcer",
+          "body": "La capture d'équipements ennemis doit être suivie de récompenses pour les preneurs, du changement d'enseignes, du réemploi des matériels et du bon traitement des captifs : c'est la stratégie de transformation des ressources ennemies en renforts pour soi.",
+          "segmentId": "02-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 3,
+      "chapterTitle": "La stratégie d'attaque",
+      "fullTitle": "La stratégie d'attaque — Troisième chapitre",
+      "group": "Victoire complète",
+      "summary": "Ce chapitre défend la conception d'une victoire qui préserve l'ensemble. Le sommet de l'art de la guerre n'est pas de gagner dans un combat frontal, mais d'abord de défaire le plan et les alliances de l'adversaire pour le priver des conditions du combat ; le siège est le dernier recours, en raison de son coût. Le texte aborde aussi la comparaison des forces, la relation souverain‑général et les conditions du gain, en insistant sur le fait que le pouvoir politique ne doit pas empiéter sur la compétence militaire, et que le commandant doit simultanément comprendre l'ennemi, les effectifs, le moment et la volonté collective.",
+      "tags": [
+        "Victoire complète",
+        "Attaquer la stratégie",
+        "Attaquer les alliances",
+        "Souverain et général",
+        "Connaître l'ennemi et soi-même"
+      ],
+      "seoTitle": "La stratégie de la victoire : vaincre sans combattre",
+      "seoDescription": "Chapitre sur la supériorité stratégique : vaincre sans combat, briser les plans et les alliances, et ne recourir au siège qu’en dernier recours.",
+      "segments": [
+        {
+          "id": "03-01",
+          "text": "Sun Tzu dit : Dans l'art de la guerre, préserver l'État est la meilleure méthode ; renverser l'État vient ensuite. Préserver l'armée est préférable ; défaire l'armée vient ensuite. Préserver la formation est préférable ; défaire la formation vient ensuite. Préserver les soldats est préférable ; défaire les soldats vient ensuite. Préserver l'unité est préférable ; rompre l'unité vient ensuite. Ainsi, gagner cent batailles n'est pas le summum de l'excellence ; contraindre l'ennemi à déposer les armes sans combattre est la plus grande excellence."
+        },
+        {
+          "id": "03-02",
+          "text": "Ainsi, la meilleure action est d'attaquer les plans de l'ennemi ; vient ensuite d'attaquer ses alliances ; puis, d'affronter ses forces ; et le pire est de s'emparer d'une ville par siège. Le siège ne se justifie qu'en dernier recours. On construit des tours d'assaut et des roulantes, on prépare les machines : il faut trois mois pour les achever ; puis, pour s'approcher des murailles, encore trois mois. Si le général, emporté par sa colère, force l'assaut et que les soldats se précipitent comme des fourmis, un tiers des hommes est tué et la ville ne tombe pas : telle est la calamité du siège."
+        },
+        {
+          "id": "03-03",
+          "text": "Donc le bon stratège use des forces de l'ennemi sans combattre, prend sa ville sans siège, détruit son État sans longue campagne ; il s'efforce de conserver l'ensemble dans le monde. Ainsi les troupes ne s'épuisent pas et l'avantage peut rester entier : telle est la méthode d'attaque par la ruse."
+        },
+        {
+          "id": "03-04",
+          "text": "Ainsi, pour employer les forces : si vous êtes dix fois supérieurs, enveloppez l'ennemi ; si vous êtes cinq fois supérieurs, attaquez ; si vous êtes le double, divisez-le ; si les forces sont égales, combattez ; si vous êtes moins nombreux, tenez la défense ; si vous êtes encore plus faible, évitez le combat. Ce qui semble la solidité d'un petit ennemi est, pour un grand ennemi, l'occasion de l'enliser et de le capturer."
+        },
+        {
+          "id": "03-05",
+          "text": "Le général est l'auxiliaire de l'État. Si l'auxiliaire est parfait, l'État sera fort ; s'il est défaillant, l'État sera faible."
+        },
+        {
+          "id": "03-06",
+          "text": "Il y a trois sources d'inquiétude pour le souverain vis‑à‑vis de l'armée : ordonner d'avancer sans savoir qu'il est impossible d'avancer, ou ordonner de reculer sans savoir qu'il est impossible de reculer — c'est asservir l'armée ; ignorer les affaires des trois armées et s'immiscer dans leur administration — les soldats seront perplexes ; ignorer les pouvoirs propres des trois armées et s'attribuer leurs fonctions — les soldats douteront. Si les trois armées sont à la fois perplexes et pleines de doutes, les difficultés avec les princes deviendront inévitables : cela s'appelle une armée troublée conduisant à la défaite."
+        },
+        {
+          "id": "03-07",
+          "text": "Il y a cinq choses à connaître pour gagner : savoir si l'on peut combattre ou non ; comprendre l'emploi des forces nombreuses ou peu nombreuses ; que le haut et le bas partagent la même volonté ; préparer des embuscades et surprises pour prendre l'ennemi au dépourvu ; que le général soit compétent et que le souverain ne l'entrave — celui qui remplit ces cinq conditions connaît la voie de la victoire."
+        },
+        {
+          "id": "03-08",
+          "text": "On dit donc : connaître l'ennemi et se connaître soi‑même, c'est assurer cent batailles sans péril ; ne connaître que soi‑même et pas l'ennemi mène à une victoire pour chaque défaite ; ne connaître ni l'un ni l'autre, et chaque bataille sera périlleuse."
+        }
+      ],
+      "points": [
+        {
+          "title": "Contraindre l'ennemi sans combattre",
+          "body": "La plus grande excellence ne se mesure pas au nombre de victoires au combat, mais à la capacité d'atteindre l'objectif en minimisant la destruction et la dépense.",
+          "segmentId": "03-01"
+        },
+        {
+          "title": "La supériorité : attaquer la stratégie",
+          "body": "Les moyens obéissent à un ordre : d'abord démanteler les plans ennemis, ensuite rompre ses alliances, puis affronter ses forces ; investir une ville ne se justifie qu'en dernier recours.",
+          "segmentId": "03-02"
+        },
+        {
+          "title": "Préserver l'ensemble",
+          "body": "Préserver 'l'ensemble' ne signifie pas refuser le combat mais sauvegarder l'État, l'armée et les ressources afin que la victoire ne coûte pas l'épuisement des forces propres.",
+          "segmentId": "03-03"
+        },
+        {
+          "title": "Trois maux causés par l'ingérence du souverain",
+          "body": "Ignorer les conditions d'avancée et de retraite, le fonctionnement organisationnel et la répartition des pouvoirs, puis s'immiscer, provoque confusion, doute et désordre dans l'armée.",
+          "segmentId": "03-06"
+        },
+        {
+          "title": "Connaître l'ennemi et soi‑même",
+          "body": "Connaître la victoire n'est pas un slogan : c'est un jugement global sur la possibilité de combattre, l'emploi des forces, l'unité de volonté, l'état de préparation et l'autonomie du commandement.",
+          "segmentId": "03-07"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "Forme militaire",
+      "fullTitle": "Forme militaire — IV",
+      "group": "Avantage préalable",
+      "summary": "Ce chapitre examine la frontière entre ce que l'on peut contrôler et ce que l'on ne peut forcer. Il faut d'abord établir des conditions qui rendent impossible notre défaite — c'est un travail maîtrisable — puis attendre que l'ennemi offre une ouverture favorable, chose qu'on ne peut provoquer à volonté. Le véritable art du combat consiste à choisir des engagements où les conditions de victoire sont déjà mûres. L'ordre : portée, capacité, nombre, comparaison, victoire, montre que l'avantage naît d'un calcul progressif de l'espace, des ressources, des effectifs et du rapport de forces.",
+      "tags": [
+        "Impossibilité de défaite",
+        "Prendre l'avantage",
+        "Forme militaire",
+        "Risque",
+        "Mesure"
+      ],
+      "seoTitle": "Forme militaire — Sun Tzu : assurer l'invincibilité avant l'attaque",
+      "seoDescription": "Chapitre IV de Sun Tzu : assurer l’invincibilité par la préparation et mesurer les ressources et le terrain avant d’engager le combat.",
+      "segments": [
+        {
+          "id": "04-01",
+          "text": "Sun Tzu dit : Autrefois, les maîtres du combat rendaient d'abord leur position invincible, puis attendaient que l'ennemi devînt vulnérable. L'impossibilité d'être vaincu tient à soi ; la possibilité de vaincre tient à l'ennemi. Ainsi le bon combattant peut assurer qu'il n'est pas vaincu, mais il ne peut contraindre l'ennemi à être nécessairement vaincu. C'est pourquoi on dit : la victoire peut être connue, mais non fabriquée."
+        },
+        {
+          "id": "04-02",
+          "text": "Ce qui rend impossible d'être vaincu, c'est la défense ; ce qui rend possible de vaincre, c'est l'attaque. La défense compense le manque ; l'attaque exploite l'excédent. Le bon défenseur se cache sous les neuf terrains ; le bon attaquant s'anime sur les neuf cieux. Ainsi il peut se préserver et remporter la victoire totale."
+        },
+        {
+          "id": "04-03",
+          "text": "Voir la victoire comme tout le monde la voit n'est pas le summum de l'habileté ; gagner et que le monde vous loue n'est pas non plus la plus grande habileté. De même, soulever un duvet n'est pas une preuve d'une force exceptionnelle ; apercevoir le soleil et la lune n'est pas une preuve d'une vision supérieure ; entendre le tonnerre n'est pas une preuve d'une audition fine."
+        },
+        {
+          "id": "04-04",
+          "text": "Ce que les anciens appelaient les vrais habiles au combat, c'était ceux qui l'emportaient sur ce qui était facile à vaincre. Ainsi la victoire des habiles ne porte ni le nom d'une intelligence extraordinaire, ni celui d'un courage hors pair. Leur victoire n'est pas fautive : là où ils positionnent leurs forces, ils doivent gagner ; leur victoire précède la défaite de l'ennemi. Les habiles se placent sur un terrain d'où ils ne peuvent être défaits, et attendent l'erreur de l'adversaire. C'est pourquoi les forces victorieuses gagnent avant d'entrer en combat ; les forces vaincues combattent d'abord et cherchent ensuite la victoire. Celui qui use bien des troupes cultive la voie et entretient la loi ; ainsi il gouverne la question de la victoire et de la défaite."
+        },
+        {
+          "id": "04-05",
+          "text": "La science militaire : d'abord la portée, ensuite la capacité, puis le nombre, ensuite la comparaison, enfin la victoire. Le terrain engendre la portée ; la portée engendre la capacité ; la capacité engendre le nombre ; le nombre engendre la comparaison ; la comparaison engendre la victoire. Ainsi l'armée victorieuse pèse comme on comparerait un taël à un fen ; l'armée vaincue pèse comme on comparerait un fen à un taël. La manière dont l'armée victorieuse attaque les masses est comme déverser l'eau accumulée dans un ravin d'une grande profondeur — telle est la forme."
+        }
+      ],
+      "points": [
+        {
+          "title": "Assurer d'abord l'invincibilité",
+          "body": "S'occuper d'abord de sa défense, de ses institutions et de ses préparatifs, puis attendre l'occasion extérieure : c'est prioriser le contrôle du risque avant la quête du gain.",
+          "segmentId": "04-01"
+        },
+        {
+          "title": "Impossibilité de défaite en soi, possibilité de victoire dans l'ennemi",
+          "body": "Éviter la défaite est en grande partie sous notre contrôle ; imposer la défaite à l'adversaire dépend de l'apparition de ses faiblesses.",
+          "segmentId": "04-01"
+        },
+        {
+          "title": "Choisir les victoires faciles",
+          "body": "La supériorité consiste à sélectionner les combats où la victoire est déjà accessible, et non à chercher la renommée en prenant des risques dans des conditions défavorables.",
+          "segmentId": "04-04"
+        },
+        {
+          "title": "Les vainqueurs gagnent avant de combattre",
+          "body": "L'action vient en dernier, quand l'avantage est déjà constitué ; on n'engage pas l'action dans l'espoir qu'elle créera l'avantage.",
+          "segmentId": "04-04"
+        },
+        {
+          "title": "Portée, capacité, nombre, comparaison, victoire",
+          "body": "Du terrain à la mesure des ressources, puis au comptage des forces et à la comparaison des rapports, chaque étape conduit à la décision de la victoire.",
+          "segmentId": "04-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "La puissance",
+      "fullTitle": "La puissance (Chapitre V)",
+      "group": "Exploitation de la puissance",
+      "summary": "Ce chapitre, qui va de l'organisation au commandement, traite de la formation du « shi » (勢). Gouverner la foule comme gouverner une minorité repose sur la structure et les signaux ; en combat, les variations sont nombreuses, mais les éléments fondamentaux restent l'alternance du régulier et du surprenant. Le shi n'est pas un enthousiasme abstrait : c'est l'art de combiner position, vitesse, rythme et conditions en une force libérable. Le leader accompli ne se contente pas d'exiger du courage individuel : il conçoit l'environnement pour que des hommes ordinaires, placés à bon escient, produisent l'effet d'ensemble.",
+      "tags": [
+        "puissance",
+        "régulier et surprenant",
+        "organisation",
+        "rythme",
+        "exploitation de la puissance"
+      ],
+      "seoTitle": "Puissance militaire : rythme et surprise — Sun Tzu, chapitre V",
+      "seoDescription": "Chapitre V de Sun Tzu sur la formation de la puissance : organisation, alternance du régulier et du surprenant, rythme et exploitation de la situation.",
+      "segments": [
+        {
+          "id": "05-01",
+          "text": "Sun Tzu dit : Gouverner une multitude comme une minorité exige la répartition des effectifs ; combattre une foule comme on combat une petite force exige la définition des formes et des désignations. Que les masses des trois armées puissent être amenées à affronter l'ennemi sans être vaincues, voilà le rôle du régulier et de l'inhabituel. Là où l'on applique la force, comme lorsque l'on lance une pierre sur un œuf, se révèlent le vide et le plein."
+        },
+        {
+          "id": "05-02",
+          "text": "Dans toute bataille, on s'aligne par le régulier et on triomphe par l'inhabituel. Ainsi, celui qui excelle à surprendre a des ressources aussi inépuisables que le ciel et la terre, aussi abondantes que les fleuves et les mers. Terminer pour recommencer, comme le jour et la lune ; mourir et renaître, comme les saisons. Les sons ne sont que cinq, mais leurs variations sont innombrables à l'oreille ; les couleurs ne sont que cinq, leurs changements sont innombrables à la vue ; les saveurs ne sont que cinq, leurs combinaisons sont innombrables au goût. Les formes du combat ne dépassent pas le régulier et l'inhabituel, et pourtant leurs métamorphoses sont sans fin. Le régulier et l'inhabituel se génèrent mutuellement comme un cycle sans commencement ni fin : qui pourrait l'épuiser ?"
+        },
+        {
+          "id": "05-03",
+          "text": "La violence d'un torrent qui emporte même les pierres, voilà la puissance ; la rapidité d'un oiseau de proie qui brise et détruit, voilà le rythme. Ainsi, le bon combattant présente une puissance dangereuse et des tempos brefs. La puissance est comme un arc de trait tendu ; le rythme est comme le mécanisme qui déclenche la flèche."
+        },
+        {
+          "id": "05-04",
+          "text": "Apparente agitation en fouillis : on lutte dans le désordre sans être réellement désorganisé ; confusion totale : la formation est compacte et ne peut être brisée. Le désordre naît de l'ordre, la peur naît du courage, la faiblesse naît de la force. L'ordre et le désordre relèvent du calcul ; courage et crainte relèvent de la puissance ; force et faiblesse relèvent de la forme."
+        },
+        {
+          "id": "05-05",
+          "text": "Ainsi, celui qui sait faire agir l'ennemi lui montre une apparence que l'ennemi suivra ; il lui donne quelque chose que l'ennemi saisira. On le met en mouvement par l'avantage, et on l'attend avec ses troupes."
+        },
+        {
+          "id": "05-06",
+          "text": "Le bon stratège tire parti de la puissance plutôt que d'en faire peser la faute sur les hommes ; ainsi il peut choisir ses hommes et leur confier la mission la mieux adaptée. Exploiter la puissance, c'est faire agir les hommes comme on ferait tourner du bois ou une pierre. Par nature, le bois et la pierre restent immobiles quand ils sont assurés, se meuvent quand ils sont en péril ; un objet anguleux s'arrête, un objet rond roule. Ainsi la puissance du maître de guerre ressemble à faire rouler une pierre ronde depuis le haut d'une montagne abrupte."
+        }
+      ],
+      "points": [
+        {
+          "title": "Division et formes",
+          "body": "La capacité à commander une grande organisation dépend de la répartition en niveaux, d'unités responsables et d'un système cohérent de signaux.",
+          "segmentId": "05-01"
+        },
+        {
+          "title": "S'aligner par le régulier, triompher par l'inhabituel",
+          "body": "Le régulier et l'inhabituel sont des configurations réciproques ; on ne doit pas considérer l'un comme une tactique fixe et immuable.",
+          "segmentId": "05-02"
+        },
+        {
+          "title": "Puissance aiguë, rythme bref",
+          "body": "La force doit se concentrer pour être libérée en un point d'impact court et efficace, comme un arc tendu et un mécanisme qui déclenche : allonger le tempo dilue l'avantage.",
+          "segmentId": "05-03"
+        },
+        {
+          "title": "Façonner et offrir l'avantage",
+          "body": "On guide la réaction de l'adversaire par des formes apparentes et des incitations avantageuses, puis on utilise des forces préparées pour exploiter sa réponse.",
+          "segmentId": "05-05"
+        },
+        {
+          "title": "Chercher dans la situation, ne pas blâmer les hommes",
+          "body": "Le rôle du leader est de choisir les hommes et d'ajuster les conditions pour exploiter la puissance, plutôt que d'imputer systématiquement l'échec aux individus.",
+          "segmentId": "05-06"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 6,
+      "chapterTitle": "Vide et plein",
+      "fullTitle": "Le vide et le plein — VI",
+      "group": "Assurer la victoire",
+      "summary": "Le noyau de ce chapitre est de prendre l'initiative pour amener l'adversaire à agir selon notre dessein plutôt que d'être contraint à le suivre. Par le profit et le préjudice, la vitesse, les feintes et la dissimulation, on disperse la vigilance ennemie et l'on concentre nos forces au point décisif. La forme la plus aboutie est l'absence de forme : l'ennemi ne peut savoir où déployer ses ressources. La fin du texte compare l'armée à l'eau : l'eau évite le haut et va vers le bas; de même, la force cherche le vide plutôt que le plein. Les méthodes ne doivent pas être figées, elles doivent évoluer selon l'ennemi et le terrain.",
+      "tags": [
+        "Vide et plein",
+        "Initiative",
+        "Concentration",
+        "Sans forme",
+        "Vaincre par l'ennemi"
+      ],
+      "seoTitle": "Sun Tzu — Chapitre VI : Le vide et le plein",
+      "seoDescription": "Prendre l'initiative, concentrer ses forces et rester sans forme, comme l'eau, pour tromper et vaincre l'ennemi.",
+      "segments": [
+        {
+          "id": "06-01",
+          "text": "Sun Tzu dit : Celui qui occupe le terrain de bataille le premier et attend l'ennemi est reposé ; celui qui arrive ensuite et se précipite au combat est fatigué. Ainsi, le bon combattant amène l'adversaire à venir à lui, il ne se met pas lui-même à la merci de l'ennemi."
+        },
+        {
+          "id": "06-02",
+          "text": "Celui qui fait venir l'ennemi de son propre chef lui offre un avantage ; celui qui empêche l'ennemi d'arriver lui cause un préjudice. Quand l'ennemi est au repos, faites-le travailler ; quand il est rassasié, affamez-le ; quand il est à l'abri, mettez-le en mouvement. Sortez de l'endroit où il ne vient pas, et allez là où il ne s'y attend pas."
+        },
+        {
+          "id": "06-03",
+          "text": "Parcourir mille li sans se fatiguer, c'est marcher en terrain sans peuplement. Attaquer et toujours prendre, c'est frapper là où l'autre ne défend pas ; défendre et être invulnérable, c'est garder ce que l'ennemi n'attaque pas. Ainsi le bon attaquant fait que l'ennemi ignore où il est défendu ; le bon défenseur fait que l'ennemi ne sait pas où il frappera. Subtil à l'extrême, jusqu'à l'absence de forme ; merveilleux à l'extrême, jusqu'au silence : ainsi il tient la vie et la mort de l'ennemi entre ses mains."
+        },
+        {
+          "id": "06-04",
+          "text": "Avancer de manière qu'on ne puisse l'empêcher, c'est frapper son vide ; se retirer de façon qu'on ne puisse poursuivre, c'est aller si vite qu'on est hors d'atteinte. Si je veux combattre, même si l'ennemi a des remparts élevés et des fossés profonds, il devra combattre si j'attaque le point qu'il doit sauver ; si je ne veux pas combattre, même si je trace une ligne et m'y tiens, l'ennemi ne pourra m'affronter si je l'ai détourné de son objectif."
+        },
+        {
+          "id": "06-05",
+          "text": "Si je montre une forme tandis que je reste sans forme, je me concentre pendant que l'ennemi se divise. Ma concentration est une, et l'ennemi se divise en dix : dix se portent contre un seul, et je suis nombreux tandis qu'il est peu. Qui peut frapper le peu avec le beaucoup, celui-là a réduit le champ de l'affrontement. Si le lieu du combat est inconnu, l'ennemi doit préparer de nombreux points ; plus il prépare, moins il a de forces à chaque endroit. S'il prépare l'avant, l'arrière est faible ; s'il prépare l'arrière, l'avant est faible ; s'il prépare la gauche, la droite est faible, et vice versa. S'il couvre partout, alors rien n'est solidement défendu. Ceux qui sont peu sont ceux qui préparent ; ceux qui sont nombreux font préparer les autres contre eux."
+        },
+        {
+          "id": "06-06",
+          "text": "Si l'on connaît le lieu et le jour du combat, on peut se rassembler à mille li pour livrer bataille. Si on ignore le lieu et le jour, la gauche ne peut secourir la droite, la droite ne peut secourir la gauche, l'avant ne peut secourir l'arrière, l'arrière ne peut secourir l'avant — et que dire des distances de dizaines de li ou de quelques li ! À mon jugement, quoique les Yue possèdent de nombreuses troupes, qu'en sert-le pour la victoire ou la défaite ? Ainsi on dit : la victoire peut être saisie. L'ennemi, même nombreux, peut être rendu incapable de combattre."
+        },
+        {
+          "id": "06-07",
+          "text": "Par la planification on connaît les comptes du gain et de la perte ; par l'action on comprend le principe du mouvement et de l'immobilité ; par la disposition on perçoit les lieux de mort et de salut ; en contournant on voit où il y a excès et insuffisance. L'extrême de la formation des troupes atteint l'absence de forme. Sans forme, aucun espion profond ne peut voir, aucun sage ne peut concevoir. En se servant des formes pour prendre l'avantage parmi la foule, la foule ne peut le deviner. Tous connaissent la forme par laquelle je les bats, mais nul ne connaît la forme par laquelle j'obtiens la victoire. Ainsi la victoire ne se répète pas et se conforme à l'infini des formes."
+        },
+        {
+          "id": "06-08",
+          "text": "La forme des troupes est semblable à l'eau : l'écoulement de l'eau évite les hauteurs et va vers le bas ; la victoire de l'armée évite le plein et frappe le vide. L'eau adapte son cours au terrain ; l'armée adapte sa victoire à l'ennemi. Ainsi l'armée n'a pas d'impulsion fixe, pas de forme constante ; celui qui, selon l'ennemi, se transforme pour remporter la victoire, celui-là est appelé 'merveilleux'. De même, les cinq éléments n'ont pas de victoire permanente, les quatre saisons n'ont pas de place fixe ; le jour a ses raccourcissements et ses allongements, la lune sa mort et sa naissance."
+        }
+      ],
+      "points": [
+        {
+          "title": "Amener l'autre à agir, ne pas s'y soumettre",
+          "body": "L'initiative ne se résume pas à agir le premier : il s'agit de faire en sorte que l'adversaire réponde à nos choix de temps, de lieu et de ressources, plutôt que de nous dicter les siens.",
+          "segmentId": "06-01"
+        },
+        {
+          "title": "Attaquer ce que l'ennemi doit sauver",
+          "body": "Il n'est pas nécessaire d'affronter les points forts choisis par l'adversaire ; en modifiant ses intérêts et ses priorités, on le force à abandonner ses positions favorables.",
+          "segmentId": "06-04"
+        },
+        {
+          "title": "Je concentre, l'ennemi se divise",
+          "body": "Cacher la direction réelle de l'effort oblige l'ennemi à se défendre sur plusieurs fronts, puis concentrer ses forces en un point crée une supériorité locale.",
+          "segmentId": "06-05"
+        },
+        {
+          "title": "L'extrême de la formation est l'absence de forme",
+          "body": "Ne pas laisser son dispositif devenir un modèle prévisible empêche l'adversaire d'exploiter des schémas et préserve l'avantage informationnel.",
+          "segmentId": "06-07"
+        },
+        {
+          "title": "La forme des forces est comme l'eau",
+          "body": "Les méthodes de victoire doivent s'adapter au terrain et à l'ennemi ; reproduire mécaniquement des schémas passés mène souvent à l'échec.",
+          "segmentId": "06-08"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 7,
+      "chapterTitle": "Conflit pour l'avantage",
+      "fullTitle": "Conflit pour l'avantage — chapitre VII",
+      "group": "Lutte pour l'avantage",
+      "summary": "Ce chapitre traite des difficultés pour rassembler une armée et obtenir une position avantageuse. Transformer le détour en chemin direct exige d'aligner incitations, itinéraires, vitesse et logistique ; la recherche d'une simple rapidité peut coûter bagages et cohésion. Il propose des rythmes d'action (vent/forêt/feu/montagne), insiste sur la commande commune via tambours et étendards, la gestion du moral et de la fatigue, et la retenue face à la feinte, aux leurres, au repli ennemi et aux ennemis acculés.",
+      "tags": [
+        "conflit militaire",
+        "détour vs direct",
+        "rythmes : vent/forêt/feu/montagne",
+        "moral",
+        "logistique"
+      ],
+      "seoTitle": "Sun Tzu — Conflit pour l'avantage (Chapitre VII)",
+      "seoDescription": "Stratégies de Sun Tzu pour conquérir l’avantage : itinéraires, rythmes d’action, moral et logistique.",
+      "segments": [
+        {
+          "id": "07-01",
+          "text": "Sun Tzu dit : Dans l'art de la guerre, le général reçoit l'ordre du souverain, rassemble les troupes, les unit, manœuvre et campe ; rien n'est plus difficile que la rivalité pour le terrain. La difficulté de ces rivalités est que le détour devient direct et que le danger se change en avantage. Ainsi, prendre un itinéraire détourné et attirer l'ennemi par des avantages — ceux qui partent après peuvent être devancés par ceux qui savent jouer du détour et de la ligne droite. Voilà l'art de comprendre la stratégie du détour et du direct."
+        },
+        {
+          "id": "07-02",
+          "text": "Ainsi la lutte pour l’avantage apporte profit et péril. Lever toute l’armée pour courir après un avantage ne permet pas d’y arriver à temps ; détacher une partie de l’armée pour courir après l’avantage, c’est sacrifier les bagages. C’est pourquoi on roule les armures et l’on marche sans halte, nuit et jour, en doublant les étapes. Pour disputer un avantage à cent li, le général des trois armées sera capturé : les vigoureux partiront devant, les épuisés suivront, et seul un homme sur dix arrivera ; à cinquante li, le général de l’avant-garde sera mis en difficulté : seule la moitié arrivera ; à trente li, les deux tiers arriveront. Ainsi, une armée sans bagages périra, sans vivres périra, sans réserves périra. Celui qui ignore les desseins des princes ne peut nouer d’alliances à l’avance ; qui ignore la topographie des montagnes, des forêts, des passages difficiles et des marais ne peut manœuvrer ; qui n’emploie pas de guides locaux ne peut obtenir l’avantage du terrain."
+        },
+        {
+          "id": "07-03",
+          "text": "L’art militaire repose sur la ruse, se meut selon l’intérêt et change par la séparation et la réunion. Il faut être rapide comme le vent, lent comme la forêt, ravageur comme le feu, immobile comme la montagne ; difficile à discerner comme l’ombre et soudain comme le tonnerre. Pillez les villages pour en disperser la population, étendez le territoire pour en partager les avantages, évaluez la situation et agissez au moment opportun. Celui qui connaît d’abord le calcul du détour et de la ligne droite gagne : telle est la loi de la lutte pour l’avantage."
+        },
+        {
+          "id": "07-04",
+          "text": "Le traité « Gouvernance militaire » dit : « Quand la parole ne circule pas, on use du tambour et du gong ; quand la vue ne suffit pas, on use de bannières et d'étendards. » Tambours, gongs et étendards sont les oreilles et les yeux d'une armée. Quand les hommes sont focalisés, le brave ne peut avancer seul, le timide ne peut reculer seul : telle est la manière d'employer la masse. C'est pourquoi on emploie surtout tambours et gongs la nuit, et bannières le jour, pour modifier l'ouïe et la vue des soldats."
+        },
+        {
+          "id": "07-05",
+          "text": "On peut ôter leur ardeur aux trois armées, on peut s’emparer du cœur du général. Ainsi, le matin, l’ardeur est vive ; dans la journée, l’énergie fléchit ; le soir, les esprits se tournent vers le retour. Le bon général évite l’ardeur du matin et frappe la lassitude du retour : voilà la gestion du moral ; il attend le désordre par la discipline et le tumulte par le calme : voilà la gestion des cœurs ; il attend l’ennemi éloigné en étant proche, l’ennemi fatigué en étant reposé et l’ennemi affamé en étant rassasié : voilà la gestion des forces ; il n’attaque pas une armée dont les étendards sont parfaitement ordonnés et n’affronte pas de front une formation imposante : voilà la maîtrise du changement."
+        },
+        {
+          "id": "07-06",
+          "text": "Ainsi sont les règles de l’emploi des forces : ne pas attaquer un ennemi occupant une hauteur ; ne pas affronter un ennemi adossé à une colline ; ne pas poursuivre une retraite simulée ; ne pas attaquer des troupes aguerries ; ne pas mordre à l’appât d’une troupe-leurre ; ne pas barrer la route à une armée qui se replie ; lorsqu’on encercle une armée, toujours lui laisser une issue ; ne pas pousser à bout un ennemi acculé. Telles sont les règles de l’art militaire."
+        }
+      ],
+      "points": [
+        {
+          "title": "Transformer le détour en direct",
+          "body": "Un itinéraire indirect, s'il altère le jugement de l'adversaire et gagne du temps, peut devenir la voie la plus rapide pour arriver le premier.",
+          "segmentId": "07-01"
+        },
+        {
+          "title": "Profit et péril de la course",
+          "body": "Poursuivre une opportunité impose vitesse et dispersion : la rapidité peut étirer les formations et compromettre les approvisionnements ; avantage et risque vont de pair.",
+          "segmentId": "07-02"
+        },
+        {
+          "title": "Vent/Forêt/Feu/Montagne",
+          "body": "La distinction entre être rapide, lent, ravageur ou immobile décrit des rythmes d'action : il s'agit d'alterner selon l'objectif, non de chercher seulement la vitesse.",
+          "segmentId": "07-03"
+        },
+        {
+          "title": "Les yeux et les oreilles de la troupe",
+          "body": "Signaux communs (tambours, gongs, étendards) empêchent le courageux d'agir isolément et le timide de se retirer seul, transformant réactions individuelles en action collective.",
+          "segmentId": "07-04"
+        },
+        {
+          "title": "Gérer moral, cœur, force et mouvement",
+          "body": "Attendre que l'ardeur adverse décline, profiter du désordre, préserver sa force et éviter l'engagement frontal contre formations imposantes sont des formes de contrôle du rythme et du changement.",
+          "segmentId": "07-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 8,
+      "chapterTitle": "Neuf variations",
+      "fullTitle": "Neuf variations — chapitre huit",
+      "group": "Adaptation stratégique",
+      "summary": "Ce chapitre insiste sur le fait que les principes ne doivent pas être appliqués mécaniquement hors de leur contexte. Ne pas emprunter certaines voies, ne pas engager certaines troupes, ne pas assiéger certaines villes, ne pas disputer certains lieux, voire ne pas obéir à certains ordres du souverain peuvent être nécessaires pour éviter de rigidifier les règles. Le jugement mûr voit les dangers dans les avantages et cherche des remèdes dans les périls. On termine par cinq faiblesses du général : la recherche obstinée de la mort ou de la vie, la colère impatiente, l'excès d'intégrité et l'amour du peuple — chacun, poussé à l'excès, devient vulnérable.",
+      "tags": [
+        "Neuf variations",
+        "Avantages et risques",
+        "Préparation",
+        "Cinq périls",
+        "Adaptation"
+      ],
+      "seoTitle": "Neuf variations (chap. 8) — Adapter la stratégie aux risques",
+      "seoDescription": "Chapitre sur l'adaptation : mêler avantages et dangers, ne pas compter sur l'inaction de l'ennemi, et connaître les cinq périls qui menacent un général.",
+      "segments": [
+        {
+          "id": "08-01",
+          "text": "Sunzi dit : Pour l'art de la guerre, le général reçoit la mission du souverain, rassemble l'armée et regroupe les hommes. Sur un terrain ruiné on ne campe pas ; aux carrefours on concentre les forces ; sur les voies coupées on ne s'attarde ; sur un terrain d'encerclement on conçoit des plans ; dans un terrain mortel on se bat. Il y a des routes qu'il ne faut pas emprunter, des armées qu'il ne faut pas attaquer, des villes qu'il ne faut pas assiéger, des lieux qu'il ne faut pas disputer, et des ordres du souverain qu'il ne faut pas accepter. Ainsi, le général qui sait tirer parti des avantages des neuf variations connaît l'art de la guerre ; celui qui n'en saisit pas les avantages, fût-il versé dans la topographie, ne saura pas profiter du terrain ; celui qui conduit les troupes sans connaître l'art des neuf variations, fût-il informé des avantages du terrain, ne saura pas tirer parti des hommes."
+        },
+        {
+          "id": "08-02",
+          "text": "C'est pourquoi la réflexion du sage mêle nécessairement avantages et périls : il mêle l'avantage pour en assurer la crédibilité, il mêle le péril pour rendre les difficultés solvables. Ainsi on assujettit les princes par le péril, on met les princes au travail par l'occupation, on attire les princes par l'intérêt."
+        },
+        {
+          "id": "08-03",
+          "text": "Donc, en matière de guerre, ne comptez pas sur le fait que l'ennemi n'interviendra pas : comptez sur le fait que nous disposerons de moyens pour l'attendre. Ne comptez pas sur le fait qu'il n'attaquera pas : comptez sur le fait que nous aurons des choses qui ne peuvent être prises d'assaut."
+        },
+        {
+          "id": "08-04",
+          "text": "Ainsi le général court cinq périls : celui qui se croit voué à la mort peut être tué ; celui qui met tout en œuvre pour préserver la vie peut être capturé ; celui qui agit avec colère et précipitation devient méprisable ; celui qui s'accroche à une pureté morale excessive peut être humilié ; celui qui aime trop ses hommes peut devenir un fardeau. Ces cinq traits constituent des fautes du chef et des calamités pour la conduite des troupes. Renverser une armée et tuer son chef s'obtient toujours en exploitant ces cinq périls ; il ne faut pas omettre d'en tenir compte."
+        }
+      ],
+      "points": [
+        {
+          "title": "Il y a des choses qu'il ne faut pas faire",
+          "body": "Routes, forces adverses, cités, territoires et ordres ne doivent pas être attaqués ou suivis simplement parce qu'ils existent ; il faut considérer l'objectif global.",
+          "segmentId": "08-01"
+        },
+        {
+          "title": "Maîtriser les neuf variations",
+          "body": "Connaître la topographie ne suffit pas pour en tirer parti ; il faut savoir quand rompre avec les pratiques habituelles.",
+          "segmentId": "08-01"
+        },
+        {
+          "title": "Réfléchir aux avantages et aux périls",
+          "body": "L'analyse des gains doit intégrer les risques à venir, et l'analyse des risques doit rechercher des solutions : éviter un jugement à sens unique.",
+          "segmentId": "08-02"
+        },
+        {
+          "title": "Ne pas compter sur l'inaction de l'ennemi",
+          "body": "La sécurité ne doit pas reposer sur l'espoir que l'adversaire n'agira pas, mais sur la certitude que l'on sera préparé à tout scénario.",
+          "segmentId": "08-03"
+        },
+        {
+          "title": "Les cinq périls du général",
+          "body": "Des qualités personnelles, poussées à l'excès, deviennent des faiblesses exploitables par l'ennemi ; la connaissance de soi est aussi une gestion du risque stratégique.",
+          "segmentId": "08-04"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 9,
+      "chapterTitle": "Marches",
+      "fullTitle": "Chapitre IX — Marches",
+      "group": "Confronter l'ennemi",
+      "summary": "Ce chapitre traite du positionnement des troupes selon le terrain (montagne, eau, marécage, plaine) et de la lecture des signes mineurs pour juger de l'état de l'ennemi. Mouvement des arbres, envol d'oiseaux, poussières, paroles, récompenses, punitions et attitudes des soldats sont des indices à recouper. Il conclut sur le lien entre discipline et adhésion : punir avant d'avoir gagné l'attachement rend la peine inefficace ; maintenir des règles constantes fonde la confiance et l'obéissance.",
+      "tags": [
+        "Marches",
+        "Terrain",
+        "Reconnaissance",
+        "Discipline",
+        "Confiance"
+      ],
+      "seoTitle": "Sun Tzu — Chapitre 9 : Marches et positionnement militaire",
+      "seoDescription": "Conseils de Sun Tzu sur le choix du terrain, l’interprétation des signes et l’équilibre entre discipline et confiance.",
+      "segments": [
+        {
+          "id": "09-01",
+          "text": "Sunzi dit : Lorsque l'on campe et que l'on fait face à l'ennemi, sur les montagnes séparez-vous des creux et appuyez-vous aux vallées ; placez-vous sur les hauteurs où l'on vit, combattez depuis l'élévation sans être obligé de monter : ceci est la position de l'armée de montagne. Écartez-vous de l'eau quand elle vous sépare ; si l'ennemi, coupé de l'eau, vient vers vous, ne l'affrontez pas dans l'élément aquatique ; faites-le se trouver à demi engagé et frappez-le : c'est avantageux. Si l'on veut livrer bataille, ne s'adossez pas à l'eau pour recevoir l'ennemi ; placez-vous sur les hauteurs où l'on vit et n'attaque z pas vers le courant : telle est la position de l'armée au bord de l'eau. À l'écart des marais et des bourbiers, fuyez vite, ne vous attardez pas ; si deux armées se rencontrent au milieu des marais, on s'appuiera sur les plantes aquatiques et l'on tournera le dos aux arbres : ainsi se comporte l'armée des marais. Sur la plaine, le terrain est facile ; si le flanc droit est en hauteur, devant est la mort, derrière la vie : telle est la position de l'armée en plaine. Les avantages de ces quatre dispositions expliquent comment l'Empereur Jaune vainquit les quatre souverains."
+        },
+        {
+          "id": "09-02",
+          "text": "En général, une armée préfère la hauteur et méprise la bassesse, valorise l'exposition au yang et dédaigne l'ombre ; elle protège la santé et s'établit sur un sol solide : alors l'armée n'aura pas cent maux, et l'on peut dire qu'elle est assurée de la victoire. Sur collines et digues, il faut établir le camp sur le versant exposé au soleil et avoir le dos appuyé sur la droite : tel est l'avantage des troupes soutenu par le terrain. Quand survient une forte pluie et que l'eau tourbillonne, si l'on veut traverser, il faut attendre que cela se calme."
+        },
+        {
+          "id": "09-03",
+          "text": "Chaque fois que le terrain présente des ravins profonds ou des gouffres — puits naturels, fosses, filets, effondrements, fissures — il faut s'en éloigner promptement, ne pas s'en approcher. Si nous nous en tenons à distance et que l'ennemi s'en approche ; si nous allons au-devant et que l'ennemi recule : attention. Si, près de l'armée, il y a des obstacles dangereux, des mares, des puits stagnants, des roseaux, des bois, des fourrés, il faut soigneusement couvrir et tendre des cordes : c'est là où se cachent les embuscades des traîtres."
+        },
+        {
+          "id": "09-04",
+          "text": "Si l'ennemi est proche et se tient confiant et calme, c'est qu'il s'appuie sur un lieu dangereux ; s'il est éloigné et lance des provocations, c'est pour pousser l'autre à avancer ; la facilité du lieu qu'il occupe signifie son avantage ; des arbres qui s'agitent en nombre annoncent l'approche des troupes ; des herbes nombreuses et entravantes inspirent le doute ; l'envol des oiseaux indique une embuscade ; la fuite des animaux signale une entourloupe ; une poussière haute et aiguë annonce l'arrivée d'un chariot ; une poussière basse et large, celle d'hommes à pied ; des groupes dispersés et étendus sont des bûcherons ; peu nombreux et en mouvements, ce sont des troupes en marche ; des paroles humbles accompagnées d'une plus grande préparation annoncent l'avance ; des paroles fortes et des poussées pressées annoncent la retraite ; quand des chars légers sortent les premiers et se tiennent sur les côtés, c'est un dispositif de bataille ; ceux qui offrent la paix sans entente cherchent la ruse ; ceux qui fuient et montrent leurs forces préparent un rendez‑vous ; avancer à mi‑chemin et reculer à mi‑chemin indique une feinte ; se tenir appuyé sur un bâton signifie la famine ; puiser puis boire d'abord signifie la soif ; voir le gain et ne pas avancer indique la fatigue ; des oiseaux qui se rassemblent signalent la vacuité ; des appels nocturnes montrent la peur ; une armée en désarroi trahit un commandement peu respecté ; des bannières et des drapeaux qui s'agitent sont signe de désordre ; des officiers en colère trahissent la lassitude ; lorsque vivres, chevaux et viande manquent et que l'armée ne retourne pas à ses quartiers, c'est la troupe dures et acculée. Ceux qui parlent longuement et plaisamment et qui vont avec lenteur perdent leurs hommes ; qui distribue souvent récompenses est embarrassé ; qui use souvent de punitions est en difficulté ; qui d'abord brutalise puis craint la multitude manque de maîtrise ; ceux qui viennent supplier et se retirer, cherchent le repos. Si des soldats, en colère, viennent au-devant, restent longtemps sans se disperser ni se retirer, il faut l'examiner avec soin."
+        },
+        {
+          "id": "09-05",
+          "text": "Ainsi, ce n'est pas parce qu'une armée est nombreuse qu'elle est précieuse ; il faut qu'elle n'aille pas à l'assaut sans raison, qu'elle soit capable de conjuguer sa force, d'estimer l'ennemi et de prendre des hommes. Qui attaque l'ennemi sans réflexion sera saisi par l'ennemi."
+        },
+        {
+          "id": "09-06",
+          "text": "Si des soldats ne sont pas encore attachés et qu'on les punit, ils ne se soumettront pas ; s'ils sont déjà attachés et que la punition n'est pas appliquée, ils ne peuvent être utilisés. Il faut commander par les textes et aligner par la force : c'est ainsi qu'on assure la victoire. Prescrire des conduites constantes pour instruire le peuple fait que le peuple obéit ; prescrire des conduites que l'on ne suit pas fait que le peuple n'obéit pas. Celui qui met en pratique ce qu'il prescrit est en harmonie avec la troupe."
+        }
+      ],
+      "points": [
+        {
+          "title": "Positionner l'armée selon le terrain",
+          "body": "La manœuvre combine le choix d'emplacements sûrs et l'observation de l'ennemi : montagnes, eaux, marécages et plaines imposent des dispositions distinctes et complémentaires.",
+          "segmentId": "09-01"
+        },
+        {
+          "title": "Préférer le haut, éviter le bas",
+          "body": "Le choix du camp privilégie la hauteur, l'exposition, la santé et la solidité du sol afin de réduire les pertes non combatives et profiter du soutien du terrain.",
+          "segmentId": "09-02"
+        },
+        {
+          "title": "Lire les signes du terrain et de la vie",
+          "body": "Signes naturels et comportements humains sont polysémiques : il faut croiser observations (végétation, poussière, oiseaux, paroles) pour déduire la situation réelle.",
+          "segmentId": "09-04"
+        },
+        {
+          "title": "La quantité n'est pas la seule force",
+          "body": "Ce n'est pas la grandeur des effectifs qui compte, mais leur capacité à unir la force, à juger l'ennemi et à prendre des cibles ; l'impulsivité mène à la capture.",
+          "segmentId": "09-05"
+        },
+        {
+          "title": "Associer règles et discipline",
+          "body": "Obtenir l'adhésion par l'exemple et les règles écrites, et maintenir l'ordre par la force : punir sans loyauté ou tolérer l'impunité rend les troupes inutilisables.",
+          "segmentId": "09-06"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 10,
+      "chapterTitle": "Terrain",
+      "fullTitle": "Le terrain — chapitre dix",
+      "group": "Avantage du terrain",
+      "summary": "Ce chapitre distingue six types de terrain (passage, pendant, appui, étroit, périlleux, lointain) puis énumère six formes de défaillance (débandade, relâchement, affaissement, effondrement, désordre, déroute). Les premiers sont des conditions extérieures ; les seconds résultent généralement d'erreurs de commandement et d'organisation, et ne doivent pas être imputés au hasard. Le général doit, indépendamment des discours officiels, juger s'il faut combattre en tenant compte de l'ennemi, de ses troupes et du terrain, en protégeant le peuple et en défendant l'intérêt de l'État. L'affection envers les soldats doit s'accompagner d'ordres efficaces ; sinon elle tourne en indulgence nuisible.",
+      "tags": [
+        "terrain",
+        "six défaites",
+        "art du général",
+        "connaissance du terrain",
+        "organisation"
+      ],
+      "seoTitle": "Sun Tzu — Chapitre 10 : Le terrain et l'art du commandement",
+      "seoDescription": "Analyse des six types de terrain et des six erreurs fatales du général ; connaître le terrain, protéger le peuple et commander avec rigueur.",
+      "segments": [
+        {
+          "id": "10-01",
+          "text": "Sunzi dit : Il existe, parmi les formes du terrain, celles de passage, celles de pendant, celles d'appui, celles d'étroit, celles de périlleux et celles de lointain. Lorsque je peux aller et que l'ennemi peut venir, on appelle cela un passage. Pour un terrain de type passage, il faut d'abord occuper les hauteurs ensoleillées et sécuriser les routes de ravitaillement ; c'est avantageux pour la guerre. Lorsque l'on peut aller mais qu'il est difficile de revenir, on appelle cela un pendant. Sur un terrain pendant, si l'ennemi n'est pas prêt, on sort et on le bat ; si l'ennemi est préparé, sortir sans vaincre rend le retour difficile et peu avantageux. Lorsque je sors et que cela n'est pas avantageux, et que l'ennemi sort et que cela ne lui est pas avantageux non plus, on appelle cela un appui. Sur un terrain d'appui, même si l'ennemi a l'avantage, je n'engage pas directement ; je le fais reculer, le force à sortir à moitié puis l'attaque, ce qui est favorable. Pour un lieu étroit, si je l'occupe d'abord, il faut le remplir pour attendre l'ennemi ; si l'ennemi l'occupe d'abord, s'il est plein, ne pas le suivre ; s'il n'est pas plein, le suivre. Pour le périlleux : si je l'occupe d'abord, il faut tenir les hauteurs ensoleillées et attendre l'ennemi ; si l'ennemi l'occupe d'abord, il faut le faire reculer et ne pas le poursuivre. Pour le lointain, lorsque les forces sont égales, il est difficile de provoquer le combat, et si l'on combat, ce n'est pas avantageux. Ces six sortes sont les lois du terrain ; c'est la plus haute responsabilité d'un général de les examiner."
+        },
+        {
+          "id": "10-02",
+          "text": "Ainsi il existe six états dans une armée : débandade, relâchement, affaissement, effondrement, désordre et déroute. Ces six cas ne sont pas des catastrophes venues du ciel, mais des fautes du général. Quand les forces sont équilibrées et qu'on engage mal, on appelle cela débandade ; lorsque les soldats sont forts mais que les officiers sont faibles, on appelle cela relâchement ; lorsque les officiers sont forts mais que les soldats sont faibles, on appelle cela affaissement. Quand les grands officiers sont en colère et ne respectent pas la discipline, affrontent l'ennemi par emportement et combattent pour eux-mêmes, et que le général ignore de quoi ils sont capables, on appelle cela effondrement. Si le commandant est faible, sans sévérité, si les instructions et les méthodes d'enseignement sont obscures, officiers et soldats sont instables et les postes se déploient sans ordre, on appelle cela désordre. Si le général est incapable d'évaluer l'ennemi, s'il oppose peu contre beaucoup, fait frapper les faibles contre les forts et ne choisit pas ses avant-gardes, on appelle cela déroute. Ces six sont la voie de la défaite ; c'est la plus haute responsabilité du général de les examiner."
+        },
+        {
+          "id": "10-03",
+          "text": "Le terrain est l'aide de l'armée. Évaluer l'ennemi pour assurer la victoire, calculer dangers, difficultés et distances, voilà la voie du grand général. Celui qui connaît cela et engage le combat gagnera ; qui ignore cela et engage le combat perdra. Ainsi, si les conditions de la guerre promettent la victoire, alors même que le souverain ordonne de ne pas combattre, on peut combattre ; si les conditions ne promettent pas la victoire, alors même que le souverain ordonne le combat, on ne doit pas combattre. C'est pourquoi, en avançant, ne pas rechercher la gloire ; en reculant, ne pas fuir la faute : seul le salut du peuple compte, et l'accord de l'utilité avec le souverain est le trésor de l'État."
+        },
+        {
+          "id": "10-04",
+          "text": "Traiter les soldats comme des nourrissons permet de les conduire à travers des torrents profonds ; les regarder comme des enfants chéris permet de mourir en leur compagnie. Les chérir sans pouvoir les employer, les aimer sans pouvoir les commander, les voir se désordonner et ne pas pouvoir les gouverner : cela revient à avoir des enfants gâtés, et ils ne peuvent être utilisés."
+        },
+        {
+          "id": "10-05",
+          "text": "Connaître que mes soldats peuvent attaquer sans savoir que l'ennemi ne peut être attaqué n'est que la moitié de la victoire ; connaître que l'ennemi est attaquable sans savoir que mes soldats ne peuvent attaquer n'est que la moitié de la victoire ; connaître que l'ennemi est attaquable et que mes soldats peuvent attaquer, sans savoir que le terrain interdit le combat, n'est que la moitié de la victoire. Celui qui connaît la guerre agit sans être égaré et commande sans être à court de moyens. C'est pourquoi : connaître l'ennemi et se connaître soi-même rend la victoire sûre ; connaître le ciel et la terre permet d'assurer la victoire entière."
+        }
+      ],
+      "points": [
+        {
+          "title": "Les six types de terrain",
+          "body": "Un même type de terrain n'est pas automatiquement favorable à l'un ou à l'autre camp : l'essentiel réside dans l'ordre d'occupation, les voies de ravitaillement, la difficulté du repli et la proportion des forces.",
+          "segmentId": "10-01"
+        },
+        {
+          "title": "Les six fautes du général",
+          "body": "La débandade, le relâchement, l'affaissement, l'effondrement, le désordre et la déroute proviennent souvent d'une mauvaise utilisation des forces, d'un déséquilibre des responsabilités et d'ordres peu clairs : c'est une faute de commandement.",
+          "segmentId": "10-02"
+        },
+        {
+          "title": "Avancer sans chercher la gloire, reculer sans fuir la faute",
+          "body": "Le jugement professionnel doit se fonder sur la protection du peuple et l'intérêt de l'État, non sur la réputation personnelle.",
+          "segmentId": "10-03"
+        },
+        {
+          "title": "Chérir et commander",
+          "body": "La sollicitude et la confiance ne remplacent pas des ordres clairs et l'autorité nécessaire : l'affection sans capacité d'ordonner transforme la troupe en enfants gâtés inutilisables.",
+          "segmentId": "10-04"
+        },
+        {
+          "title": "Connaître le ciel et la terre",
+          "body": "Savoir uniquement qui est l'ennemi et qui l'on est soi-même n'est pas suffisant : il faut intégrer le terrain et le moment pour maximiser la probabilité d'une victoire complète.",
+          "segmentId": "10-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 11,
+      "chapterTitle": "Les neuf terrains",
+      "fullTitle": "Chapitre XI : Les neuf terrains",
+      "group": "Affaires militaires",
+      "summary": "Ce chapitre distingue neuf types de situation territoriale — dispersé, léger, disputé, d'échange, carrefour, profond, embarrassant, encerclant et mortel — et prescrit des règles différentes pour chacune. Il montre comment la pénétration en territoire ennemi modifie la psychologie et la cohésion des troupes, pourquoi le commandement doit harmoniser la volonté, préserver les approvisionnements et contrôler l'information, et comment des mécanismes de secours mutuel (comme la métaphore du serpent enroulé) rendent l'unité opérationnelle. L'essentiel n'est pas d'apprendre par cœur neuf noms, mais de comprendre comment position, voies de retraite, ressources et état d'esprit transforment l'action.",
+      "tags": [
+        "neuf-terrains",
+        "affaires-militaires",
+        "profondeur",
+        "coordination",
+        "contexte"
+      ],
+      "seoTitle": "Sun Tzu — Les neuf terrains et la conduite de la guerre",
+      "seoDescription": "Analyse des « neuf terrains » de Sun Tzu et des principes pour commander, maintenir les approvisionnements et préserver la cohésion en campagne.",
+      "segments": [
+        {
+          "id": "11-01",
+          "text": "Sunzi dit : Dans l'art d'employer les armées, il existe neuf types de terrain : terrain dispersé, terrain léger, terrain disputé, terrain d'échange, carrefour, terrain profond, terrain embarrassant, terrain d'encerclement et terrain de mort. Si un seigneur combat sur son propre territoire, c'est un terrain dispersé ; si l'on entre sur le territoire d'un autre sans y pénétrer profondément, c'est un terrain léger ; si ce que je gagne est avantageux pour moi et aussi pour l'ennemi, c'est un terrain disputé ; si je peux y aller et l'ennemi peut venir, c'est un terrain d'échange ; les terres d'un seigneur traversées par trois voies, où celui qui arrive le premier obtient la masse du peuple, constituent un carrefour ; si l'on entre profondément sur le territoire d'autrui et que des villes restent à l'arrière, c'est un terrain profond ; montagnes, forêts, obstacles escarpés, marais et routes difficiles sont des terrains embarrassants ; lorsque les voies d'entrée sont étroites, les chemins de retour détournés, et que l'ennemi, quoique peu nombreux, peut frapper nos forces, c'est un terrain d'encerclement ; là où la bataille rapide conduit à la survie et la lenteur à la perte, c'est un terrain de mort. Ainsi, sur un terrain dispersé il n'y a pas de combat ; sur un terrain léger il n'y a pas de repos ; sur un terrain disputé il n'y a pas d'offensive ; sur un terrain d'échange il n'y a pas de rupture ; au carrefour on se joint et on se sépare ; sur le terrain profond on pille ; sur le terrain embarrassant on avance ; sur l'encerclement on manigance ; sur le terrain de mort on se bat."
+        },
+        {
+          "id": "11-02",
+          "text": "Ce qu'on appelle les anciens maîtres de la guerre, c'est qu'ils savent rendre l'ennemi incapable de se couvrir l'avant et l'arrière, empêcher les grands et les petits de se soutenir mutuellement, faire que les riches et les pauvres ne puissent s'entraider, que le haut et le bas ne puissent se recueillir ; que les soldats se séparent et ne se rassemblent pas, que les unités se réunissent mais ne soient pas ordonnées. Ils n'agissent que lorsque cela sert leur intérêt, et s'arrêtent quand ce n'est pas profitable. On demande : « Si l'ennemi, nombreux et en ordre, vient sous les ordres d'un général, que doit-on faire ? » On répond : « Prenez d'abord ce qu'il chérit, et alors il obéira. » Ainsi, la nature de la guerre privilégie la rapidité : tirer parti de l'inattendu, suivre des voies imprévues et frapper ce dont l'ennemi ne se méfie pas."
+        },
+        {
+          "id": "11-03",
+          "text": "En campagne comme envahisseur, plus on pénètre, plus l'unité se resserre ; l'hôte ne peut pas résister. Ravager des campagnes riches assure trois repas pour l'armée. Nourrir avec soin sans épuiser, rassembler le souffle et accumuler la force, déplacer les troupes et dissimuler les plans rendent l'action imprévisible. Lorsqu'on jette les hommes sans issue, même la mort ne les fera pas battre en retraite. Ne pouvant mourir paisiblement, les soldats donnent tout. Quand les troupes sont profondément engagées, elles ne craignent plus ; n'ayant point d'issue, elles tiennent ferme ; pénétrées profondémént, elles deviennent résignées ; faute d'alternative, elles combattent. Ainsi leurs forces, sans ordres formels mais sur leurs gardes, obtiennent sans négociation, s'affectionnent sans promesse, obéissent sans commandement et croient sans directives. Écarter les signes d'hésitation, ne rien laisser d'inachevé jusqu'à la mort. Mes soldats n'ont plus de biens ; ce n'est pas qu'ils méprisent les richesses ; ils n'ont plus de vies ; ce n'est pas qu'ils abhorrent la longue vie. Au jour de l'ordonnance, ceux qui sont assis pleurent jusqu'aux cols, ceux qui se reposent ont les larmes aux joues. Lorsqu'on jette les hommes sans issue, alors c'est le courage de Zhu et de Gui."
+        },
+        {
+          "id": "11-04",
+          "text": "Celui qui sait conduire les troupes habilement est semblable à un serpent enroulé : le serpent du mont Chang. Frappez sa tête et la queue accourra ; frappez la queue et la tête viendra ; frappez le milieu et la tête et la queue accourront ensemble. On demande : « Peut-on commander les troupes comme un serpent enroulé ? » On répond : « Oui. Les habitants de Wu et de Yue se haïssent, mais lorsqu'ils partagent une même barque et doivent traverser le fleuve, au vent ils se sauvent mutuellement comme la main droite et la main gauche. » Ainsi un véhicule dont les roues sont mal enfoncées n'est pas encore fiable ; l'égalité du courage fait l'unité, c'est la voie du gouvernement ; vigueur et souplesse doivent coexister, c'est la loi du terrain. Le bon chef d'armée unit les mains comme s'il commandait un seul homme, seulement en cas de nécessité."
+        },
+        {
+          "id": "11-05",
+          "text": "La tâche du général est de rester tranquille pour sonder, et juste pour gouverner. Il doit tromper l'ouïe et la vue des soldats afin qu'ils n'en sachent rien ; changer leurs tâches et renouveler leurs plans pour qu'ils perdent leurs repères ; modifier leurs cantonnements et détourner leurs routes afin qu'ils ne puissent prévoir. Le chef s'en va comme quelqu'un qui monte sur une hauteur et retire l'échelle ; il pénètre profondément dans le territoire des princes et déclenche le moment : brûler les bateaux et casser les marmites, comme conduire un troupeau de moutons. Forcer à avancer, pousser à revenir, sans que nul ne sache leur destination. Rassembler les forces des trois armées et les jeter dans le péril : telle est l'œuvre du général. Les transformations des neuf terrains, les avantages du repli et de l'extension, la nature des sentiments humains, ne doivent pas être ignorés."
+        },
+        {
+          "id": "11-06",
+          "text": "En campagne, plus l'on est profond, plus l'unité se resserre ; plus l'on est superficiel, plus on se disperse. Quitter le pays et franchir la frontière, c'est se trouver sur un terrain sans issue ; les terres aux voies multiples sont des carrefours ; pénétrer profondément, c'est un terrain profond ; pénétrer superficiellement, c'est un terrain léger ; avoir l'arrière solide et l'avant étroit, c'est un terrain d'encerclement ; n'avoir aucun endroit où aller, c'est un terrain de mort. Ainsi, sur un terrain dispersé, je ferai converger leur volonté ; sur un terrain léger, je les ferai dépendre ; sur un terrain disputé, je pousserai à poursuivre ; sur un terrain d'échange, je garderai la défense ; au carrefour, je consoliderai mes jonctions ; sur le terrain profond, j'assurerai leur ravitaillement ; sur le terrain embarrassant, je dégagerai les voies ; sur l'encerclement, je comblerai les brèches ; sur le terrain de mort, je ferai comprendre qu'il n'y a pas d'autre issue que la vie combattante. Telle est la nature de la guerre : quand on est encerclé on défend, quand on n'a pas le choix on lutte, quand on déborde on suit."
+        },
+        {
+          "id": "11-07",
+          "text": "Qui ignore les desseins des princes ne peut préparer des alliances ; qui ignore la forme des montagnes, des défilés et des marais ne peut conduire une armée ; qui n'emploie pas de guides locaux ne tirera pas parti du terrain. Si on ignore quatre ou cinq de ces éléments, sans en connaître au moins un, on n'a pas une armée digne d'un roi-hégémon. L'armée d'un hégémon, frappant un grand État, empêche l'ennemi de rassembler ses forces ; sa puissance impose que les alliances ennemies ne se reforment. Ainsi il ne dispute pas l'entente du monde ni ne nourrit la force du monde ; confiant en ses intérêts propres et imposant sa puissance à l'ennemi, il peut faire tomber villes et détrôner royaumes. Il applique récompenses sans loi et accroche des ordres sans gouvernement. Infligez aux trois armées la même direction que si elles étaient une seule personne. Agissez par faits plutôt que par paroles ; offrez profit sans annoncer le tort. Jetez l'ennemi dans le terrain de la perte puis il vivra, plongez-le dans le terrain mortel puis il renaîtra. C'est quand la masse est engagée dans le péril qu'elle peut déterminer victoire ou défaite. Ainsi, l'art de la guerre consiste à feindre l'obéissance à la volonté ennemie, à regrouper l'ennemi sur une seule direction, à frapper à mille lieues le commandant : voilà ce qu'on appelle l'habileté qui accomplit une entreprise."
+        },
+        {
+          "id": "11-08",
+          "text": "Ainsi, au jour de l'opération, dégarnissez les gués, rompez les signes d'autorité et empêchez la circulation des messagers ; soyez sévère dans les halls et les temples pour punir ce qu'il faut. Quand l'ennemi ouvre et ferme, entrez vite ; enlevez d'abord ce qu'il chérit, accordez-lui peu d'échéance, poussez à suivre l'ennemi et décidez la bataille. Au début soyez comme une fille à la maison : si l'ennemi ouvre la porte, on entre ; à la fin soyez comme un lièvre fuyant : l'ennemi ne pourra s'opposer."
+        }
+      ],
+      "points": [
+        {
+          "title": "Neuf terrains, une logique contextuelle",
+          "body": "Les neuf terrains ne sont pas une simple classification géographique : ils découpent la situation selon distance au pays, voies, intérêts et rapports entre retraite et ennemis, et prescrivent des comportements distincts.",
+          "segmentId": "11-01"
+        },
+        {
+          "title": "La guerre privilégie la vitesse",
+          "body": "La vitesse sert à tirer parti de l'inattendu et à frapper l'ennemi hors de sa préparation ; elle n'est pas une fuite hors de l'approvisionnement ou de l'organisation.",
+          "segmentId": "11-02"
+        },
+        {
+          "title": "Pénétration et cohésion",
+          "body": "La profondeur d'une incursion modifie le moral et la cohésion des combattants ; le commandement doit comprendre comment distance, voies de retraite et ressources transforment l'attachement et la détermination.",
+          "segmentId": "11-03"
+        },
+        {
+          "title": "Métaphore du serpent enroulé",
+          "body": "Le secours mutuel entre premier et dernier élément n'est pas spontané : il résulte d'ordres, de terrain et d'intérêts communs qui font répondre l'ensemble comme un seul corps.",
+          "segmentId": "11-04"
+        },
+        {
+          "title": "Adapter l'action à l'ouverture ennemie",
+          "body": "Les règles et rites donnent un cadre, mais l'exécution doit suivre les ouvertures et fermetures de l'adversaire : entrer vite sur une porte ouverte, frapper là où il chérit.",
+          "segmentId": "11-08"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 12,
+      "chapterTitle": "Attaque par le feu",
+      "fullTitle": "Attaque par le feu — chapitre douze",
+      "group": "Prudence en guerre",
+      "summary": "Ce chapitre semble traiter des conditions de l'attaque au feu, mais son vrai propos porte sur la coordination des moyens, du timing et de la riposte. Il distingue plusieurs cibles pour le feu et insiste sur la nécessité de disposer de matériaux et de conditions météorologiques favorables avant d'agir. Après le déclenchement, il faut observer la réaction de l'ennemi pour décider de poursuivre ou d'arrêter. Même après une victoire, l'absence de consolidation rend le succès vain. Le texte conclut en élevant la prudence militaire au principe politique : ni le souverain ni le général ne doivent engager une campagne sous le coup de la colère, car les émotions se dissipent, mais on ne peut pas ressusciter un pays perdu ni les morts.",
+      "tags": [
+        "attaque par le feu",
+        "timing",
+        "résultats",
+        "prudence",
+        "émotions"
+      ],
+      "seoTitle": "Sun Tzu — L’attaque par le feu : moment, moyens et prudence",
+      "seoDescription": "Usage du feu selon Sun Tzu : conditions, moment opportun, réponses à l’ennemi et nécessité de consolider les gains, sans décider sous l’effet de la colère.",
+      "segments": [
+        {
+          "id": "12-01",
+          "text": "Sun Tzu dit : Il y a cinq sortes d'attaque au feu : la première, incendier les hommes ; la deuxième, incendier les provisions amassées ; la troisième, incendier les chariots et le train de bagages ; la quatrième, incendier les magasins et dépôts ; la cinquième, incendier les unités ennemies. Employer le feu exige des raisons et des préparatifs ; les combustibles et les procédés d'incendie doivent être prêts. Déclencher le feu a son moment, allumer a ses jours favorables. Le \"moment\" tient à la sécheresse du ciel. Le \"jour\" se reconnaît quand la lune se trouve dans les maisons lunaires Ji, Bi, Yi ou Zhen — ce sont des jours où le vent se lève."
+        },
+        {
+          "id": "12-02",
+          "text": "Pour toute attaque incendiaire, il faut répondre aux cinq situations que présente le feu : si le feu prend à l'intérieur, il faut réagir tôt depuis l'extérieur ; si le feu éclate mais que les soldats restent calmes, attendre et ne pas attaquer ; si le feu est d'une force extrême, on peut en tirer parti et poursuivre, si ce n'est pas possible, s'abstenir ; le feu peut être allumé de l'extérieur sans attendre qu'il vienne de l'intérieur — l'allumer au moment opportun ; si le feu prend sous le vent, on n'attaque pas en contre‑vent ; si le vent souffle longtemps le jour, il cesse la nuit. Tout commandement doit connaître ces cinq variations du feu et s'en défendre par le nombre. Ainsi, qui s'aide du feu pour attaquer agit avec clairvoyance ; qui s'aide de l'eau pour attaquer est puissant. L'eau peut couper (rompre une liaison), mais elle ne peut pas s'emparer à elle seule."
+        },
+        {
+          "id": "12-03",
+          "text": "Vaincre et conquérir sans consolider ses gains est néfaste ; on appelle cela « dépenser pour rester ». C'est pourquoi : un souverain avisé y réfléchit, un bon général l'organise. Ne pas se mouvoir sans avantage ; ne pas employer (la force) sans but ; ne pas livrer bataille sans péril. Le maître ne doit pas lever une armée sous l'effet de la colère, le général ne doit pas déclencher le combat sous l'effet du courroux. Agir quand cela est avantageux, s'abstenir quand cela ne l'est pas. La colère peut redevenir joie, l'irritation peut redevenir plaisir ; un État perdu ne renaît pas, les morts ne revivent pas. Ainsi le souverain éclairé en prend garde, et le bon général se montre vigilant : voilà la voie pour assurer la sûreté du pays et la survie des troupes."
+        }
+      ],
+      "points": [
+        {
+          "title": "L'emploi du feu exige des conditions",
+          "body": "Tout outil ou moyen exige des conditions, des ressources et un moment propice ; sans dispositifs complémentaires, une mesure isolée ne produit pas d'effet réel.",
+          "segmentId": "12-01"
+        },
+        {
+          "title": "Répondre aux changements",
+          "body": "Une fois le feu déclenché, il ne faut pas attaquer mécaniquement : observer si l'ennemi est réellement désorganisé et si le feu sert vos objectifs, puis décider de poursuivre ou d'interrompre.",
+          "segmentId": "12-02"
+        },
+        {
+          "title": "L'eau peut couper, mais pas s'emparer",
+          "body": "Les moyens ont des effets distincts et des limites : pouvoir interrompre une liaison n'implique pas la capacité d'occuper ou de s'emparer de la position ennemie.",
+          "segmentId": "12-02"
+        },
+        {
+          "title": "Vaincre sans consolider",
+          "body": "Si l'on n'assure pas la mise en ordre et la conservation des gains après la victoire, les coûts initiaux risquent de devenir vains.",
+          "segmentId": "12-03"
+        },
+        {
+          "title": "Ne pas lever les troupes par colère",
+          "body": "Les décisions majeures et irréversibles ne doivent pas être dictées par des émotions passagères ; la prudence dans la guerre protège des risques pour les vies et pour l'État.",
+          "segmentId": "12-03"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 13,
+      "chapterTitle": "Emploi des espions",
+      "fullTitle": "L'emploi des espions — chapitre treize",
+      "group": "Connaissance préalable",
+      "summary": "Le dernier chapitre démontre la valeur du renseignement à partir du coût considérable de la guerre : celui qui se montre avare des récompenses dues au renseignement tout en faisant supporter aux populations des années de dépenses est à la fois inhumain et insensé. La « préconnaissance » ne vient ni des dieux, ni des analogies ni des suppositions, mais des hommes qui maîtrisent la situation ennemie. Il existe cinq types d’agents — locaux, internes, retournés, « morts » et vivants — dont l’agent retourné est la clé. Le travail d’information exige sagesse, bienveillance, subtilité et confidentialité stricte.",
+      "tags": [
+        "Usage d'espions",
+        "Connaissance préalable",
+        "Renseignement",
+        "Agents doubles",
+        "Confidentialité"
+      ],
+      "seoTitle": "Emploi des espions — Sun Tzu, Chapitre 13",
+      "seoDescription": "Chapitre 13 de Sun Tzu : les cinq types d'espions, l'importance du renseignement, et la nécessité d'une confidentialité et d'une sagesse supérieures.",
+      "segments": [
+        {
+          "id": "13-01",
+          "text": "Sun Tzu dit : Quand on lève cent mille hommes et qu’on part en expédition à mille li, les dépenses du peuple et les charges de l’État s’élèvent à mille pièces d’or par jour ; les troubles intérieurs et extérieurs, les gens qui traînent sur les routes et ne peuvent plus vaquer à leurs occupations représentent sept cent mille foyers. Se battre durant des années pour obtenir en un seul jour la victoire, tout en se montrant avare de titres et d’une récompense de cent pièces d’or au point de ne pas connaître la situation de l’ennemi, voilà le comble de l’inhumanité ; un tel homme n’est pas un véritable général, ni l’assistant d’un souverain, ni le maître de la victoire. Ainsi, les souverains éclairés et les généraux capables, qui se mettent en mouvement et vainquent l’ennemi, et dont le succès vient de l’ensemble, possèdent la préconnaissance. La préconnaissance ne se prend ni auprès des fantômes ni des dieux, ne se déduit pas par analogie et ne se vérifie pas par des mesures ; elle doit être obtenue auprès des hommes, c’est-à-dire de ceux qui connaissent la situation de l’ennemi."
+        },
+        {
+          "id": "13-02",
+          "text": "Ainsi, pour l'emploi des espions, il y a cinq sortes : il y a l'espion local, l'espion interne, l'agent retourné, l'espion «mort» et l'espion vivant. Quand les cinq espions opèrent ensemble et que personne ne connaît leurs procédés, on appelle cela un «ordonnancement divin» ; c'est le trésor du souverain. L'espion local est utilisé parmi les compatriotes de la localité ; l'espion interne parmi les gens de la maison et les fonctionnaires ; l'agent retourné est employé à partir des espions de l'ennemi ; l'espion «mort» est chargé d'opérations trompeuses à l'extérieur afin que nos agents en soient informés et reproduisent cela auprès de l'ennemi ; l'espion vivant, quant à lui, rend compte en retour."
+        },
+        {
+          "id": "13-03",
+          "text": "Dans les affaires des trois armées, rien n'est plus intime que l'espionnage ; aucune récompense ne doit être plus généreuse envers les espions ; rien ne doit être plus secret que les affaires d'espionnage. Sans sagesse suprême on ne peut employer les espions ; sans bienveillance et justice on ne peut les diriger ; sans finesse on n'obtient pas la substance de leurs informations. Subtil ! Subtil ! Il n'est rien où l'on n'emploie des espions. Si une affaire d'espionnage est connue avant qu'elle n'ait été déclenchée, l'espion et celui qui a reçu l'information doivent être mis à mort."
+        },
+        {
+          "id": "13-04",
+          "text": "Pour toute armée que l'on veut frapper, toute cité que l'on veut assiéger, toute personne que l'on veut tuer, il faut d'abord connaître le nom du commandant en défense, de ses officiers de droite et de gauche, des hérauts, des portiers et des domestiques ; ordonnez à nos espions d'exiger ces renseignements. Il faut aussi exiger que les espions ennemis qui viennent nous entretenir soient interrogés systématiquement : en les favorisant on les dirige puis on les abandonne, de sorte que l'agent retourné peut être obtenu et mis à profit ; c'est ainsi que l'on reconnaît et peut employer les espions locaux et internes ; c'est ainsi que l'espion «mort» peut diffuser des mensonges et les faire parvenir à l'ennemi ; c'est ainsi que l'espion vivant peut être utilisé conformément au plan. Le souverain doit connaître les affaires des cinq espions ; cette connaissance doit provenir de l'agent retourné, aussi ne faut-il pas lésiner sur celui-ci."
+        },
+        {
+          "id": "13-05",
+          "text": "Autrefois, lors de l’essor de la dynastie Yin, Yi Zhi était auprès de Xia ; lors de l’essor des Zhou, Lü Ya était auprès de Yin. Ainsi, les souverains éclairés et les généraux capables qui savent employer les plus grands sages comme espions accomplissent de grandes choses. Telle est la clé de la guerre, ce sur quoi les trois armées s’appuient pour agir."
+        }
+      ],
+      "points": [
+        {
+          "title": "La préconnaissance vient des hommes",
+          "body": "Un renseignement fiable doit provenir de sources humaines identifiables ; il ne peut être remplacé par la superstition, l'imagination ou des analogies non vérifiées.",
+          "segmentId": "13-01"
+        },
+        {
+          "title": "Les cinq espions agissent en réseau",
+          "body": "Des sources distinctes et complémentaires — locales, internes, retournées, mortes et vivantes — doivent coopérer pour vérifier, influencer, rapporter et contrer les informations ennemies.",
+          "segmentId": "13-02"
+        },
+        {
+          "title": "L'espionnage est le plus intime",
+          "body": "Le renseignement est au cœur des décisions militaires : il requiert confiance, récompenses appropriées, secret strict, sagesse élevée, vertu et finesse pour produire des informations exactes.",
+          "segmentId": "13-03"
+        },
+        {
+          "title": "L'agent retourné est central",
+          "body": "Identifier et exploiter les espions venus de l'ennemi permet de découvrir et d'orienter les réseaux adverses, d'employer les espions locaux et internes, d'utiliser des opérations de tromperie et de contrôler les retours d'information ; c'est pourquoi l'agent retourné mérite des récompenses conséquentes.",
+          "segmentId": "13-04"
+        },
+        {
+          "title": "Employer l'intelligence au sommet",
+          "body": "Les exemples historiques montrent que confier les opérations de renseignement aux plus sages produit de grandes réussites : le renseignement est l’essentiel sur lequel les armées fondent leur action.",
+          "segmentId": "13-05"
+        }
+      ]
+    }
+  ],
+  "de": [
+    {
+      "chapterNumber": 1,
+      "chapterTitle": "Anfangsberechnung",
+      "fullTitle": "Erste Abhandlung: Anfangsberechnung",
+      "group": "Tempelberechnung",
+      "summary": "Dieser Abschnitt definiert Krieg als eine Angelegenheit von Staatsinteresse, Leben und Tod. Er fordert, vor Entscheidungen fünf Aspekte (Weg, Himmel, Erde, General, Ordnung) als gemeinsame Bewertungsmaßstäbe heranzuziehen und sie mit sieben Abwägungen systematisch zu vergleichen. Der Vergleich dient nicht nur der statischen Bewertung, sondern soll konkrete Handlungsoptionen durch Ausnutzung von Vorteilen formen. Methoden der Täuschung betreffen Informations- und Wahrnehmungssteuerung; doch das Entscheidende bleibt die gründliche Vorberechnung: je vollständiger Bedingungen, Vorbereitung und Urteilsgrundlagen, desto vorhersehbarer der Ausgang.",
+      "tags": [
+        "Fünf Aspekte",
+        "Sieben Kalküle",
+        "Tempelberechnung",
+        "Täuschung",
+        "Entscheidungsfindung"
+      ],
+      "seoTitle": "Sunzi, Kapitel 1: Fünf Dinge und sieben Berechnungen",
+      "seoDescription": "Kapitel 1 betont sorgfältige Kriegsplanung: fünf Bewertungsfaktoren, sieben Vergleiche und Täuschung als Mittel zur Entscheidungsfindung.",
+      "segments": [
+        {
+          "id": "01-01",
+          "text": "Sunzi sagt: Krieg ist eine große Angelegenheit des Staates, ein Ort von Leben und Tod, der Weg von Bestehen oder Untergang; man darf ihn nicht unbedacht lassen. Daher beurteilt man ihn nach fünf Punkten und vergleicht ihn an sieben Kalkülen, um seine Lage zu ermitteln: erstens der Weg, zweitens der Himmel, drittens die Erde, viertens der General, fünftens die Ordnung."
+        },
+        {
+          "id": "01-02",
+          "text": "Der ‚Weg‘ bedeutet, dass das Volk mit dem Oberen im Einvernehmen ist — bereit, mit ihm zu leben oder zu sterben und keine Gefahren zu fürchten. Der ‚Himmel‘ betrifft Wechsel von Yin und Yang, Kälte und Hitze, Jahreszeiten und Zeitmaß. Die ‚Erde‘ umfasst Höhen und Tiefen, Entfernungen, Gefährlichkeit, Weite und Enge sowie Leben und Tod. Der ‚General‘ steht für Klugheit, Glaubwürdigkeit, Menschlichkeit, Tapferkeit und Strenge. Die ‚Ordnung‘ meint Organisation, Dienstwege und den Einsatz von Beamten. Diese fünf Punkte kennt jeder Heerführer; wer sie kennt, siegt; wer sie nicht kennt, siegt nicht. Daher vergleicht man in sieben Kalkülen, um die Lage zu prüfen: Welcher Herrscher hat den Weg? Welcher General ist tauglich? Wem gehören Vorzüge von Himmel und Erde? Werden Gesetze und Befehle ausgeführt? Welches Heer ist stärker? Welche Truppen sind besser ausgebildet? Sind Belohnungen und Strafen klar geregelt? Anhand dieser Fragen erkenne ich Sieg oder Niederlage."
+        },
+        {
+          "id": "01-03",
+          "text": "Hört der General auf meine Pläne und bringt sie zur Anwendung, so wird er mit ihnen siegen — man behält ihn; hört er nicht, und sein Einsatz würde mit Sicherheit scheitern, so muss man ihn entfernen. Durch Vorteile veranlasst zu hören schafft man die Lage (shi), die das Äußere stützt. ‚Lage‘ bedeutet, Nutzen zu ergreifen, um Gelegenheiten zu beherrschen. Krieg ist der Weg der List. Darum zeigt man Fähigkeit als Unfähigkeit, Einsatz als Nicht-Einsatz, Nähe als Ferne, Ferne als Nähe. Locke durch Vorteil, nimm durch Verwirrung; wenn er voll ist, bereite dich gegen ihn, wenn er stark ist, meide ihn; erzeuge seinen Zorn, um ihn zu verwirren; mache den Geringen übermütig, ermüde den Entspannten, trenne die Vertrauten. Greife an, wo er unvorbereitet ist; trete hervor, wo er nicht damit rechnet. Das ist der Sieg der Kriegskunst, den man nicht im Voraus offenbaren darf."
+        },
+        {
+          "id": "01-04",
+          "text": "Wer vor der Schlacht im Tempel mehr Kalküle anstellt, gewinnt; wer vor der Schlacht weniger Kalküle hat, gewinnt nicht. Viele Rechnungen führen zum Sieg, wenige nicht — wie viel mehr gilt das für gar keine Rechnung? Daran gemessen sind Sieg und Niederlage offenbar."
+        }
+      ],
+      "points": [
+        {
+          "title": "Krieg ist eine Staatsangelegenheit",
+          "body": "Krieg darf nicht als persönliches Abenteuer eines Heerführers betrachtet werden. Er betrifft öffentliche Ressourcen, Leben und Tod sowie das Bestehen des Staates; daher ist sorgfältige Bewertung vorrangig.",
+          "segmentId": "01-01"
+        },
+        {
+          "title": "Fünf Aspekte und sieben Kalküle",
+          "body": "Die fünf Aspekte liefern Beobachtungsfelder, die sieben Kalküle verlangen systematischen Vergleich von Gegner und eigener Seite. Zusammen bilden sie den Grundrahmen für kriegsstrategische Vorentscheidungen.",
+          "segmentId": "01-02"
+        },
+        {
+          "title": "Lage durch Nutzen formen",
+          "body": "Pläne müssen sich an realen Vorteilen und Bedingungen ausrichten. ‚Lage‘ ist kein willkürlicher Wechsel, sondern das gezielte Nutzen von Gelegenheiten, um das Kräfteverhältnis zu steuern.",
+          "segmentId": "01-03"
+        },
+        {
+          "title": "Täuschung und Vorspiegelung",
+          "body": "Gegnerische Wahrnehmung zu steuern — Fähiges als unfähig zeigen, Nähe als Ferne, usw. — hat das Ziel, den Gegner zu Fehlentscheidungen zu verleiten und verwundbare Momente offenzulegen.",
+          "segmentId": "01-03"
+        },
+        {
+          "title": "Vorrechnung sichert Vorhersehbarkeit",
+          "body": "Wahrer Vorteil entsteht vor der Schlacht: je vollständiger die Voraussicht, Vorbereitung und der Vergleich, desto besser lässt sich der Ausgang einschätzen.",
+          "segmentId": "01-04"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 2,
+      "chapterTitle": "Kriegführung",
+      "fullTitle": "Kriegführung — Kapitel 2",
+      "group": "Staatlicher Nutzen",
+      "summary": "Dieser Abschnitt behandelt vor allem Zeit und Kosten des Krieges. Sobald ein großes Heer in Bewegung gesetzt wird, verursachen Transporte, Ausrüstung, Einberufungen und steigende Preise dauernde Belastungen für die Staatskasse. Selbst taktisch ausgeklügelte Operationen verlieren bei Verzögerung ihren Wert. Deshalb liegt der Schwerpunkt auf schnellem Erreichen der Ziele und auf Verkürzung eigener Nachschublinien. Die Aneignung gegnerischer Ressourcen und Mannstärken bedeutet nicht nur Plünderung, sondern auch Belohnung, Umschichtung und Integration, so dass der Sieger seine eigene Stärke bewahrt oder vermehrt.",
+      "tags": [
+        "Kosten",
+        "Schnellsieg",
+        "Logistik",
+        "Staatskraft",
+        "Umgliederung"
+      ],
+      "seoTitle": "Sunzi — Kapitel 2: Kriegskosten, Schnellsieg und Logistik",
+      "seoDescription": "Betont die Kosten langwieriger Kriege, die Notwendigkeit schneller Siege und die Nutzung gegnerischer Ressourcen zur Entlastung der eigenen Wirtschaft.",
+      "segments": [
+        {
+          "id": "02-01",
+          "text": "Sunzi sagt: Allgemein in der Kriegführung: Wenn man Wagen in tausendfacher Zugkraft antreibt, tausend Streitwagen herstellt, Zehntausende in Rüstung stellt und Verpflegung über tausend Li verfrachtet, so entstehen innere und äußere Ausgaben, Kosten für Gäste, Leim und Lack als Material, die Unterhaltung von Wagen und Rüstung; die täglichen Ausgaben betragen tausend Gold, und erst dann wird ein Heer von zehntausend aufgestellt. Beim Einsatz von Streitkräften ist Sieg das Kostbarste; dauert der Krieg lange, so werden die Waffen abgestumpft und die Kampfkraft gebrochen; belagert man Städte, so schwindet die Kraft; setzt man das Heer lange freilich ein, so reichen die Staatsmittel nicht aus. Abgestumpfte Waffen, gebrochene Kräfte und erschöpfte Vorräte bringen die Fürsten dazu, die Schwäche zu nutzen und aufzustehen; selbst Weise können danach nicht gut für das Nachher sorgen. Deshalb gilt: man hört von der ungeschliffenen Schnelligkeit, nicht von der kunstvollen Dauer. Einen langen Krieg, von dem der Staat profitiert, hat es noch nie gegeben. Wer die Schädlichkeit des Kriegführens nicht vollständig kennt, kann auch dessen Nutzen nicht vollständig erkennen."
+        },
+        {
+          "id": "02-02",
+          "text": "Ein guter Heerführer sorgt dafür, dass Dienstleistende nicht zweimal eingezogen werden und Getreide nicht über drei Jahre hinweg beansprucht wird; er nimmt, was im Land nötig ist, und bezieht Verpflegung vom Feind; so ist die Truppenverpflegung gewährleistet."
+        },
+        {
+          "id": "02-03",
+          "text": "Ist der Staat arm und die Versorgung weit her zu liefern, so verarmt das Volk durch weite Transporte; ist das Heer nahe, so sind die Verkäufe teuer, die Leute erschöpfen ihr Vermögen, und fehlt den Leuten Eigentum, wird drückende Frondienstpflicht nötig. Sind Kräfte gebrochen und Schätze verbraucht, so ist das Kernland innerlich ausgehöhlt. Die Last für die Bevölkerung verzehrt sieben von zehn Teilen ihres Besitzes; die öffentlichen Ausgaben führen zu beschädigten Wagen, außer Dienst gestellten Pferden, Rüstungen, Pfeilen und Armbrüsten, Speeren, Schilden und Belagerungsgeräten, Ochsenkarren und großen Transportwagen — sechs von zehn Teilen gehen verloren."
+        },
+        {
+          "id": "02-04",
+          "text": "Deshalb bemüht sich der kluge General, seine Truppen vom Feind zu ernähren: eine Maßeinheit Getreide vom Feind ersetzt zwanzig unserer Maße; Stroh und Halme in gleicher Weise — ein Maß vom Feind ist zwanzig unserer Maße wert."
+        },
+        {
+          "id": "02-05",
+          "text": "Wer Feinde tötet, tut dies aus Zorn; wer dem Feind dessen Nutzen wegnimmt, handelt aus Gewinnsucht. Daher: Bei Wagenkämpfen — erbeutet man zehn oder mehr Wagen, so belohnt man die Erst-Erbeuter und ersetzt ihre Standarten. Mischt man die erbeuteten Wagen und nutzt sie, behält man die tüchtigen Soldaten und versorgt sie wohl — das nennt man, den Feind zu besiegen und sich zugleich stärker zu machen."
+        },
+        {
+          "id": "02-06",
+          "text": "Darum ist im Krieg der Sieg kostbar, nicht die Dauer. Wer die Kriegskunst kennt, ist der Hüter des Lebens des Volkes und der Lenker über Wohl und Wehe des Staates."
+        }
+      ],
+      "points": [
+        {
+          "title": "Sieg zählt, nicht die Dauer",
+          "body": "Der Abschnitt fordert nicht zu Hast auf, sondern zeigt, dass langwierige Konflikte Waffen abstumpfen, Kampfmoral und Ressourcen erschöpfen und Dritten Gelegenheit bieten. Schnelligkeit bewahrt Kampfkraft und staatswirtschaftliche Stabilität.",
+          "segmentId": "02-01"
+        },
+        {
+          "title": "Die Schäden des Einsatzes kennen",
+          "body": "Wer nur mögliche Gewinne sieht, ohne direkte und indirekte Kosten zu berücksichtigen, kann nicht richtig entscheiden, ob ein Krieg zu führen ist. Risikobewusstsein ist Voraussetzung für Nutzenabwägung.",
+          "segmentId": "02-01"
+        },
+        {
+          "title": "Verpflegung aus dem Feind schlagen",
+          "body": "Weite Nachschublinien verlagern die Last auf die eigene Bevölkerung. Verkürzte Versorgung und die Nutzung fremder Ressourcen sind Methoden, um die Gesamtkosten des Krieges zu senken.",
+          "segmentId": "02-02"
+        },
+        {
+          "title": "Den Feind besiegen und sich selbst stärken",
+          "body": "Die Aneignung erbeuteter Wagen und die Umzeichnung ihrer Standarten, die Durchmischung und Nutzung sowie das Schonend-behandelnde Versorgen gefangener oder übernommener Truppen zeigen, wie man feindliche Ressourcen organisatorisch in eigene Stärke verwandelt.",
+          "segmentId": "02-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 3,
+      "chapterTitle": "Móugōng (Über die Angriffsplanung)",
+      "fullTitle": "Móugōng Dritte",
+      "group": "Vollkommener Sieg",
+      "summary": "Dieses Kapitel stellt die Vorstellung des umfassenden Sieges dar: die höchste Kunst ist nicht der Erfolg in direkten Schlachten, sondern das Zerschlagen der Pläne und Bündnisse des Gegners, wodurch ihm die Mittel zum Widerstand entzogen werden; Belagerungen sind teuer und nur das letzte Mittel. Es behandelt außerdem Truppenvergleiche, das Verhältnis von Herrscher und Feldherrn sowie die Bedingungen des Sieges und betont, dass politische Führung nicht fachfremd in militärische Details eingreifen darf, während Feldherren Feind- und Eigenlage, Kräfteverhältnisse, Zeitpunkt und den Willen der Truppe verstehen müssen.",
+      "tags": [
+        "vollkommener Sieg",
+        "Angriff auf Pläne",
+        "Angriff auf Bündnisse",
+        "Fürst und Feldherr",
+        "Kenne Feind und dich selbst"
+      ],
+      "seoTitle": "Sunzi Kapitel 3: Vollkommener Sieg durch strategische Planung",
+      "seoDescription": "Kapitel über höchsten Sieg: Pläne und Bündnisse zerstören, Belagerungen meiden, Führungsrollen klären und 'kenne Feind und dich selbst'.",
+      "segments": [
+        {
+          "id": "03-01",
+          "text": "Sunzi sagt: Im Gebrauch der Streitkräfte steht der Erhalt des ganzen Reiches an oberster Stelle; das Zerstören eines Reiches steht an zweiter. Das Erhalten der ganzen Armee ist vor dem Zerschlagen der Armee zu bewerten; die Bewahrung eines ganzen Heereszuges ist vor dem Zerschlagen eines Heereszuges; das Erhalten ganzer Einheiten ist vor deren Vernichtung zu stellen. Daher ist in hundert Schlachten hundertmal zu siegen nicht das Höchste des Guten; das Unterwerfen der feindlichen Streitkräfte ohne zu kämpfen ist das Höchste des Guten."
+        },
+        {
+          "id": "03-02",
+          "text": "Deshalb ist die beste Kriegskunst, die Pläne des Gegners zu zerschlagen; an zweiter Stelle steht, seine Bündnisse zu brechen; an dritter, seine Streitkräfte zu treffen; am schlechtesten ist das Sturmieren oder Belagern von Städten. Belagerung ist nur ein Mittel, wenn es nicht anders geht. Schutzvorrichtungen, Rolltürme und Belagerungsgeräte herzustellen — das dauert drei Monate; die Mauer zu überwinden, dauert weitere drei Monate. Wenn der General seiner eigenen Wut nicht Herr wird und die Truppen wie Ameisen anstürmen, wird ein Drittel der Soldaten getötet, und die Stadt wird dennoch nicht genommen — das ist das Unglück der Belagerung."
+        },
+        {
+          "id": "03-03",
+          "text": "Darum der erfahrene Feldherr: Er bricht die gegnerischen Streitkräfte, ohne zu kämpfen; er nimmt die Städte ein, ohne zu belagern; er zerstört fremde Staaten, ohne lange Kriege zu führen. Er streitet für den Erhalt des Ganzen in der Welt, so dass die Truppen nicht erschöpft werden und der Gewinn unversehrt bleibt – das ist die Lehre vom Angriff durch List und Planung."
+        },
+        {
+          "id": "03-04",
+          "text": "Die Regeln der Kriegsführung lauten: Ist man dem Feind zehnfach überlegen, so umzingele ihn; ist man fünffach überlegen, greife ihn an; ist man doppelt so stark, spalte seine Reihen; ist man ebenbürtig, kämpfe; ist man in der Minderheit, halte die Stellung; ist man unterlegen, meide den Kampf. Daher ist die Hartnäckigkeit eines kleinen Gegners oft ein Zeichen dafür, dass er vom größeren Heer ergriffen werden kann."
+        },
+        {
+          "id": "03-05",
+          "text": "Der Feldherr ist die Stütze des Staates. Ist diese Stütze solide, wird der Staat stark; ist sie mangelhaft, wird der Staat schwach."
+        },
+        {
+          "id": "03-06",
+          "text": "Deshalb entstehen dem Herrscher drei Arten von Problemen im Umgang mit dem Heer: Er erkennt nicht, dass das Heer nicht vorstoßen kann und befiehlt dennoch Vorstoß – so fesselt er das Heer; er erkennt nicht, dass das Heer nicht zurückgehen kann und befiehlt Rückzug – so fesselt er es ebenfalls. Er kennt die Belange der drei Heereszweige nicht, mischt sich aber in deren Führung ein, so werden die Soldaten verwirrt; er kennt nicht die Befugnisse der drei Heereszweige, verteilt ihnen aber Aufgaben, so werden die Soldaten misstrauisch. Sind die drei Heere sowohl verwirrt als auch misstrauisch, so steht das Unglück des Herrschers unmittelbar bevor — das nennt man, ein Heer in Unordnung zu führen und dem Gegner zum Sieg zu verhelfen."
+        },
+        {
+          "id": "03-07",
+          "text": "So gibt es fünf Erkenntnisse, die zum Sieg führen: Wer erkennt, ob man kämpfen kann oder nicht, siegt; wer den Einsatz von Über- und Unterzahl versteht, siegt; wer oberste und unterste Schichten auf ein gemeinsames Ziel einschwört, siegt; wer vorbereitet den Unvorbereiteten erwartet, siegt; wer einen fähigen Feldherrn hat, den der Fürst nicht behindert, siegt. Diese fünf bilden den Weg, den Sieg zu erkennen."
+        },
+        {
+          "id": "03-08",
+          "text": "Deshalb heißt es: Kenne den Feind und kenne dich selbst — in hundert Schlachten wirst du nicht in Gefahr geraten. Kennst du nicht den Feind, kennst aber dich selbst, so wirst du einmal siegen und einmal verlieren. Kennst du weder Feind noch dich selbst, so wirst du in jeder Schlacht in Gefahr sein."
+        }
+      ],
+      "points": [
+        {
+          "title": "Unterwerfung ohne Kampf",
+          "body": "Das Höchste des Guten bemisst sich nicht an der Anzahl der gewonnenen Schlachten, sondern daran, ob das Ziel mit geringstmöglichem Schaden und Aufwand erreicht wird.",
+          "segmentId": "03-01"
+        },
+        {
+          "title": "Der beste Sieg: die Pläne angreifen",
+          "body": "Die Mittel sind abgestuft: Zuerst zerschlägt man die gegnerischen Pläne, dann seine Bündnisse, erst danach greift man seine Streitkräfte an; Belagerungen sind das äußerste Mittel.",
+          "segmentId": "03-02"
+        },
+        {
+          "title": "Wahrung des Ganzen als Ziel",
+          "body": "Ganzheitliche Kriegführung bedeutet nicht Passivität, sondern die Bewahrung staatlicher und militärischer Mittel, sodass Erfolg nicht durch eigene Erschöpfung erkauft werden muss.",
+          "segmentId": "03-03"
+        },
+        {
+          "title": "Drei Gefahren durch königliche Einmischung",
+          "body": "Wenn der Herrscher nicht versteht, wann Vorstoß oder Rückzug möglich sind, wenn er sich in operative Führung einklinkt oder Befugnisse falsch verteilt, entstehen Verwirrung und Misstrauen in den Truppen.",
+          "segmentId": "03-06"
+        },
+        {
+          "title": "Kenne Feind und dich selbst",
+          "body": "Sieg entsteht aus einer Gesamtbeurteilung: Kampffähigkeit, Einsatz von Zahlen, gemeinsamer Wille, Vorbereitung gegen das Unerwartete und ein kompetenter, unbehelligter Feldherr.",
+          "segmentId": "03-07"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "Militärische Gestalt",
+      "fullTitle": "Militärische Gestalt — Kapitel IV",
+      "group": "Sieg vorbereiten",
+      "summary": "Dieser Abschnitt behandelt die Grenze zwischen dem, was man kontrollieren kann, und dem, was sich nicht erzwingen lässt. Zuerst schafft man Bedingungen, unter denen man selbst unbesiegbar ist; ob der Gegner eine verwundbare Lage preisgibt, liegt nicht in der eigenen Macht. Der Meister des Krieges jagt nicht nach glanzvollen Taten, sondern wählt Situationen, in denen die Entscheidung bereits zu seinen Gunsten geneigt ist. Die Reihenfolge von Maß, Umfang, Zahl, Wägung und Sieg zeigt, wie Überlegenheit aus gestaffelter Abwägung von Raum, Ressourcen, Quantität und Kräftekontrast entsteht.",
+      "tags": [
+        "Unbesiegbarkeit",
+        "Siegvorbereitung",
+        "Heeresform",
+        "Risiko",
+        "Messung"
+      ],
+      "seoTitle": "Sunzi Kapitel 4: Militärische Gestalt und Siegvorbereitung",
+      "seoDescription": "Kapitel über das Vorbereiten von Unbesiegbarkeit, das Erkennen besiegbarer Gegner und die Reihenfolge von Maß, Menge, Zahl und Wägung zum Sieg.",
+      "segments": [
+        {
+          "id": "04-01",
+          "text": "Sunzi sagt: Die früheren Meister des Krieges machten sich zuerst unbesiegbar und warteten, bis der Feind besiegbar wurde. Unbesiegbarkeit liegt bei einem selbst, Besiegbarkeit beim Feind. Daher kann der gute Krieger sich unbesiegbar machen, aber er kann nicht erzwingen, dass der Feind notwendigerweise besiegbar wird. Darum heißt es: Der Sieg ist erkennbar, aber nicht erzwingbar."
+        },
+        {
+          "id": "04-02",
+          "text": "Unbesiegbarkeit ist Verteidigung; Besiegbarkeit ist Angriff. In der Verteidigung besteht Mangel, im Angriff besteht Überfluss. Der gute Verteidiger verbirgt sich in den neun Tiefen der Erde; der gute Angreifer bewegt sich auf den neun Höhen des Himmels. So können sie sich selbst schützen und vollständig siegen."
+        },
+        {
+          "id": "04-03",
+          "text": "Einen Sieg zu sehen, der nur dem Volk bekannt ist, ist nicht die höchste Kunst; im Krieg zu siegen und dass die Welt davon spricht, ist nicht die höchste Kunst. Deshalb: Das Aufheben eines Herbsthaares ist keine große Kraftleistung; das Sehen von Sonne und Mond macht die Augen nicht schärfer; das Hören von Donner macht die Ohren nicht klüger."
+        },
+        {
+          "id": "04-04",
+          "text": "Die Alten sagten: Ein guter Kriegsherr siegt in dem, was leicht zu siegen ist. Darum trägt der Sieg des guten Kriegsherrn weder Ruhm der Schlauheit noch Ruhm der Tapferkeit. Deshalb ist sein Sieg ohne Fehl. Ohne Fehl zu sein heißt: Seine Aufstellung führt gewiss zum Sieg; er hat den Sieg bereits herbeigeführt, bevor der Kampf entschieden ist. Der gute Kriegsherr stellt sich auf einen Ort der Unbesiegbarkeit und verpasst nicht die Niederlage des Feindes. Darum suchen siegreiche Heere zuerst den Sieg und dann den Kampf; unterlegene Heere kämpfen zuerst und hoffen dann auf den Sieg. Wer das Heer geschickt führt, pflegt die Grundsätze und wahrt die Vorschriften; so kann er über Sieg und Niederlage bestimmen."
+        },
+        {
+          "id": "04-05",
+          "text": "Kriegskunst: Erstens Maß, zweitens Umfang, drittens Zahl, viertens Wägung, fünftens Sieg. Das Gelände schafft das Maß, das Maß schafft den Umfang, der Umfang schafft die Zahl, die Zahl schafft die Wägung, die Wägung schafft den Sieg. Daher wiegt ein siegreiches Heer mit Schwergewichten, als wären es Kleingewichte; ein unterliegendes Heer wiegt mit Kleingewichten, als wären es Schwergewichte. Das Vorgehen des siegreichen Heeres gleicht dem Entlassen aufgestauten Wassers in einen tausend Faden tiefen Bach — das ist seine Gestalt."
+        }
+      ],
+      "points": [
+        {
+          "title": "Zuerst Unbesiegbarkeit schaffen",
+          "body": "Zuerst die eigene Verteidigung, Ordnung und Vorbereitung sichern, dann auf äußere Gelegenheiten warten; das ist Risiko­steuerung vor Gewinnjagd.",
+          "segmentId": "04-01"
+        },
+        {
+          "title": "Unbesiegbarkeit in sich, Besiegbarkeit im Feind",
+          "body": "Die Vermeidung der Niederlage liegt weitgehend in eigener Hand; das Besiegen des Gegners hängt davon ab, ob er eine verwundbare Lage offenbart.",
+          "segmentId": "04-01"
+        },
+        {
+          "title": "Sieg dort, wo er leicht zu erringen ist",
+          "body": "Meisterschaft zeigt sich in der Auswahl von Situationen mit bereits bestehender Vorteilslage, nicht im riskanten Streben nach Ruhm unter ungünstigen Bedingungen.",
+          "segmentId": "04-04"
+        },
+        {
+          "title": "Siegerarmeen sichern zuerst den Sieg, dann suchen sie den Kampf",
+          "body": "Handeln ist der abschließende Ausdruck einer bereits geschaffenen Überlegenheit, nicht das Mittel, auf das Entstehen von Vorteilen zu wetten.",
+          "segmentId": "04-04"
+        },
+        {
+          "title": "Maß, Umfang, Zahl, Wägung, Sieg",
+          "body": "Vom Geländemaß über Kapazität, Truppenstärke und zahlenmäßigen Vergleich führt diese Abfolge zur Beurteilung von Sieg oder Niederlage.",
+          "segmentId": "04-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "Die Macht der Streitkräfte",
+      "fullTitle": "Die Macht der Streitkräfte — Kapitel 5",
+      "group": "Nutzung der Kräfte",
+      "summary": "Dieser Abschnitt behandelt, wie durch Organisation und Führung „Shi“ (die Lagekraft) entsteht. Die Beherrschung großer Massen beruht auf Gliederung und einheitlichen Signalen; trotz zahlloser taktischer Variationen sind die Grundelemente wiederkehrende Wechsel von Konventionellem (正) und Unkonventionellem (奇). Shi ist kein bloßes Pathos, sondern die Kombination von Stellung, Geschwindigkeit, Rhythmus und Bedingungen zu einer freisetzbaren Kraft. Meisterhafte Führung schafft nicht nur individuelle Tapferkeit, sondern gestaltet Umstände, in denen gewöhnliche Menschen an der richtigen Stelle zur kollektiven Wirkung beitragen.",
+      "tags": [
+        "Kraft",
+        "Unkonventionell und Konventionell",
+        "Organisation",
+        "Rhythmus",
+        "Einsatz der Kraft"
+      ],
+      "seoTitle": "Sunzi — Die Macht der Streitkräfte (Kapitel 5)",
+      "seoDescription": "Kapitel über Shi: wie Lage, Rhythmus und Organisation Kräfte formen, damit auch gewöhnliche Menschen wirksame Energie freisetzen.",
+      "segments": [
+        {
+          "id": "05-01",
+          "text": "Sunzi sagt: Im Allgemeinen eine Menge so zu regeln wie eine Minderheit — das ist die Einteilung nach Zahlen; viele im Gefecht wie wenige kämpfen zu lassen — das ist Form und Benennung. Dass die Streitkräfte der drei Heere so eingesetzt werden können, daß sie dem Feind entgegentreten, ohne zu scheitern — das beruht auf dem Zusammenspiel von Unkonventionellem und Konventionellem. Wenn die Wirkung einer Waffe einsetzt, als ob man Kiesel auf Eier wirft — das ist das Verhältnis von Leere und Fülle."
+        },
+        {
+          "id": "05-02",
+          "text": "In allen Kämpfen begegnet man mit dem Konventionellen und siegt mit dem Unkonventionellen. Wer geschickt das Überraschende einsetzt, ist unerschöpflich wie Himmel und Erde, unermüdlich wie Flüsse und Meere. Das Ende geht ins Neue über wie Sonne und Mond; Tod und Wiedergeburt wie die vier Jahreszeiten. Töne sind nicht mehr als fünf; die Wandlungen dieser fünf Töne kann man nicht ermessen; Farben sind nicht mehr als fünf; die Wandlungen der fünf Farben sind nicht zu überblicken; Geschmäcker sind nicht mehr als fünf; die Wandlungen der fünf Geschmäcker sind nicht vollständig zu erfassen. Die Kampfform beruht auf nichts anderem als Unkonventionellem und Konventionellem; deren Wandlungen sind unergründlich. Unkonventionell und Konventionell erzeugen einander wie ein Kreis ohne Ende — wer könnte ihn völlig durchschauen?"
+        },
+        {
+          "id": "05-03",
+          "text": "Die Schnelligkeit reißenden Wassers, die Steine forttreibt — das ist Shi (die Lagekraft); die Wucht des Raubvogels, die Bruch verursacht — das ist der Takt/Timing. Daher ist der Tüchtige im Kampf: seine Kraft ist gefährlich, sein Schlagmoment kurz. Die Kraft ist wie eine gespannte Armbrust, der Takt wie der Augenblick des Abzugs."
+        },
+        {
+          "id": "05-04",
+          "text": "Durcheinander in Menge und Gestalt — der Kampf erscheint chaotisch, ist aber nicht destruktiv; völlige Unklarheit, die Form ist rund und doch nicht zu besiegen. Unordnung entsteht aus Ordnung, Feigheit entsteht aus Tapferkeit, Schwäche entsteht aus Stärke. Ordnung und Unordnung sind Sache der Zahlen; Tapferkeit und Feigheit sind Sache der Lage; Stärke und Schwäche sind Sache der Form."
+        },
+        {
+          "id": "05-05",
+          "text": "Darum: Wer den Feind geschickt in Bewegung setzt, gestaltet die Lage, und der Feind wird ihm folgen; dem Feind etwas anbieten, und er wird es annehmen. Bewege ihn durch Vorteile, und halte deine Truppen in Bereitschaft."
+        },
+        {
+          "id": "05-06",
+          "text": "Der tüchtige Feldherr sucht die Wirkung in der Lage (Shi) und macht den Menschen nicht zum Sündenbock; so kann er Personen auswählen und der Lage die Aufgabe anvertrauen. Wer auf die Lage setzt, führt die Kämpfenden wie das Drehen von Holz oder Stein. Holz und Stein: in Ruhe bleiben sie still, in Gefahr bewegen sie sich; eckig bleibt stehen, rund rollt. Daher ist die Wirkung des Meisters wie das Anstoßen eines runden Steins von einer tausend Klafter hohen Felswand — das ist Shi."
+        }
+      ],
+      "points": [
+        {
+          "title": "Einteilung und Form",
+          "body": "Ob große Organisationen geführt werden können, hängt von Schichtung, verantwortlichen Einheiten und einem einheitlichen Signalsystem ab.",
+          "segmentId": "05-01"
+        },
+        {
+          "title": "Mit Konventionellem beginnen, mit Unkonventionellem siegen",
+          "body": "Konventionelles und Unkonventionelles sind wechselnde Konfigurationen; man sollte nicht eine Methode dauerhaft als ‚Überraschung‘ festschreiben.",
+          "segmentId": "05-02"
+        },
+        {
+          "title": "Gefährliche Kraft, kurzes Timing",
+          "body": "Kraft muss auf einen kurzen, effektiven Freisetzungszeitpunkt konzentriert werden — wie die Spannung einer Armbrust und ihr Auslösemechanismus; ein gestreckter Rhythmus zerstreut die Überlegenheit.",
+          "segmentId": "05-03"
+        },
+        {
+          "title": "Formen und Anbieten",
+          "body": "Lenke den Gegner durch eine gestaltete Lage und durch Anreize; fange dann seine Reaktion mit bereitstehenden Kräften ab.",
+          "segmentId": "05-05"
+        },
+        {
+          "title": "Auf die Lage setzen, nicht auf Schuldzuweisungen",
+          "body": "Führung heißt, Menschen auszuwählen und die Bedingungen so zu arrangieren, dass die Lage (Shi) wirkt — nicht, Systemversagen allein Individuen anzulasten.",
+          "segmentId": "05-06"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 6,
+      "chapterTitle": "Leere und Fülle",
+      "fullTitle": "Leere und Fülle — Kapitel Sechs",
+      "group": "Siegführung",
+      "summary": "Kern dieses Kapitels ist das Erlangen der Initiative, sodass der Gegner nach unseren Vorgaben handelt statt wir nach seinen. Durch Nutzen und Schädigen, Tempo, Täuschung und Verbergung lässt sich der Feind verstreuen, während wir an entscheideten Punkten konzentrieren. Die höchste Stufe der Kriegsform ist Formlosigkeit, sodass der Gegner nicht weiß, wo er Kräfte binden soll. Am Ende dient das Bild des Wassers als Metapher: Wasser weicht dem Hohen und strebt zum Niedrigen — die Streitkraft meidet das Starke und trifft das Schwache; Methoden dürfen nicht starr sein, sondern müssen sich nach Gelände und Gegnerwandlung richten.",
+      "tags": [
+        "Leere und Fülle",
+        "Initiative",
+        "Konzentration",
+        "Formlosigkeit",
+        "Gegnerlenkung"
+      ],
+      "seoTitle": "Sunzi Kapitel 6: Die Kunst von Leere, Fülle und Formlosigkeit",
+      "seoDescription": "Kapitel 6 von Sunzi erklärt, wie man durch Täuschung, Tempo und Formlosigkeit Gegner zerreißt und an entscheidenden Punkten besiegt.",
+      "segments": [
+        {
+          "id": "06-01",
+          "text": "Sunzi sagt: Wer zuerst das Schlachtfeld einnimmt und dort auf den Feind wartet, ist unangestrengt; wer später das Schlachtfeld erreicht und zum Kampf eilt, ist ermüdet. Der gute Kriegsführer veranlasst andere, zu ihm zu kommen, ohne selbst zu anderen kommen zu müssen."
+        },
+        {
+          "id": "06-02",
+          "text": "Wer den Feind dazu bringt, von selbst zu kommen, gewährt ihm Vorteil; wer ihn daran hindert, zu kommen, bringt ihm Schaden. So kann man den Erholten ermüden, den Gesättigten hungern lassen, den Behaglichen in Bewegung setzen. Gehe dorthin, wohin er nicht eilt; strebe dorthin, womit er nicht rechnet."
+        },
+        {
+          "id": "06-03",
+          "text": "Wer tausend Li zieht, ohne ermüdet zu sein, zieht durch menschenleeres Land. Wer angreift und gewiss nimmt, greift da an, wo der Feind nicht verteidigt; wer verteidigt und gewiss standhält, bewacht Orte, die der Feind nicht angreift. Der gute Angreifer lässt den Feind nicht wissen, was er verteidigt; der gute Verteidiger lässt den Feind nicht wissen, was er angreift. Wie fein! Bis zur Formlosigkeit; wie wunderbar! Bis zur Lautlosigkeit — so bestimmt man Leben und Tod des Gegners."
+        },
+        {
+          "id": "06-04",
+          "text": "Wenn wir vorgehen und nicht aufgehalten werden können, so durchbrechen wir seine Leere; wenn wir zurückgehen und nicht verfolgt werden können, so sind wir schnell und unaufholbar. Wollen wir Kampf, so zwingen wir den Feind, selbst gegen hohe Wälle und tiefe Gräben zu kämpfen, indem wir dort angreifen, wo er unbedingt Hilfe leisten muss; wollen wir nicht kämpfen, so halten wir unsere Linien, und der Feind kann uns nicht begegnen, weil wir seinen Kurs stören."
+        },
+        {
+          "id": "06-05",
+          "text": "Wenn wir Erscheinung schaffen und selbst formlos bleiben, sind wir konzentriert und der Feind zerstreut. Wir sind eins, der Feind teilt sich in Zehner; greifen zehn gegen eins an, so sind wir zahlreich und der Feind gering. Wer mit Überzahl gegen Unterzahl wirkt, dessen Kampfausgang ist knapp bemessen. Ist der Ort unseres Kampfes unbekannt, so bereitet sich der Feind an vielen Stellen vor; je mehr er vorbereitet, desto dünner seine Kräfte an jedem einzelnen Punkt. Deckt man vorne, so wird hinten dünn; deckt man hinten, so wird vorne dünn; deckt man links, so wird rechts dünn; deckt man rechts, so wird links dünn. Bereitet er sich überall vor, so ist er überall dünn. ‚Dünn‘ ist das Zeichen des Verteidigers; ‚Zahlreich‘ ist das Zeichen dessen, der andere zur Verteidigung zwingt."
+        },
+        {
+          "id": "06-06",
+          "text": "Wer Ort und Zeitpunkt des Kampfes kennt, kann aus tausend Li Entfernung zur Schlacht zusammenkommen; wer Ort und Zeitpunkt nicht kennt, dem können links und rechts nicht helfen, vorn und hinten nicht helfen — ganz zu schweigen von Entfernungen von Dutzenden Li oder nur wenigen Li. Nach meiner Einschätzung nützen selbst viele Truppen der Yue wenig im Kampf um Sieg oder Niederlage. Deshalb sage ich: Sieg ist erlangbar. Selbst bei zahlenmäßig überlegenem Feind lässt sich der Kampf entziehen."
+        },
+        {
+          "id": "06-07",
+          "text": "Man plant, um Gewinn und Verlust zu erkennen; man handelt, um die Logik von Bewegung und Ruhe zu verstehen; man formiert, um Orte von Leben und Tod zu kennen; man prüft die Flanken, um Übermaß und Mangel zu finden. So erreicht die Formung der Truppen ihren Gipfel in der Formlosigkeit. Wer formlos ist, ist für tiefe Späher unsichtbar und für Weise unberechenbar. Nutze Formen, um in der Masse den Sieg zu bereiten, ohne dass die Masse es erkennt. Alle kennen die Form, mit der ich sie besiege; niemand kennt die Form, mit der ich den Sieg erzwinge. Deshalb wiederholt sich der Sieg nicht; er passt seine Gestalten unendlich an."
+        },
+        {
+          "id": "06-08",
+          "text": "Die Gestalt der Truppen ist wie Wasser: Wasser weicht dem Hohen aus und strebt zum Niedrigen; der Sieg der Streitkraft meidet das Starke und trifft das Schwache. Wasser richtet seinen Lauf nach dem Gelände, das Heer erringt Sieg nach dem Feind. Daher gibt es keine feste Machtstellung, keine dauerhafte Gestalt; wer sich dem Gegner anpasst und durch Wandel siegt, gilt als übernatürlich. So haben die fünf Wandlungsphasen keinen ewigen Sieg, die vier Jahreszeiten keinen festen Platz; der Tag hat Längen und Kürzen, der Mond hat Vergehen und Werden."
+        }
+      ],
+      "points": [
+        {
+          "title": "Andere lenken, nicht gelenkt werden",
+          "body": "Initiative heißt nicht nur zuerst zu handeln, sondern den Gegner so zu beeinflussen, dass er zeitlich, örtlich und in der Ressourcenzuteilung auf uns reagiert.",
+          "segmentId": "06-01"
+        },
+        {
+          "title": "Angriff auf das, was er unbedingt retten muss",
+          "body": "Es gilt nicht, stur die vom Gegner als stark angesehenen Punkte frontal anzugreifen, sondern seine Interessen so zu verändern, dass er seine vorteilhaften Positionen aufgibt.",
+          "segmentId": "06-04"
+        },
+        {
+          "title": "Wir konzentriert, der Feind zerstreut",
+          "body": "Verbirg die Hauptangriffsrichtung und zwinge den Gegner zu Verteidigungen an vielen Stellen, um dann an einem Punkt Kräfte zu bündeln und viele gegen wenige schlagen zu lassen.",
+          "segmentId": "06-05"
+        },
+        {
+          "title": "Die Vollendung der Form: Formlosigkeit",
+          "body": "Vermeide feste, lesbare Muster in der Aufstellung, damit der Informationsvorteil nicht vom Gegner erkannt und gegen dich verwendet werden kann.",
+          "segmentId": "06-07"
+        },
+        {
+          "title": "Die Heerformation ist wie Wasser",
+          "body": "Methoden zum Sieg müssen sich nach Gelände und Gegner richten; eine früher erfolgreiche Gestalt starr zu wiederholen, entwertet sie sobald sich Umstände ändern.",
+          "segmentId": "06-08"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 7,
+      "chapterTitle": "Kampf um Stellung",
+      "fullTitle": "Kampf um Stellung — Kapitel 7",
+      "group": "Wettstreit um Vorteil",
+      "summary": "Der Text behandelt die Schwierigkeiten beim Zusammenziehen von Truppen und beim Wettstreit um vorteilhafte Positionen. Indirekte Wege können direkten Nutzen bringen, wenn sie mit Anreizen, Routenwahl, Tempo und Nachschub verbunden werden; wer nur äußerliche Schnelligkeit anstrebt, riskiert Trossverlust und Zerfall der Streitmacht. Es werden Aktionsrhythmen wie Wind–Wald–Feuer–Berg vorgestellt, die Bedeutung gemeinsamer Signale, von Moral- und Kraftmanagement sowie Zurückhaltung bei fingierter Flucht, Ködertruppen, Rückzug und in der Verfolgung eines in die Enge geratenen Feindes betont.",
+      "tags": [
+        "Stellungskampf",
+        "Umweg und Gerade",
+        "Wind-Wald-Feuer-Berg",
+        "Kampfmoral",
+        "Logistik"
+      ],
+      "seoTitle": "Sunzi Kapitel 7: Kampf um Stellung und Tempo",
+      "seoDescription": "Analyse von Bewegung, Täuschung, Logistik und Rhythmus im Wettstreit um vorteilhafte Positionen; Fokus auf Moral, Signalen und Zurückhaltung.",
+      "segments": [
+        {
+          "id": "07-01",
+          "text": "Sunzi sagt: Bei der Kunst, Heer zu führen, erhält der General seinen Auftrag vom Fürsten, verbindet Truppen und versammelt die Massen, schließt Bündnisse und lagert; am schwierigsten ist der Wettstreit um vorteilhafte Stellung. Die Schwierigkeit dieses Wettstreits liegt darin, das Umständliche als Direktes erscheinen zu lassen und das Gefährliche als Vorteil. Daher wählt man einen Umweg und lockt den Gegner mit Gewinn: die Nachrückenden setzen aus, die Vordermänner erreichen zuerst — so zeigt sich die Kunst, Umweg und Gerade zu berechnen."
+        },
+        {
+          "id": "07-02",
+          "text": "Darum bringt der Kampf um einen Vorteil sowohl Gewinn als auch Gefahr. Zieht das ganze Heer los, um den Vorteil zu erringen, kommt es nicht rechtzeitig an; schickt man nur einen Teil der Truppen voraus, geht der Tross verloren. Deshalb rollt man die Rüstung zusammen, eilt Tag und Nacht ohne Rast und legt im Gewaltmarsch die doppelte Strecke zurück. Kämpft man um einen Vorteil in hundert Li Entfernung, können die Befehlshaber der drei Heere gefangen werden: Die Kräftigen gehen voraus, die Erschöpften bleiben zurück, sodass nur einer von zehn ankommt. Bei fünfzig Li kann der Befehlshaber der Vorhut verloren gehen und nur die Hälfte kommt an; bei dreißig Li kommen zwei Drittel an. Daher geht ein Heer ohne Tross zugrunde, ohne Proviant zugrunde und ohne Vorräte zugrunde. Wer die Pläne der benachbarten Fürsten nicht kennt, kann nicht rechtzeitig Bündnisse schließen; wer Berge, Wälder, Engpässe und Sümpfe nicht kennt, kann nicht marschieren; wer keine ortskundigen Führer einsetzt, kann den Vorteil des Geländes nicht nutzen."
+        },
+        {
+          "id": "07-03",
+          "text": "Die Kriegskunst gründet sich auf Täuschung, bewegt sich wegen Vorteil und verändert sich durch Teilung und Zusammenschluss. Daher: schnell wie der Wind, ruhig wie der Wald, plündernd wie das Feuer, unbeweglich wie der Berg; schwer zu durchschauen wie die Dunkelheit, bewegend wie Donnerschlag. Plündere Dörfer, teile die Massen, räume Gelände und teile die Beute, halte die Waage und setze in Bewegung. Wer zuerst die Rechnung von Umweg und Gerade kennt, siegt — das ist die Regel des Wettstreits um Stellung."
+        },
+        {
+          "id": "07-04",
+          "text": "In der Militärverwaltung heißt es: \"Weil Worte nicht gehört werden, gibt es Klanggeräte und Trommeln; weil Sicht eingeschränkt ist, gibt es Wimpel und Fahnen.\" Trommeln und Fahnen sind Ohr und Auge des Volkes. Wenn die Leute einheitlich reagieren, kann der Tapfere nicht allein vorrücken, der Feige nicht allein zurückweichen — das ist die Kunst, Massen einzusetzen. Daher werden bei Nachtkämpfen häufig Trommeln gebraucht, bei Tagkämpfen häufig Fahnen; so verändert man Gehör und Blick der Menschen."
+        },
+        {
+          "id": "07-05",
+          "text": "Man kann dem ganzen Heer die Energie entreißen und dem Heerführer den Willen. So ist die Morgenkraft scharf, am Tag träge, am Abend auf Heimkehr gerichtet. Der kundige Feldherr meidet die morgendliche Schärfe und schlägt die Tagmüden und Heimkehrenden — das ist Führung der Energie; er wartet mit Ordnung auf Unordnung, mit Ruhe auf Lärm — das ist Führung des Willens; er lässt den Nahen auf den Fernen warten, den Ausgeruhten auf den Erschöpften, den Gesättigten auf den Hungrigen — das ist Führung der Kräfte; er fordert nicht die gerade Fahne heraus, greift nicht die standhafte Formation an — das ist Führung durch Wandel."
+        },
+        {
+          "id": "07-06",
+          "text": "Deshalb gelten beim Einsatz von Truppen folgende Regeln: Greife keinen Feind an, der eine Höhe besetzt; stelle dich keinem Feind entgegen, der einen Hügel im Rücken hat; verfolge keinen vorgetäuschten Rückzug; greife keine frischen, kampfkräftigen Truppen an; beiße nicht auf den Köder einer Locktruppe an; versperre einem heimkehrenden Heer nicht den Weg. Wenn du ein Heer einschließt, lasse ihm stets einen Ausweg; bedränge einen verzweifelten Feind nicht bis zum Äußersten. Das sind die Grundsätze des Truppeneinsatzes."
+        }
+      ],
+      "points": [
+        {
+          "title": "Indirektes als direkt verwenden, Gefahr als Vorteil wenden",
+          "body": "Wenn ein Umweg die feindliche Entscheidung beeinflusst und Zeit gewinnt, kann er zur direkten Lösung werden und ermöglicht, vor dem Gegner einzutreffen.",
+          "segmentId": "07-01"
+        },
+        {
+          "title": "Vorteil und Risiko zugleich",
+          "body": "Das Streben nach Gelegenheiten bringt Tempo, dehnt Formationen und gefährdet Nachschub; Nutzen und Risiko existieren nebeneinander.",
+          "segmentId": "07-02"
+        },
+        {
+          "title": "Wind–Wald–Feuer–Berg",
+          "body": "Schnell, ruhig, plündernd, unbeweglich — verschiedene Rhythmen entsprechen unterschiedlichen Zwecken; wichtig ist der Wechsel je nach Ziel, nicht einseitige Hast.",
+          "segmentId": "07-03"
+        },
+        {
+          "title": "Gemeinsames Ohr und Auge",
+          "body": "Gemeinsame Signale verwandeln individuelle Reaktionen in organisierte Bewegung: Tapfere können nicht allein vorpreschen, Zaghafte nicht allein zurückweichen.",
+          "segmentId": "07-04"
+        },
+        {
+          "title": "Führung von Moral, Willen, Kraft und Wandel",
+          "body": "Man wartet, bis die morgendliche Schärfe vergeht, bis Unordnung entsteht oder Gegner erschöpft sind, und schlägt dann zu — Rhythmus- und Ressourcensteuerung entscheiden.",
+          "segmentId": "07-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 8,
+      "chapterTitle": "Neun Veränderungen",
+      "fullTitle": "Neun Veränderungen — Kapitel 8",
+      "group": "Situative Anpassung",
+      "summary": "Dieses Kapitel betont, dass Prinzipien nicht losgelöst von der Lage angewendet werden dürfen. Manchmal darf man Wege nicht benutzen, Heere nicht angreifen, Städte nicht erstürmen, Gebiete nicht erstreiten und selbst Befehle des Herrschers nicht ausführen, um zu verhindern, dass allgemeine Regeln mechanisch angewandt werden. Reife Urteilsfähigkeit erkennt in Nutzen die Gefahren und in Gefahr die Lösungsansätze. Am Ende werden fünf gefährliche Charakterzüge eines Feldherrn genannt: Mut, zu starke Schonung des Lebens, Eile im Zorn, übertriebene Redlichkeit und übermäßige Volksliebe — ohne Maß können diese Tugenden dem Gegner zum Vorteil gereichen.",
+      "tags": [
+        "Neun Veränderungen",
+        "Nutzen und Schaden",
+        "Kriegsbereitschaft",
+        "Fünf Gefahren",
+        "Situative Anpassung"
+      ],
+      "seoTitle": "Sunzi — Neun Veränderungen: Flexibilität in der Kriegsführung",
+      "seoDescription": "Kapitel 8 erklärt, wie Generäle Nutzen und Risiken abwägen, wann Regeln zu brechen sind und welche fünf Charakterfehler Gefahren bergen.",
+      "segments": [
+        {
+          "id": "08-01",
+          "text": "Sunzi sagt: Im Grundsatz der Kriegführung empfängt der General den Auftrag vom Herrscher, vereinigt die Truppen und sammelt das Heer. Auf gebrochenem Boden schlägt man kein Lager; an Kreuzungen vereinigt man sich; auf abgeschnittenem Gelände verweilt man nicht; bei eingeklemmtem Gelände berät man; auf dem Todesboden kämpft man. Es gibt Wege, die man nicht benutzt; Heere, die man nicht angreift; Städte, die man nicht bestürmt; Gebiete, um die man nicht streitet; und Befehle des Herrschers, die man nicht annimmt. Wer die Vorzüge der neun Wandelungen durchschaut, versteht die Kriegskunst; wer sie nicht durchschaut, mag zwar die Geländeformen kennen, aber er wird die Vorteile des Geländes nicht nutzen können; wer Truppen führt, ohne die Kunst der neun Wandelungen zu kennen, mag die Geländevorzüge kennen, doch wird er den Einsatz der Menschen nicht gewinnen können."
+        },
+        {
+          "id": "08-02",
+          "text": "Darum mischen sich die Überlegungen des Klugen stets aus Nutzen und Schaden: vermengt mit dem Nutzen strebt er nach Vertrauenswürdigkeit, vermengt mit dem Schaden werden die Gefahren lösbar. Deshalb zwingt man Fürsten durch drohenden Schaden, setzt man Fürsten durch Arbeit und Pflichten in Bewegung, und gewinnt man Fürsten durch Vorteile."
+        },
+        {
+          "id": "08-03",
+          "text": "Daher ist die Regel des Kriegführens: Verlasse dich nicht darauf, dass er nicht kommen wird, sondern verlasse dich darauf, dass wir Mittel haben, ihn zu erwarten; verlasse dich nicht darauf, dass er nicht angreifen wird, sondern darauf, dass wir etwas besitzen, das nicht angegriffen werden kann."
+        },
+        {
+          "id": "08-04",
+          "text": "Also hat ein Feldherr fünf Gefahren: wer auf den sicheren Tod besteht, kann getötet werden; wer auf sicheres Leben besteht, kann gefangen genommen werden; wer rasch in Zorn gerät, kann erniedrigt werden; wer übertrieben keusch oder reinlich ist, kann beschämt werden; wer sein Volk zu sehr liebt, kann zur Last werden. All diese fünf sind Fehler des Feldherrn und Katastrophen in der Kriegführung. Eine Armee zu vernichten und den Befehlshaber zu töten geschieht gewiss durch Ausnutzung dieser fünf Gefahren — dem darf man keine Unachtsamkeit schenken."
+        }
+      ],
+      "points": [
+        {
+          "title": "Es gibt Dinge, die man nicht tun sollte",
+          "body": "Wege, feindliche Einheiten, Städte, Gebiete und sogar Befehle sollten nicht allein wegen ihrer Existenz automatisch angegriffen werden; stets ist das übergeordnete Ziel zu beachten.",
+          "segmentId": "08-01"
+        },
+        {
+          "title": "Kenntnis der neun Wandelungen",
+          "body": "Topographie zu kennen ist nicht dasselbe wie ihre Vorteile zu nutzen; man muss wissen, wann übliches Vorgehen zu ändern ist.",
+          "segmentId": "08-01"
+        },
+        {
+          "title": "Überlegung mischt Nutzen und Schaden",
+          "body": "Bei der Analyse von Nutzen müssen auch die daraus entstehenden Gefahren bedacht werden; bei der Risikoanalyse sollten zugleich Lösungen gesucht werden, um einseitige Urteile zu vermeiden.",
+          "segmentId": "08-02"
+        },
+        {
+          "title": "Nicht darauf vertrauen, dass der Feind nicht kommt",
+          "body": "Sicherheit darf nicht auf der Erwartung beruhen, dass der Gegner untätig bleibt; sie muss auf der Vorbereitung beruhen, auch falls er doch angreift.",
+          "segmentId": "08-03"
+        },
+        {
+          "title": "Die fünf Gefahren des Generals",
+          "body": "Tugenden, die ins Extreme geraten, werden zu vorhersehbaren Schwächen. Selbsterkenntnis ist ein Teil des strategischen Risikomanagements.",
+          "segmentId": "08-04"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 9,
+      "chapterTitle": "Aufmarsch",
+      "fullTitle": "Aufmarsch — Neuntes Kapitel",
+      "group": "Den Feind beurteilen",
+      "summary": "Dieses Kapitel beginnt mit dem Umgang der Truppen in Berg-, Wasser-, Sumpf- und Flachgelände und erklärt, wie aus Umwelt- und feindlichen Kleinsignalen der Zustand zu lesen ist. Baumbewegungen, aufsteigende Vögel, Staubwolken, Worte, Belohnungen und Strafen sowie das Verhalten der Soldaten sind Signale, die gegeneinander abgeglichen werden müssen. Am Ende verknüpft der Text Organisationsdisziplin und Gefolgschaft: Bestraft man Soldaten, bevor sie gebunden sind, gehorchen sie nicht; sind sie gebunden, darf Strafe nicht wirkungslos bleiben. Beständige, konsequente Führung schafft Vertrauen.",
+      "tags": [
+        "Aufmarsch",
+        "Gelände",
+        "Feindbeurteilung",
+        "Disziplin",
+        "Vertrauen"
+      ],
+      "seoTitle": "Sunzi Kapitel 9: Aufmarsch — Gelände, Zeichen, Disziplin",
+      "seoDescription": "Gelände, natürliche Zeichen und Truppenverhalten lesen; Disziplin und beständige Führung als Grundlage für Einsatzfähigkeit.",
+      "segments": [
+        {
+          "id": "09-01",
+          "text": "Sunzi sagt: Wann immer man Truppen gegenüber dem Feind aufstellt, gibt es vorteilhafte Arten der Lage. Die Gebirgstruppe: stelle dich an abgeschnittene Berge und stütze dich auf Täler; nimm die höheren Stellen ein, kämpfe von erhöhter Lage ohne mühsames Aufsteigen. Die Wassertruppe: ist das Wasser weit, und der Feind kommt über Wasser, so trete ihm nicht mitten im Wasser entgegen; lasse ihn halb übergesetzt sein und schlage zu — das ist vorteilhaft. Wer den Kampf sucht, soll sich nicht am Wasser festmachen, sondern die hohen Stellen abseits des fließenden Wassers besetzen — so handelt eine Truppe im Bereich des Wassers. Die Sumpftruppe: meide Moor und Sumpf, ziehe dich schnell zurück und bleibe nicht; wenn Heere mitten im Sumpf aufeinandertreffen, stützen sie sich auf Wasser und Schilf und haben den Rücken an Bäume gelehnt. Die Flachlandtruppe: auf ebenem Land ist die Bewegung leicht; rechts liegt erhöhter Rücken, vorn ist Tod, hinten Leben — so verhält sich die Truppe auf dem Flachland. Die Vorteile dieser vier Arten von Aufstellungen sind es, mit denen der Gelbe Kaiser die vier Herrscher besiegte."
+        },
+        {
+          "id": "09-02",
+          "text": "Generell bevorzugt ein Heer Höhen und vermeidet Tiefen; man schätzt die sonnige, 'yang'-Seite und verachtet die schattige, 'yin'-Seite; man pflegt die Gesundheit und steht auf festem Boden, so leidet das Heer nicht an zahllosen Gebrechen — das heißt sicheren Sieg. Bei Hügeln und Dämmen muss man auf der sonnigen Seite Stellung beziehen und den Rücken rechts haben; hierin liegt der Nutzen der Truppen und die Hilfe des Geländes. Wenn starker Regen fällt und das Wasser schäumt, wer eine Furt wagen will, soll warten, bis es sich legt."
+        },
+        {
+          "id": "09-03",
+          "text": "Wenn das Gelände schroffe Schluchten oder Gefahren wie 'Himmelsbrunnen', 'Himmelskäfig', 'Himmelsnetz', 'Himmelssturz' oder 'Himmelsspalte' aufweist, so entferne dich schnell und nähere dich nicht. Wenn ich Abstand halte, rückt der Feind vor; wenn ich vorgehe, zieht er sich zurück. Neben dem Heer dürfen Hindernisse, tiefe Wasserlöcher, Schilf, Röhricht, Wälder oder dorniges Gestrüpp nicht unbeachtet bleiben; beim Überqueren ist größte Vorsicht beim Einsatz von Überbrückungen (Seilen) geboten — dort verbergen sich gerne Hinterhalte."
+        },
+        {
+          "id": "09-04",
+          "text": "Anzeichen des Feindes und ihr Sinn: Nähernde Stille deutet darauf hin, dass er sich auf Geländevorteile verlässt; Ferner und provozierende Zurufe wollen dich zum Vorrücken locken. Auf einfache Plätze zu ziehen ist vorteilhaft. Viele bewegte Bäume kündigen Annäherung an; viel Gestrüpp und Gras als Hindernis zeigen Unsicherheit. Aufsteigende Vögel verraten einen Hinterhalt; erschrockene Tiere deuten auf Verdeckung. Hohe, scharfe Staubwolken bedeuten herannahende Streitwagen; tiefer, breiter Staub bedeutet Fußvolk. Zerstreute, weit auseinanderliegende Spuren sind Holzfäller; wenige, beständige Hin‑ und Hergänge sind Feldlager. Unterwürfige Worte gepaart mit erhöhter Vorsicht bedeuten Angriff; stolze, vordringliche Worte bedeuten Rückzug. Leichte Streitwagen, die zuerst ausrücken und an den Flanken stehen, zeigen eine Aufstellung; wer ohne Abmachung Frieden anbietet, kann eine List verfolgen. Fliehende Truppen, die zur Schlacht antreten, haben einen Plan; halb Vor‑, halb Rückzug ist Lockung. Am Stock stützend steht man aus Hunger; am Brunnen zuerst trinken heißt Durst. Wer Gewinn sieht und nicht vorgeht, ist ermüdet. Vogelansammlungen deuten auf Leere; nächtliches Rufen auf Furcht. Unruhige Truppen zeigen, dass der Führer gering geschätzt wird; wehende Fahnen bedeuten Unordnung; wütende Beamte deuten Erschöpfung. Soldaten mit Getreide, Pferden und Fleisch, ohne Rationenvorrat und doch nicht ins Lager zurückkehrend, sind verwegene Feinde. Wer beharrlich und langsam spricht, hat seine Reihen verloren. Häufige Belohnungen bedeuten Bedrängnis; häufige Strafen bringen Erschöpfung. Zuerst grausam und später die Leute fürchtend zeugt von mangelnder Meisterschaft. Wer kommt, bittet und sich fügt, will Ruhe. Treffen feindliche Soldaten zornig und begegnen sich lange ohne sich zu schließen oder zu entfernen, so ist besondere Vorsicht geboten."
+        },
+        {
+          "id": "09-05",
+          "text": "Darum ist das Heer nicht deshalb wertvoll, weil es viele Mann hat. Entscheidend ist, nicht unüberlegt vorzustoßen, sondern so geführt zu werden, dass es seine Kraft bündeln, den Feind einschätzen und Menschen nehmen kann. Denn wer unbesonnen ist und den Gegner leichtmacht, wird selbst dem Feind in die Hände fallen."
+        },
+        {
+          "id": "09-06",
+          "text": "Strafe setzt Bindung voraus: Bestraft man Soldaten, bevor sie sich dir angeschlossen haben, so werden sie nicht gehorchen und schwer einsetzbar sein. Sind sie aber bereits gebunden und die Strafe wirkt nicht, sind sie ebenfalls unbrauchbar. Deshalb ordne mit Zucht und forme mit militärischer Disziplin — so gewinnst du sicher. Setze Gewohnheiten und Vorbild durch, um die Menschen zu lehren, dann gehorchen sie; sprich man Befehle aus, die man selbst nicht lebt, so gehorchen sie nicht. Wer an seinen Gewohnheiten festhält, gelangt ins Einvernehmen mit der Masse."
+        }
+      ],
+      "points": [
+        {
+          "title": "Platzwahl und Gegnersicht",
+          "body": "Aufstellung und Geländewahl gehören untrennbar zusammen mit der Beobachtung des Gegners; Gelände (Berg, Wasser, Sumpf, Ebene) bestimmt die vorteilhafte Disposition.",
+          "segmentId": "09-01"
+        },
+        {
+          "title": "Höhe vor Tiefe, Sonniges vor Schattigem",
+          "body": "Lagerwahl orientiert sich an Sicht, Trockenheit, Gesundheit und Unterstützung — so minimiert man nicht‑kampfbedingte Verluste.",
+          "segmentId": "09-02"
+        },
+        {
+          "title": "Zeichen lesen, nicht isoliert",
+          "body": "Natürliche und menschliche Signale sind mehrdeutig; man darf sie nicht einzeln deuten, sondern muss Distanz, Haltung, Staubentwicklung und Worte wechselseitig prüfen.",
+          "segmentId": "09-04"
+        },
+        {
+          "title": "Mehr ist nicht immer besser",
+          "body": "Stärke liegt nicht nur in der Zahl: Konzentration der Kraft, Einschätzung des Gegners und Fähigkeit, Menschen zu gewinnen, übertreffen blinden Personalzuwachs.",
+          "segmentId": "09-05"
+        },
+        {
+          "title": "Zucht durch Wandel und Beständigkeit",
+          "body": "Sorgfalt und Fürsorge schaffen Gefolgschaft; Disziplin sichert Einsatzfähigkeit. Befehle müssen beständig gelebt werden, sonst versagen sie.",
+          "segmentId": "09-06"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 10,
+      "chapterTitle": "Gelände",
+      "fullTitle": "Gelände, Kapitel Zehn",
+      "group": "Geländevorteil",
+      "summary": "Dieser Abschnitt unterscheidet sechs Geländetypen — passierbar, hängend, abzweigend, eng, gefährlich, entfernt — und nennt sechs Formen des Versagens: Flucht, Nachlässigkeit, Versagen, Zusammenbruch, Unordnung und Niederlage. Die Geländetypen sind äußere Bedingungen; die Versagenstypen ergeben sich meist aus Führungs- und Organisationsfehlern und dürfen nicht als himmlisches Unheil abgetan werden. Generäle sollen anhand von Verhältnis von eigenem und feindlichem Kräftepotenzial sowie Gelände eigenständig entscheiden, ob ein Gefecht angezeigt ist, und dabei den Schutz der Bevölkerung sowie das Staatsinteresse als Maßstab nehmen. Zuneigung gegenüber den Soldaten muss mit wirksamer Befehlsgewalt einhergehen; sonst wird Fürsorge zu Verwöhnung.",
+      "tags": [
+        "Gelände",
+        "Sechs Fehler",
+        "Führungspflicht",
+        "Geländekenntnis",
+        "Organisation"
+      ],
+      "seoTitle": "Sunzi Kapitel 10: Gelände, Tücken und Führungsverantwortung",
+      "seoDescription": "Untersucht sechs Geländetypen, sechs Führungsfehler und die Pflicht des Generals, Sieg, Bevölkerungsschutz und Staatsinteresse abzuwägen.",
+      "segments": [
+        {
+          "id": "10-01",
+          "text": "Sunzi sagte: Im Allgemeinen gibt es sechs Arten von Gelände: das Passierbare, das Hängende, das Abzweigende, das Enge, das Gefährliche und das Entfernte. Wenn ich hingehen kann und der Feind zu mir kommen kann, nennt man es passierbar. Ein passierbares Gelände sollte man zuerst von hohen, sonnigen Punkten aus besetzen und die Nachschublinien sichern; im Kampf ist es vorteilhaft. Wenn man hingehen kann, aber schwer zurückzukehren ist, heißt das \"hängend\". In solchem Gelände ist der Feind oft unvorbereitet; zieht man hinaus, kann man ihn besiegen; ist er jedoch vorbereitet, zieht man hinaus und verliert und kann schwer zurückkehren — das ist ungünstig. Wenn ich hinausrücke und es mir nicht nützt, dem Feind aber auch nicht nützt, nennt man das \"abzweigend\". Bei solcher Lage, obwohl der Feind Vorteile hat, setze ich nicht direkt an; ich locke ihn heraus und schlage ihn, wenn er zur Hälfte herausgekommen ist — das ist vorteilhaft. Beim \"engen\" Gelände: haben wir es zuerst besetzt, müssen wir es vollständig einnehmen und auf den Feind warten. Hat der Feind es zuerst, so fülle es und folge nicht; ist es nicht vollständig besetzt, dann folge ihm. Beim \"gefährlichen\" Gelände: nehmen wir es zuerst ein, besetzen wir Höhen und warten; hat der Feind es zuerst, locken wir ihn fort und verfolgen ihn nicht. Beim \"fernen\" Gelände sind die Kräfte ausgeglichen und schwer herauszufordern; ein Kampf ist nachteilig. Diese sechs Arten sind die Wege des Geländes; die Verantwortung des Generals ist höchst wichtig und darf nicht übersehen werden."
+        },
+        {
+          "id": "10-02",
+          "text": "Daher gibt es bei Truppen solche, die fliehen, solche, die nachlassen, solche, die in die Falle geraten, solche, die zusammenbrechen, solche, die in Unordnung geraten, und solche, die in Niederlage geraten. Diese sechs Dinge sind keine Strafen des Himmels, sondern Fehler der Führer. Sind die Kräfte ausgeglichen und erreicht ein Stoß das Zehnfache, nennt man das Flucht; sind die Soldaten stark und die Offiziere schwach, nennt man das Nachlassen; sind die Offiziere stark und die Soldaten schwach, nennt man das Versagen. Ein hoher Offizier tobt und wird nicht gehorcht; begegnet er dem Feind, kämpft er eigenmächtig, und der General kennt nicht seine Fähigkeiten — das nennt man Zusammenbruch. Ist der General schwach und nicht streng, die Lehre und die Befehle unklar, Offiziere und Soldaten ohne feste Ordnung und die Truppenaufstellung quer und durcheinander, nennt man das Unordnung. Kann der General den Feind nicht einschätzen, verbindet er wenige mit vielen, setzt Schwache gegen Starke ein und wählt nicht die Spitze der Truppen — das nennt man Niederlage. Diese sechs sind Wege zum Verderben; die Pflicht des Generals ist höchst wichtig und darf nicht übersehen werden."
+        },
+        {
+          "id": "10-03",
+          "text": "Das Gelände ist die Hilfe der Streitkräfte. Den Feind einschätzen und den Sieg planen, Gefahren und Entfernungen berechnen — das ist das Werk der obersten Generäle. Wer dies weiß und danach Krieg führt, wird sicher siegen; wer es nicht weiß und dennoch Krieg führt, wird sicher verlieren. Darum: Wenn die Kriegslage zum Sieg führt, sagt der Herrscher 'kein Kampf' — doch der Kampf kann nötig sein; ist die Kriegslage nicht siegreich, sagt der Herrscher 'wir müssen kämpfen' — es kann dann keinen Erfolg geben. Deshalb: Vorstoßen ohne Ruhmsucht, Rückzug ohne Scheu vor Schuld; allein der Schutz der Bevölkerung und ein Nutzen, der dem Herrscher dient, sind der Schatz des Staates."
+        },
+        {
+          "id": "10-04",
+          "text": "Betrachte die Soldaten wie Säuglinge — so kannst du mit ihnen durch tiefe Bäche gehen; betrachte sie wie geliebte Söhne — so werden sie mit dir sterben. Wer sie zwar warmherzig liebt, aber nicht befehlen kann; wer Fürsorge zeigt, aber nicht durchsetzungsfähig ist; wer Unordnung nicht zügelt — das ist wie ein verwöhntes Kind und ist nicht einsetzbar."
+        },
+        {
+          "id": "10-05",
+          "text": "Zu wissen, dass meine Soldaten angreifen können, aber nicht zu wissen, dass der Feind nicht angreifbar ist, bringt nur halben Sieg; zu wissen, dass der Feind angreifbar ist, aber nicht zu wissen, dass meine Soldaten nicht angreifen können, bringt ebenfalls halben Sieg; zu wissen, dass der Feind angreifbar ist und meine Soldaten angreifen können, aber nicht zu wissen, dass das Gelände für einen Kampf ungeeignet ist, bringt auch nur halben Sieg. Daher: Der Kenner des Kriegswesens handelt, ohne sich zu verirren, und handelt, ohne erschöpft zu werden. Deshalb heißt es: Kenne den Feind und dich selbst, dann bist du in hundert Schlachten nicht in Gefahr; kenne Himmel und Erde, dann ist dein Sieg vollständig."
+        }
+      ],
+      "points": [
+        {
+          "title": "Die sechs Geländearten",
+          "body": "Dasselbe Terrain ist nicht automatisch für eine Seite vorteilhaft; entscheidend sind Reihenfolge der Besetzung, Nachschub, Rückzugsmöglichkeiten und das Kräfteverhältnis.",
+          "segmentId": "10-01"
+        },
+        {
+          "title": "Sechs Führungsfehler",
+          "body": "Flucht, Nachlässigkeit, Versagen, Zusammenbruch, Unordnung und Niederlage entspringen meist Fehlgebrauch von Kräften, unausgewogenen Zuständigkeiten und unklaren Befehlen — das ist Führungsverantwortung.",
+          "segmentId": "10-02"
+        },
+        {
+          "title": "Vorstoß ohne Ruhm, Rückzug ohne Scheu",
+          "body": "Professionelle Entscheidungen richten sich nicht nach persönlichem Ruhm, sondern nach dem Schutz der Bevölkerung und dem Nutzen des Staates.",
+          "segmentId": "10-03"
+        },
+        {
+          "title": "Liebe muss durchsetzbar sein",
+          "body": "Zuneigung und Fürsorge dürfen klare, durchsetzbare Befehle nicht ersetzen; ohne Disziplin wird Fürsorge zur Verwöhnung und die Truppe ist nicht einsatzfähig.",
+          "segmentId": "10-04"
+        },
+        {
+          "title": "Kenne Himmel und Erde",
+          "body": "Nur die Kenntnis von Feind und Eigenem reicht nicht; Lage, Zeit und Gelände müssen mitbedacht werden, um einen vollständigen Sieg zu sichern.",
+          "segmentId": "10-05"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 11,
+      "chapterTitle": "Die neun Gebiete",
+      "fullTitle": "Die neun Gebiete, Kapitel XI",
+      "group": "Kriegslage",
+      "summary": "Dieses Kapitel unterscheidet neun Terrainsituationen — zerstreute, leichte, umstrittene, durchkreuzte, Knoten-, schwere, versperrte, eingekreiste und Todesgebiete — und ordnet jedem Grundsätze zu. Eindringen ins feindliche Gebiet verändert Moral, Bindung und Versorgungswege der Truppen; der Führer muss Willen, Nachschub und Informationsfluss steuern. Das Gleichnis der Schlange erklärt wechselseitige Rettung von vorn und hinten. Entscheidend ist weniger das Auswendiglernen der Namen als das Verständnis von Lage, Rückweg, Ressourcen und Psychologie als gemeinsame Determinanten des Handelns.",
+      "tags": [
+        "Neun Gebiete",
+        "Kriegslage",
+        "Eindringen",
+        "Koordination",
+        "Situation"
+      ],
+      "seoTitle": "Die neun Gebiete — Sunzis Kapitel XI",
+      "seoDescription": "Kapitel über neun Geländetypen, ihr Verhalten gegenüber Truppen, Führungspflichten, Versorgung und Moral im Feld.",
+      "segments": [
+        {
+          "id": "11-01",
+          "text": "Sunzi sagt: Die Regeln der Kriegführung kennen neun Geländeformen: zerstreute Gebiete, leichte Gebiete, umstrittene Gebiete, durchkreuzte Gebiete, Knotenpunkte, schwere Gebiete, versperrte Gebiete, eingeschlossene Gebiete und Todesgebiete. Wenn die Landesfürsten in ihrem eigenen Gebiet kämpfen, ist es ein zerstreutes Gebiet. Wenn man fremdes Gebiet betritt, aber nicht weit eindringt, ist es ein leichtes Gebiet. Wenn sowohl wir Gewinn haben, wenn wir es halten, als auch der Feind Gewinn hat, wenn er es hält, ist es ein umstrittenes Gebiet. Wenn wir hingehen können und der Feind auch kommen kann, ist es ein durchkreuztes Gebiet. Wenn in des Fürsten Territorium drei Zugänge zusammentreffen und wer zuerst kommt, die Volksmassen des Reiches gewinnt, ist es ein Knotenpunkt. Wenn man tief in fremdes Gebiet eindringt und die eigenen Städte im Rücken liegen, ist es ein schweres Gebiet. Wege durch Berge, Wälder, Engpässe, Sümpfe und generell schwer begehbare Wege sind versperrte Gebiete. Wenn der Zugang schmal ist und der Rückweg weit, so dass der Feind mit wenigen Leuten unsere Massen angreifen kann, ist es ein eingeschlossenes Gebiet. Wenn in schnellem Kampf Leben gerettet wird, in langsamem aber gestorben wird, ist es ein Todesgebiet. Deshalb: in zerstreutem Gebiet gibt es keinen Kampf; in leichtem Gebiet gibt es kein Verweilen; im umstrittenen Gebiet gibt es keinen Sturmangriff; im durchkreuzten Gebiet gibt es keinen Abbruch der Verbindung; im Knotenpunkt schließen sich die Truppen an; in schwerem Gebiet plündert man; in versperrtem Gebiet marschiert man; im eingeschlossenen Gebiet plant man; im Todesgebiet kämpft man."
+        },
+        {
+          "id": "11-02",
+          "text": "Die Meister der Kriegskunst der Alten vermochten es, dem Feind Vorder- und Rückseite zu entzweien, Zahl und Zahl nicht aufeinander angewiesen zu lassen, Vornehme und Gemeine an Hilfe zu hindern, Obere und Untere nicht zusammenzufassen, dass die Truppen getrennt blieben und nicht sammelten, dass Verbände zwar zusammentrafen, aber nicht einheitlich waren. Man handelt, wenn es dem Vorteil entspricht, und ruht, wenn es dem Nachteil entspricht. Da wird gefragt: \"Wenn die feindliche Masse geordnet kommt, was soll man tun?\" Die Antwort lautet: \"Nehmt ihm zuerst, was er liebt; dann gehorcht er.\" Daher ist die Natur des Krieges Geschwindigkeit: man nutzt das Überraschungsmoment, geht den unerwarteten Weg und greift dort an, wo der Gegner unvorsichtig ist."
+        },
+        {
+          "id": "11-03",
+          "text": "Wenn man als fremde Streitmacht handelt, so führt tiefes Eindringen zur geschlossenen Hingabe; der Gastgeber ist nicht imstande, zu widerstehen. Plündert man die fruchtbaren Ebenen, reicht die Beute, bis die drei Heere gespeist sind. Pflegt sie sorgsam und ermüdet sie nicht; sammelt Atem und Kraft, führt die Truppen mit überlegtem Plan, macht sich unberechenbar. Wer die Soldaten so setzt, dass sie nichts haben, wähnen sie keinen Ausweg und kämpfen eher bis zum Tod, ohne sich rückwärts zu wenden. Können sie nicht zu ihrem Zweck zurückkehren, so setzen sie ihre volle Kraft ein. Sind die Soldaten tief in die Lage hineingezogen, fürchten sie nicht, haben keinen Ausweg, sind standhaft; je tiefer das Eindringen, desto fester die Bindung; notfalls kämpfen sie. Daher tragen die Soldaten keine private Habe mehr — nicht, weil sie Habgier aufgegeben hätten; sie haben kein Restleben mehr — nicht, weil sie das Leben verabscheuen. Am Tag der Befehlsausgabe sitzen die Soldaten und weinen, die auf ihren Plätzen verweilen, und die Ruhenden liegen und tränen. Sind sie an einen Ort ohne Ausweg geworfen, entwickeln sie den Mut der Zhu und Gui."
+        },
+        {
+          "id": "11-04",
+          "text": "Der Meister der Kriegskunst ist wie die Schlangengruppe. Diese Schlangen von Changshan: schlägt man ihnen den Kopf, kommt der Schwanz; schlägt man den Schwanz, kommt der Kopf; trifft man die Mitte, eilen Kopf und Schwanz zugleich herbei. Man fragt: \"Ist es möglich, die Truppen so zu führen wie jene Schlangen?\" Die Antwort: \"Es ist möglich. Die Wu und Yue waren verfeindet, doch mussten sie in einem Boot zusammen übersetzen; bei Sturm retteten sie einander wie rechte und linke Hand.\" Darum ist ein einzelner Wagenrad noch nicht zuverlässig; die Harmonisierung tapferer Männer zu einer Einheit ist die Kunst der Regierung; das Zusammenspiel von Härte und Nachgiebigkeit ist Gesetz des Geländes. Ein Meister der Kriegskunst lässt die Hände zusammengehen, als ob er nur einen Mann führen würde, wenn es die Umstände erfordern."
+        },
+        {
+          "id": "11-05",
+          "text": "Die Aufgaben des Generals sind: in Ruhe heimlich, in Rechtsordnung tätig. Er blendet Ohr und Auge der Soldaten, dass sie nichts wissen; er verändert ihre Aufgaben und wandelt ihre Pläne, dass man nichts erkennt; er verändert ihre Unterkünfte und macht Wege verschlungen, dass man nicht vorausdenkt. Wenn der Führer den Zeitpunkt vorgibt, zieht er die Leiter weg wie beim Besteigen einer Höhe; wenn er tief in des Fürsten Land eindringt und seine Absicht offenbart, verbrennt er die Schiffe und zerbricht die Kessel, wie wenn man eine Herde Schafe treibt. Treibt man sie voran, wissen sie nicht, wohin; ruft man sie zurück, wissen sie nicht, wohin. Trifft man drei Heere zusammen und wirft sie in Gefahr, das ist die Aufgabe des Generals. Die Wandelbarkeit der neun Gebiete, der Nutzen von Streckenverkürzung und -verlängerung, und die Gesetzmäßigkeit menschlicher Gefühle — all das darf man nicht unberücksichtigt lassen."
+        },
+        {
+          "id": "11-06",
+          "text": "Wenn man als Fremder handelt, bringt tiefes Eindringen Geschlossenheit, flaches Eindringen Zerstreuung. Wer sein Land verlässt und die Grenze überschreitet, ist auf abgetrenntem Gebiet; wer in alle Richtungen erreichbar ist, ist an einem Knotenpunkt; wer tief eindringt, befindet sich im schweren Gebiet; wer flach eindringt, ist im leichten Gebiet; wer mit fester Rückseite und engem Vorfeld kämpft, ist im eingeschlossenen Gebiet; wer keinen Weg mehr hat, ist im Todesgebiet. Deshalb: in zerstreutem Gebiet werde ich den Willen einen; in leichtem Gebiet werde ich es aneignen; im umstrittenen Gebiet werde ich ihm nachsetzen; im durchkreuzten Gebiet werde ich achtsam seine Bewachung halten; am Knotenpunkt werde ich seine Verbindung sichern; im schweren Gebiet werde ich seine Nachschubwege fortsetzen; im versperrten Gebiet werde ich seine Wege öffnen; im eingeschlossenen Gebiet werde ich seine Lücken schließen; im Todesgebiet werde ich ihm zeigen, dass kein Entrinnen bleibt. So ist die Natur der Truppen: im Einkreisungsfall verteidigen sie; wenn keine Wahl bleibt, kämpfen sie; fällt man ihnen zu nahe, so folgen sie."
+        },
+        {
+          "id": "11-07",
+          "text": "Wer die Pläne der Fürsten nicht kennt, kann nicht Beziehungen vorhersehen; wer die Gestalt von Bergen, Wäldern, Engpässen und Sümpfen nicht kennt, kann nicht marschieren; wer keine einheimischen Führer nutzt, kann die Geländeeinheit nicht gewinnen. Kennt man vier oder fünf dieser Dinge nicht, ist man kein Heer eines Hegemons. Ein hegemoniales Heer, das ein großes Reich angreift, sorgt dafür, dass die feindlichen Kräfte sich nicht sammeln; seine Macht bedrückt den Feind, dass Bündnisse nicht geschlossen werden. Deshalb kämpft man nicht gegen alle Verbindungen des Reichs, nährt nicht alle Machtstellungen des Reichs, sondern vertraut auf die eigene Sache: wirkt einschüchternd auf den Feind, so kann eine Stadt eingenommen, ein Staat gestürzt werden. Gewährt man Belohnungen ohne Gesetz und hängt Befehle ohne Verwaltung aus, behandelt man die Massen wie einen einzigen Mann. Beauftrage sie mit Taten, kündige es nicht nur in Worten; locke sie mit Gewinn, warne sie nicht vor Verlust. Wirf sie in einen Ort ohne Rückkehr, dann werden sie leben; bringe sie in ein Todesgebiet, dann werden sie überleben. Wenn die Menge in Gefahr gerät, kann sie erst über Sieg und Niederlage entscheiden. Daher besteht Kriegsführung darin, dem Feind scheinbar gefügig zu sein, ihn in eine Richtung zu binden und tausend Meilen lang seinen Führer zu töten — das ist die Fertigkeit, die Dinge vollendet."
+        },
+        {
+          "id": "11-08",
+          "text": "Darum, am Tage der Mobilmachung, macht die Grenzbefestigungen unpassierbar, zerbrecht die Talismanzeichen und haltet die Gesandten ab; gebietet Härte auf den Hallen und Altären, um Vergehen zu bestrafen. Öffnet der Feind Tor und Tür, so dringt schnell ein; nehmt ihm zuerst, was er liebt; gebt ihm nur kurze Frist; tretet nach seiner Spur, folgt ihm, um die Entscheidung herbeizuführen. Daher am Anfang wie eine Jungfrau, wenn der Feind die Tür öffnet; zuletzt wie ein fliehender Hase, wenn der Feind nicht mehr rechtzeitig zu reagieren vermag."
+        }
+      ],
+      "points": [
+        {
+          "title": "Die Unterschiede der neun Gebiete",
+          "body": "Die neun Gebiete sind keine bloße Geländeklassifikation, sondern situative Bestimmungen anhand von Entfernung zur Heimat, Verkehrswegen, Interessen und Rückwegun sowie dem Verhältnis von Gegner und eigener Seite.",
+          "segmentId": "11-01"
+        },
+        {
+          "title": "Kampf lebt von Geschwindigkeit",
+          "body": "Geschwindigkeit wird genutzt, um den Gegner unvorbereitet zu treffen; sie ist nicht gleichbedeutend mit rücksichtsloser Trennung von Nachschub und Organisation.",
+          "segmentId": "11-02"
+        },
+        {
+          "title": "Tiefes Eindringen erzeugt Geschlossenheit",
+          "body": "Rückweg, Distanz und Ressourcen verändern die Psyche der Truppe; Führung muss erkennen, wie die Lage die Kohäsion beeinflusst.",
+          "segmentId": "11-03"
+        },
+        {
+          "title": "Gleichnis der Schlangen",
+          "body": "Wechselseitige Rettung von Anfang und Ende entsteht nicht von selbst, sondern durch Befehle, Gelände und gemeinsame Interessen, die die Organisation zu einem Ganzen formen.",
+          "segmentId": "11-04"
+        },
+        {
+          "title": "Dem Feind folgen, nicht starr verharren",
+          "body": "Grundregeln liefern Orientierung, das tatsächliche Handeln muss sich aber am Öffnen und Schließen des Gegners und an der Dynamik des Schlachtfelds orientieren.",
+          "segmentId": "11-08"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 12,
+      "chapterTitle": "Feuerangriff",
+      "fullTitle": "Feuerangriff — Kapitel Zwölf",
+      "group": "Vorsicht im Krieg",
+      "summary": "Dieses Kapitel scheint oberflächlich die Bedingungen für Brandangriffe zu behandeln, fokussiert jedoch auf die Notwendigkeit, Mittel, Zeitpunkt und Reaktion aufeinander abzustimmen. Es unterscheidet verschiedene Ziele des Feuers, verlangt Material- und Wettervorsorge und mahnt, nach Ausbruch die feindliche Reaktion zu beobachten, bevor man weiter handelt. Auch ein Sieg nützt nichts, wenn die errungenen Vorteile nicht gefestigt werden. Am Ende wird Vorsicht im Krieg zur politischen Ethik: Herrscher und Feldherrn dürfen nicht aus momentaner Wut in Kriege ziehen, denn Gefühle vergehen, verlorenes Land und Tote nicht.",
+      "tags": [
+        "Brandangriff",
+        "Zeitpunkt",
+        "Ergebnis",
+        "Vorsicht im Krieg",
+        "Emotionen"
+      ],
+      "seoTitle": "Feuerangriff: Sunzis Regeln zu Zeitpunkt, Mitteln und Vorsicht",
+      "seoDescription": "Sunzis Kapitel zu Brandangriffen betont Vorbereitung, Wind- und Zeitwahl, richtige Reaktion und die Pflicht, Siege zu sichern.",
+      "segments": [
+        {
+          "id": "12-01",
+          "text": "Sunzi sagt: Es gibt fünf Arten des Feuerangriffs: erstens das Anzünden von Menschen (Truppen), zweitens das Anzünden von Vorräten, drittens das Anzünden des Gepäcks und der Marschwagen, viertens das Anzünden der Magazine, fünftens das Anzünden ganzer Truppenteile. Beim Einsatz von Feuer muss es Gründe geben; Brandwerkzeuge und Rauchmittel müssen vorbereitet sein. Feuer wird zu bestimmten Zeiten verwendet, und an bestimmten Tagen entfacht. Zeit meint hier die Trockenheit des Himmels. Tag meint, wenn der Mond in den Sternbildern Ji, Bi, Yi oder Zhen steht — an diesen vier Sternbildern treten Windtage auf."
+        },
+        {
+          "id": "12-02",
+          "text": "Bei Brandangriffen muss man auf die fünf Feuerveränderungen reagieren: Bricht Feuer innen aus, so antworte frühzeitig von außen; bricht Feuer aus und die feindlichen Truppen verharren ruhig, so warte und greife nicht an; ist die Feuerkraft groß, so folge und nutze sie; ist ein Folgen nicht möglich, dann brich ab. Feuer kann von außen gelegt werden, ohne auf Innenwirkung zu warten; setze es zur rechten Zeit ein. Wenn Feuer auf der windzugewandten Seite ausbricht, greife nicht auf der windabgewandten Seite an. Tageswinde dauern an, Nachtwinde legen sich. Jedes Heer muss die fünf Feuerveränderungen kennen und entsprechend Wache halten. Deshalb ist es klug, Feuer dem Angriff beizugeben; Wasser dem Angriff beizugeben ist stark. Wasser kann abschneiden, aber nicht ergreifen."
+        },
+        {
+          "id": "12-03",
+          "text": "Wer im Kampf siegt und erobert, ohne seinen Gewinn zu sichern, bringt Unheil hervor; das nennt man ‚Verschwendung und Verweilen‘. Darum: Der weise Herrscher denkt darüber nach, der tüchtige General konsolidiert das Werk. Nicht des Vorteils wegen rühre man sich nicht, ohne Gewinn setze man nichts ein, in Nichtgefahr kämpfe man nicht. Der Herrscher darf nicht aus Zorn Krieg führen, der General nicht aus Verdruss Kampf anordnen. Handle, wenn es dem Nutzen entspricht; halte inne, wenn es dem Nutzen nicht entspricht. Zorn kann wieder in Freude umschlagen, Groll kann wieder versöhnt werden; ein verlorenes Reich kann nicht wiederhergestellt werden, Tote können nicht wieder lebendig. Deshalb ist der weise Herrscher vorsichtig und der tüchtige General wachsam — dies ist der Weg, Staat und Heer zu schützen."
+        }
+      ],
+      "points": [
+        {
+          "title": "Handeln braucht Voraussetzungen",
+          "body": "Jedes Mittel verlangt nach passenden Bedingungen, Ausrüstung und Timing; ohne die nötigen Voraussetzungen bleibt eine Maßnahme wirkungslos.",
+          "segmentId": "12-01"
+        },
+        {
+          "title": "Auf Veränderung reagieren",
+          "body": "Nach Ausbruch eines Feuers darf man nicht mechanisch angreifen; man muss das Verhalten des Gegners und die Stärke des Feuers beobachten und dann entscheiden, ob man folgt oder abbricht.",
+          "segmentId": "12-02"
+        },
+        {
+          "title": "Wasser kann abschneiden, nicht ergreifen",
+          "body": "Verschiedene Mittel haben unterschiedliche Wirkungsgrenzen. Etwas zu unterbrechen ist nicht dasselbe wie es unmittelbar zu erobern; Funktion und Ziel dürfen nicht verwechselt werden.",
+          "segmentId": "12-02"
+        },
+        {
+          "title": "Sieg ohne Sicherung ist Verlust",
+          "body": "Wird nach einem Erfolg nicht geordnet gesichert und konsolidiert, kann der zuvor eingesetzte Aufwand wirkungslos oder schädlich werden.",
+          "segmentId": "12-03"
+        },
+        {
+          "title": "Nicht aus Zorn Krieg führen",
+          "body": "Wesentliche, irreversible Entscheidungen dürfen nicht von vorübergehenden Gefühlen gelenkt werden; Vorsicht schützt Leben und Staat.",
+          "segmentId": "12-03"
+        }
+      ]
+    },
+    {
+      "chapterNumber": 13,
+      "chapterTitle": "Einsatz von Spionen",
+      "fullTitle": "Einsatz von Spionen, Kapitel 13",
+      "group": "Voraussicht",
+      "summary": "Das Schlusskapitel demonstriert anhand der enormen Kriegskosten den Wert von Nachrichtendienst: Wer aus Geiz bei Ehren und Belohnungen nicht in Aufklärung investiert, lässt Heer und Volk langandauernde Lasten tragen — das ist unbarmherzig und unklug. Voraussicht darf nicht von Göttern, Analogien oder unbewiesenen Schlussfolgerungen abhängen, sondern muss von Menschen kommen, die die Lage des Feindes kennen. Ortsgebundene, innere, Gegen-, tote und lebende Agenten haben je eigene Funktionen; die Gegenspionage ist das Zentrum zur Erkennung und Nutzung des feindlichen Nachrichtennetzes. Nachrichtendienst erfordert Klugheit, Rechtschaffenheit, Feingefühl und strikte Geheimhaltung.",
+      "tags": [
+        "Einsatz von Spionen",
+        "Voraussicht",
+        "Nachrichtendienst",
+        "Gegenspionage",
+        "Geheimhaltung"
+      ],
+      "seoTitle": "Sunzi Kap.13: Einsatz von Spionen und Voraussicht",
+      "seoDescription": "Kapitel 13 betont den Wert menschlicher Aufklärung, fünf Spionagearten und die zentrale Rolle der Gegenspionage.",
+      "segments": [
+        {
+          "id": "13-01",
+          "text": "Sunzi spricht: Wenn ein Heer von hunderttausend aufbricht und tausend Li vorstößt, die Kosten für das Volk und die Staatsausgaben täglich tausend Goldstücke betragen, innen und außen Unruhen entstehen, Wege vernachlässigt werden und viele nicht mehr arbeiten können, so betrifft das siebenhunderttausend Haushalte. Jahre lang halten sie Stellung, um einen einzigen Tag des Sieges zu erringen; und doch, weil man an Ehren und Belohnungen von hundert Goldstücken spart und die Lage des Feindes nicht kennt, ist das äußerste Unbarmherzigkeit. Solch ein Mensch ist kein Feldherr, kein Helfer des Herrschers, kein Führer zum Sieg. Daher sind der weise Herrscher und der tüchtige General, die in Bewegung siegen und Erfolg aus der Menge hervorbringen, durch Voraussicht bestimmt. Voraussicht darf nicht von Geistern oder Göttern hergeleitet, nicht aus Ähnlichkeiten der Dinge geschlossen, nicht durch Maße geprüft werden; sie muss aus Menschen gewonnen werden — von denen, die die Lage des Feindes kennen."
+        },
+        {
+          "id": "13-02",
+          "text": "Daher gibt es beim Einsatz von Spionen fünf Arten: Ortsgebundene, Innere, Gegenspione, tote Spione und lebende Spione. Wenn alle fünf zugleich wirken und niemand ihre Methode erkennt, nennt man das eine 'göttliche Regel' — den Schatz des Herrschers. Ortsgebundene Spione nutzt man wegen ihrer Heimatverbundenheit; innere Spione wegen ihrer Stellung im Staatsapparat; Gegenspione gewinnt man aus dem feindlichen Spionagenetz; tote Spione werden eingesetzt, um nach außen Täuschungen zu verbreiten, sodass unsere Spione davon Kenntnis erhalten und es dem Feind weitergeben; lebende Spione dienen dem Rückberichten echter Informationen."
+        },
+        {
+          "id": "13-03",
+          "text": "Bei den Angelegenheiten der drei Heere ist nichts vertrauter als die Spionage; niemand wird so reich belohnt wie der Spion; nichts ist so streng geheim wie die Spionagetätigkeit. Ohne heilige Klugheit kann man Spione nicht einsetzen; ohne Güte und Rechtschaffenheit kann man ihnen nicht vorstehen; ohne feinste Kunstfertigkeit kann man nicht an die wahren Informationen gelangen. Fein! Wie fein! Überall setzt man Spione ein. Wenn eine Spionageangelegenheit aufgedeckt wird, bevor sie begonnen hat, dann sterben sowohl der Spion als auch derjenige, dem er berichtet hat."
+        },
+        {
+          "id": "13-04",
+          "text": "Was immer das Heer angreifen will, welche Stadt man belagern will oder welche Personen man töten will, man muss zuvor die Namen des verteidigenden Generals, seiner Leibwächter, der Audienzbeamten, der Torwächter und der Hausangestellten wissen; unsere Spione müssen diese Namen unbedingt ermitteln. Man muss diejenigen, die als Spione des Feindes zu uns kommen, unbedingt ausforschen; gewährt man ihnen Vorteile, lenkt sie und entlässt sie wieder, so kann man Gegenspione gewinnen und einsetzen; daraus lassen sich auch Orts- und Innenspione gewinnen und gebrauchen; daraus weiß man, wie man tote Spione zur Täuschung einsetzen und den Feind informieren kann; daraus kann man lebende Spione pünktlich einsetzen. Über die Angelegenheiten der fünf Spionagetypen muss der Herrscher Bescheid wissen; dieses Wissen beruht auf den Gegenspionen, daher darf man bei Gegenspionen nicht sparen."
+        },
+        {
+          "id": "13-05",
+          "text": "Als die Yin-Dynastie aufstieg, war Yi Zhi noch in Xia; als die Zhou-Dynastie aufstieg, war Lü Ya in Yin. Daher, wenn ein weiser Herrscher und ein tüchtiger General ihre höchste Klugheit der Spionage widmen, werden sie gewiss große Erfolge erzielen. Dies ist die Kernfrage des Kriegswesens, auf die sich das Handeln der drei Heere stützt."
+        }
+      ],
+      "points": [
+        {
+          "title": "Voraussicht beruht auf Menschen",
+          "body": "Zuverlässige Information muss von namentlich erreichbaren Personen und direkten Kontakten kommen; Aberglaube, bloße Analogien oder unbestätigte Vermutungen ersetzen keine verlässliche Aufklärung.",
+          "segmentId": "13-01"
+        },
+        {
+          "title": "Die fünf Spionagearten gemeinsam",
+          "body": "Nur das Zusammenspiel unterschiedlicher Quellen ermöglicht Verifikation, Einflussnahme, Rückmeldung und Gegenaufklärung zu einem vollständigen Nachrichtennetzwerk.",
+          "segmentId": "13-02"
+        },
+        {
+          "title": "Nichts ist vertrauter als Spionage",
+          "body": "Aufklärung steht den Entscheidungen am nächsten; sie verlangt entsprechend Vertrauen, Ressourcen, strikte Geheimhaltung und moralische Verantwortung.",
+          "segmentId": "13-03"
+        },
+        {
+          "title": "Gegenspionage als Schlüssel",
+          "body": "Das Erkennen und Nutzen feindlicher Agententätigkeit reduziert das Risiko eigener Durchdringung und eröffnet Einblicke in die Struktur des feindlichen Netzes.",
+          "segmentId": "13-04"
+        },
+        {
+          "title": "Höchste Klugheit für Spionage",
+          "body": "Hochwertige Aufklärung ist keine niedere Aufgabe, sondern eine strategische, hochqualifizierte Tätigkeit, die den Erfolg ganzer Heere bestimmt.",
+          "segmentId": "13-05"
+        }
+      ]
+    }
+  ]
+};

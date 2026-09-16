@@ -1,0 +1,22 @@
+{
+  "name": "孫子兵法十三篇線上讀本",
+  "short_name": "孫子兵法",
+  "description": "《孫子兵法》十三篇原文、多語翻譯、閱讀進度與個人化閱讀工具。",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#eee4d1",
+  "theme_color": "#efe5d2",
+  "icons": [
+    {
+      "src": "brand/sunzi-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "brand/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

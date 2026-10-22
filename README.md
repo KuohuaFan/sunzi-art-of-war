@@ -51,7 +51,7 @@
 | 全端 API | Express、tRPC、Zod |
 | 資料庫 | Drizzle ORM、MySQL／TiDB |
 | SSR | React `renderToString` 與 Vite SSR bundle |
-| 靜態發布 | 98 個公開路由預先渲染至 `dist/pages`，由 GitHub Actions 發布至 Pages |
+| 靜態發布 | 98 個公開路由預先渲染至 `dist/pages`，以 `pnpm pages:deploy` 同步 `gh-pages` 分支 |
 | 測試 | Vitest、SSR 路由驗證、Chromium 手機 viewport 驗收 |
 
 ## 本機開發
@@ -84,13 +84,31 @@ pnpm pages:preview
 
 ## GitHub Pages 發布
 
-執行下列命令會先建置並驗證靜態產物，再把 `dist/pages` 發布至 `gh-pages` 分支：
+日後在 GitHub 原始碼工作副本更新內容後，先提交並推送 `main`，再執行 `pnpm pages:deploy` 同步 Pages：
 
 ```bash
+git pull --ff-only origin main
+pnpm install --frozen-lockfile
+# 修改內容後，檢查要公開的檔案；不要加入 .env 或私人資料
+git add <本次修改的檔案>
+git commit -m "docs: update reader content"
+git push origin main
 pnpm pages:deploy
 ```
 
-在 GitHub 儲存庫 **Settings → Pages** 中，Source 設為 **Deploy from a branch**，分支選擇 `gh-pages`、資料夾選擇 `/ (root)`。發布腳本會依 GitHub 儲存庫名稱自動設定 Vite 基底路徑，因此 fork 後亦可使用。
+發布命令會依序執行單元測試、型別檢查、Pages 建置與產物驗證，全部通過才推送 `gh-pages`。它保留既有部署歷史，不使用強制推送；若遠端被其他人同時更新，推送會停止，請確認後重新執行。產物完全相同時不建立重複部署提交。
+
+在 GitHub 儲存庫 **Settings → Pages** 中，Source 設為 **Deploy from a branch**，分支選擇 `gh-pages`、資料夾選擇 `/ (root)`。本儲存庫預設基底路徑為 `/sunzi-art-of-war/`；若 fork 後改名，請用 `GITHUB_REPOSITORY=帳號/新儲存庫名稱 pnpm pages:deploy` 指定新路徑。
+
+這是手動發布命令，不是背景自動排程，也不會發布完整 Manus 站的後端或搬移私人資料庫。
+
+## GitHub 儲存庫社群預覽圖
+
+![孫子兵法儲存庫社群預覽圖](docs/assets/github-social-preview.jpg)
+
+圖檔位於 [`docs/assets/github-social-preview.jpg`](docs/assets/github-social-preview.jpg)，尺寸 1280×640，JPEG 小於 1 MB。已沿用專案紫色鳥形 Logo、繁體中文名稱與七語讀本定位。
+
+將圖片加入 Git 並不會自動設定 GitHub 的 Social preview。請在 [儲存庫 Settings](https://github.com/KuohuaFan/sunzi-art-of-war/settings) 找到 **Social preview → Edit → Upload an image…**，選取此圖片。GitHub 官方尺寸及設定說明見 [Customizing your repository's social media preview](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/customizing-your-repositorys-social-media-preview)。此圖用於分享儲存庫連結，不會替換讀本各篇的 Open Graph 圖。
 
 ## 內容編輯
 
